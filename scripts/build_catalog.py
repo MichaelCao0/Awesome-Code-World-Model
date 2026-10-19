@@ -91,43 +91,78 @@ def load_data():
 def md(value):
     return value.replace('|', '\\|').replace('\n', ' ')
 
+def load_localization(data):
+    localized = json.loads((ROOT / 'data/readme.zh-CN.json').read_text(encoding='utf-8'))
+    require(localized['locale'] == 'zh-CN', 'Unexpected README locale')
+    require(set(localized['sections']) == {s['id'] for s in data['sections']}, 'Chinese section translations are out of sync')
+    require(set(localized['summaries']) == {p['id'] for p in data['papers']}, 'Chinese paper summaries are out of sync')
+    for sid, section in localized['sections'].items():
+        require(all(isinstance(section.get(k), str) and section[k].strip() for k in ('title', 'description')), f'{sid}: missing Chinese section text')
+    for pid, summary in localized['summaries'].items():
+        require(isinstance(summary, str) and summary.strip() and re.search(r'[\u3400-\u9fff]', summary), f'{pid}: missing Chinese summary')
+    return localized
+
+def load_survey_links():
+    links = json.loads((ROOT / 'data/survey-links.json').read_text(encoding='utf-8'))
+    require(set(links) == {'arxiv_url', 'semantic_scholar_url', 'semantic_scholar_citations_badge_url'}, 'Unexpected survey link fields')
+    for key, value in links.items():
+        if value is None:
+            continue
+        require(isinstance(value, str), f'{key}: use an HTTPS URL or null')
+        parsed = urlparse(value)
+        require(parsed.scheme == 'https' and parsed.netloc and not parsed.username and not parsed.password, f'{key}: invalid publication URL')
+    require(not links['semantic_scholar_citations_badge_url'] or links['semantic_scholar_url'], 'A live citation badge needs the survey paper link')
+    return links
+
 def section_papers(data, section_id):
     return sorted((p for p in data['papers'] if p['section'] == section_id),
                   key=lambda p: (p['first_public_date'], p['id']), reverse=True)
 
-def catalogue(data):
-    lines = [f"**{len(data['papers'])} sources** · literature through **{data['literature_cutoff']}**.", '',
-             'Browse by research direction below. [Full annotations, review depth, and evidence notes →](docs/catalogue.md)', '',
-             'Within each section, sources are ordered by their recorded first-public date. Supporting and adjacent branches can be expanded.']
+def catalogue(data, localized=None):
+    if localized:
+        lines = [f"**{len(data['papers'])} 条文献来源** · 文献截止日期：**{data['literature_cutoff']}**。", '',
+                 '按研究方向浏览。[完整注释、核查深度与证据说明 →](docs/catalogue.md)', '',
+                 '各分区按来源记录的首次公开日期倒序排列，支撑与相邻分支可展开浏览。']
+    else:
+        lines = [f"**{len(data['papers'])} sources** · literature through **{data['literature_cutoff']}**.", '',
+                 'Browse by research direction below. [Full annotations, review depth, and evidence notes →](docs/catalogue.md)', '',
+                 'Within each section, sources are ordered by their recorded first-public date. Supporting and adjacent branches can be expanded.']
     for index, section in enumerate(data['sections'], 1):
         title, description, folded = PRESENTATION[section['id']]
+        if localized:
+            title = localized['sections'][section['id']]['title']
+            description = localized['sections'][section['id']]['description']
         subset = section_papers(data, section['id'])
         lines += ['', f'<a id="papers-{section["id"]}"></a>', f'### {index:02d} · {title}', '',
                   f'*{description}*', '']
         if folded:
-            lines += ['<details>', f'<summary><strong>Explore {len(subset)} sources</strong></summary>', '']
+            caption = f'展开 {len(subset)} 条文献' if localized else f'Explore {len(subset)} sources'
+            lines += ['<details>', f'<summary><strong>{caption}</strong></summary>', '']
         for p in subset:
             label = md(p['title'])
             if p.get('alias') and p['alias'].lower() not in p['title'].lower():
                 label += f" ({md(p['alias'])})"
             kind = 'arxiv' if p.get('arxiv_id') else 'paper'
             badge_label = 'arXiv' if p.get('arxiv_id') else 'Paper'
+            summary = localized['summaries'][p['id']] if localized else p['summary']
             lines += [f"- **{label}** `{p['year']}` [![{badge_label}](assets/badges/{kind}.svg)]({p['source_url']})",
-                      f"  <br><sub>{escape(p['summary'])}</sub>", '']
+                      f"  <br><sub>{escape(summary)}</sub>", '']
         if folded:
             lines += ['</details>', '']
-        lines += ['[↑ Contents](#contents)']
+        lines += ['[↑ 返回导航](#contents)' if localized else '[↑ Contents](#contents)']
     return '\n'.join(lines)
 
-def navigation(data):
+def navigation(data, localized=None):
     entries = []
     for index, section in enumerate(data['sections'], 1):
         sid = section['id']
         count = len(section_papers(data, sid))
-        entries.append(f"[{index:02d} · {PRESENTATION[sid][0]}](#papers-{sid}) <sub>({count})</sub>")
-    lines = ['| Modeling & evaluation | Foundations & context |', '|---|---|']
+        title = localized['sections'][sid]['title'] if localized else PRESENTATION[sid][0]
+        entries.append(f"[{index:02d} · {title}](#papers-{sid}) <sub>({count})</sub>")
+    lines = ['| 建模与评测 | 基础与相邻研究 |' if localized else '| Modeling & evaluation | Foundations & context |', '|---|---|']
+    more = '[详细核查表 →](docs/catalogue.md)' if localized else '[All annotations →](docs/catalogue.md)'
     for index in range(5):
-        right = entries[index + 5] if index + 5 < len(entries) else '[All annotations →](docs/catalogue.md)'
+        right = entries[index + 5] if index + 5 < len(entries) else more
         lines.append(f'| {entries[index]} | {right} |')
     return '\n'.join(lines)
 
@@ -156,14 +191,14 @@ def annotated_catalogue(data):
             lines += ['', '</details>']
     return '\n'.join(lines) + '\n'
 
-def badge(label, value, color='#0f766e'):
+def badge(label, value, color='#0f766e', left_color='#40564e'):
     left = max(42, len(label) * 7 + 16)
     right = max(36, len(value) * 7 + 16) if value else 0
     title = escape(f'{label}: {value}' if value else label)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{left + right}" height="22" role="img" aria-label="{title}">
   <title>{title}</title>
   <rect width="{left + right}" height="22" rx="3" fill="{color}"/>
-  <path d="M3 0h{left - 3}v22H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3Z" fill="{'#40564e' if value else color}"/>
+  <path d="M3 0h{left - 3}v22H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3Z" fill="{left_color if value else color}"/>
   <g fill="#fff" text-anchor="middle" font-family="Verdana, Arial, sans-serif" font-size="11">
     <text x="{left / 2:g}" y="15">{escape(label)}</text>
     <text x="{left + right / 2:g}" y="15">{escape(value)}</text>
@@ -171,17 +206,28 @@ def badge(label, value, color='#0f766e'):
 </svg>
 '''
 
-def badges(data):
+def badges(data, survey_links):
     specs = {'sources': ('Sources', str(len(data['papers']))), 'topics': ('Topics', str(len(data['sections']))),
              'cutoff': ('Literature', data['literature_cutoff']), 'contributions': ('Contributions', 'welcome'),
              'arxiv': ('arXiv', ''), 'paper': ('Paper', '')}
-    return {ROOT / f'assets/badges/{name}.svg': badge(label, value, '#a33d47' if name == 'arxiv' else '#0f766e')
-            for name, (label, value) in specs.items()}
+    output = {ROOT / f'assets/badges/{name}.svg': badge(label, value, '#a33d47' if name == 'arxiv' else '#0f766e')
+              for name, (label, value) in specs.items()}
+    output[ROOT / 'assets/badges/survey-arxiv.svg'] = badge('arXiv', 'Paper' if survey_links['arxiv_url'] else '—', '#8c959f', '#57606a')
+    output[ROOT / 'assets/badges/survey-citations.svg'] = badge('Semantic Scholar Citations', '—', '#8c959f', '#57606a')
+    return output
 
-def badge_row():
+def badge_row(survey_links):
     links = [('sources', 'Source records', '#paper-collection'), ('topics', 'Reading sections', '#contents'),
              ('cutoff', 'Literature cutoff', 'docs/review-protocol.md'), ('contributions', 'Contributions welcome', 'CONTRIBUTING.md')]
-    return ' '.join(f'[![{alt}](assets/badges/{name}.svg)]({target})' for name, alt, target in links)
+    current = ' '.join(f'[![{alt}](assets/badges/{name}.svg)]({target})' for name, alt, target in links)
+    publication = []
+    for name, alt, target in [('survey-arxiv', 'Survey arXiv', survey_links['arxiv_url']),
+                              ('survey-citations', 'Survey Semantic Scholar citations', survey_links['semantic_scholar_url'])]:
+        source = survey_links['semantic_scholar_citations_badge_url'] if name == 'survey-citations' else None
+        source = source or f'assets/badges/{name}.svg'
+        icon = f'![{alt}]({source})'
+        publication.append(f'[{icon}]({target})' if target else icon)
+    return current + '\n\n' + ' '.join(publication)
 
 def bib_escape(value):
     replacements = {'\\': r'\textbackslash{}', '&': r'\&', '%': r'\%', '_': r'\_', '#': r'\#', '$': r'\$', '{': r'\{', '}': r'\}'}
@@ -271,12 +317,17 @@ def main():
     parser.add_argument('--check', action='store_true', help='Validate without writing; reject stale generated output')
     args = parser.parse_args()
     data = load_data()
-    readme_path = ROOT / 'README.md'
-    readme = readme_path.read_text(encoding='utf-8')
-    for name, content in [('BADGES', badge_row()), ('NAVIGATION', navigation(data)), ('CATALOG', catalogue(data))]:
-        readme = replace_region(readme, name, content)
-    expected = {readme_path: readme, ROOT / 'papers.bib': bibliography(data),
-                ROOT / 'docs/catalogue.md': annotated_catalogue(data), **badges(data)}
+    localized = load_localization(data)
+    survey_links = load_survey_links()
+    expected = {ROOT / 'papers.bib': bibliography(data), ROOT / 'docs/catalogue.md': annotated_catalogue(data),
+                **badges(data, survey_links)}
+    for filename, language in [('README.md', None), ('README.zh-CN.md', localized)]:
+        readme_path = ROOT / filename
+        readme = readme_path.read_text(encoding='utf-8')
+        for name, content in [('BADGES', badge_row(survey_links)), ('NAVIGATION', navigation(data, language)),
+                              ('CATALOG', catalogue(data, language))]:
+            readme = replace_region(readme, name, content)
+        expected[readme_path] = readme
     for path, text in expected.items():
         if args.check:
             require(path.exists() and path.read_text(encoding='utf-8') == text, f'{path.name} is stale; run python3 scripts/build_catalog.py')
@@ -284,7 +335,7 @@ def main():
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(text, encoding='utf-8')
     check_links()
-    print(f"{'Validated' if args.check else 'Generated'} {len(data['papers'])} sources, {len(data['sections'])} sections, annotated catalogue, badges, links/anchors, and BibTeX.")
+    print(f"{'Validated' if args.check else 'Generated'} bilingual READMEs, {len(data['papers'])} sources, {len(data['sections'])} sections, annotated catalogue, badges, links/anchors, and BibTeX.")
 
 if __name__ == '__main__':
     try:

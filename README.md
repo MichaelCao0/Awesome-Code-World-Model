@@ -6,25 +6,27 @@
 
 A living literature collection and home for our forthcoming survey.
 
+**English** | [简体中文](README.zh-CN.md)
+
 <!-- BADGES:BEGIN -->
 
 [![Source records](assets/badges/sources.svg)](#paper-collection) [![Reading sections](assets/badges/topics.svg)](#contents) [![Literature cutoff](assets/badges/cutoff.svg)](docs/review-protocol.md) [![Contributions welcome](assets/badges/contributions.svg)](CONTRIBUTING.md)
+
+![Survey arXiv](assets/badges/survey-arxiv.svg) ![Survey Semantic Scholar citations](assets/badges/survey-citations.svg)
 
 <!-- BADGES:END -->
 
 [Survey Hub](docs/survey.md) · [Paper Collection](#paper-collection) · [Taxonomy](docs/taxonomy.md) · [BibTeX](papers.bib) · [Contributing](CONTRIBUTING.md)
 
-<p><img src="assets/banner.svg" alt="Worlds, made executable: code, persistent state, and rendered observations" width="100%"></p>
+<p><img src="./assets/banner.png" alt="Worlds, made executable: code, persistent state, and rendered observations" width="1280"></p>
 
 </div>
 
 Code makes world models **executable, editable, and inspectable**. This collection connects program synthesis, model-based agents, physical simulation, GUI prediction, and controllable visual generation through one question: **what world semantics does code carry?**
 
-以“代码承担什么世界语义”为主线，梳理可执行动力学、持久世界、可渲染观测，以及程序的获取、验证和使用方式。
-
 ## News
 
-- **2026-10-19** — New survey hub, visual navigation, and paper browsing layout.
+- **2026-10-19** — Bilingual READMEs, a PNG cover, reserved survey links, and visual navigation.
 - **2026-10-14** — Initial release: 92 source records, structured metadata, BibTeX, and a shared taxonomy and evaluation framework.
 
 ## Contents

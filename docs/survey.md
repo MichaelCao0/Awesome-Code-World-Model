@@ -4,6 +4,15 @@
 
 This is the home for the survey and its companion literature collection. The manuscript is in preparation; the resources below provide the current research questions, organization, and evidence framework.
 
+## Publication links
+
+| Resource | Link / live indicator |
+|---|---|
+| arXiv | — |
+| Semantic Scholar citations | — |
+
+The survey links and citation indicator are reserved for publication. Their URLs are currently empty in [data/survey-links.json](../data/survey-links.json); a Semantic Scholar paper link and live citation badge can be connected after a verified paper identifier is available.
+
 ## Central questions
 
 1. What semantics does code carry in a world model, and how do transition, observation, and coupled programs fit together?
