@@ -1,0 +1,35 @@
+# Code-Centric World Models
+
+**Executable Dynamics, Persistent Worlds, and Renderable Observations**
+
+This is the home for the survey and its companion literature collection. The manuscript is in preparation; the resources below provide the current research questions, organization, and evidence framework.
+
+## Central questions
+
+1. What semantics does code carry in a world model, and how do transition, observation, and coupled programs fit together?
+2. How are world programs acquired from specifications, interaction, and visual evidence, then verified and revised?
+3. What evidence connects these design choices to world fidelity, persistent-state consistency, and agent utility?
+
+## Read the framework
+
+| Resource | What you will find |
+|---|---|
+| [Taxonomy & scope](taxonomy.md) | Semantic responsibilities, task roles, program origin, and lifecycle attributes |
+| [Evaluation & evidence](evaluation.md) | Evaluation layers, benchmark targets, comparison controls, and research questions |
+| [Survey outline / 中文大纲](survey-outline.md) | Chapter plan, narrative structure, and proposed figures and tables |
+| [Review protocol](review-protocol.md) | Search perspectives, inclusion criteria, source review, and date conventions |
+
+## Explore and cite the literature
+
+- [Browse the paper collection](../README.md#paper-collection).
+- [Read the annotated catalogue](catalogue.md) for scope labels, review depth, and evidence notes.
+- [Download the BibTeX bibliography](../papers.bib) for the collected sources.
+- [Use the structured metadata](../data/papers.json) for filtering and comparison.
+
+The BibTeX file cites the collected sources. A citation for the survey itself will be added here with the manuscript release.
+
+## Follow the project
+
+Release news and collection updates appear on the [repository homepage](../README.md#news). Contributions and corrections follow the [contribution guide](../CONTRIBUTING.md).
+
+[← Back to the collection](../README.md)
