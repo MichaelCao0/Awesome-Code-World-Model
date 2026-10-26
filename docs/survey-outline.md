@@ -1,54 +1,62 @@
-# Survey 组织建议
+# Survey 写作安排与分类对照
 
-建议标题：**Code-Centric World Models: Executable Dynamics, Persistent Worlds, and Renderable Observations**。
+**讨论稿 · 2026-10-26。** 当前工作标题为 *Programmatic World Models: A Survey*。首页继续使用文献库名称 Code-Centric World Models；分类与最终章节仍在讨论。
 
-主线是程序承担哪些世界语义、这些语义怎样获得与修订，以及它们怎样转化为可以检查的世界一致性和 agent 使用价值。可执行动力学、GUI 观测代码和持久视觉世界由同一分析框架贯通，文献之间的设计差异构成综述的比较贡献。
+[两套分类定义](classification-guide.md) · [逐篇分类与主讲位置](classification-crosswalk.md) · [可复制 CSV](../data/classification.csv)
 
 ## 三个研究问题
 
-- **RQ1：程序职责。** 代码在状态转移、世界构建与观测生成中承担哪些语义，这些职责怎样组合？
-- **RQ2：获得与维护。** 世界程序怎样从规格、交互和视觉中获得，并在新证据下验证、抽象和修订？
-- **RQ3：能力与证据。** 不同职责与获取方式在世界忠实度、长程一致性和 agent 使用价值上得到什么证据支持？
+- **RQ1：程序职责。** 程序怎样定义世界结构、执行状态变化或表达预测观测？
+- **RQ2：获得与维护。** 程序怎样从规格和证据中获得，怎样区分状态演化、模型修正与世界编辑？
+- **RQ3：能力与证据。** 可执行性、机制忠实度、观测遵循、决策价值与修订可靠性分别由什么证据支持？
 
-## 推荐目录
+## 方案一：保留 lifecycle 章节，调整分类图和总表
 
-| 章节 | 回答的问题 | 代表内容 |
+这是本轮建议的写作底稿。编号与当前讨论的 PDF 对齐；该 PDF 没有被修改或发布。
+
+| 章节 | 比较问题 | 主讲论文与内容 |
 |---|---|---|
-| 1. Introduction | 为什么需要将程序动力学、可见观测与持久世界联系起来？ | 运行示例、共同问题、三个 RQ、综述贡献 |
-| 2. Scope, Definitions, and Review Protocol | 纳入对象、任务角色与文献核查方式是什么？ | target-world model / constructed world / observation predictor；检索与筛选 |
-| 3. A Functional Taxonomy | 程序负责哪些语义，怎样组合？ | transition / observation / both；程序来源与生命周期标签 |
-| 4. Learning and Revising Executable Dynamics | 规则如何从描述、交互和视频中得到？ | WorldCoder、GIF-MCTS、TheoryCoder、PoE-World、OneLife、Baba、ARC 系列、EMPIRIC；PDDL 生成 |
-| 5. Constructing Persistent Executable Worlds | 怎样构造可运行、可干预和可维护的世界？ | Web World Models、Code2Worlds、Code as Worlds、ChronoAgentic、SceneCode、验证世界与训练数据 |
-| 6. Predicting Observations as Renderable Code | 为什么以代码预测观测，怎样学习？ | gWorld、Code2World、AppDeltaWorld；full / delta、render feedback、retrieval |
-| 7. Coupling Execution with Visual Generation | 执行状态怎样约束未来像素？ | Code World Model、Programmable World Model、CoDeR、GameDirector、Magpie、AgentGarten |
-| 8. Evaluation and Evidence | 运行、转移、状态、呈现与使用价值各如何检验？ | Text2World、GameLogicBench、WorldCoder-Bench、Video2World、PROWBench、GUI-CC、StateAliasBench、ScratchWorld |
-| 9. Cross-Branch Findings and Research Agenda | 不同路线共同揭示哪些可检验问题？ | predictive state、program-to-render alignment、regression-preserving repair、matched-budget model utility |
-| 10. Conclusion | 三个 RQ 得到怎样的答案？ | 程序语义框架、获取与验证规律、证据和下一步方向 |
+| 1. Introduction | 程序化表示提供哪些建模能力？ | 共同运行示例、历史与近期路线 |
+| 2. Foundations | 模型、状态、程序、引擎和观测承担什么责任？ | Eq.(1)–(3)、分类、状态演化/模型修正/世界编辑、论文总表 |
+| 3. Executable World Representations | 世界需要保留什么，程序表达哪些量？ | 符号、几何、关节、物理参数、持久状态；Code for 3D 表示基础 |
+| 4. World Program Induction and Construction | 程序如何从规则、轨迹、视觉或规格中得到？ | 4.1 WorldCoder/GIF-MCTS；4.2 PoE-World/RoleWorld；4.3 Code as Worlds；4.4 ChronoAgentic/SceneCode/环境构建 |
+| 5. Executable World Evolution and Simulation | 谁更新状态，哪些机制继承自引擎？ | 5.1 规划与可复用转移；5.2 EMPIRIC/Code2Worlds-2；5.3 Web World Models/Oneira/Mallea/PWM/CoDeR |
+| 6. Program-Guided Observation Generation | 状态怎样变成观测；预测观测代码有何不同？ | 6.1 gWorld/Code2World/AppDeltaWorld；6.2 确定性渲染；6.3 神经接口/StreamRender-H3/EdenLive；6.4 视觉记忆 |
+| 7. Verification, Feedback, and Refinement | 怎样发现错误并保留已有行为？ | 7.1 PatchWorld/Memento 3；7.2 仿真与规格约束；7.3 观测一致性 |
+| 8. Evaluation and Applications | benchmark 实际验证哪个承诺？ | Text2World/ExeWorldBench/Video2World/GameLogicBench/PROWBench/GUI-CC；相邻视频评测单列 |
+| 9. Open Challenges | 哪些跨方法问题尚未解决？ | 状态充分性、可辨识性、开放世界扩展、执行—观测接口、可维护修订 |
+| 10. Conclusion | 三个研究问题得到哪些回答？ | 程序责任、获取方式与证据之间的联系 |
 
-## 分类层级怎样保持一致
+逐篇对照表的主讲位置用于完整介绍方法；交叉章节只比较相关接口或结果，避免多次重复介绍同一套方法。
 
-运行时职责作为主轴：程序承载转移、观测，或二者的耦合。程序合成、归纳、重建、验证和修补是横向属性，也可以成为组织比较的流程章节。这样，一篇从视频发现物理程序、执行仿真并渲染验证的论文拥有多个标签，但不会迫使分类树增加一个专属分支。
+## 方案二：按程序职责重排主体
 
-README 的九个文献分区是阅读导航。投稿稿的 taxonomy 使用 [taxonomy.md](taxonomy.md) 中的语义轴，避免把导航章节写成互斥的自然类别。PDDL 与 Python 世界模型都讨论转移、反馈和规划；两者的接口与建模假设用于比较。
+| 章节群 | 内容 | 相对方案一的变化 |
+|---|---|---|
+| World Specification | 世界结构、对象与物理属性、可执行环境的构建与恢复 | 集中原先分散在表示、构建、物理执行中的 S 工作 |
+| World Evolution | 转移规则、引擎扩展、agent 与引擎协同、持续状态 | 将 E 工作及获取、执行、验证放在一起 |
+| Observation Representation | 下一屏代码、增量程序、GUI 观测预测 | 单独展开 O，神经渲染作为跨层接口 |
+| Acquisition and Revision | induction/construction、修正与编辑 | 横向总结共同过程 |
+| Evaluation and Outlook | 五项证据与研究问题 | 与方案一共用评测框架 |
 
-场景和资产程序连接程序化世界构建。静态重建可以压缩为 enabling representations；关节、动态或仿真行为则按实际证据接入执行机制。这样保留程序几何的来源，同时将正文重心放在世界模型问题上。
+方案二适合按路线连续阅读；方案一利于比较共同生命周期和接口。目前先保留方案一，利用同一份属性表检验方案二能否改善叙事。
 
-## 五个值得建立的图表
+## 可直接展开的比较段落
 
-1. **运行示例和总览图。** 同一个动作经过程序转移、状态编译和观测渲染，并展示 GUI 代码预测的对应路径。
-2. **语义—生命周期矩阵。** 每篇方法的 task role、code responsibility、program origin、state status、feedback 和 use。
-3. **获取与修订比较表。** 候选如何提出、反例怎样得到、全局重写或局部修补、怎样保留旧行为、模型如何进入 planner。
-4. **历史时间线。** Game Engine Learning from Video → EMPA → AutumnSynth / LLM-to-PDDL → LLM Python 模型 → 持久世界和执行—视觉耦合。会议年份与预印本年份分别记录。
-5. **评测证据地图。** program acquisition → transition fidelity → state consistency → observation alignment → closed-loop utility，并标明每个 benchmark 覆盖的接口。
+| 比较单元 | 必须解释的差异 | 写作锚点 |
+|---|---|---|
+| WorldCoder / GIF-MCTS / PatchWorld / Memento 3 | 候选如何获得、反例来源、更新后如何验证旧轨迹 | §4.1 与 §7.1 |
+| PoE-World / OneLife / RoleWorld | 随机组合、条件机制与角色抽象分别分解了什么 | §4.2 |
+| Code as Worlds / EMPIRIC / Code2Worlds-2 | 恢复物理假设、补充缺失定律、编译模拟器规格 | §4.3 与 §5.2；明确给定几何与推断机制 |
+| PWM / CoDeR / Oneira / Mallea | 谁维护状态、决定更新，新对象与编辑如何进入世界 | §5.3；渲染接口交叉引用 §6.3 |
+| AgentGarten / Magpie / StreamRender-H3 / EdenLive | 上游引擎语义与生成式渲染器的职责 | §6.3；区分渲染组件与完整系统 |
+| gWorld / Code2World / AppDeltaWorld | full/delta、训练反馈、历史与隐藏状态 | §6.1；接 GUI-CC/StateAliasBench |
+| ExeWorldBench / Video2World / PROWBench / Code2Video-Compass | 机制、重建功能、事件遵循与视频工程的评测对象 | §8；不同能力不合成统一排行榜 |
 
-## 文献比较的写法
+## 待定边界
 
-每段围绕一个共同问题，比较设计差异，再解释它支持的能力与成立条件。例如，WorldCoder、GIF-MCTS 和 PatchWorld 可比较候选搜索、反例来源、模型更新方式与 planner 接口；GUI 三篇可比较输出粒度、训练反馈与结构复用，再接入分布变化、状态别名和多步一致性的证据。
+1. **S/E 主标签**：配置引擎属性与生成新机制的边界；按主要贡献选主标签，保留次标签及执行者。
+2. **运行时 agent**：提交世界状态的更新与只输出策略的代码应分别描述。
+3. **渲染器与完整系统**：上游引擎已给定时，论文贡献可能是观测接口而非机制归纳。
 
-正文重点解释程序职责如何创造新能力。共同定义和评价条件集中在范围章节及比较表中；与某个结论直接相关的实验条件放在对应论证处。这样综述形成清晰的学术叙事，同时让读者能够核对每项判断。
-
-## 邻域定位
-
-相邻综述通常按生成模态、3D 场景任务或 code intelligence 架构组织。本稿可以用程序职责、状态所有权、程序获取、执行验证和下游价值建立自己的分析视角。独特性应由分类框架及跨路线比较体现。
-
-文献库是持续扩充的研究基础。下一轮写正文时，以选定章节的问题筛选详述论文，并把实验证据矩阵补到具体版本、split、预算和指标；每条性能结论都关联它所依赖的配置。
+这些问题决定 Figure 1 的最终画法；公式、生命周期分析和五项 evidence obligations 可以继续沿用。

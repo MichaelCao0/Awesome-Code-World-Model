@@ -27,6 +27,7 @@
 <a id="news"></a>
 ## 更新
 
+- **2026-10-26** — 补入 31 条核实来源，并提供覆盖全部 123 条来源的[两套分类对照与写作位置](docs/classification-crosswalk.md)；分类仍为讨论稿。
 - **2026-10-19** — 加入中英双语 README、PNG 封面、综述标签占位与分类导航。
 - **2026-10-14** — 初始版本收录 92 条文献记录，提供结构化元数据、BibTeX、分类框架与评测框架。
 
@@ -35,15 +36,17 @@
 
 [综述与资源](#survey--resources) · [核心视角](#at-a-glance) · [文献目录](#paper-collection) · [参与贡献](#contributing) · [致谢](#acknowledgements)
 
+**写作讨论：** [分类判据](docs/classification-guide.md) · [逐篇对照表](docs/classification-crosswalk.md) · [CSV](data/classification.csv) · [本轮更新](docs/updates/2026-10-26.md)
+
 <!-- NAVIGATION:BEGIN -->
 
 | 建模与评测 | 基础与相邻研究 |
 |---|---|
-| [01 · 可执行动力学与规划](#papers-dynamics) <sub>(23)</sub> | [06 · 场景与资产程序](#papers-scene_programs) <sub>(11)</sub> |
-| [02 · 持久的可执行世界](#papers-construction) <sub>(6)</sub> | [07 · 历史与表示基础](#papers-foundations) <sub>(9)</sub> |
-| [03 · 执行与视觉生成的连接](#papers-coupling) <sub>(6)</sub> | [08 · 对照与相邻方法](#papers-comparators) <sub>(20)</sub> |
+| [01 · 可执行动力学与规划](#papers-dynamics) <sub>(26)</sub> | [06 · 场景与资产程序](#papers-scene_programs) <sub>(13)</sub> |
+| [02 · 持久的可执行世界](#papers-construction) <sub>(12)</sub> | [07 · 历史与表示基础](#papers-foundations) <sub>(9)</sub> |
+| [03 · 执行与视觉生成的连接](#papers-coupling) <sub>(14)</sub> | [08 · 对照与相邻方法](#papers-comparators) <sub>(26)</sub> |
 | [04 · 以可渲染代码预测观测](#papers-observation) <sub>(3)</sub> | [09 · 相关综述](#papers-surveys) <sub>(3)</sub> |
-| [05 · 基准与验证资源](#papers-evaluation) <sub>(11)</sub> | [详细核查表 →](docs/catalogue.md) |
+| [05 · 基准与验证资源](#papers-evaluation) <sub>(17)</sub> | [详细核查表 →](docs/catalogue.md) |
 
 <!-- NAVIGATION:END -->
 
@@ -58,7 +61,7 @@
 | [**评测框架**](docs/evaluation.md) — 从运行正确性到 agent 使用价值 | [**BibTeX 文献库**](papers.bib) — 稳定的引用键 |
 | [**详细核查表**](docs/catalogue.md) — 日期、定位、核查深度与证据说明 | [**结构化数据**](data/papers.json) — 原始来源与机制标签 |
 
-论文标题和方法名保留原文，本页提供中文机制摘要。分类、评测及详细核查文档目前以英文为主。
+论文标题和方法名保留原文，本页提供中文机制摘要。逐篇分类与写作安排提供中文说明；评测框架及详细核查文档以英文为主。
 
 <a id="at-a-glance"></a>
 ## 核心视角
@@ -76,16 +79,25 @@
 
 <!-- CATALOG:BEGIN -->
 
-**92 条文献来源** · 文献截止日期：**2026-10-13**。
+**123 条文献来源** · 文献截止日期：**2026-10-26**。
 
 按研究方向浏览。[完整注释、核查深度与证据说明 →](docs/catalogue.md)
 
-各分区按来源记录的首次公开日期倒序排列，支撑与相邻分支可展开浏览。
+各分区按记录日期倒序排列；首发日期未知的项目按已公开时间上界排序，详见注释表。支撑与相邻分支可展开浏览。
 
 <a id="papers-dynamics"></a>
 ### 01 · 可执行动力学与规划
 
 *学习可执行的规则、抽象与机制，用于预测和规划。*
+
+- **A Declared World Model: Language Models Write the Rules of the Scene They are Shown** `2026` [![Paper](assets/badges/paper.svg)](https://www.preprints.org/manuscript/202610.1139)
+  <br><sub>语言模型根据带标签场景图编写世界规则，由确定性引擎检查动作并计算下一状态；实验检验规则能否迁移到未见布局。</sub>
+
+- **Write Once, Plan Many: Building Reusable Visual Planning Systems from One Scene** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.19234)
+  <br><sub>由给定领域规则和单个练习场景生成可复用渲染、动力学、感知与规划程序，以执行和重建反馈改进，随后冻结复用。</sub>
+
+- **RoleWorld: Knowledge Transfer in World Modeling with Functional Role Abstractions** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.13172)
+  <br><sub>提取可复用角色原型与可执行转移规则，在新环境中更新角色分配和参数估计，保持已获得的转移规则不变。</sub>
 
 - **Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.11794)
   <br><sub>Memento 3 结合轨迹判断与精确回放，修订反思式规则手册和可执行模型。</sub>
@@ -163,6 +175,24 @@
 
 *构建交互世界、物理仿真和经过验证的世界族。*
 
+- **WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28827)
+  <br><sub>分层规划预测区域与地块的类型化规格，固定过程生成器将其编译成场景；持久记录保留对象身份、边界约束和编辑，以支持流式加载与重访。</sub>
+
+- **NeoWorld-3: From Pixels to Code-Defined Physical Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.27690)
+  <br><sub>通过分层编码智能体、可微参数拟合以及关节与物理检查，从视觉证据重建可编辑几何程序。</sub>
+
+- **Agent World Model in the Wild: Computer-Use Agent Environment Synthesis (WildAWM)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.26828)
+  <br><sub>合成贯通 GUI、MCP 和 CLI 的可执行计算机环境，以可重放状态构建程序和基于执行的任务、验证器质量门控支持智能体训练。</sub>
+
+- **LLM Agents as Suppliers of Physical System Models: Calibration and Acceptance in Modelica** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.25019)
+  <br><sub>研究编码智能体根据描述与数据组合、校准可执行 Modelica 物理系统模型，并以行为拟合、物理不变量与可解释性进行验收。</sub>
+
+- **RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.18835)
+  <br><sub>基于 Newton 的交互式工具包，将求解器、接触模型与物理参数显式开放给人类和编码智能体，依据观测行为迭代调整操作仿真。</sub>
+
+- **Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.17651)
+  <br><sub>将生成的视觉场景编译为具有物理属性的 MuJoCo 世界，通过仿真器反馈修正可执行动力学与场景设置。</sub>
+
 - **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.27549)
   <br><sub>Code as Worlds 通过提出、实例化、执行、渲染和验证的循环，发现可执行物理表示。</sub>
 
@@ -188,8 +218,32 @@
 
 *将持久程序状态连接到传统渲染与神经视觉输出。*
 
+- **EdenLive: Real-Time Generative Rendering from Any Visual Reference** `2026` [![Project](assets/badges/project.svg)](https://github.com/VAST-AI-Research/EdenLive)
+  <br><sub>生成式渲染器把上游参考视频、目标首帧和提示转换为增强视频；状态和规则由上游程序维护。官方还提供从提示生成可玩游戏的 skill 与工作台。</sub>
+
+- **Mundo: Customized World Model** `2026` [![Project](assets/badges/project.svg)](https://mundo-world-model.github.io/)
+  <br><sub>从图像重建可编辑的三维代理场景；场景程序指定对象和物理参数，脚本及通常采用的 MuJoCo 推进状态，代理帧与参考视图共同控制视频渲染。</sub>
+
+- **SolarRenderer: Few-Step Generative Reference Rendering** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28630)
+  <br><sub>通过控制与加速 LoRA 适配冻结视频骨干，将对齐的结构视频转成细节视频，并支持流式生成。</sub>
+
+- **Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.27999)
+  <br><sub>编码智能体把玩家要求写成游戏代码与规则；引擎维护持久状态，因果视频模型根据低模画面生成细节视图。</sub>
+
+- **State World Models: Execute the Rules, Generate the Pixels** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.26811)
+  <br><sub>编码智能体生成有类型的游戏定义；运行时先执行语义与空间状态规则，再调用冻结视频渲染器，之后接收与规则兼容的视觉反馈。</sub>
+
+- **Mallea: Building, Steering, and Memorizing Worlds with Coding Agent** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.21283)
+  <br><sub>编码智能体联合构建对象结构与规则，支持保留未受影响状态的运行时编辑，并结合执行状态与对象纹理记忆进行渲染。</sub>
+
+- **StreamRender-H3: Interactive Coding Worlds with Real-time Streaming Diffusion Render** `2026` [![Project](assets/badges/project.svg)](https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/)
+  <br><sub>three.js 游戏引擎维护地图、规则和状态，并根据玩家输入推进；语义帧连接引擎和流式 MiniMax-H3 渲染器，构成执行式模拟与生成外观分离的系统。</sub>
+
 - **AgentGarten: Code Worlds for Evolving Agents** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.12374)
   <br><sub>AgentGarten 将程序定义的仿真后端连接到共享实时渲染器，并复用 agent 的文字技能手册。</sub>
+
+- **Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.01614)
+  <br><sub>编码智能体与轻量引擎维护可扩展世界状态表，生成粗粒度视觉条件，并纳入新出现的对象以支持持续交互。</sub>
 
 - **Code Plans, Diffusion Renders: Open-Ended Generative World Modeling (CoDeR)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2609.26458)
   <br><sub>CoDeR 协调可执行白盒世界的构建与生成式 Artist，创建开放式视觉世界。</sub>
@@ -228,6 +282,24 @@
 ### 05 · 基准与验证资源
 
 *检验程序行为、状态、渲染后果以及面向 agent 的一致性。*
+
+- **Events, Not Pixels: Where World Models Get the Return Wrong** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.29435)
+  <br><sub>在匹配预算下用真实转移替换部分想象转移诊断回报误差；对所测模型，奖励或终止事件比视觉误差大的帧更影响回报。</sub>
+
+- **Code2Video-Compass: A Comprehensive Benchmark for General-Purpose Code-Based Video Generation across T2V, I2V, and V2V** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28416)
+  <br><sub>以文本、图像和视频为输入，评估可执行程序生成完整视频的能力，并测量执行、质量、指令对齐与参考保真。</sub>
+
+- **GlobeBench: Evaluating Text-Based World Model Capabilities for Scalable Environment Simulations** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.22708)
+  <br><sub>以实际执行得到的结果为参照，结合确定性检查与语义评判，测试文本模型对动作后环境响应的预测。</sub>
+
+- **BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.23986)
+  <br><sub>通过多模态任务要求、渲染视图和任务评分细则，评估智能体创建的可编辑 Blender 场景。</sub>
+
+- **WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.18826)
+  <br><sub>以配对真实执行评估动作条件机器人世界模型，覆盖状态正确性、交互空间对齐、局部交互保真及多视角动作一致性。</sub>
+
+- **ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.15166)
+  <br><sub>评估单个机制、多阶段组合机械系统以及意图驱动的可执行三维世界合成。</sub>
 
 - **Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.04432)
   <br><sub>Video2World 从几何、动力学和功能三个方面，评价具身视频到交互世界的重建。</sub>
@@ -270,7 +342,13 @@
 *程序化几何、重建、关节建模与场景组合。*
 
 <details>
-<summary><strong>展开 11 条文献</strong></summary>
+<summary><strong>展开 13 条文献</strong></summary>
+
+- **SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28585)
+  <br><sub>从单张图像重建物体与布局，通过场景代码编辑、受限位姿搜索和仿真验证，保留物理稳定且与图像对齐的场景配置。</sub>
+
+- **3DCodeVerse: Exploring 3D Worlds as Code** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.22341)
+  <br><sub>将可执行 3D 程序、资产与验证记录组成数据资源，并通过执行检查、几何测量及视觉反馈迭代生成和修正程序。</sub>
 
 - **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.11322)
   <br><sub>USDCraft 将输入几何转为可执行建模程序，导出具有关节结构的 USD 仿真资产。</sub>
@@ -354,7 +432,25 @@
 *比较其他状态表示、学习型仿真器与相邻机制。*
 
 <details>
-<summary><strong>展开 20 条文献</strong></summary>
+<summary><strong>展开 26 条文献</strong></summary>
+
+- **Agentic World Action Models (AW-0)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.30136)
+  <br><sub>以耦合专家联合建模代码、未来视频和动作；程序提供可复用技能与控制结构，视频和动作专家预测视觉未来与低层运动命令。</sub>
+
+- **Beyond Next-Screen Prediction: The Decision Value of GUI World Models** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.24372)
+  <br><sub>控制预测呈现方式和监督条件，对比 GUI 前瞻预测与直接动作排序器，检验预测画面对决策的增量价值。</sub>
+
+- **Self-Building Labs** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.23826)
+  <br><sub>智能体从科学目标、照片和设备信息构建实验室数字孪生、机器人技能与工作流，并通过观测和物理反馈改进场景模型。</sub>
+
+- **Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation (ATAS)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.20571)
+  <br><sub>将剧本编译为带空间和事件时间引用的镜头请求，检索配准场景与事件记忆，并在检查通过后将生成观测写入记忆。</sub>
+
+- **Neurosymbolic Learning of Interpretable World Models (CGWM)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.19955)
+  <br><sub>学习视觉概念落地，而无可学习参数的预测器执行给定时序逻辑转移规则；通过符号想象轨迹进行可微规划。</sub>
+
+- **From Pixels to Executable Physics: Behavior-Grounded World Models for Embodied Action Consequence Prediction (DR-WM)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.17630)
+  <br><sub>结合 RGB 场景重建、真实动作响应校准的地形接触先验与物理仿真，以模拟运动和几何指导视频世界模型。</sub>
 
 - **Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.11942)
   <br><sub>研究以 GUI 世界模型验证状态转移，并区分界面相似度与转移正确性。</sub>

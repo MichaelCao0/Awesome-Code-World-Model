@@ -19,6 +19,10 @@ The survey links and citation indicator are reserved for publication. Their URLs
 2. How are world programs acquired from specifications, interaction, and visual evidence, then verified and revised?
 3. What evidence connects these design choices to world fidelity, persistent-state consistency, and agent utility?
 
+## Classification and writing discussion
+
+The working manuscript title is *Programmatic World Models: A Survey*. The collection title above is retained while organization is discussed. Compare [the manuscript families with proposed program responsibilities](classification-guide.md), browse [all per-source assignments](classification-crosswalk.md), or copy the [CSV table](../data/classification.csv). The [writing plan](survey-outline.md) retains the lifecycle chapters and also describes an alternative role-based structure.
+
 ## Read the framework
 
 | Resource | What you will find |

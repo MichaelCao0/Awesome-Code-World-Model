@@ -9,6 +9,7 @@ from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
+from build_classification import outputs as classification_outputs
 
 ROOT = Path(__file__).resolve().parents[1]
 SCOPES = {'core', 'historical', 'enabling', 'benchmark', 'resource', 'comparator', 'adjacent', 'survey'}
@@ -34,6 +35,12 @@ def parse_date(value):
     require(isinstance(value, str) and re.fullmatch(r'\d{4}(?:-\d{2}){0,2}', value), f'Invalid date: {value!r}')
     parts = [int(p) for p in value.split('-')]
     return dt.date(*(parts + [1] * (3 - len(parts))))
+
+def record_date(p):
+    return p.get('first_public_date') or p['available_by']
+
+def display_date(p):
+    return p['first_public_date'] if p.get('first_public_date') else 'by ' + p['available_by']
 
 def load_data():
     data = json.loads((ROOT / 'data/papers.json').read_text(encoding='utf-8'))
@@ -66,7 +73,11 @@ def load_data():
         require(set(p['code_roles']) <= ROLES and len(p['code_roles']) == len(set(p['code_roles'])), f'{pid}: invalid code roles')
         require(p['tags'] and len(p['tags']) == len(set(p['tags'])), f'{pid}: missing or duplicate tags')
         require(all(re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', t) for t in p['tags']), f'{pid}: invalid tag')
-        first = parse_date(p['first_public_date'])
+        if not p.get('first_public_date'):
+            require(p.get('source_type') == 'project' and p.get('available_by') and p.get('date_basis'),
+                    f'{pid}: unknown first date requires project availability evidence')
+            require(p.get('evidence_urls'), f'{pid}: missing availability evidence URLs')
+        first = parse_date(record_date(p))
         reviewed = parse_date(p['reviewed_on'])
         require(isinstance(p['year'], int) and first.year == p['year'], f'{pid}: year/date mismatch')
         require(first <= cutoff and first <= reviewed <= updated, f'{pid}: inconsistent dates')
@@ -116,17 +127,17 @@ def load_survey_links():
 
 def section_papers(data, section_id):
     return sorted((p for p in data['papers'] if p['section'] == section_id),
-                  key=lambda p: (p['first_public_date'], p['id']), reverse=True)
+                  key=lambda p: (record_date(p), p['id']), reverse=True)
 
 def catalogue(data, localized=None):
     if localized:
         lines = [f"**{len(data['papers'])} 条文献来源** · 文献截止日期：**{data['literature_cutoff']}**。", '',
                  '按研究方向浏览。[完整注释、核查深度与证据说明 →](docs/catalogue.md)', '',
-                 '各分区按来源记录的首次公开日期倒序排列，支撑与相邻分支可展开浏览。']
+                 '各分区按记录日期倒序排列；首发日期未知的项目按已公开时间上界排序，详见注释表。支撑与相邻分支可展开浏览。']
     else:
         lines = [f"**{len(data['papers'])} sources** · literature through **{data['literature_cutoff']}**.", '',
                  'Browse by research direction below. [Full annotations, review depth, and evidence notes →](docs/catalogue.md)', '',
-                 'Within each section, sources are ordered by their recorded first-public date. Supporting and adjacent branches can be expanded.']
+                 'Sources are ordered by recorded publication dates or, for undated projects, availability bounds documented in the annotations. Supporting and adjacent branches can be expanded.']
     for index, section in enumerate(data['sections'], 1):
         title, description, folded = PRESENTATION[section['id']]
         if localized:
@@ -143,7 +154,9 @@ def catalogue(data, localized=None):
             if p.get('alias') and p['alias'].lower() not in p['title'].lower():
                 label += f" ({md(p['alias'])})"
             kind = 'arxiv' if p.get('arxiv_id') else 'paper'
-            badge_label = 'arXiv' if p.get('arxiv_id') else 'Paper'
+            badge_label = 'arXiv' if p.get('arxiv_id') else 'Project' if p.get('source_type') == 'project' else 'Paper'
+            if p.get('source_type') == 'project':
+                kind = 'project'
             summary = localized['summaries'][p['id']] if localized else p['summary']
             lines += [f"- **{label}** `{p['year']}` [![{badge_label}](assets/badges/{kind}.svg)]({p['source_url']})",
                       f"  <br><sub>{escape(summary)}</sub>", '']
@@ -171,7 +184,8 @@ def annotated_catalogue(data):
              '[← Browse the paper collection](../README.md#paper-collection) · [Structured data](../data/papers.json) · [BibTeX](../papers.bib)', '',
              f"**{len(data['papers'])} source records** · literature cutoff **{data['literature_cutoff']}** · metadata snapshot **{data['updated_on']}**.", '',
              'Review: **FT** = targeted full-text sections · **A** = metadata and abstract · **M** = bibliographic metadata.', '',
-             'Review depth describes citation and mechanism checking. Experimental conditions appear below each table; the [evaluation framework](evaluation.md) explains the shared comparisons.']
+             'Review depth describes citation and mechanism checking. Dates prefixed **by** are documented availability bounds, not first-release dates. Experimental conditions appear below each table; the [evaluation framework](evaluation.md) explains the shared comparisons.', '',
+             '[Compare the manuscript taxonomy and proposed program responsibilities →](classification-crosswalk.md)']
     for section in data['sections']:
         subset = section_papers(data, section['id'])
         lines += ['', f"## {section['title']} ({len(subset)})", '',
@@ -182,7 +196,7 @@ def annotated_catalogue(data):
             if p.get('alias') and p['alias'].lower() not in p['title'].lower():
                 label += f" **({md(p['alias'])})**"
             paper = f"[{label}]({p['source_url']})"
-            lines.append(f"| {p['first_public_date']} | {paper} | {md(p['summary'])} | {p['scope']} | {DEPTHS[p['review_depth']]} |")
+            lines.append(f"| {display_date(p)} | {paper} | {md(p['summary'])} | {p['scope']} | {DEPTHS[p['review_depth']]} |")
         notes = [p for p in subset if p.get('evidence_notes')]
         if notes:
             lines += ['', '<details>', f'<summary>Evidence notes ({len(notes)})</summary>', '']
@@ -209,7 +223,7 @@ def badge(label, value, color='#0f766e', left_color='#40564e'):
 def badges(data, survey_links):
     specs = {'sources': ('Sources', str(len(data['papers']))), 'topics': ('Topics', str(len(data['sections']))),
              'cutoff': ('Literature', data['literature_cutoff']), 'contributions': ('Contributions', 'welcome'),
-             'arxiv': ('arXiv', ''), 'paper': ('Paper', '')}
+             'arxiv': ('arXiv', ''), 'paper': ('Paper', ''), 'project': ('Project', '')}
     output = {ROOT / f'assets/badges/{name}.svg': badge(label, value, '#a33d47' if name == 'arxiv' else '#0f766e')
               for name, (label, value) in specs.items()}
     output[ROOT / 'assets/badges/survey-arxiv.svg'] = badge('arXiv', 'Paper' if survey_links['arxiv_url'] else '—', '#8c959f', '#57606a')
@@ -235,7 +249,7 @@ def bib_escape(value):
 
 def bibliography(data):
     lines = ['% Generated from data/papers.json by scripts/build_catalog.py.',
-             '% UTF-8. Years follow the recorded first-public source dates.',
+             '% UTF-8. Years follow source dates or documented availability bounds for undated projects.',
              '% Primary-source citations; unverified conference assignments are omitted.', '']
     for p in sorted(data['papers'], key=lambda p: p['citation_key']):
         authors = ['{' + bib_escape(a) + '}' if a.lower().endswith(' team') else bib_escape(a) for a in p['authors']]
@@ -246,6 +260,8 @@ def bibliography(data):
         if 'doi' in p:
             fields.append(('doi', p['doi']))
         fields.append(('url', p['source_url']))
+        if p.get('source_type') == 'project':
+            fields.append(('note', 'Project resource; verified available by ' + p['available_by'] + '; first release date unverified' if not p.get('first_public_date') else 'Project resource; date follows the cited author announcement'))
         lines.append('@misc{' + p['citation_key'] + ',')
         lines.extend(f'  {key} = {{{value}}},' for key, value in fields)
         lines += ['}', '']
@@ -320,7 +336,7 @@ def main():
     localized = load_localization(data)
     survey_links = load_survey_links()
     expected = {ROOT / 'papers.bib': bibliography(data), ROOT / 'docs/catalogue.md': annotated_catalogue(data),
-                **badges(data, survey_links)}
+                **badges(data, survey_links), **classification_outputs(ROOT, data)}
     for filename, language in [('README.md', None), ('README.zh-CN.md', localized)]:
         readme_path = ROOT / filename
         readme = readme_path.read_text(encoding='utf-8')
@@ -335,7 +351,7 @@ def main():
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(text, encoding='utf-8')
     check_links()
-    print(f"{'Validated' if args.check else 'Generated'} bilingual READMEs, {len(data['papers'])} sources, {len(data['sections'])} sections, annotated catalogue, badges, links/anchors, and BibTeX.")
+    print(f"{'Validated' if args.check else 'Generated'} bilingual READMEs, {len(data['papers'])} sources/classification rows, {len(data['sections'])} sections, catalogue, crosswalk/CSV, badges, links/anchors, and BibTeX.")
 
 if __name__ == '__main__':
     try:

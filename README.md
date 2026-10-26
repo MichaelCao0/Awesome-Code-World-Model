@@ -26,6 +26,7 @@ Code makes world models **executable, editable, and inspectable**. This collecti
 
 ## News
 
+- **2026-10-26** — Added 31 verified sources and a [two-scheme classification crosswalk](docs/classification-crosswalk.md) covering all 123 records, with manuscript writing anchors. Taxonomy remains a discussion draft.
 - **2026-10-19** — Bilingual READMEs, a PNG cover, reserved survey links, and visual navigation.
 - **2026-10-14** — Initial release: 92 source records, structured metadata, BibTeX, and a shared taxonomy and evaluation framework.
 
@@ -33,15 +34,17 @@ Code makes world models **executable, editable, and inspectable**. This collecti
 
 [Survey & resources](#survey--resources) · [At a glance](#at-a-glance) · [Paper collection](#paper-collection) · [Contributing](#contributing) · [Acknowledgements](#acknowledgements)
 
+**Writing discussion:** [Classification criteria](docs/classification-guide.md) · [Paper-by-paper crosswalk](docs/classification-crosswalk.md) · [CSV](data/classification.csv) · [Update notes](docs/updates/2026-10-26.md)
+
 <!-- NAVIGATION:BEGIN -->
 
 | Modeling & evaluation | Foundations & context |
 |---|---|
-| [01 · Executable dynamics & planning](#papers-dynamics) <sub>(23)</sub> | [06 · Scene & asset programs](#papers-scene_programs) <sub>(11)</sub> |
-| [02 · Persistent executable worlds](#papers-construction) <sub>(6)</sub> | [07 · Historical foundations](#papers-foundations) <sub>(9)</sub> |
-| [03 · Execution meets visual generation](#papers-coupling) <sub>(6)</sub> | [08 · Comparators & adjacent approaches](#papers-comparators) <sub>(20)</sub> |
+| [01 · Executable dynamics & planning](#papers-dynamics) <sub>(26)</sub> | [06 · Scene & asset programs](#papers-scene_programs) <sub>(13)</sub> |
+| [02 · Persistent executable worlds](#papers-construction) <sub>(12)</sub> | [07 · Historical foundations](#papers-foundations) <sub>(9)</sub> |
+| [03 · Execution meets visual generation](#papers-coupling) <sub>(14)</sub> | [08 · Comparators & adjacent approaches](#papers-comparators) <sub>(26)</sub> |
 | [04 · Renderable-code observations](#papers-observation) <sub>(3)</sub> | [09 · Related surveys](#papers-surveys) <sub>(3)</sub> |
-| [05 · Benchmarks & verification](#papers-evaluation) <sub>(11)</sub> | [All annotations →](docs/catalogue.md) |
+| [05 · Benchmarks & verification](#papers-evaluation) <sub>(17)</sub> | [All annotations →](docs/catalogue.md) |
 
 <!-- NAVIGATION:END -->
 
@@ -70,16 +73,25 @@ Program origin, verification, and downstream use form a second set of attributes
 
 <!-- CATALOG:BEGIN -->
 
-**92 sources** · literature through **2026-10-13**.
+**123 sources** · literature through **2026-10-26**.
 
 Browse by research direction below. [Full annotations, review depth, and evidence notes →](docs/catalogue.md)
 
-Within each section, sources are ordered by their recorded first-public date. Supporting and adjacent branches can be expanded.
+Sources are ordered by recorded publication dates or, for undated projects, availability bounds documented in the annotations. Supporting and adjacent branches can be expanded.
 
 <a id="papers-dynamics"></a>
 ### 01 · Executable dynamics & planning
 
 *Learning rules, abstractions, and mechanisms that can be executed for prediction and planning.*
+
+- **A Declared World Model: Language Models Write the Rules of the Scene They are Shown** `2026` [![Paper](assets/badges/paper.svg)](https://www.preprints.org/manuscript/202610.1139)
+  <br><sub>A language model writes world rules from a labelled scene graph. A deterministic engine checks proposed actions and computes next states. Experiments test whether generated rules transfer beyond the observed layout.</sub>
+
+- **Write Once, Plan Many: Building Reusable Visual Planning Systems from One Scene** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.19234)
+  <br><sub>Builds reusable executable renderers, dynamics, perception and planning programs from supplied domain rules and one practice scene; execution and reconstruction checks refine programs before reuse.</sub>
+
+- **RoleWorld: Knowledge Transfer in World Modeling with Functional Role Abstractions** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.13172)
+  <br><sub>Extracts reusable role prototypes and executable transition rules, then adapts role assignments and parameter estimates in new environments while keeping transition rules fixed.</sub>
 
 - **Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.11794)
   <br><sub>Memento 3 revises reflective rulebooks and executable models using trajectory judgments and exact replay.</sub>
@@ -157,6 +169,24 @@ Within each section, sources are ordered by their recorded first-public date. Su
 
 *Constructing interactive worlds, physical simulations, and verified world families.*
 
+- **WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28827)
+  <br><sub>Hierarchical planning predicts typed regional and tile specifications; fixed procedural generators compile them, while persistent records retain identities, boundary contracts and edits across streaming revisits.</sub>
+
+- **NeoWorld-3: From Pixels to Code-Defined Physical Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.27690)
+  <br><sub>Reconstructs editable geometry programs from visual evidence through hierarchical coding agents, differentiable parameter fitting and articulation/physics checks.</sub>
+
+- **Agent World Model in the Wild: Computer-Use Agent Environment Synthesis (WildAWM)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.26828)
+  <br><sub>Synthesizes executable computer-use worlds spanning GUI, MCP and CLI interfaces, with replayable state-building programs and execution-based task/verifier quality gates for agent training.</sub>
+
+- **LLM Agents as Suppliers of Physical System Models: Calibration and Acceptance in Modelica** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.25019)
+  <br><sub>Studies LLM coding agents that assemble and calibrate executable Modelica physical-system models from descriptions and data, with acceptance based on behavioral fit, invariants and interpretability.</sub>
+
+- **RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.18835)
+  <br><sub>Interactive Newton-based toolkit exposes solver, contact-model and physical-parameter choices so humans and coding agents can refine manipulation simulations against observed behavior.</sub>
+
+- **Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.17651)
+  <br><sub>Compiles generated visual scenes into MuJoCo-compatible worlds with physical attributes and refines executable dynamics using simulator feedback.</sub>
+
 - **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.27549)
   <br><sub>Code as Worlds discovers executable physical representations through propose, instantiate, execute, render, and verify loops.</sub>
 
@@ -182,8 +212,32 @@ Within each section, sources are ordered by their recorded first-public date. Su
 
 *Connecting persistent program state to conventional and neural visual output.*
 
+- **EdenLive: Real-Time Generative Rendering from Any Visual Reference** `2026` [![Project](assets/badges/project.svg)](https://github.com/VAST-AI-Research/EdenLive)
+  <br><sub>A generative renderer maps upstream reference video, a target first frame and a prompt to enhanced video. The upstream program maintains state and rules. Released tooling also includes a prompt-to-playable-game skill and workbench.</sub>
+
+- **Mundo: Customized World Model** `2026` [![Project](assets/badges/project.svg)](https://mundo-world-model.github.io/)
+  <br><sub>Images are reconstructed into an editable 3D proxy. A scene program specifies objects and physical parameters; scripts and usually MuJoCo evolve state. Proxy frames condition a video renderer together with context views.</sub>
+
+- **SolarRenderer: Few-Step Generative Reference Rendering** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28630)
+  <br><sub>Adapts a frozen video backbone with control and acceleration LoRAs to turn aligned structural video into detailed video, including streaming generation.</sub>
+
+- **Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.27999)
+  <br><sub>A coding agent turns player requests into executable game rules; an engine owns persistent state, while a causal video model renders detailed views from low-poly proxies.</sub>
+
+- **State World Models: Execute the Rules, Generate the Pixels** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.26811)
+  <br><sub>A coding agent writes a typed game definition; a runtime executes rules over semantic and spatial state before a frozen video renderer, then admits rule-compatible visual feedback.</sub>
+
+- **Mallea: Building, Steering, and Memorizing Worlds with Coding Agent** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.21283)
+  <br><sub>A coding agent jointly builds object structures and rules, supports runtime edits preserving unaffected state, and combines executed state with object texture memory for rendering.</sub>
+
+- **StreamRender-H3: Interactive Coding Worlds with Real-time Streaming Diffusion Render** `2026` [![Project](assets/badges/project.svg)](https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/)
+  <br><sub>A three.js game engine maintains maps, rules and state, advancing on player inputs. Semantic frames connect it to a streaming MiniMax-H3 renderer. The demonstrated system separates executable simulation from generated appearance.</sub>
+
 - **AgentGarten: Code Worlds for Evolving Agents** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.12374)
   <br><sub>AgentGarten connects program-defined simulation backends to a shared real-time renderer and reusable agent playbooks.</sub>
+
+- **Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.01614)
+  <br><sub>A coding agent and lightweight engine maintain an extensible world-state table, compile coarse visual conditions, and incorporate newly observed objects for persistent interaction.</sub>
 
 - **Code Plans, Diffusion Renders: Open-Ended Generative World Modeling (CoDeR)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2609.26458)
   <br><sub>CoDeR coordinates executable whitebox world construction with a generative Artist for open-ended visual worlds.</sub>
@@ -222,6 +276,24 @@ Within each section, sources are ordered by their recorded first-public date. Su
 ### 05 · Benchmarks & verification
 
 *Testing program behavior, state, rendered consequences, and agent-facing consistency.*
+
+- **Events, Not Pixels: Where World Models Get the Return Wrong** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.29435)
+  <br><sub>Diagnoses return errors by replacing selected imagined transitions with real ones under matched budgets; reward/terminal events matter more than visually poor frames for the tested models.</sub>
+
+- **Code2Video-Compass: A Comprehensive Benchmark for General-Purpose Code-Based Video Generation across T2V, I2V, and V2V** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28416)
+  <br><sub>Benchmarks executable-program video creation from text, images and videos with objective and model-judged measures of execution, quality and alignment.</sub>
+
+- **GlobeBench: Evaluating Text-Based World Model Capabilities for Scalable Environment Simulations** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.22708)
+  <br><sub>Tests textual action-conditioned successor predictions against execution-derived references, combining deterministic checks with semantic judging.</sub>
+
+- **BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.23986)
+  <br><sub>Evaluates agent-created Blender projects against multimodal briefs using rendered views, task rubrics and visual-quality judgments.</sub>
+
+- **WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.18826)
+  <br><sub>Evaluates action-conditioned robot world-model rollouts against paired physical executions across state correctness, spatial alignment, local interaction fidelity and multiview coherence.</sub>
+
+- **ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.15166)
+  <br><sub>Evaluates individual mechanisms, compositional mechanical systems, and intent-driven executable 3D world synthesis.</sub>
 
 - **Video2World: Benchmarking Coding Agents for Interactive World Modeling from Embodied Videos** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.04432)
   <br><sub>Video2World evaluates video-to-interactive-world reconstruction through geometry, dynamics, and function.</sub>
@@ -264,7 +336,13 @@ Within each section, sources are ordered by their recorded first-public date. Su
 *Programmatic geometry, reconstruction, articulation, and scene composition.*
 
 <details>
-<summary><strong>Explore 11 sources</strong></summary>
+<summary><strong>Explore 13 sources</strong></summary>
+
+- **SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28585)
+  <br><sub>Reconstructs objects and scene layout from one image, then edits scene code and uses bounded pose search plus simulation validation to retain physically stable, visually aligned configurations.</sub>
+
+- **3DCodeVerse: Exploring 3D Worlds as Code** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.22341)
+  <br><sub>Packages executable 3D programs with assets and verification records; a generation-and-repair harness uses execution, geometry measurements and visual feedback.</sub>
 
 - **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.11322)
   <br><sub>USDCraft converts source geometry into executable modeling programs that export articulated USD simulation assets.</sub>
@@ -348,7 +426,25 @@ Within each section, sources are ordered by their recorded first-public date. Su
 *Alternative state representations, learned simulators, and neighboring mechanisms.*
 
 <details>
-<summary><strong>Explore 20 sources</strong></summary>
+<summary><strong>Explore 26 sources</strong></summary>
+
+- **Agentic World Action Models (AW-0)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.30136)
+  <br><sub>Jointly models code, future video and actions with coupled experts; generated programs provide reusable skills and control structure while video/action experts predict visual futures and motor commands.</sub>
+
+- **Beyond Next-Screen Prediction: The Decision Value of GUI World Models** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.24372)
+  <br><sub>Controls prediction presentation and supervision when comparing GUI lookahead with a directly learned action ranker, testing the incremental decision value of predicted screens.</sub>
+
+- **Self-Building Labs** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.23826)
+  <br><sub>Agents construct laboratory digital twins, reusable robot skills and workflows from objectives, photographs and device information, refining scene models using observations and physical feedback.</sub>
+
+- **Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation (ATAS)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.20571)
+  <br><sub>Compiles screenplay shots with spatial and event-time references, retrieves registered scene and event memories, and admits generated observations into memory only after checks.</sub>
+
+- **Neurosymbolic Learning of Interpretable World Models (CGWM)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.19955)
+  <br><sub>Learns visual concept grounding while a parameter-free predictor applies supplied temporal-logic transition rules; planning differentiates through symbolic imagined trajectories.</sub>
+
+- **From Pixels to Executable Physics: Behavior-Grounded World Models for Embodied Action Consequence Prediction (DR-WM)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.17630)
+  <br><sub>Combines RGB scene reconstruction and behavior-calibrated terrain contact priors with physics simulation, using simulated motion and geometry to guide a video world model.</sub>
 
 - **Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.11942)
   <br><sub>Studies GUI world models as transition verifiers and separates screen similarity from transition correctness.</sub>

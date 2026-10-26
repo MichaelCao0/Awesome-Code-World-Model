@@ -9,13 +9,16 @@ The canonical bibliography is `data/papers.json`. README paper lists, navigation
 3. Search the existing catalogue for its arXiv ID, DOI, title, and aliases. Update an existing record when it is the same source; link related sources with symmetric `related_ids` when their relationship is unresolved.
 4. Choose an editorial `section`, a `scope` label, semantic `code_roles`, and lifecycle `tags` using [the taxonomy](docs/taxonomy.md).
 5. Write a concise mechanism or relevance summary. Record evaluation conditions that materially affect comparisons in `evidence_notes`.
-6. Update `updated_on` and the literature cutoff when appropriate, then regenerate and validate:
+6. Add or update the matching discussion record in `data/classification.json`. Keep original Figure 1 assignments separate from editorial proposals; benchmark roles describe evaluated targets. Mark uncertain placements provisional.
+7. Update `updated_on` and the literature cutoff when appropriate, then regenerate and validate:
 
 ```bash
 python3 scripts/build_catalog.py
 python3 scripts/build_catalog.py --check
 git diff --check
 ```
+
+The same command also validates complete classification coverage and generates `docs/classification-crosswalk.md` and `data/classification.csv`. Classification labels remain proposals until the manuscript taxonomy is settled.
 
 The builder requires Python 3.9 or later and has no third-party dependencies. Its checks are offline: they validate record structure and generated content. Source verification remains part of the literature review.
 
@@ -37,7 +40,9 @@ Survey publication links live in `data/survey-links.json`. Leave unavailable URL
 | `citation_key` | Stable BibTeX key; preserve it when the record is updated |
 | `title`, `authors` | Exact primary-source title; complete author list in source order |
 | `alias` | Optional method or benchmark name, separate from the title |
-| `year`, `first_public_date` | Source-publication year and date; date precision may be year, month, or day |
+| `year`, `first_public_date` | Source-publication year/date; precision may be year, month, or day. Use `null` for a project whose first release cannot be verified. |
+| `available_by`, `date_basis`, `evidence_urls` | For undated project resources, record a documented availability bound and its primary evidence; never present it as the first release. |
+| `source_type` | Optional `project` or `preprint`; projects receive a Project badge and an explanatory BibTeX note. |
 | `source_url`, `arxiv_id`, `doi` | HTTPS primary link and identifiers where available |
 | `section` | One reading section from the collection's `sections` list |
 | `scope` | `core`, `historical`, `enabling`, `benchmark`, `resource`, `comparator`, `adjacent`, or `survey` |

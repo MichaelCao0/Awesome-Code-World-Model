@@ -1,5 +1,7 @@
 # Taxonomy and scope
 
+**Classification discussion updated 2026-10-26:** this page preserves the collection’s original broad semantic tags. The manuscript A/B/C families and candidate S/E/O responsibilities are compared in the [classification guide](classification-guide.md) and [full crosswalk](classification-crosswalk.md). The final manuscript taxonomy is not fixed.
+
 Code-centric world modeling makes world facts executable, editable, and inspectable. The useful organizing question is which part of the world model a program represents: its transitions, its observations, or a connection between both.
 
 ## Three semantic roles

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-14",
-  "literature_cutoff": "2026-10-13",
+  "updated_on": "2026-10-26",
+  "literature_cutoff": "2026-10-26",
   "description": "Curated source records for a code-centric world-model survey. Source counts are bibliographic records, not unique-method counts. Review depth refers to citation and mechanism checking, not experiment reproduction.",
   "sections": [
     {
@@ -1344,7 +1344,10 @@
       ],
       "summary": "Code2Worlds generates object and scene programs for 4D simulation, using Blender dynamics and visual motion feedback.",
       "evidence_notes": "ICML 2026 is stated on author sources; this catalogue uses the arXiv citation without an independently verified proceedings assignment.",
-      "metadata_checked_on": "2026-10-14"
+      "metadata_checked_on": "2026-10-14",
+      "related_ids": [
+        "2610.17651"
+      ]
     },
     {
       "id": "2602.14721",
@@ -3056,6 +3059,1140 @@
       "evidence_notes": "Reported skill reuse includes inherited written playbooks; parameter learning and matched-budget training gains require separate evidence. Mechanism review uses v1; the author list was refreshed from current arXiv metadata on 2026-10-14.",
       "metadata_checked_on": "2026-10-14",
       "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.18835",
+      "citation_key": "cwm_2610_18835",
+      "title": "RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks",
+      "authors": [
+        "Kaiyuan Chen",
+        "Shuangyu Xie",
+        "Uksang Yoo",
+        "Xinyue Zhu",
+        "Cael Magner",
+        "Alvin Zhu",
+        "Daehwa Kim",
+        "Eric Heiden",
+        "Erwin Coumans",
+        "Miles Macklin",
+        "Spencer Huang",
+        "Ken Goldberg"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-13",
+      "source_url": "https://arxiv.org/abs/2610.18835",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "construction",
+      "scope": "resource",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "real2sim",
+        "simulation-configuration",
+        "physical-calibration"
+      ],
+      "summary": "Interactive Newton-based toolkit exposes solver, contact-model and physical-parameter choices so humans and coding agents can refine manipulation simulations against observed behavior.",
+      "evidence_notes": "Simulation configuration and calibration are supported; the abstract does not establish synthesis of a new transition algorithm. State evolution is delegated to Newton. Real2sim calibration is mixed observation-driven adjustment and simulator specification. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.18835",
+      "alias": "RoboSimStudio"
+    },
+    {
+      "id": "2610.19234",
+      "citation_key": "cwm_2610_19234",
+      "title": "Write Once, Plan Many: Building Reusable Visual Planning Systems from One Scene",
+      "authors": [
+        "Ruixiao Yang",
+        "Yilun Hao",
+        "Mingxin Yu",
+        "Yang Zhang",
+        "Chuchu Fan"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-13",
+      "source_url": "https://arxiv.org/abs/2610.19234",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "dynamics",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "program-synthesis",
+        "reusable-planning",
+        "given-domain-rules"
+      ],
+      "summary": "Builds reusable executable renderers, dynamics, perception and planning programs from supplied domain rules and one practice scene; execution and reconstruction checks refine programs before reuse.",
+      "evidence_notes": "Task schema, interfaces and rules are supplied. This is rule implementation and visual grounding, not discovery of unknown dynamics from transition data. Executable renderer code additionally maps states to RGB-D, but does not make predicted observations themselves code. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.19234",
+      "alias": "Write Once, Plan Many",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.18826",
+      "citation_key": "cwm_2610_18826",
+      "title": "WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions",
+      "authors": [
+        "Haoyi Duan",
+        "Liliang Chen",
+        "Nan Wang",
+        "Yang Zhang",
+        "Yuhang Lu",
+        "Xiaotong Chen",
+        "Wei-Cheng Tseng",
+        "Shenyuan Gao",
+        "Zhaoshuo Li",
+        "Jingyi Jin",
+        "Pooya Jannaty",
+        "Dhruv Shah",
+        "Yuke Zhu",
+        "Ming-Yu Liu",
+        "Maoqing Yao",
+        "Guanghui Ren"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-13",
+      "source_url": "https://arxiv.org/abs/2610.18826",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "evaluation",
+      "scope": "benchmark",
+      "code_roles": [],
+      "tags": [
+        "real-execution-reference",
+        "action-conditioned-evaluation"
+      ],
+      "summary": "Evaluates action-conditioned robot world-model rollouts against paired physical executions across state correctness, spatial alignment, local interaction fidelity and multiview coherence.",
+      "evidence_notes": "An evaluation benchmark and dataset, not evidence that executable code represents or learns the evaluated models' dynamics. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.18826",
+      "alias": "WorldOracle"
+    },
+    {
+      "id": "2610.17630",
+      "citation_key": "cwm_2610_17630",
+      "title": "From Pixels to Executable Physics: Behavior-Grounded World Models for Embodied Action Consequence Prediction",
+      "authors": [
+        "Ruo Chen",
+        "Jiahua Pang",
+        "Yingjie Niu",
+        "Hongyi Lin",
+        "Jun Tian",
+        "Yang Zhu",
+        "Chao Li"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-13",
+      "source_url": "https://arxiv.org/abs/2610.17630",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "comparators",
+      "scope": "adjacent",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "physical-calibration",
+        "simulator-guided-video",
+        "scene-reconstruction"
+      ],
+      "summary": "Combines RGB scene reconstruction and behavior-calibrated terrain contact priors with physics simulation, using simulated motion and geometry to guide a video world model.",
+      "evidence_notes": "Physical-parameter/terrain specification feeds an existing simulator; no abstract evidence of synthesizing transition source code. Learned video observations update reconstruction. S is simulator-input configuration, not generated executable world-rule code. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.17630",
+      "alias": "DR-WM"
+    },
+    {
+      "id": "2610.19955",
+      "citation_key": "cwm_2610_19955",
+      "title": "Neurosymbolic Learning of Interpretable World Models",
+      "authors": [
+        "Riccardo Andreoni",
+        "Massimiliano Ronzani",
+        "Chiara Ghidini",
+        "Alessandro Daniele",
+        "Emile van Krieken"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-14",
+      "source_url": "https://arxiv.org/abs/2610.19955",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "comparators",
+      "scope": "adjacent",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "declarative-dynamics",
+        "visual-grounding",
+        "given-transition-rules"
+      ],
+      "summary": "Learns visual concept grounding while a parameter-free predictor applies supplied temporal-logic transition rules; planning differentiates through symbolic imagined trajectories.",
+      "evidence_notes": "Complete deterministic transition knowledge is assumed; only the encoder is trained. S/E refer to executable declarative logic, not induced program code. Fully observable deterministic environments are the reported setting. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.19955",
+      "alias": "CGWM",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.20571",
+      "citation_key": "cwm_2610_20571",
+      "title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation",
+      "authors": [
+        "Weijie Wang",
+        "Haomin Zhang",
+        "Ye Li",
+        "Akide Liu",
+        "Zeyu Zhang",
+        "Haoyu Zhao",
+        "Yefei He",
+        "Donny Y. Chen",
+        "Feng Chen",
+        "Bohan Zhuang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-14",
+      "source_url": "https://arxiv.org/abs/2610.20571",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "comparators",
+      "scope": "adjacent",
+      "code_roles": [],
+      "tags": [
+        "video-orchestration",
+        "scene-memory",
+        "event-memory"
+      ],
+      "summary": "Compiles screenplay shots with spatial and event-time references, retrieves registered scene and event memories, and admits generated observations into memory only after checks.",
+      "evidence_notes": "Explicit geometry and event memory do not by themselves establish an executable state-transition world model. The verified abstract supports retrieval, registration and admission control, not code-generated dynamics. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.20571",
+      "alias": "ATAS"
+    },
+    {
+      "id": "2610.23826",
+      "citation_key": "cwm_2610_23826",
+      "title": "Self-Building Labs",
+      "authors": [
+        "Jiaru Bai",
+        "Yuchi Zhao",
+        "Han Hao",
+        "Miroslav Bogdanovic",
+        "Yang Cao",
+        "Varinia Bernales",
+        "Alán Aspuru-Guzik"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-16",
+      "source_url": "https://arxiv.org/abs/2610.23826",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "comparators",
+      "scope": "adjacent",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "digital-twin",
+        "lab-automation",
+        "physical-feedback"
+      ],
+      "summary": "Agents construct laboratory digital twins, reusable robot skills and workflows from objectives, photographs and device information, refining scene models using observations and physical feedback.",
+      "evidence_notes": "The paper explicitly describes Python construction of geometry, joints, simulated device APIs and an Isaac Sim USD twin. This establishes world construction/configuration; broad autonomous discovery of physical laws or chemical dynamics is not established. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.23826",
+      "alias": "Self-Building Labs",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.25019",
+      "citation_key": "cwm_2610_25019",
+      "title": "LLM Agents as Suppliers of Physical System Models: Calibration and Acceptance in Modelica",
+      "authors": [
+        "Jörg Frochte",
+        "Herbert Schmidt"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-18",
+      "source_url": "https://arxiv.org/abs/2610.25019",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "construction",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "modelica",
+        "physical-model-calibration",
+        "acceptance-tests"
+      ],
+      "summary": "Studies LLM coding agents that assemble and calibrate executable Modelica physical-system models from descriptions and data, with acceptance based on behavioral fit, invariants and interpretability.",
+      "evidence_notes": "Models are built from library components under partially specified handovers; fitting does not identify a unique true structure. The paper explicitly distinguishes data fit from physical validity and interpretable model acceptance. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.25019"
+    },
+    {
+      "id": "2610.26811",
+      "citation_key": "cwm_2610_26811",
+      "title": "State World Models: Execute the Rules, Generate the Pixels",
+      "authors": [
+        "Chan Yan Ki",
+        "Yanran Zhang",
+        "Wenzhao Zheng",
+        "Xiaofeng Wang",
+        "Zheng Zhu",
+        "Lei Chen",
+        "Jie Zhou",
+        "Jiwen Lu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-19",
+      "source_url": "https://arxiv.org/abs/2610.26811",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "coupling",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "typed-rules",
+        "persistent-state",
+        "neural-rendering"
+      ],
+      "summary": "A coding agent writes a typed game definition; a runtime executes rules over semantic and spatial state before a frozen video renderer, then admits rule-compatible visual feedback.",
+      "evidence_notes": "World rules are specified and frozen per episode rather than induced from unknown transition data. Rule settlement and compilation are deterministic conditional on accepted inputs; neural rendering/observation remains stochastic. Procedural previews are guidance, not predicted-observation source code. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.26811",
+      "alias": "State World Models",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.26828",
+      "citation_key": "cwm_2610_26828",
+      "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+      "authors": [
+        "Zhaoyang Wang",
+        "Qianhui Wu",
+        "Haorui Wang",
+        "Simon Yu",
+        "Baolin Peng",
+        "Canwen Xu",
+        "Hao Cheng",
+        "Wenlin Yao",
+        "Boyi Liu",
+        "Yite Wang",
+        "Jianfeng Gao",
+        "Huaxiu Yao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-19",
+      "source_url": "https://arxiv.org/abs/2610.26828",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "construction",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "environment-synthesis",
+        "state-building-programs",
+        "agent-training"
+      ],
+      "summary": "Synthesizes executable computer-use worlds spanning GUI, MCP and CLI interfaces, with replayable state-building programs and execution-based task/verifier quality gates for agent training.",
+      "evidence_notes": "Worlds and tasks are authored from personas and day plans; this is environment synthesis rather than identification of an unknown real system's dynamics. Generated service backends implement interaction semantics; deterministic replay verifies constructed states, not real-world fidelity. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.26828",
+      "alias": "WildAWM",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.29435",
+      "citation_key": "cwm_2610_29435",
+      "title": "Events, Not Pixels: Where World Models Get the Return Wrong",
+      "authors": [
+        "Haoyue Liu",
+        "Xiaoying Tang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-21",
+      "source_url": "https://arxiv.org/abs/2610.29435",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "evaluation",
+      "scope": "benchmark",
+      "code_roles": [],
+      "tags": [
+        "event-diagnostics",
+        "return-error",
+        "matched-budget-comparison"
+      ],
+      "summary": "Diagnoses return errors by replacing selected imagined transitions with real ones under matched budgets; reward/terminal events matter more than visually poor frames for the tested models.",
+      "evidence_notes": "This is a transition-level diagnostic study, not a new executable-code world model or a general theorem. Its interventions rely on access to real transitions and reliability-screened model-collection pairs. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.29435",
+      "alias": "Events, Not Pixels"
+    },
+    {
+      "id": "2610.30136",
+      "citation_key": "cwm_2610_30136",
+      "title": "Agentic World Action Models",
+      "authors": [
+        "Zhuoyang Liu",
+        "Dantong Niu",
+        "Botong Zhang",
+        "Boning Shao",
+        "Jing Wang",
+        "Ruijie Zheng",
+        "Yuvan Sharma",
+        "Runyu Lu",
+        "Jiaming Liu",
+        "Renrui Zhang",
+        "Roei Herzig",
+        "Yutong Bai",
+        "Ken Goldberg",
+        "Danfei Xu",
+        "Yuke Zhu",
+        "Guanzhi Wang",
+        "Linxi \"Jim\" Fan",
+        "Trevor Darrell"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-21",
+      "source_url": "https://arxiv.org/abs/2610.30136",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "comparators",
+      "scope": "adjacent",
+      "code_roles": [],
+      "tags": [
+        "code-as-policy",
+        "video-action-experts",
+        "reusable-skills"
+      ],
+      "summary": "Jointly models code, future video and actions with coupled experts; generated programs provide reusable skills and control structure while video/action experts predict visual futures and motor commands.",
+      "evidence_notes": "Code is a skill/policy/control representation. The verified abstract does not show code implementing an autonomous state-transition simulator or encoding predicted observations. Induction refers to learned multimodal predictions/skills, not induction of executable world dynamics. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.30136",
+      "alias": "AW-0"
+    },
+    {
+      "id": "2610.23986",
+      "citation_key": "cwm_2610_23986",
+      "title": "BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References",
+      "authors": [
+        "Xinyu Fang",
+        "Yuchi Wang",
+        "Weihao Yu",
+        "Rongyao Fang",
+        "Zhaohai Li",
+        "Zhixun Li",
+        "Tiancheng Gu",
+        "Xilin Wei",
+        "Yuhang Zang",
+        "Hongsheng Li",
+        "Dahua Lin",
+        "Guofeng Zhang",
+        "Shuai Bai",
+        "Zhibo Yang",
+        "Dayiheng Liu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-14",
+      "source_url": "https://arxiv.org/abs/2610.23986",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "evaluation",
+      "scope": "benchmark",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "blender-evaluation",
+        "multimodal-references",
+        "visual-rubrics"
+      ],
+      "summary": "Evaluates agent-created Blender projects against multimodal briefs using rendered views, task rubrics and visual-quality judgments.",
+      "evidence_notes": "The task includes reference reconstruction and specification following; it does not establish learned state-transition programs. Some agents may use direct UI manipulation rather than code. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.23986",
+      "alias": "BlenderWorld"
+    },
+    {
+      "id": "2610.22341",
+      "citation_key": "cwm_2610_22341",
+      "title": "3DCodeVerse: Exploring 3D Worlds as Code",
+      "authors": [
+        "Yipeng Gao",
+        "Ziyao Zeng",
+        "Jinfa Huang",
+        "Yijiang Li",
+        "Haolin Xiong",
+        "Wang Qin",
+        "Xinlei Yu",
+        "Youheng Yao",
+        "Jie Zhang",
+        "Kun-Yu Lin",
+        "Rong Liu",
+        "Yinyuan Zhao",
+        "Yajie Zhao",
+        "Meiqi Guo",
+        "Jiebo Luo",
+        "Lei Shu",
+        "Yunhao Ge",
+        "Xinyu Hu",
+        "Laurent Itti"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-15",
+      "source_url": "https://arxiv.org/abs/2610.22341",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "scene_programs",
+      "scope": "resource",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "program-data",
+        "3d-assets",
+        "execution-validation"
+      ],
+      "summary": "Packages executable 3D programs with assets and verification records; a generation-and-repair harness uses execution, geometry measurements and visual feedback.",
+      "evidence_notes": "A large ecosystem for programmable geometry, scenes and assets. Physics examples use existing solvers; neither 2M code-condition pairs nor simulation support alone proves induction of unknown dynamics. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.22341",
+      "alias": "3DCodeVerse"
+    },
+    {
+      "id": "2610.22708",
+      "citation_key": "cwm_2610_22708",
+      "title": "GlobeBench: Evaluating Text-Based World Model Capabilities for Scalable Environment Simulations",
+      "authors": [
+        "Nicholas Saban",
+        "Charvi Bannur",
+        "Mariya Vasileva",
+        "Darshan Deshpande"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-15",
+      "source_url": "https://arxiv.org/abs/2610.22708",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "evaluation",
+      "scope": "benchmark",
+      "code_roles": [],
+      "tags": [
+        "text-world-model-evaluation",
+        "real-execution-reference"
+      ],
+      "summary": "Tests textual action-conditioned successor predictions against execution-derived references, combining deterministic checks with semantic judging.",
+      "evidence_notes": "Execution supplies ground truth, but evaluated models predict textual responses rather than executable transition code. Induction here denotes inference from trajectories, not demonstrated program induction. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.22708",
+      "alias": "GlobeBench"
+    },
+    {
+      "id": "2610.24372",
+      "citation_key": "cwm_2610_24372",
+      "title": "Beyond Next-Screen Prediction: The Decision Value of GUI World Models",
+      "authors": [
+        "Sizhe Tang",
+        "Hanhan Zhou",
+        "Jeffrey Svajlenko",
+        "Rashmi Gangadharaiah"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-17",
+      "source_url": "https://arxiv.org/abs/2610.24372",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "comparators",
+      "scope": "comparator",
+      "code_roles": [],
+      "tags": [
+        "gui-lookahead",
+        "decision-value",
+        "action-ranking"
+      ],
+      "summary": "Controls prediction presentation and supervision when comparing GUI lookahead with a directly learned action ranker, testing the incremental decision value of predicted screens.",
+      "evidence_notes": "A comparator and evaluation warning for GUI world models. It neither proposes generated transition code nor implies all world models lack decision value; its negative result is bounded to tested GUI settings. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.24372",
+      "alias": "Beyond Next-Screen"
+    },
+    {
+      "id": "2610.27690",
+      "citation_key": "cwm_2610_27690",
+      "title": "NeoWorld-3: From Pixels to Code-Defined Physical Worlds",
+      "authors": [
+        "Eachen Soong",
+        "Zijian Niu",
+        "Haoran Xu",
+        "Yihong Dong",
+        "Yunbo Wang",
+        "Xiaokang Yang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-20",
+      "source_url": "https://arxiv.org/abs/2610.27690",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "construction",
+      "scope": "core",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "visual-reconstruction",
+        "geometry-programs",
+        "physics-checks"
+      ],
+      "summary": "Reconstructs editable geometry programs from visual evidence through hierarchical coding agents, differentiable parameter fitting and articulation/physics checks.",
+      "evidence_notes": "Core under a broad program-as-world-specification definition; not evidence of learning general physical transition laws. Differentiability is limited to supported builder operations. The linked Studio repository currently describes documentation only, not an installable implementation. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.27690",
+      "alias": "NeoWorld-3",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.27999",
+      "citation_key": "cwm_2610_27999",
+      "title": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds",
+      "authors": [
+        "Jihai Zhang",
+        "Runjia Qian",
+        "Kaiqin Kong",
+        "Biao Jiang",
+        "Puyi Wang",
+        "Siru Chen",
+        "Tianle Li",
+        "Guanjie Chen",
+        "Junyi Wu",
+        "Chubin Chen",
+        "Yuanhang Li",
+        "Kaichen Huang",
+        "Haobo Zhang",
+        "Yangguang Li",
+        "Wei Yu",
+        "Guibin Chen",
+        "Yu Cheng",
+        "Yahui Zhou"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-20",
+      "source_url": "https://arxiv.org/abs/2610.27999",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "coupling",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "game-code-generation",
+        "persistent-state",
+        "neural-rendering"
+      ],
+      "summary": "A coding agent turns player requests into executable game rules; an engine owns persistent state, while a causal video model renders detailed views from low-poly proxies.",
+      "evidence_notes": "The transition code is authored from requested gameplay, not identified from unknown observed dynamics. Neural rendering is not predicted observation code O. Reported performance is the authors claim, not an independently reproduced result. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.27999",
+      "alias": "Matrix-Game 4.0"
+    },
+    {
+      "id": "2610.28585",
+      "citation_key": "cwm_2610_28585",
+      "title": "SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images",
+      "authors": [
+        "Rundong Luo",
+        "Yunong Liu",
+        "Di Cao",
+        "Matthew Tancik",
+        "Shyamal Buch",
+        "Colton Stearns",
+        "Wenqi Xian"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-20",
+      "source_url": "https://arxiv.org/abs/2610.28585",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "scene_programs",
+      "scope": "adjacent",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "scene-reconstruction",
+        "physical-stability",
+        "scene-code-editing"
+      ],
+      "summary": "Reconstructs objects and scene layout from one image, then edits scene code and uses bounded pose search plus simulation validation to retain physically stable, visually aligned configurations.",
+      "evidence_notes": "Code specifies the reconstructed scene; existing simulator dynamics provide validation and rollout. Current objects are single rigid bodies, without recovered articulation or deformation. Relevant to configuration induction, not transition-law induction. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.28585",
+      "alias": "SceneRig",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.28827",
+      "citation_key": "cwm_2610_28827",
+      "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
+      "authors": [
+        "Xiaoxiao Ma",
+        "Weiyang Jin",
+        "Yanwen Ma",
+        "Haoran Li",
+        "Zhixiang Wei",
+        "Songchun Zhang",
+        "Yaowei Li",
+        "Junhao Zhuang",
+        "Zeyue Xue",
+        "Yuming Li",
+        "Zheming Fu",
+        "Haoyang Huang",
+        "Nan Duan",
+        "Feng Zhao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-20",
+      "source_url": "https://arxiv.org/abs/2610.28827",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "construction",
+      "scope": "core",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "typed-world-specifications",
+        "procedural-generation",
+        "persistent-state"
+      ],
+      "summary": "Hierarchical planning predicts typed regional and tile specifications; fixed procedural generators compile them, while persistent records retain identities, boundary contracts and edits across streaming revisits.",
+      "evidence_notes": "S is the generated semantic program/configuration. E occurs in the fixed executing runtime and stateful interactions, rather than in learned or generated transition-code synthesis, so E is not assigned as a generated-program role. The paper is a bounded procedural prototype with a curated generation vocabulary; geographic conditioning is not dynamics induction. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.28827",
+      "alias": "WorldStream",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.28630",
+      "citation_key": "cwm_2610_28630",
+      "title": "SolarRenderer: Few-Step Generative Reference Rendering",
+      "authors": [
+        "Guian Fang",
+        "Shengju Qian",
+        "Dongyue Lu",
+        "Junchao Huang",
+        "Lutao Jiang",
+        "Xin Wang",
+        "Yiren Song",
+        "Li Jiang",
+        "Mike Zheng Shou"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-20",
+      "source_url": "https://arxiv.org/abs/2610.28630",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "coupling",
+      "scope": "enabling",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "reference-rendering",
+        "streaming-video",
+        "renderer-interface"
+      ],
+      "summary": "Adapts a frozen video backbone with control and acceleration LoRAs to turn aligned structural video into detailed video, including streaming generation.",
+      "evidence_notes": "An enabling visual renderer for code/engine-based systems. It consumes rendered structural conditions and does not itself generate world programs, state-evolution code or observation code; neural rendering alone is not O. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.28630",
+      "alias": "SolarRenderer"
+    },
+    {
+      "id": "2610.28416",
+      "citation_key": "cwm_2610_28416",
+      "title": "Code2Video-Compass: A Comprehensive Benchmark for General-Purpose Code-Based Video Generation across T2V, I2V, and V2V",
+      "authors": [
+        "Zhenghan Chen",
+        "Zekai Shao",
+        "Xin Lin",
+        "Leting Cheng",
+        "Siming Chen"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-20",
+      "source_url": "https://arxiv.org/abs/2610.28416",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "evaluation",
+      "scope": "benchmark",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "programmatic-video",
+        "video-generation-evaluation",
+        "reference-fidelity"
+      ],
+      "summary": "Benchmarks executable-program video creation from text, images and videos with objective and model-judged measures of execution, quality and alignment.",
+      "evidence_notes": "Programs encode requested visual and temporal construction. This creative-generation benchmark is not an action-conditioned environment prediction benchmark; animation or state-dependency complexity alone does not establish learned world dynamics or O. Date records arXiv v1; earlier external releases were not exhaustively audited.",
+      "arxiv_id": "2610.28416",
+      "alias": "Code2Video-Compass",
+      "reviewed_version": "v1"
+    },
+    {
+      "id": "2610.01614",
+      "citation_key": "cwm_2610_01614",
+      "title": "Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models",
+      "authors": [
+        "Xindi Yang",
+        "Baolu Li",
+        "Liam Lee",
+        "Zhenfei Yin",
+        "Songxin Zhang",
+        "Zhuoyang Song",
+        "Xu Jia",
+        "Jianfei Cai",
+        "Tien-Tsin Wong",
+        "Bingyi Jing",
+        "Mengyue Yang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-01",
+      "source_url": "https://arxiv.org/abs/2610.01614",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "coupling",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "persistent-state",
+        "open-world-interaction",
+        "neural-rendering"
+      ],
+      "summary": "A coding agent and lightweight engine maintain an extensible world-state table, compile coarse visual conditions, and incorporate newly observed objects for persistent interaction.",
+      "evidence_notes": "The state table stores coarse object states and interaction outcomes; detailed motion is completed by the video generator.",
+      "arxiv_id": "2610.01614",
+      "alias": "Oneira"
+    },
+    {
+      "id": "2610.21283",
+      "citation_key": "cwm_2610_21283",
+      "title": "Mallea: Building, Steering, and Memorizing Worlds with Coding Agent",
+      "authors": [
+        "Xuanyi Liu",
+        "Ruiqi Li",
+        "Siwei Ma"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-15",
+      "source_url": "https://arxiv.org/abs/2610.21283",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "coupling",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "world-construction",
+        "state-preserving-editing",
+        "object-texture-memory"
+      ],
+      "summary": "A coding agent jointly builds object structures and rules, supports runtime edits preserving unaffected state, and combines executed state with object texture memory for rendering.",
+      "evidence_notes": "Texture memory is tied to whitebox-defined objects. State evolution, user-requested editing, and visual memory are distinct responsibilities.",
+      "arxiv_id": "2610.21283",
+      "alias": "Mallea"
+    },
+    {
+      "id": "2610.15166",
+      "citation_key": "cwm_2610_15166",
+      "title": "ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling",
+      "authors": [
+        "Xinge Peng",
+        "Zhen Fang",
+        "Ruibing Wang",
+        "Yongxuan Lv",
+        "Haodong Li",
+        "Guohui Zhang",
+        "Xiaoxiao Ma",
+        "Yiting Lu",
+        "Lin Chen",
+        "Zehui Che",
+        "Feng Zhao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-10",
+      "source_url": "https://arxiv.org/abs/2610.15166",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "evaluation",
+      "scope": "benchmark",
+      "code_roles": [],
+      "tags": [
+        "executable-3d",
+        "mechanism-evaluation",
+        "compositional-executability"
+      ],
+      "summary": "Evaluates individual mechanisms, compositional mechanical systems, and intent-driven executable 3D world synthesis.",
+      "evidence_notes": "Benchmark targets executable world construction and mechanisms; it is not itself a learned dynamics method. Author spellings follow arXiv abstract-page metadata.",
+      "arxiv_id": "2610.15166",
+      "alias": "ExeWorldBench"
+    },
+    {
+      "id": "2610.17651",
+      "citation_key": "cwm_2610_17651",
+      "title": "Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation",
+      "authors": [
+        "Haoyu Zhang",
+        "Siming Li",
+        "Zeyu Zhang",
+        "Yi Zhang",
+        "Tat-Seng Chua",
+        "Hao Tang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-13",
+      "source_url": "https://arxiv.org/abs/2610.17651",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "construction",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "simulation-ready",
+        "mujoco",
+        "simulator-feedback"
+      ],
+      "summary": "Compiles generated visual scenes into MuJoCo-compatible worlds with physical attributes and refines executable dynamics using simulator feedback.",
+      "evidence_notes": "Engine dynamics are inherited; scene compilation and simulator-guided refinement are the generated contribution. Public benchmark readiness checks should be separated from method-generated-world success.",
+      "arxiv_id": "2610.17651",
+      "alias": "Code2Worlds-2",
+      "related_ids": [
+        "2602.11757"
+      ]
+    },
+    {
+      "id": "2610.13172",
+      "citation_key": "cwm_2610_13172",
+      "title": "RoleWorld: Knowledge Transfer in World Modeling with Functional Role Abstractions",
+      "authors": [
+        "Boyuan Xiao",
+        "Pu Wang",
+        "Ji Feng",
+        "Yao-Xiang Ding"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-09",
+      "source_url": "https://arxiv.org/abs/2610.13172",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "dynamics",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "role-abstraction",
+        "transfer",
+        "interaction-induction"
+      ],
+      "summary": "Extracts reusable role prototypes and executable transition rules, then adapts role assignments and parameter estimates in new environments while keeping transition rules fixed.",
+      "evidence_notes": "Target-world adaptation changes role assignments and parameter estimates, not the fixed transition rules or LLM weights.",
+      "arxiv_id": "2610.13172",
+      "alias": "RoleWorld"
+    },
+    {
+      "id": "edenlive",
+      "citation_key": "cwm_edenlive",
+      "title": "EdenLive: Real-Time Generative Rendering from Any Visual Reference",
+      "authors": [
+        "Zehuan Huang",
+        "Tianxing Xu",
+        "Chunli Peng",
+        "Cheng Zhang",
+        "Zeyi Zheng",
+        "Yifei Song",
+        "Zekai Gu",
+        "Zhipeng Yu",
+        "Peng Wang",
+        "Yanpei Cao"
+      ],
+      "year": 2026,
+      "first_public_date": null,
+      "source_url": "https://github.com/VAST-AI-Research/EdenLive",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "coupling",
+      "scope": "enabling",
+      "code_roles": [],
+      "tags": [
+        "reference-rendering",
+        "streaming-video",
+        "renderer-interface"
+      ],
+      "summary": "A generative renderer maps upstream reference video, a target first frame and a prompt to enhanced video. The upstream program maintains state and rules. Released tooling also includes a prompt-to-playable-game skill and workbench.",
+      "evidence_notes": "S/E belong to the generated or existing upstream game, not to the neural renderer. O does not apply: predicted observations are video, not code.  Current official README confirms released code and weights. October 18 release date was not established from accessible primary history; API returned rate-limit 403. Do not label October 18 as first publication.",
+      "alias": "EdenLive",
+      "available_by": "2026-10-26",
+      "source_type": "project",
+      "date_basis": "verified_available_by",
+      "evidence_urls": [
+        "https://github.com/VAST-AI-Research/EdenLive",
+        "https://vast-eden.ai/?p=edenlive",
+        "https://huggingface.co/VAST-AI/EdenLive"
+      ]
+    },
+    {
+      "id": "mundo",
+      "citation_key": "cwm_mundo",
+      "title": "Mundo: Customized World Model",
+      "authors": [
+        "Yihang Luo",
+        "Zunnan Xu",
+        "Shangchen Zhou",
+        "Yushi Lan",
+        "Kang Liao",
+        "Zerui Gong",
+        "Xiaoming Wu",
+        "Qingyi Tao",
+        "Zhonghua Wu",
+        "Bixuan Jin",
+        "Fei Wang",
+        "Zhi Hou",
+        "Xiaogang Wang",
+        "Xingang Pan",
+        "Chen Change Loy"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-23",
+      "source_url": "https://mundo-world-model.github.io/",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "coupling",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "scene-reconstruction",
+        "physical-simulation",
+        "neural-rendering"
+      ],
+      "summary": "Images are reconstructed into an editable 3D proxy. A scene program specifies objects and physical parameters; scripts and usually MuJoCo evolve state. Proxy frames condition a video renderer together with context views.",
+      "evidence_notes": "The scene program specifies state and simulation rules; executable scripts/physics advance it. Video is the observation, so O is absent. Authors report slow rendering, small-object interaction errors and no long-horizon memory mechanism. Demos do not establish general physical fidelity or downstream robot-training gains. Author blog explicitly gives Published October 23, 2026. This establishes the dated announcement, not an audited first code or model release.",
+      "alias": "Mundo",
+      "source_type": "project",
+      "date_basis": "author_blog_publication",
+      "evidence_urls": [
+        "https://mundo-world-model.github.io/",
+        "https://huggingface.co/blog/Luo-Yihang/mundo-world-model"
+      ]
+    },
+    {
+      "id": "declared_world_model",
+      "citation_key": "cwm_declared_world_model",
+      "title": "A Declared World Model: Language Models Write the Rules of the Scene They are Shown",
+      "authors": [
+        "Jean-Jacques Dubray"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-13",
+      "source_url": "https://www.preprints.org/manuscript/202610.1139",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "dynamics",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "declared-rules",
+        "deterministic-execution",
+        "layout-transfer"
+      ],
+      "summary": "A language model writes world rules from a labelled scene graph. A deterministic engine checks proposed actions and computes next states. Experiments test whether generated rules transfer beyond the observed layout.",
+      "evidence_notes": "Rules are declared as a program and executed for action acceptance and state updates; generated observation code is not established. Perception is held perfect. Abstract reports layout-bound rules from a single scene; separating facts/rules or varying layouts can improve lifting. These controlled results do not establish arbitrary visual-world reconstruction. Exact v1 posting date on the publisher page; not a claim about any earlier informal manuscript.",
+      "alias": "A Declared World Model",
+      "source_type": "preprint",
+      "date_basis": "version_1_posted",
+      "evidence_urls": [
+        "https://www.preprints.org/manuscript/202610.1139"
+      ]
+    },
+    {
+      "id": "streamrender_h3",
+      "citation_key": "cwm_streamrender_h3",
+      "title": "StreamRender-H3: Interactive Coding Worlds with Real-time Streaming Diffusion Render",
+      "authors": [
+        "Yanzuo Lu",
+        "Tian Ye",
+        "Yitong Li",
+        "Shuchen Xue",
+        "Haozhe Liu",
+        "Song Han",
+        "Enze Xie"
+      ],
+      "year": 2026,
+      "first_public_date": null,
+      "source_url": "https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/",
+      "review_depth": "targeted_fulltext",
+      "reviewed_on": "2026-10-26",
+      "metadata_checked_on": "2026-10-26",
+      "section": "coupling",
+      "scope": "resource",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "engine-renderer-interface",
+        "semantic-controls",
+        "streaming-video"
+      ],
+      "summary": "A three.js game engine maintains maps, rules and state, advancing on player inputs. Semantic frames connect it to a streaming MiniMax-H3 renderer. The demonstrated system separates executable simulation from generated appearance.",
+      "evidence_notes": "S/E belong to the explicitly included game engine. The learned renderer does not itself supply executable state dynamics; output pixels are not O-code. Published renderer evaluation is racing-specific. No standalone StreamRender-H3 paper is established; page asks citation alongside the underlying Sol-Engine paper. Issue #536 opened on October 12 discusses released StreamRender code/checkpoint. It establishes availability by that day, not initial release. Current project details may include later updates.",
+      "alias": "StreamRender-H3",
+      "available_by": "2026-10-12",
+      "source_type": "project",
+      "date_basis": "publicly_available_by",
+      "evidence_urls": [
+        "https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/",
+        "https://github.com/NVlabs/Sana/issues/536"
+      ]
     }
   ]
 }
