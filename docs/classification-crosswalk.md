@@ -2,11 +2,11 @@
 
 <!-- Generated from data/classification.json and data/papers.json. -->
 
-**Discussion draft / 讨论稿 · 2026-10-26**
+**Discussion draft / 讨论稿 · 2026-10-29**
 
 [Definitions / 两套定义](classification-guide.md) · [Writing plan / 写作安排](survey-outline.md) · [CSV](../data/classification.csv) · [JSON](../data/classification.json)
 
-**123 source records**; **20** appear explicitly in the manuscript classification figure. Source records are not unique-method counts.
+**124 source records**; **20** appear explicitly in the manuscript classification figure. Source records are not unique-method counts.
 
 - **原图** transcribes Figure 1; **—** means not listed in that figure, not absent from the full manuscript.
 - **旧体系建议** applies the manuscript families to the broader corpus. Empty entries are deliberate scope/fit decisions.
@@ -57,10 +57,11 @@
 | [Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks](https://arxiv.org/abs/2610.11794) | A3 | A3, A1 | **E** | 轨迹与回放反馈 | §7.1 | 以模型修正与历史回放为主讲位置；维护的模型状态不自动等于真实状态。 |
 | [World-Time Compute with Verified Code World Models](https://arxiv.org/abs/2609.09163) | — | B1 | S + **E** | 构造规格与验证 | §8.2 | 世界构建服务训练轨迹与标签生成；模型使用价值另行验证。 |
 
-## World specification methods / 世界定义与构建方法 (9)
+## World specification methods / 世界定义与构建方法 (10)
 
 | Work / 工作 | 原图 | 旧体系建议 | 程序职责 | 依据 / 来源 | 主讲位置 | 分类与写作说明 |
 |---|---|---|---|---|---|---|
+| [VibeWorlding](https://arxiv.org/abs/2608.15265) | — | — | **S** | 文本/视觉意图与场景构建要求 | §3.2 | VibeWorlding 是新增的 VibeWorlding-type 代表：重点是 coding agent 端到端构建和编辑开放式 3D 世界。它提供构建/编辑证据，不应直接计作未知时间动力学发现。 |
 | [Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning](https://arxiv.org/abs/2608.27549) | A4 | A4, B2 | **S** + E | 视觉证据或文本规格（依设定） | §4.3 | 按实验设定区分归纳与构造，不能把整篇永久限定为 A4。 |
 | [NeoWorld-3](https://arxiv.org/abs/2610.27690) | — | B2 | **S** † | 视觉证据与参数拟合 | §4.3 | 旧 B2 是任务形态近邻，来源是视觉证据；不声称发现未知物理定律。 |
 | [Mundo](https://mundo-world-model.github.io/) | — | B2, C1 | **S** + E † | 图像重建与模拟规格 | §4.3 | 按作者项目资料收录；图像代理与仿真条件是主线，独立论文未核实。 |

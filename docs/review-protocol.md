@@ -2,9 +2,9 @@
 
 The initial collection has a literature cutoff of **2026-10-13** and was organized into this repository on **2026-10-14**. The collection answers three questions: what semantics programs carry, how programs are acquired and maintained, and what evaluation establishes their value as world models.
 
-## 2026-10-26 targeted update
+## 2026-10-29 targeted update
 
-The current cutoff is **2026-10-26**, with **123 source records**. This update adds 31 verified sources from the recent discussion and fills earlier omissions, including Oneira, ExeWorldBench, and RoleWorld. It also adds sources already present in the working manuscript but absent from the repository, such as Mallea and Code2Worlds-2. See the [dated update ledger](updates/2026-10-26.md).
+The current cutoff is **2026-10-29**, with **124 source records**. This update adds VibeWorlding, records the initial three-family writing map, and publishes a one-row-per-source master list. Earlier targeted additions remain documented in the [2026-10-26 update ledger](updates/2026-10-26.md); this pass also preserves the read-only Feishu provenance boundary.
 
 All new sources were checked against primary metadata and abstracts or official project material. Method review is recorded conservatively; older records retain their previous review depths. The classification pass covers all records but does not imply rereading every paper in full. The first-public field follows the verified arXiv v1 or dated source announcement. For EdenLive and StreamRender-H3, exact first-release dates remain unverified: their dates are explicitly availability bounds. Project pages describe the currently inspected system, which can include later changes.
 
@@ -41,3 +41,8 @@ Review depth describes citation checking. The collection does not report reprodu
 ## Updating the collection
 
 New entries should extend a relevant research question, fill a missing mechanism or evaluation axis, or establish an informative comparison. Verify the source first, choose the semantic roles and lifecycle tags, then add the record and regenerate the catalogue. Revisit affected comparison notes when a new version changes the mechanism or evidence. The initial snapshot is a curated coverage base; completeness is assessed through research-question coverage and citation-chain checks as the manuscript develops.
+
+
+## Feishu source boundary
+
+The catalogue incorporates paper names directly visible in the user-provided pasted text and marks them in the master list as `feishu_visible_pasted_text`. The linked Feishu documents were treated as read-only. Their hidden tables and bibliography placeholders were not used as evidence or published in this repository.

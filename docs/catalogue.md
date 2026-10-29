@@ -4,7 +4,7 @@
 
 [← Browse the paper collection](../README.md#paper-collection) · [Structured data](../data/papers.json) · [BibTeX](../papers.bib)
 
-**123 source records** · literature cutoff **2026-10-26** · metadata snapshot **2026-10-26**.
+**124 source records** · literature cutoff **2026-10-29** · metadata snapshot **2026-10-29**.
 
 Review: **FT** = targeted full-text sections · **A** = metadata and abstract · **M** = bibliographic metadata.
 
@@ -182,7 +182,7 @@ Review depth describes citation and mechanism checking. Dates prefixed **by** ar
 
 </details>
 
-## Scene and asset programs (13)
+## Scene and asset programs (14)
 
 | Date | Paper | Mechanism / relevance | Scope | Review |
 |---|---|---|---|---|
@@ -192,6 +192,7 @@ Review depth describes citation and mechanism checking. Dates prefixed **by** ar
 | 2026-09-28 | [LEGO-Anything: Coding Agents for 3D Scene Reconstruction](https://arxiv.org/abs/2609.36380) | LEGO-Anything reconstructs 3D scenes as executable programs and separates artifact, geometry, and appearance evaluation. | enabling | FT |
 | 2026-09-10 | [Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs](https://arxiv.org/abs/2609.11499) | Recursive Code World Models reconstruct complex scenes using recursive programs, global-local refinement, and shared reference views. | enabling | FT |
 | 2026-08-30 | [FuncRoom-Agent: Sequential Feed-Forward 3D Functional Indoor Scene Generation](https://arxiv.org/abs/2608.29519) | FuncRoom-Agent generates functional indoor scenes with a recursive DSL, sequential expert, and execution-grounded process reward. | enabling | FT |
+| 2026-08-15 | [VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?](https://arxiv.org/abs/2608.15265) | VibeWorlding studies an end-to-end multimodal coding agent that constructs and edits open 3D worlds in a Blender sandbox through asset retrieval, procedural editing, rendered-view feedback, and physical-feasibility checks. | core | FT |
 | 2026-08-05 | [WorldClaw: Agentic 3D Open-World Generation at Scale](https://arxiv.org/abs/2608.05248) | WorldClaw builds large editable 3D scenes through region planning, terrain generation, and render-guided refinement. | enabling | FT |
 | 2025-10-17 | [Procedural Scene Programs for Open-Universe Scene Generation: LLM-Free Error Correction via Program Search](https://arxiv.org/abs/2510.16147) | Studies procedural scene programs and error correction through program search. | enabling | A |
 | 2025-04-07 | [Imperative vs. Declarative Programming Paradigms for Open-Universe Scene Generation](https://arxiv.org/abs/2504.05482) | Studies imperative and declarative scene-program representations and program-based error correction. | enabling | A |
@@ -201,12 +202,13 @@ Review depth describes citation and mechanism checking. Dates prefixed **by** ar
 | 2023-12-14 | [Holodeck: Language Guided Generation of 3D Embodied AI Environments](https://arxiv.org/abs/2312.09067) | Holodeck builds language-guided 3D embodied environments through spatial constraints and optimization. | enabling | A |
 
 <details>
-<summary>Evidence notes (7)</summary>
+<summary>Evidence notes (8)</summary>
 
 - **SceneRig:** Code specifies the reconstructed scene; existing simulator dynamics provide validation and rollout. Current objects are single rigid bodies, without recovered articulation or deformation. Relevant to configuration induction, not transition-law induction. Date records arXiv v1; earlier external releases were not exhaustively audited.
 - **3DCodeVerse:** A large ecosystem for programmable geometry, scenes and assets. Physics examples use existing solvers; neither 2M code-condition pairs nor simulation support alone proves induction of unknown dynamics. Date records arXiv v1; earlier external releases were not exhaustively audited.
 - **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation:** Source geometry is input, executable modeling programs are generated, and articulated USD is the exported artifact.
 - **Recursive Code World Models: Building Complex Worlds through Recursive Scene Programs:** The reported reconstruction is static; dynamic behavior belongs to a separate evaluation axis.
+- **VibeWorlding:** The primary task is agentic 3D world construction and editing with VWE-Bench; it should not be counted as temporal dynamics discovery unless a separate transition model is evaluated.
 - **WorldClaw: Agentic 3D Open-World Generation at Scale:** Scene generation and editable geometry are the reviewed capabilities.
 - **Procedural Scene Programs for Open-Universe Scene Generation: LLM-Free Error Correction via Program Search:** Closely related title, authors, and abstract to 2504.05482. Treat the relationship as unresolved when counting distinct methods.
 - **Imperative vs. Declarative Programming Paradigms for Open-Universe Scene Generation:** Closely related title, authors, and abstract to 2510.16147. Treat the relationship as unresolved when counting distinct methods.

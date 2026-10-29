@@ -26,7 +26,7 @@ Code makes world models **executable, editable, and inspectable**. This collecti
 
 ## News
 
-- **2026-10-26** — Added 31 verified sources and a [two-scheme classification crosswalk](docs/classification-crosswalk.md) covering all 123 records, with manuscript writing anchors. Taxonomy remains a discussion draft.
+- **2026-10-29** — Added VibeWorlding, a 124-record [paper master list](docs/paper-master-list.md), and the initial three-family map: WorldCoder-type, Code-as-World-type, and VibeWorlding-type. Replaced the cover with a generated raster image.
 - **2026-10-19** — Bilingual READMEs, a PNG cover, reserved survey links, and visual navigation.
 - **2026-10-14** — Initial release: 92 source records, structured metadata, BibTeX, and a shared taxonomy and evaluation framework.
 
@@ -34,13 +34,13 @@ Code makes world models **executable, editable, and inspectable**. This collecti
 
 [Survey & resources](#survey--resources) · [At a glance](#at-a-glance) · [Paper collection](#paper-collection) · [Contributing](#contributing) · [Acknowledgements](#acknowledgements)
 
-**Writing discussion:** [Classification criteria](docs/classification-guide.md) · [Paper-by-paper crosswalk](docs/classification-crosswalk.md) · [CSV](data/classification.csv) · [Update notes](docs/updates/2026-10-26.md)
+**Writing discussion:** [Three-family taxonomy](docs/coarse-taxonomy.md) · [Paper master list](docs/paper-master-list.md) · [Classification criteria](docs/classification-guide.md) · [Paper-by-paper crosswalk](docs/classification-crosswalk.md) · [CSV](data/classification.csv) · [Update notes](docs/updates/2026-10-29.md)
 
 <!-- NAVIGATION:BEGIN -->
 
 | Modeling & evaluation | Foundations & context |
 |---|---|
-| [01 · Executable dynamics & planning](#papers-dynamics) <sub>(26)</sub> | [06 · Scene & asset programs](#papers-scene_programs) <sub>(13)</sub> |
+| [01 · Executable dynamics & planning](#papers-dynamics) <sub>(26)</sub> | [06 · Scene & asset programs](#papers-scene_programs) <sub>(14)</sub> |
 | [02 · Persistent executable worlds](#papers-construction) <sub>(12)</sub> | [07 · Historical foundations](#papers-foundations) <sub>(9)</sub> |
 | [03 · Execution meets visual generation](#papers-coupling) <sub>(14)</sub> | [08 · Comparators & adjacent approaches](#papers-comparators) <sub>(26)</sub> |
 | [04 · Renderable-code observations](#papers-observation) <sub>(3)</sub> | [09 · Related surveys](#papers-surveys) <sub>(3)</sub> |
@@ -68,12 +68,22 @@ Our survey is **in preparation**. The [survey hub](docs/survey.md) brings togeth
 
 Program origin, verification, and downstream use form a second set of attributes. The [taxonomy](docs/taxonomy.md) explains how they connect across branches.
 
+### Three-family writing map
+
+| Initial family | Core question | Representative anchors |
+|---|---|---|
+| **WorldCoder-type** · Programmatic Dynamics | Does code predict action consequences and support planning? | [WorldCoder](https://arxiv.org/abs/2402.12275), [TheoryCoder](https://arxiv.org/abs/2503.20124), [OneLife](https://arxiv.org/abs/2510.12088), [EMPIRIC](https://arxiv.org/abs/2609.35047) |
+| **Code-as-World-type** · Executable World Programs | Does code keep a persistent world, its state, rules, and interfaces executable? | [Code as Worlds](https://arxiv.org/abs/2608.27549), [Programmable World Model](https://arxiv.org/abs/2609.10540), [AgentGarten](https://arxiv.org/abs/2610.12374), [Oneira](https://arxiv.org/abs/2610.01614) |
+| **VibeWorlding-type** · Agentic 3D World Construction | Can an agent construct and edit an editable, simulation-ready 3D world? | [VibeWorlding](https://arxiv.org/abs/2608.15265), [WorldClaw](https://arxiv.org/abs/2608.05248), [USDCraft](https://arxiv.org/abs/2610.11322), [SceneRig](https://arxiv.org/abs/2610.28585) |
+
+The [three-family guide](docs/coarse-taxonomy.md) gives the placement rules. Papers that would be distorted by a forced assignment remain in **Other / Benchmarks / Adjacent**; the [master list](docs/paper-master-list.md) keeps every record visible.
+
 <a id="paper-collection"></a>
 ## Paper collection
 
 <!-- CATALOG:BEGIN -->
 
-**123 sources** · literature through **2026-10-26**.
+**124 sources** · literature through **2026-10-29**.
 
 Browse by research direction below. [Full annotations, review depth, and evidence notes →](docs/catalogue.md)
 
@@ -336,7 +346,7 @@ Sources are ordered by recorded publication dates or, for undated projects, avai
 *Programmatic geometry, reconstruction, articulation, and scene composition.*
 
 <details>
-<summary><strong>Explore 13 sources</strong></summary>
+<summary><strong>Explore 14 sources</strong></summary>
 
 - **SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28585)
   <br><sub>Reconstructs objects and scene layout from one image, then edits scene code and uses bounded pose search plus simulation validation to retain physically stable, visually aligned configurations.</sub>
@@ -355,6 +365,9 @@ Sources are ordered by recorded publication dates or, for undated projects, avai
 
 - **FuncRoom-Agent: Sequential Feed-Forward 3D Functional Indoor Scene Generation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.29519)
   <br><sub>FuncRoom-Agent generates functional indoor scenes with a recursive DSL, sequential expert, and execution-grounded process reward.</sub>
+
+- **VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.15265)
+  <br><sub>VibeWorlding studies an end-to-end multimodal coding agent that constructs and edits open 3D worlds in a Blender sandbox through asset retrieval, procedural editing, rendered-view feedback, and physical-feasibility checks.</sub>
 
 - **WorldClaw: Agentic 3D Open-World Generation at Scale** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.05248)
   <br><sub>WorldClaw builds large editable 3D scenes through region planning, terrain generation, and render-guided refinement.</sub>

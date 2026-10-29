@@ -1,8 +1,8 @@
 # Survey 写作安排与分类对照
 
-**讨论稿 · 2026-10-26。** 当前工作标题为 *Programmatic World Models: A Survey*。首页继续使用文献库名称 Code-Centric World Models；分类与最终章节仍在讨论。
+**讨论稿 · 2026-10-29。** 当前工作标题为 *Programmatic World Models: A Survey*。首页继续使用文献库名称 Code-Centric World Models；分类与最终章节仍在讨论。
 
-[两套分类定义](classification-guide.md) · [逐篇分类与主讲位置](classification-crosswalk.md) · [可复制 CSV](../data/classification.csv)
+[三类主线说明](coarse-taxonomy.md) · [全量论文总表](paper-master-list.md) · [两套分类定义](classification-guide.md) · [逐篇分类与主讲位置](classification-crosswalk.md) · [可复制 CSV](../data/classification.csv)
 
 ## 三个研究问题
 
@@ -12,7 +12,7 @@
 
 ## 方案一：保留 lifecycle 章节，调整分类图和总表
 
-这是本轮建议的写作底稿。编号与当前讨论的 PDF 对齐；该 PDF 没有被修改或发布。
+这是本轮建议的写作底稿。编号与当前讨论的 PDF 对齐；该 PDF 没有被修改或发布。三类主线用于顶层叙事，lifecycle 章节用于跨类比较；具体归类见[三类主线说明](coarse-taxonomy.md)和[全量论文总表](paper-master-list.md)。
 
 | 章节 | 比较问题 | 主讲论文与内容 |
 |---|---|---|

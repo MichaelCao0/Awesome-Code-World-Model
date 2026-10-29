@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-26",
+  "updated_on": "2026-10-29",
   "status": "discussion-draft",
   "scope": "All catalogue source records; roles annotate methods, supporting artifacts, evaluation targets, or comparisons as indicated. Labels are editorial proposals. Original labels transcribe Figure 1 of the working manuscript; absence there is not absence from the full manuscript.",
   "records": [
@@ -25,7 +25,10 @@
       ],
       "evidence_depth": "metadata",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "gameengine2017",
@@ -53,7 +56,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "csgnet2018",
@@ -77,7 +83,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2006.08381",
@@ -100,7 +109,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2009.08026",
@@ -124,7 +136,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2107.12544",
@@ -152,7 +167,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "infinigen2023",
@@ -176,7 +194,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "autumnsynth2023",
@@ -204,7 +225,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2303.05501",
@@ -231,7 +255,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2305.14909",
@@ -258,7 +285,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2312.09067",
@@ -282,7 +312,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2403.09675",
@@ -306,7 +339,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2402.12275",
@@ -337,7 +373,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2403.01248",
@@ -361,7 +400,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2405.15383",
@@ -392,7 +434,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2408.02211",
@@ -416,7 +461,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2410.13232",
@@ -438,7 +486,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2410.23156",
@@ -460,7 +511,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2411.06559",
@@ -482,7 +536,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2502.04728",
@@ -511,7 +568,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2502.13092",
@@ -539,7 +599,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2502.20694",
@@ -562,7 +625,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2503.20124",
@@ -592,7 +658,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2504.05482",
@@ -616,7 +685,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2504.13936",
@@ -638,7 +710,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2505.10819",
@@ -667,7 +742,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2508.11836",
@@ -694,7 +772,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2509.07996",
@@ -714,7 +795,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "context"
+      "assignment_kind": "context",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2510.02387",
@@ -736,7 +820,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2510.04542",
@@ -762,7 +849,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2510.12088",
@@ -791,7 +881,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2510.16147",
@@ -815,7 +908,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2512.14014",
@@ -838,7 +934,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2512.22336",
@@ -867,7 +966,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2512.23676",
@@ -895,7 +997,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2602.00929",
@@ -923,7 +1028,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2602.01576",
@@ -952,7 +1060,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2602.09856",
@@ -981,7 +1092,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2602.11757",
@@ -1010,7 +1124,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2602.14721",
@@ -1032,7 +1149,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2602.17365",
@@ -1054,7 +1174,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2606.23690",
@@ -1074,7 +1197,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "context"
+      "assignment_kind": "context",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2605.05138",
@@ -1102,7 +1228,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2605.10347",
@@ -1128,7 +1257,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2605.14398",
@@ -1156,7 +1288,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2605.16725",
@@ -1184,7 +1319,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2605.19587",
@@ -1212,7 +1350,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2605.19769",
@@ -1236,7 +1377,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2605.30880",
@@ -1267,7 +1411,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2606.01869",
@@ -1296,7 +1443,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2606.16070",
@@ -1325,7 +1475,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2606.31689",
@@ -1348,7 +1501,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2607.01531",
@@ -1376,7 +1532,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2609.09163",
@@ -1404,7 +1563,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2607.15439",
@@ -1431,7 +1593,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2607.16900",
@@ -1453,7 +1618,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2607.17540",
@@ -1480,7 +1648,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2607.25236",
@@ -1508,7 +1679,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2607.26754",
@@ -1530,7 +1704,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2607.28287",
@@ -1558,7 +1735,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2608.05248",
@@ -1582,7 +1762,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2608.05891",
@@ -1611,7 +1794,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2608.06257",
@@ -1633,7 +1819,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2608.14490",
@@ -1662,7 +1851,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2608.25927",
@@ -1694,7 +1886,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2608.27168",
@@ -1721,7 +1916,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2608.27549",
@@ -1753,7 +1951,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2608.29305",
@@ -1775,7 +1976,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2608.29519",
@@ -1799,7 +2003,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2609.00048",
@@ -1826,7 +2033,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2608.30530",
@@ -1853,7 +2063,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "scene-survey2026",
@@ -1873,7 +2086,10 @@
       ],
       "evidence_depth": "metadata",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "context"
+      "assignment_kind": "context",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2609.02885",
@@ -1895,7 +2111,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2609.10540",
@@ -1928,7 +2147,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2609.11499",
@@ -1952,7 +2174,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2609.21562",
@@ -1979,7 +2204,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2609.25652",
@@ -2009,7 +2237,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2609.26458",
@@ -2042,7 +2273,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2609.28416",
@@ -2064,7 +2298,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2609.32679",
@@ -2091,7 +2328,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2609.35047",
@@ -2121,7 +2361,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2609.36380",
@@ -2145,7 +2388,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.00834",
@@ -2174,7 +2420,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.01215",
@@ -2196,7 +2445,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.02205",
@@ -2223,7 +2475,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.04432",
@@ -2252,7 +2507,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.04940",
@@ -2274,7 +2532,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.11253",
@@ -2301,7 +2562,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.11322",
@@ -2325,7 +2589,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.11794",
@@ -2356,7 +2623,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.11942",
@@ -2378,7 +2648,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.12374",
@@ -2407,7 +2680,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.18835",
@@ -2434,7 +2710,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.19234",
@@ -2464,7 +2743,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.18826",
@@ -2486,7 +2768,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.17630",
@@ -2514,7 +2799,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.19955",
@@ -2539,7 +2827,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.20571",
@@ -2561,7 +2852,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.23826",
@@ -2588,7 +2882,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.25019",
@@ -2617,7 +2914,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.26811",
@@ -2647,7 +2947,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.26828",
@@ -2676,7 +2979,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.29435",
@@ -2698,7 +3004,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.30136",
@@ -2720,7 +3029,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.23986",
@@ -2744,7 +3056,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.22341",
@@ -2769,7 +3084,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.22708",
@@ -2791,7 +3109,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.24372",
@@ -2813,7 +3134,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.27690",
@@ -2841,7 +3165,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.27999",
@@ -2870,7 +3197,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.28585",
@@ -2896,7 +3226,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "comparison"
+      "assignment_kind": "comparison",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.28827",
@@ -2924,7 +3257,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.28630",
@@ -2948,7 +3284,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.28416",
@@ -2974,7 +3313,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "other",
+      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.01614",
@@ -3002,7 +3344,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.21283",
@@ -3034,7 +3379,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.15166",
@@ -3063,7 +3411,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "evaluation"
+      "assignment_kind": "evaluation",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "2610.17651",
@@ -3093,7 +3444,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "2610.13172",
@@ -3122,7 +3476,10 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue + feishu_visible_pasted_text"
     },
     {
       "id": "edenlive",
@@ -3148,7 +3505,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "mundo",
@@ -3178,7 +3538,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "declared_world_model",
@@ -3204,7 +3567,10 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "method"
+      "assignment_kind": "method",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "github_catalogue"
     },
     {
       "id": "streamrender_h3",
@@ -3232,7 +3598,38 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26",
-      "assignment_kind": "support"
+      "assignment_kind": "support",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "github_catalogue"
+    },
+    {
+      "id": "2608.15265",
+      "old_figure": [],
+      "old_suggested": [],
+      "roles": [
+        "S"
+      ],
+      "primary_role": "S",
+      "basis": "文本/视觉意图与场景构建要求",
+      "execution": "Blender 沙盒中的资产检索、程序化编辑与物理可行性检查",
+      "render": "多视图渲染反馈",
+      "main_section": "3.2",
+      "secondary_sections": [
+        "4.4",
+        "5.2"
+      ],
+      "reason_zh": "VibeWorlding 是新增的 VibeWorlding-type 代表：重点是 coding agent 端到端构建和编辑开放式 3D 世界。它提供构建/编辑证据，不应直接计作未知时间动力学发现。",
+      "assignment_status": "reviewed-proposal",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2608.15265"
+      ],
+      "evidence_depth": "targeted_fulltext",
+      "annotated_on": "2026-10-29",
+      "assignment_kind": "method",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "github_catalogue + user_requested"
     }
   ]
 }

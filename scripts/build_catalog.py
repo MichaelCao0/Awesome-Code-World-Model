@@ -10,6 +10,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 from build_classification import outputs as classification_outputs
+from build_master_list import outputs as master_list_outputs
 
 ROOT = Path(__file__).resolve().parents[1]
 SCOPES = {'core', 'historical', 'enabling', 'benchmark', 'resource', 'comparator', 'adjacent', 'survey'}
@@ -336,7 +337,7 @@ def main():
     localized = load_localization(data)
     survey_links = load_survey_links()
     expected = {ROOT / 'papers.bib': bibliography(data), ROOT / 'docs/catalogue.md': annotated_catalogue(data),
-                **badges(data, survey_links), **classification_outputs(ROOT, data)}
+                **badges(data, survey_links), **classification_outputs(ROOT, data), **master_list_outputs(ROOT, data)}
     for filename, language in [('README.md', None), ('README.zh-CN.md', localized)]:
         readme_path = ROOT / filename
         readme = readme_path.read_text(encoding='utf-8')

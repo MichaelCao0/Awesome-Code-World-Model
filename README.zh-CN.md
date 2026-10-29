@@ -36,13 +36,13 @@
 
 [综述与资源](#survey--resources) · [核心视角](#at-a-glance) · [文献目录](#paper-collection) · [参与贡献](#contributing) · [致谢](#acknowledgements)
 
-**写作讨论：** [分类判据](docs/classification-guide.md) · [逐篇对照表](docs/classification-crosswalk.md) · [CSV](data/classification.csv) · [本轮更新](docs/updates/2026-10-26.md)
+**写作讨论：** [三类框架](docs/coarse-taxonomy.md) · [全量论文总表](docs/paper-master-list.md) · [分类判据](docs/classification-guide.md) · [逐篇对照表](docs/classification-crosswalk.md) · [CSV](data/classification.csv) · [本轮更新](docs/updates/2026-10-29.md)
 
 <!-- NAVIGATION:BEGIN -->
 
 | 建模与评测 | 基础与相邻研究 |
 |---|---|
-| [01 · 可执行动力学与规划](#papers-dynamics) <sub>(26)</sub> | [06 · 场景与资产程序](#papers-scene_programs) <sub>(13)</sub> |
+| [01 · 可执行动力学与规划](#papers-dynamics) <sub>(26)</sub> | [06 · 场景与资产程序](#papers-scene_programs) <sub>(14)</sub> |
 | [02 · 持久的可执行世界](#papers-construction) <sub>(12)</sub> | [07 · 历史与表示基础](#papers-foundations) <sub>(9)</sub> |
 | [03 · 执行与视觉生成的连接](#papers-coupling) <sub>(14)</sub> | [08 · 对照与相邻方法](#papers-comparators) <sub>(26)</sub> |
 | [04 · 以可渲染代码预测观测](#papers-observation) <sub>(3)</sub> | [09 · 相关综述](#papers-surveys) <sub>(3)</sub> |
@@ -74,12 +74,22 @@
 
 程序来源、验证过程与下游用途构成另一组属性。[分类框架](docs/taxonomy.md) 解释这些属性如何贯通不同研究路线。
 
+### 三类写作主线（初版）
+
+| 初版主类 | 核心问题 | 代表工作 |
+|---|---|---|
+| **WorldCoder-type** · 程序化动力学 | 代码能否预测动作后果并支持规划？ | [WorldCoder](https://arxiv.org/abs/2402.12275)、[TheoryCoder](https://arxiv.org/abs/2503.20124)、[OneLife](https://arxiv.org/abs/2510.12088)、[EMPIRIC](https://arxiv.org/abs/2609.35047) |
+| **Code-as-World-type** · 可执行世界程序 | 代码能否持续维护世界、状态、规则及其接口？ | [Code as Worlds](https://arxiv.org/abs/2608.27549)、[Programmable World Model](https://arxiv.org/abs/2609.10540)、[AgentGarten](https://arxiv.org/abs/2610.12374)、[Oneira](https://arxiv.org/abs/2610.01614) |
+| **VibeWorlding-type** · agentic 3D 世界构建 | agent 能否构建并编辑可编辑、可仿真的 3D 世界？ | [VibeWorlding](https://arxiv.org/abs/2608.15265)、[WorldClaw](https://arxiv.org/abs/2608.05248)、[USDCraft](https://arxiv.org/abs/2610.11322)、[SceneRig](https://arxiv.org/abs/2610.28585) |
+
+[三类框架说明](docs/coarse-taxonomy.md) 给出具体判据。若强行归类会掩盖论文贡献，则保留在 **Other / Benchmarks / Adjacent**；[全量总表](docs/paper-master-list.md) 仍保留每条记录。
+
 <a id="paper-collection"></a>
 ## 文献目录
 
 <!-- CATALOG:BEGIN -->
 
-**123 条文献来源** · 文献截止日期：**2026-10-26**。
+**124 条文献来源** · 文献截止日期：**2026-10-29**。
 
 按研究方向浏览。[完整注释、核查深度与证据说明 →](docs/catalogue.md)
 
@@ -342,7 +352,7 @@
 *程序化几何、重建、关节建模与场景组合。*
 
 <details>
-<summary><strong>展开 13 条文献</strong></summary>
+<summary><strong>展开 14 条文献</strong></summary>
 
 - **SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28585)
   <br><sub>从单张图像重建物体与布局，通过场景代码编辑、受限位姿搜索和仿真验证，保留物理稳定且与图像对齐的场景配置。</sub>
@@ -361,6 +371,9 @@
 
 - **FuncRoom-Agent: Sequential Feed-Forward 3D Functional Indoor Scene Generation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.29519)
   <br><sub>FuncRoom-Agent 通过递归 DSL、顺序专家模型和执行依据的过程奖励，生成功能性室内场景。</sub>
+
+- **VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.15265)
+  <br><sub>VibeWorlding 研究多模态 coding agent 如何在 Blender 沙盒中通过资产检索、程序化编辑、渲染反馈与物理可行性检查端到端构建和修改开放式 3D 世界。它的核心任务是世界构建与编辑，不应直接计作时间动力学发现。</sub>
 
 - **WorldClaw: Agentic 3D Open-World Generation at Scale** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.05248)
   <br><sub>WorldClaw 通过区域规划、地形生成和渲染反馈，构建大规模可编辑三维场景。</sub>

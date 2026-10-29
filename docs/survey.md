@@ -21,7 +21,7 @@ The survey links and citation indicator are reserved for publication. Their URLs
 
 ## Classification and writing discussion
 
-The working manuscript title is *Programmatic World Models: A Survey*. The collection title above is retained while organization is discussed. Compare [the manuscript families with proposed program responsibilities](classification-guide.md), browse [all per-source assignments](classification-crosswalk.md), or copy the [CSV table](../data/classification.csv). The [writing plan](survey-outline.md) retains the lifecycle chapters and also describes an alternative role-based structure.
+The working manuscript title is *Programmatic World Models: A Survey*. The collection title above is retained while organization is discussed. Start with the [three-family working taxonomy](coarse-taxonomy.md), browse the [paper master list](paper-master-list.md), then compare [the manuscript families with proposed program responsibilities](classification-guide.md) and [all per-source assignments](classification-crosswalk.md). The [writing plan](survey-outline.md) retains the lifecycle chapters and also describes an alternative role-based structure.
 
 ## Read the framework
 
@@ -38,6 +38,7 @@ The working manuscript title is *Programmatic World Models: A Survey*. The colle
 - [Read the annotated catalogue](catalogue.md) for scope labels, review depth, and evidence notes.
 - [Download the BibTeX bibliography](../papers.bib) for the collected sources.
 - [Use the structured metadata](../data/papers.json) for filtering and comparison.
+- [Download the master-list CSV](../data/paper-master-list.csv) for one-row-per-source sorting and copy-paste.
 
 The BibTeX file cites the collected sources. A citation for the survey itself will be added here with the manuscript release.
 

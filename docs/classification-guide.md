@@ -2,7 +2,7 @@
 
 **Discussion draft · 2026-10-26.** This comparison supports writing decisions. The responsibility labels and an alternative chapter order are proposals, not an adopted final taxonomy.
 
-[Paper-by-paper crosswalk / 逐篇对照表](classification-crosswalk.md) · [CSV](../data/classification.csv) · [Structured annotations](../data/classification.json) · [Writing plan / 写作安排](survey-outline.md)
+[Three-family working map / 三类主线](coarse-taxonomy.md) · [Paper master list / 全量论文总表](paper-master-list.md) · [Paper-by-paper crosswalk / 逐篇对照表](classification-crosswalk.md) · [CSV](../data/classification.csv) · [Structured annotations](../data/classification.json) · [Writing plan / 写作安排](survey-outline.md)
 
 ## Scheme A: manuscript families
 
@@ -17,7 +17,7 @@
 | C1 | Program-Driven World Generation — Code–Neural Hybrid World Models | Explicit worlds and neural observations |
 | C2 | Program-Driven World Generation — Renderable-Code Interface Models | Predicting observations as executable code |
 
-The crosswalk distinguishes labels actually printed in the working manuscript's Figure 1 from suggested placements under the same scheme. Absence from that figure does not mean absence from the manuscript. The unpublished manuscript itself is not distributed here.
+The crosswalk distinguishes labels actually printed in the working manuscript's Figure 1 from suggested placements under the same scheme. The separate [three-family working map](coarse-taxonomy.md) is the current top-level writing scaffold: it is intentionally coarser than the manuscript families. Absence from that figure does not mean absence from the manuscript. The unpublished manuscript itself is not distributed here.
 
 A/B describe the modeling objective and reference for correctness; C describes architecture and program responsibility. A2 and A3 also describe properties recurring in A1. Suggested Scheme A labels retain these overlaps rather than silently changing the original definitions.
 
@@ -40,6 +40,10 @@ S/E/O describe program components, not a disjoint partition of papers. `primary_
 **Agent boundary.** A coding agent can author mechanisms, maintain a state table, construct scenes, or write an action policy. Assign roles from the artifact and runtime, not from the method name.
 
 The existing catalogue `code_roles` field is a broad browsing index: its `observation` value includes scene/appearance rendering and is not synonymous with the proposed O. The crosswalk is separately curated; do not obtain S/E/O by renaming legacy fields.
+
+## Coarse family fields
+
+`coarse_family` is the initial one-primary-family editorial assignment used by the [paper master list](paper-master-list.md): `worldcoder`, `code_as_world`, `vibeworlding`, or `other`. `source_provenance` records whether an entry is supported by the GitHub catalogue, directly visible in the pasted Feishu text, or explicitly added from a later user request. These fields do not replace S/E/O or the manuscript-family annotations; they provide a stable top-level grouping for drafting and future revision.
 
 ## Orthogonal attributes and evidence
 
