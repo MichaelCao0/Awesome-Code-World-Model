@@ -8,7 +8,7 @@ The table merges every current GitHub catalogue record with the visible paper na
 
 **Family counts / 类别计数：** **WorldCoder-type · Programmatic Dynamics / World Program Induction** 30 · **Code-as-World-type · Executable World Programs** 23 · **VibeWorlding-type · Agentic 3D World Construction** 15 · **Other / Benchmarks / Adjacent** 56
 
-**数据文件：** [CSV](../data/paper-master-list.csv) · [分类 JSON](../data/classification.json) · [逐篇对照](classification-crosswalk.md) · [三类框架说明](coarse-taxonomy.md)
+**数据文件：** [CSV](../data/paper-master-list.csv) · [分类 JSON](../data/classification.json) · [粗分类 JSON](../data/classification.json) · [三类框架说明](coarse-taxonomy.md)
 
 | # | Work / 工作 | Year | Coarse family / 初版主类 | Catalogue section | Scope | Roles | Review | Provenance / 来源 |
 |---:|---|---:|---|---|---|---|---|---|

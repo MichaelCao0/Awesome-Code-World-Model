@@ -186,7 +186,7 @@ def annotated_catalogue(data):
              f"**{len(data['papers'])} source records** · literature cutoff **{data['literature_cutoff']}** · metadata snapshot **{data['updated_on']}**.", '',
              'Review: **FT** = targeted full-text sections · **A** = metadata and abstract · **M** = bibliographic metadata.', '',
              'Review depth describes citation and mechanism checking. Dates prefixed **by** are documented availability bounds, not first-release dates. Experimental conditions appear below each table; the [evaluation framework](evaluation.md) explains the shared comparisons.', '',
-             '[Compare the manuscript taxonomy and proposed program responsibilities →](classification-crosswalk.md)']
+             '[Three-family taxonomy →](coarse-taxonomy.md) · [Paper master list →](paper-master-list.md)']
     for section in data['sections']:
         subset = section_papers(data, section['id'])
         lines += ['', f"## {section['title']} ({len(subset)})", '',
@@ -352,7 +352,7 @@ def main():
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(text, encoding='utf-8')
     check_links()
-    print(f"{'Validated' if args.check else 'Generated'} bilingual READMEs, {len(data['papers'])} sources/classification rows, {len(data['sections'])} sections, catalogue, crosswalk/CSV, badges, links/anchors, and BibTeX.")
+    print(f"{'Validated' if args.check else 'Generated'} bilingual READMEs, {len(data['papers'])} sources/classification rows, {len(data['sections'])} sections, catalogue, coarse CSV, badges, links/anchors, and BibTeX.")
 
 if __name__ == '__main__':
     try:

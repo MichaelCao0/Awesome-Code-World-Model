@@ -58,7 +58,7 @@ def outputs(root, catalogue):
         '这张表是当前仓库的合并清单：包含 GitHub catalogue 的全部来源记录，并标出从用户粘贴文本中能直接确认的飞书可见条目。飞书文档中的表格/参考文献占位符未被当作可见证据，因此 `github_catalogue` 不表示“飞书中没有”，只表示该条目目前由仓库记录支持。', '',
         'The table merges every current GitHub catalogue record with the visible paper names in the pasted Feishu text. Feishu placeholders and hidden tables are not treated as visible evidence; `github_catalogue` therefore means “currently supported by the repository,” not “absent from Feishu.”', '',
         '**Family counts / 类别计数：** ' + counts, '',
-        '**数据文件：** [CSV](../data/paper-master-list.csv) · [分类 JSON](../data/classification.json) · [逐篇对照](classification-crosswalk.md) · [三类框架说明](coarse-taxonomy.md)', '',
+        '**数据文件：** [CSV](../data/paper-master-list.csv) · [分类 JSON](../data/classification.json) · [粗分类 JSON](../data/classification.json) · [三类框架说明](coarse-taxonomy.md)', '',
         '| # | Work / 工作 | Year | Coarse family / 初版主类 | Catalogue section | Scope | Roles | Review | Provenance / 来源 |',
         '|---:|---|---:|---|---|---|---|---|---|',
     ]

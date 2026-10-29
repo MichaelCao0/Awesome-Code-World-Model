@@ -27,7 +27,8 @@
 <a id="news"></a>
 ## 更新
 
-- **2026-10-26** — 补入 31 条核实来源，并提供覆盖全部 123 条来源的[两套分类对照与写作位置](docs/classification-crosswalk.md)；分类仍为讨论稿。
+- **2026-10-29** — 加入 VibeWorlding，整理覆盖 124 条记录的全量论文总表，并将 README 主分类收敛为 WorldCoder-type、Code-as-World-type、VibeWorlding-type 三类。封面改为代码—状态—数字世界主题的栅格图。
+- **2026-10-26** — 补入 31 条核实来源，形成当前文献目录基础。
 - **2026-10-19** — 加入中英双语 README、PNG 封面、综述标签占位与分类导航。
 - **2026-10-14** — 初始版本收录 92 条文献记录，提供结构化元数据、BibTeX、分类框架与评测框架。
 
@@ -36,7 +37,7 @@
 
 [综述与资源](#survey--resources) · [核心视角](#at-a-glance) · [文献目录](#paper-collection) · [参与贡献](#contributing) · [致谢](#acknowledgements)
 
-**写作讨论：** [三类框架](docs/coarse-taxonomy.md) · [全量论文总表](docs/paper-master-list.md) · [分类判据](docs/classification-guide.md) · [逐篇对照表](docs/classification-crosswalk.md) · [CSV](data/classification.csv) · [本轮更新](docs/updates/2026-10-29.md)
+**写作讨论：** [三类框架](docs/coarse-taxonomy.md) · [全量论文总表](docs/paper-master-list.md) · [分类 JSON](data/classification.json) · [本轮更新](docs/updates/2026-10-29.md)
 
 <!-- NAVIGATION:BEGIN -->
 
@@ -61,7 +62,7 @@
 | [**评测框架**](docs/evaluation.md) — 从运行正确性到 agent 使用价值 | [**BibTeX 文献库**](papers.bib) — 稳定的引用键 |
 | [**详细核查表**](docs/catalogue.md) — 日期、定位、核查深度与证据说明 | [**结构化数据**](data/papers.json) — 原始来源与机制标签 |
 
-论文标题和方法名保留原文，本页提供中文机制摘要。逐篇分类与写作安排提供中文说明；评测框架及详细核查文档以英文为主。
+论文标题和方法名保留原文，本页提供中文机制摘要。README 首页只采用三类主线；评测框架及详细核查文档以英文为主。
 
 <a id="at-a-glance"></a>
 ## 核心视角

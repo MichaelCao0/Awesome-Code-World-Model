@@ -34,7 +34,7 @@ Code makes world models **executable, editable, and inspectable**. This collecti
 
 [Survey & resources](#survey--resources) · [At a glance](#at-a-glance) · [Paper collection](#paper-collection) · [Contributing](#contributing) · [Acknowledgements](#acknowledgements)
 
-**Writing discussion:** [Three-family taxonomy](docs/coarse-taxonomy.md) · [Paper master list](docs/paper-master-list.md) · [Classification criteria](docs/classification-guide.md) · [Paper-by-paper crosswalk](docs/classification-crosswalk.md) · [CSV](data/classification.csv) · [Update notes](docs/updates/2026-10-29.md)
+**Writing discussion:** [Three-family map](docs/coarse-taxonomy.md) · [Paper master list](docs/paper-master-list.md) · [Classification JSON](data/classification.json) · [Update notes](docs/updates/2026-10-29.md)
 
 <!-- NAVIGATION:BEGIN -->
 

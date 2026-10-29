@@ -1,62 +1,41 @@
-# Survey 写作安排与分类对照
+# Survey 写作安排与三类主线
 
-**讨论稿 · 2026-10-29。** 当前工作标题为 *Programmatic World Models: A Survey*。首页继续使用文献库名称 Code-Centric World Models；分类与最终章节仍在讨论。
+**讨论稿 · 2026-10-29。** 当前工作标题为 *Programmatic World Models: A Survey*；首页使用文献库名称 *Code-Centric World Models*。README 首页直接采用三类主线，论文总表提供逐条记录和来源信息。
 
-[三类主线说明](coarse-taxonomy.md) · [全量论文总表](paper-master-list.md) · [两套分类定义](classification-guide.md) · [逐篇分类与主讲位置](classification-crosswalk.md) · [可复制 CSV](../data/classification.csv)
+[三类主线说明](coarse-taxonomy.md) · [全量论文总表](paper-master-list.md) · [分类 JSON](../data/classification.json) · [可复制 CSV](../data/classification.csv)
 
 ## 三个研究问题
 
-- **RQ1：程序职责。** 程序怎样定义世界结构、执行状态变化或表达预测观测？
-- **RQ2：获得与维护。** 程序怎样从规格和证据中获得，怎样区分状态演化、模型修正与世界编辑？
-- **RQ3：能力与证据。** 可执行性、机制忠实度、观测遵循、决策价值与修订可靠性分别由什么证据支持？
+- **RQ1：程序承担什么职责？** 它是动作后果的动力学、持续存在的世界程序，还是 3D 世界的构建与编辑工具？
+- **RQ2：程序如何获得和维护？** 它来自交互轨迹、文本/视觉规格、物理证据、资产工具，还是这些来源的组合？
+- **RQ3：什么证据支持它？** 如何分别验证执行正确性、状态持久性、构建质量、观测一致性、规划价值和修订可靠性？
 
-## 方案一：保留 lifecycle 章节，调整分类图和总表
+## 建议的顶层组织
 
-这是本轮建议的写作底稿。编号与当前讨论的 PDF 对齐；该 PDF 没有被修改或发布。三类主线用于顶层叙事，lifecycle 章节用于跨类比较；具体归类见[三类主线说明](coarse-taxonomy.md)和[全量论文总表](paper-master-list.md)。
+| 主线 | 核心问题 | 正文重点 | 代表工作 |
+|---|---|---|---|
+| **WorldCoder-type** | 代码能否预测动作后果？ | 转移程序、随机/层次机制、规划、反例修复与主动实验 | WorldCoder、GIF-MCTS、TheoryCoder、PoE-World、OneLife、PatchWorld、EMPIRIC |
+| **Code-as-World-type** | 代码能否让世界持续存在并可执行？ | 状态权威、实体和规则、模拟器接口、神经渲染接口、长时交互 | Code as Worlds、Code2Worlds、Programmable World Model、CoDeR、AgentGarten、Oneira、Mallea |
+| **VibeWorlding-type** | agent 能否构建和编辑 3D 世界？ | 资产检索、场景程序、空间布局、关节/物理属性、渲染反馈与仿真准备度 | VibeWorlding、Holodeck、SceneCraft、WorldClaw、USDCraft、NeoWorld-3、SceneRig |
 
-| 章节 | 比较问题 | 主讲论文与内容 |
+GUI 观测代码模型、渲染器、评测基准、历史表示和相邻学习型模拟器保留在文献总表中，但不强行制造第四类主线。
+
+## 章节草案
+
+| 章节 | 比较问题 | 主讲内容 |
 |---|---|---|
-| 1. Introduction | 程序化表示提供哪些建模能力？ | 共同运行示例、历史与近期路线 |
-| 2. Foundations | 模型、状态、程序、引擎和观测承担什么责任？ | Eq.(1)–(3)、分类、状态演化/模型修正/世界编辑、论文总表 |
-| 3. Executable World Representations | 世界需要保留什么，程序表达哪些量？ | 符号、几何、关节、物理参数、持久状态；Code for 3D 表示基础 |
-| 4. World Program Induction and Construction | 程序如何从规则、轨迹、视觉或规格中得到？ | 4.1 WorldCoder/GIF-MCTS；4.2 PoE-World/RoleWorld；4.3 Code as Worlds；4.4 ChronoAgentic/SceneCode/环境构建 |
-| 5. Executable World Evolution and Simulation | 谁更新状态，哪些机制继承自引擎？ | 5.1 规划与可复用转移；5.2 EMPIRIC/Code2Worlds-2；5.3 Web World Models/Oneira/Mallea/PWM/CoDeR |
-| 6. Program-Guided Observation Generation | 状态怎样变成观测；预测观测代码有何不同？ | 6.1 gWorld/Code2World/AppDeltaWorld；6.2 确定性渲染；6.3 神经接口/StreamRender-H3/EdenLive；6.4 视觉记忆 |
-| 7. Verification, Feedback, and Refinement | 怎样发现错误并保留已有行为？ | 7.1 PatchWorld/Memento 3；7.2 仿真与规格约束；7.3 观测一致性 |
-| 8. Evaluation and Applications | benchmark 实际验证哪个承诺？ | Text2World/ExeWorldBench/Video2World/GameLogicBench/PROWBench/GUI-CC；相邻视频评测单列 |
-| 9. Open Challenges | 哪些跨方法问题尚未解决？ | 状态充分性、可辨识性、开放世界扩展、执行—观测接口、可维护修订 |
-| 10. Conclusion | 三个研究问题得到哪些回答？ | 程序责任、获取方式与证据之间的联系 |
+| 1. Introduction | 为什么需要代码中心的世界模型？ | 共同示例；代码、状态、规则和观测之间的关系 |
+| 2. Foundations | 三类主线分别把什么交给程序？ | 世界模型定义、状态权威、程序接口、执行与观测边界 |
+| 3. WorldCoder-type | 如何从交互和证据获得可执行动力学？ | WorldCoder/GIF-MCTS；TheoryCoder/PoE-World/OneLife；PatchWorld/Memento 3/EMPIRIC |
+| 4. Code-as-World-type | 如何构建持久的可执行环境？ | Code as Worlds/Code2Worlds；PWM/CoDeR/GameDirector；AgentGarten/Oneira/Mallea/Web World Models |
+| 5. VibeWorlding-type | 如何把意图和工具转成 3D 世界？ | VibeWorlding、SceneCraft、WorldClaw、USDCraft、SceneRig、NeoWorld-3；Code for 3D 与 simulation-ready 资产 |
+| 6. Observation and rendering interfaces | 世界状态如何变成可见观测？ | gWorld/Code2World/AppDeltaWorld；确定性渲染、神经渲染、GUI 渲染与状态—观测一致性 |
+| 7. Verification and maintenance | 错误如何发现、修复和回归验证？ | 回放、反例、仿真反馈、事件遵循、长期一致性 |
+| 8. Evaluation | benchmark 实际验证哪个承诺？ | WorldCoder-Bench、ExeWorldBench、Video2World、GameLogicBench、PROWBench、GUI-CC |
+| 9. Open challenges | 三类方法共同缺少什么？ | 状态充分性、可辨识性、开放世界扩展、接口信息损失、成本与可审计修订 |
 
-逐篇对照表的主讲位置用于完整介绍方法；交叉章节只比较相关接口或结果，避免多次重复介绍同一套方法。
+同一论文可以在交叉章节中被再次比较，但主线归属只保留一个。这样既能保持三类叙事清楚，也能讨论共享的执行、渲染和验证问题。
 
-## 方案二：按程序职责重排主体
+## 范围边界
 
-| 章节群 | 内容 | 相对方案一的变化 |
-|---|---|---|
-| World Specification | 世界结构、对象与物理属性、可执行环境的构建与恢复 | 集中原先分散在表示、构建、物理执行中的 S 工作 |
-| World Evolution | 转移规则、引擎扩展、agent 与引擎协同、持续状态 | 将 E 工作及获取、执行、验证放在一起 |
-| Observation Representation | 下一屏代码、增量程序、GUI 观测预测 | 单独展开 O，神经渲染作为跨层接口 |
-| Acquisition and Revision | induction/construction、修正与编辑 | 横向总结共同过程 |
-| Evaluation and Outlook | 五项证据与研究问题 | 与方案一共用评测框架 |
-
-方案二适合按路线连续阅读；方案一利于比较共同生命周期和接口。目前先保留方案一，利用同一份属性表检验方案二能否改善叙事。
-
-## 可直接展开的比较段落
-
-| 比较单元 | 必须解释的差异 | 写作锚点 |
-|---|---|---|
-| WorldCoder / GIF-MCTS / PatchWorld / Memento 3 | 候选如何获得、反例来源、更新后如何验证旧轨迹 | §4.1 与 §7.1 |
-| PoE-World / OneLife / RoleWorld | 随机组合、条件机制与角色抽象分别分解了什么 | §4.2 |
-| Code as Worlds / EMPIRIC / Code2Worlds-2 | 恢复物理假设、补充缺失定律、编译模拟器规格 | §4.3 与 §5.2；明确给定几何与推断机制 |
-| PWM / CoDeR / Oneira / Mallea | 谁维护状态、决定更新，新对象与编辑如何进入世界 | §5.3；渲染接口交叉引用 §6.3 |
-| AgentGarten / Magpie / StreamRender-H3 / EdenLive | 上游引擎语义与生成式渲染器的职责 | §6.3；区分渲染组件与完整系统 |
-| gWorld / Code2World / AppDeltaWorld | full/delta、训练反馈、历史与隐藏状态 | §6.1；接 GUI-CC/StateAliasBench |
-| ExeWorldBench / Video2World / PROWBench / Code2Video-Compass | 机制、重建功能、事件遵循与视频工程的评测对象 | §8；不同能力不合成统一排行榜 |
-
-## 待定边界
-
-1. **S/E 主标签**：配置引擎属性与生成新机制的边界；按主要贡献选主标签，保留次标签及执行者。
-2. **运行时 agent**：提交世界状态的更新与只输出策略的代码应分别描述。
-3. **渲染器与完整系统**：上游引擎已给定时，论文贡献可能是观测接口而非机制归纳。
-
-这些问题决定 Figure 1 的最终画法；公式、生命周期分析和五项 evidence obligations 可以继续沿用。
+机器人不是独立研究主线。只有当论文研究可执行动力学、世界程序、模拟器扩展或世界构建时，机器人实验才作为验证载体出现；纯机器人控制、操作策略或 Real2Sim 工具不会因为使用代码而自动成为核心文献。

@@ -10,7 +10,7 @@ Review: **FT** = targeted full-text sections · **A** = metadata and abstract ·
 
 Review depth describes citation and mechanism checking. Dates prefixed **by** are documented availability bounds, not first-release dates. Experimental conditions appear below each table; the [evaluation framework](evaluation.md) explains the shared comparisons.
 
-[Compare the manuscript taxonomy and proposed program responsibilities →](classification-crosswalk.md)
+[Three-family taxonomy →](coarse-taxonomy.md) · [Paper master list →](paper-master-list.md)
 
 ## Executable dynamics, induction, and planning (26)
 

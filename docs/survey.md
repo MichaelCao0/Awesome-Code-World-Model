@@ -21,7 +21,7 @@ The survey links and citation indicator are reserved for publication. Their URLs
 
 ## Classification and writing discussion
 
-The working manuscript title is *Programmatic World Models: A Survey*. The collection title above is retained while organization is discussed. Start with the [three-family working taxonomy](coarse-taxonomy.md), browse the [paper master list](paper-master-list.md), then compare [the manuscript families with proposed program responsibilities](classification-guide.md) and [all per-source assignments](classification-crosswalk.md). The [writing plan](survey-outline.md) retains the lifecycle chapters and also describes an alternative role-based structure.
+The working manuscript title is *Programmatic World Models: A Survey*. The collection title above is retained while organization is discussed. Start with the [three-family taxonomy](coarse-taxonomy.md) and [paper master list](paper-master-list.md). The [writing plan](survey-outline.md) explains how the three families can organize the manuscript while lifecycle chapters compare shared mechanisms.
 
 ## Read the framework
 

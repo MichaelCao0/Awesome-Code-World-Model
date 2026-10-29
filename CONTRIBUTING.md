@@ -9,7 +9,7 @@ The canonical bibliography is `data/papers.json`. README paper lists, navigation
 3. Search the existing catalogue for its arXiv ID, DOI, title, and aliases. Update an existing record when it is the same source; link related sources with symmetric `related_ids` when their relationship is unresolved.
 4. Choose an editorial `section`, a `scope` label, semantic `code_roles`, and lifecycle `tags` using [the taxonomy](docs/taxonomy.md).
 5. Write a concise mechanism or relevance summary. Record evaluation conditions that materially affect comparisons in `evidence_notes`.
-6. Add or update the matching discussion record in `data/classification.json`. Keep original Figure 1 assignments separate from editorial proposals; benchmark roles describe evaluated targets. Mark uncertain placements provisional.
+6. Add or update the matching coarse-family record in `data/classification.json`. Use exactly one of `worldcoder`, `code_as_world`, `vibeworlding`, or `other`; do not add a second fine-grained public family layer.
 7. Update `updated_on` and the literature cutoff when appropriate, then regenerate and validate:
 
 ```bash
@@ -18,7 +18,7 @@ python3 scripts/build_catalog.py --check
 git diff --check
 ```
 
-The same command also validates complete classification coverage and generates `docs/classification-crosswalk.md`, `data/classification.csv`, `docs/paper-master-list.md`, and `data/paper-master-list.csv`. Classification labels remain proposals until the manuscript taxonomy is settled.
+The same command validates complete three-family coverage and generates `data/classification.csv`, `docs/paper-master-list.md`, and `data/paper-master-list.csv`. The README is the primary presentation of the taxonomy.
 
 The builder requires Python 3.9 or later and has no third-party dependencies. Its checks are offline: they validate record structure and generated content. Source verification remains part of the literature review.
 

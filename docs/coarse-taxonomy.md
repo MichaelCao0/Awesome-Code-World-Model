@@ -44,6 +44,6 @@ GUI 观测代码模型、只负责渲染的系统、基准测试、没有代码�
 2. Use acquisition source as a second axis: interaction/trajectory induction, specification-driven construction, visual or physical reconstruction, or hybrid evidence.
 3. Use execution and rendering as a third axis: symbolic transition, external engine, deterministic scene renderer, neural renderer, or GUI renderer.
 4. Use verification as a fourth axis: replay, counterexample repair, simulator-in-the-loop, state-to-render consistency, or downstream agent utility.
-5. Assign one primary family in `data/classification.json`; record overlap through `roles`, `section`, tags, and the writing crosswalk rather than duplicating a paper in several primary lists.
+5. Assign exactly one primary family in `data/classification.json`. Keep the catalogue section, scope, and mechanism tags as browsing metadata; they are not additional public classification families.
 
-The family labels are an editorial starting point, not a claim that the papers are mutually exclusive. The [paper master list](paper-master-list.md) gives the current one-row-per-record assignment, while the [classification crosswalk](classification-crosswalk.md) preserves the earlier S/E/O and manuscript-family discussion.
+The family labels are the only public classification layer in this repository. The [paper master list](paper-master-list.md) gives the current one-row-per-record assignment; the structured [classification JSON](../data/classification.json) and [CSV](../data/classification.csv) keep the same four values for filtering.
