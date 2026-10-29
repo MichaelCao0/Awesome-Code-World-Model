@@ -9,7 +9,6 @@ LABELS = {
     'worldcoder': 'WorldCoder-type · Programmatic Dynamics / World Program Induction',
     'code_as_world': 'Code-as-World-type · Executable World Programs',
     'vibeworlding': 'VibeWorlding-type · Agentic 3D World Construction',
-    'other': 'Other / Benchmarks / Adjacent',
 }
 
 
@@ -23,8 +22,8 @@ def outputs(root, catalogue):
     rows = []
     for annotation in classification['records']:
         paper = papers[annotation['id']]
-        family = annotation.get('coarse_family', 'other')
-        if family not in LABELS:
+        family = annotation.get('coarse_family')
+        if family is not None and family not in LABELS:
             raise ValueError(f"{paper['id']}: invalid coarse_family {family!r}")
         rows.append({
             'id': paper['id'],
@@ -34,14 +33,15 @@ def outputs(root, catalogue):
             'date': paper.get('first_public_date') or ('by ' + paper.get('available_by', '')),
             'primary_url': paper['source_url'],
             'coarse_family': family,
-            'coarse_family_label': LABELS[family],
+            'coarse_family_label': LABELS[family] if family else 'Unassigned / 未归类',
             'section': paper['section'],
             'scope': paper['scope'],
             'roles': '; '.join(paper['code_roles']),
             'review_depth': paper['review_depth'],
             'source_provenance': annotation.get('source_provenance', 'github_catalogue'),
         })
-    rows.sort(key=lambda row: (row['coarse_family'], -row['year'], row['id']))
+    family_order = {key: index for index, key in enumerate(LABELS)}
+    rows.sort(key=lambda row: (family_order.get(row['coarse_family'], len(LABELS)), -row['year'], row['id']))
     fields = list(rows[0])
     csv_buffer = io.StringIO(newline='')
     writer = csv.DictWriter(csv_buffer, fieldnames=fields, lineterminator='\n')
@@ -52,13 +52,14 @@ def outputs(root, catalogue):
         f"**{LABELS[key]}** {sum(row['coarse_family'] == key for row in rows)}"
         for key in LABELS
     )
+    unassigned_count = sum(row['coarse_family'] is None for row in rows)
     lines = [
         '# Paper master list / 全量论文总表', '',
         '<!-- Generated from data/papers.json and data/classification.json. -->', '',
         '这张表是当前仓库的合并清单：包含 GitHub catalogue 的全部来源记录，并标出从用户粘贴文本中能直接确认的飞书可见条目。飞书文档中的表格/参考文献占位符未被当作可见证据，因此 `github_catalogue` 不表示“飞书中没有”，只表示该条目目前由仓库记录支持。', '',
         'The table merges every current GitHub catalogue record with the visible paper names in the pasted Feishu text. Feishu placeholders and hidden tables are not treated as visible evidence; `github_catalogue` therefore means “currently supported by the repository,” not “absent from Feishu.”', '',
-        '**Family counts / 类别计数：** ' + counts, '',
-        '**数据文件：** [CSV](../data/paper-master-list.csv) · [分类 JSON](../data/classification.json) · [粗分类 JSON](../data/classification.json) · [三类框架说明](coarse-taxonomy.md)', '',
+        '**Family counts / 类别计数：** ' + counts + f' · **Unassigned / 未归类** {unassigned_count}', '',
+        '**数据文件：** [CSV](../data/paper-master-list.csv) · [分类 JSON](../data/classification.json) · [分类 CSV](../data/classification.csv) · [三类框架说明](coarse-taxonomy.md)', '',
         '| # | Work / 工作 | Year | Coarse family / 初版主类 | Catalogue section | Scope | Roles | Review | Provenance / 来源 |',
         '|---:|---|---:|---|---|---|---|---|---|',
     ]
@@ -66,7 +67,7 @@ def outputs(root, catalogue):
         label = row['alias'] or row['title']
         work = f"[{safe(label)}]({row['primary_url']})"
         lines.append('| ' + ' | '.join([
-            str(index), work, str(row['year']), row['coarse_family_label'], row['section'],
+            str(index), work, str(row['year']), row['coarse_family_label'], row['section'] or '—',
             row['scope'], row['roles'] or '—', row['review_depth'], row['source_provenance'],
         ]) + ' |')
     return {

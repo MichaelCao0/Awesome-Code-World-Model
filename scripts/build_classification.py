@@ -9,7 +9,6 @@ FAMILIES = {
     'worldcoder': 'WorldCoder-type · Programmatic Dynamics / World Program Induction',
     'code_as_world': 'Code-as-World-type · Executable World Programs',
     'vibeworlding': 'VibeWorlding-type · Agentic 3D World Construction',
-    'other': 'Other / Benchmarks / Adjacent',
 }
 
 
@@ -32,9 +31,10 @@ def outputs(root, catalogue):
         seen.add(pid)
         paper = by_id[pid]
         family = record.get('coarse_family')
-        if family not in FAMILIES:
+        if family is not None and family not in FAMILIES:
             raise ValueError(f'{pid}: invalid coarse_family {family!r}')
-        if record.get('coarse_family_label') != FAMILIES[family]:
+        expected_label = FAMILIES[family] if family else 'Unassigned / 未归类'
+        if record.get('coarse_family_label') != expected_label:
             raise ValueError(f'{pid}: coarse_family_label is out of sync')
         if not record.get('source_provenance'):
             raise ValueError(f'{pid}: missing source_provenance')
@@ -45,7 +45,7 @@ def outputs(root, catalogue):
         writer.writerow({
             'id': pid, 'title': paper['title'], 'alias': paper.get('alias', ''),
             'source_url': paper['source_url'], 'year': paper['year'],
-            'coarse_family': family, 'coarse_family_label': FAMILIES[family],
+            'coarse_family': family or '', 'coarse_family_label': expected_label,
             'source_provenance': record['source_provenance'], 'scope': paper['scope'],
             'review_depth': paper['review_depth'],
         })

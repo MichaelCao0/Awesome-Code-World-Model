@@ -32,11 +32,11 @@ The central output is a constructed or edited 3D world: scene layout, assets, ar
 
 **判据：** 如果 coding agent 主要在 Blender、USD、仿真工具或类似沙盒中检索资产、编写/修改场景程序，并通过渲染或仿真反馈完成 3D 世界构建，就放入 VibeWorlding-type。静态场景构建可以属于这一类，但不能因为可渲染就自动宣称它发现了未知时间动力学。
 
-## Other / Benchmarks / Adjacent
+## Unassigned records / 未归类来源
 
-GUI observation-code models, renderer-only systems, benchmarks, learned simulators without a code-defined world substrate, surveys, and historical representations may remain in `other`. They are still part of the catalogue and can support the survey. “Other” means the three-family assignment would obscure the paper’s actual contribution; it does not mean unimportant.
+GUI observation-code models, renderer-only systems, benchmarks, learned simulators without a code-defined world substrate, surveys, and historical representations remain in the corpus without a primary family. They are still part of the master list and can support the survey; they are simply not forced into one of the three main lines.
 
-GUI 观测代码模型、只负责渲染的系统、基准测试、没有代码世界基底的学习型模拟器、综述和表示历史可以保留在 `other`。它们仍然属于总目录，并可在相应章节中作为对照或证据使用。
+GUI 观测代码模型、只负责渲染的系统、基准测试、没有代码世界基底的学习型模拟器、综述和表示历史保留在总表中，但不强行分进三条主线。它们仍可作为对照或证据使用。
 
 ## How to use the taxonomy in the manuscript
 
@@ -46,4 +46,4 @@ GUI 观测代码模型、只负责渲染的系统、基准测试、没有代码�
 4. Use verification as a fourth axis: replay, counterexample repair, simulator-in-the-loop, state-to-render consistency, or downstream agent utility.
 5. Assign exactly one primary family in `data/classification.json`. Keep the catalogue section, scope, and mechanism tags as browsing metadata; they are not additional public classification families.
 
-The family labels are the only public classification layer in this repository. The [paper master list](paper-master-list.md) gives the current one-row-per-record assignment; the structured [classification JSON](../data/classification.json) and [CSV](../data/classification.csv) keep the same four values for filtering.
+The three family labels are the only public classification layer in this repository. The [paper master list](paper-master-list.md) gives the current one-row-per-record assignment; the structured [classification JSON](../data/classification.json) and [CSV](../data/classification.csv) keep the same three family values; unassigned records have a blank family for filtering.

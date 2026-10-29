@@ -2,18 +2,17 @@
   "schema_version": 2,
   "updated_on": "2026-10-29",
   "status": "discussion-draft",
-  "scope": "One coarse editorial family per catalogue record: WorldCoder-type, Code-as-World-type, VibeWorlding-type, or Other. Fine-grained A/B/C and S/E/O labels are intentionally retired from the public classification.",
+  "scope": "One of three public family assignments per classified record: WorldCoder-type, Code-as-World-type, or VibeWorlding-type. Smaller, benchmark, historical, renderer, GUI, survey, and adjacent records remain unassigned in the master list.",
   "families": {
     "worldcoder": "Programmatic dynamics and world-program induction.",
     "code_as_world": "Persistent executable world programs.",
-    "vibeworlding": "Agentic 3D world construction and editing.",
-    "other": "Benchmarks, renderers, GUI observation models, historical foundations, surveys, and adjacent work."
+    "vibeworlding": "Agentic 3D world construction and editing."
   },
   "records": [
     {
       "id": "pcg2013",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -36,8 +35,8 @@
     },
     {
       "id": "csgnet2018",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -48,8 +47,8 @@
     },
     {
       "id": "2006.08381",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -60,8 +59,8 @@
     },
     {
       "id": "2009.08026",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -84,8 +83,8 @@
     },
     {
       "id": "infinigen2023",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -108,8 +107,8 @@
     },
     {
       "id": "2303.05501",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -204,8 +203,8 @@
     },
     {
       "id": "2410.13232",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -216,8 +215,8 @@
     },
     {
       "id": "2410.23156",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -228,8 +227,8 @@
     },
     {
       "id": "2411.06559",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -252,8 +251,8 @@
     },
     {
       "id": "2502.13092",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -264,8 +263,8 @@
     },
     {
       "id": "2502.20694",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -288,8 +287,8 @@
     },
     {
       "id": "2504.05482",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -300,8 +299,8 @@
     },
     {
       "id": "2504.13936",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -336,8 +335,8 @@
     },
     {
       "id": "2509.07996",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -348,8 +347,8 @@
     },
     {
       "id": "2510.02387",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -384,8 +383,8 @@
     },
     {
       "id": "2510.16147",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -396,8 +395,8 @@
     },
     {
       "id": "2512.14014",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -444,8 +443,8 @@
     },
     {
       "id": "2602.01576",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -456,8 +455,8 @@
     },
     {
       "id": "2602.09856",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -480,8 +479,8 @@
     },
     {
       "id": "2602.14721",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -492,8 +491,8 @@
     },
     {
       "id": "2602.17365",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -504,8 +503,8 @@
     },
     {
       "id": "2606.23690",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -528,8 +527,8 @@
     },
     {
       "id": "2605.10347",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -576,8 +575,8 @@
     },
     {
       "id": "2605.19769",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -600,8 +599,8 @@
     },
     {
       "id": "2606.01869",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -612,8 +611,8 @@
     },
     {
       "id": "2606.16070",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -624,8 +623,8 @@
     },
     {
       "id": "2606.31689",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -660,8 +659,8 @@
     },
     {
       "id": "2607.15439",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -672,8 +671,8 @@
     },
     {
       "id": "2607.16900",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -708,8 +707,8 @@
     },
     {
       "id": "2607.26754",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -744,8 +743,8 @@
     },
     {
       "id": "2608.05891",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -756,8 +755,8 @@
     },
     {
       "id": "2608.06257",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -816,8 +815,8 @@
     },
     {
       "id": "2608.29305",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -840,8 +839,8 @@
     },
     {
       "id": "2609.00048",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -852,8 +851,8 @@
     },
     {
       "id": "2608.30530",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -864,8 +863,8 @@
     },
     {
       "id": "scene-survey2026",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -876,8 +875,8 @@
     },
     {
       "id": "2609.02885",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -912,8 +911,8 @@
     },
     {
       "id": "2609.21562",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -948,8 +947,8 @@
     },
     {
       "id": "2609.28416",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -960,8 +959,8 @@
     },
     {
       "id": "2609.32679",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1008,8 +1007,8 @@
     },
     {
       "id": "2610.01215",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1020,8 +1019,8 @@
     },
     {
       "id": "2610.02205",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1032,8 +1031,8 @@
     },
     {
       "id": "2610.04432",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1044,8 +1043,8 @@
     },
     {
       "id": "2610.04940",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1092,8 +1091,8 @@
     },
     {
       "id": "2610.11942",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1141,8 +1140,8 @@
     },
     {
       "id": "2610.18826",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1153,8 +1152,8 @@
     },
     {
       "id": "2610.17630",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1165,8 +1164,8 @@
     },
     {
       "id": "2610.19955",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1178,8 +1177,8 @@
     },
     {
       "id": "2610.20571",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1190,8 +1189,8 @@
     },
     {
       "id": "2610.23826",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1241,8 +1240,8 @@
     },
     {
       "id": "2610.29435",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1253,8 +1252,8 @@
     },
     {
       "id": "2610.30136",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1289,8 +1288,8 @@
     },
     {
       "id": "2610.22708",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1301,8 +1300,8 @@
     },
     {
       "id": "2610.24372",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1364,8 +1363,8 @@
     },
     {
       "id": "2610.28630",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1376,8 +1375,8 @@
     },
     {
       "id": "2610.28416",
-      "coarse_family": "other",
-      "coarse_family_label": "Other / Benchmarks / Adjacent",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [

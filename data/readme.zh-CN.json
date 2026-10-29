@@ -1,41 +1,17 @@
 {
   "locale": "zh-CN",
   "sections": {
-    "dynamics": {
-      "title": "可执行动力学与规划",
-      "description": "学习可执行的规则、抽象与机制，用于预测和规划。"
+    "worldcoder": {
+      "title": "WorldCoder-type · 程序化动力学",
+      "description": "可执行转移机制、世界程序归纳、规划与模型修复。"
     },
-    "construction": {
-      "title": "持久的可执行世界",
-      "description": "构建交互世界、物理仿真和经过验证的世界族。"
+    "code_as_world": {
+      "title": "Code-as-World-type · 可执行世界程序",
+      "description": "持久世界状态、规则、模拟器以及执行/渲染接口。"
     },
-    "coupling": {
-      "title": "执行与视觉生成的连接",
-      "description": "将持久程序状态连接到传统渲染与神经视觉输出。"
-    },
-    "observation": {
-      "title": "以可渲染代码预测观测",
-      "description": "通过可执行的渲染代码，预测动作条件下的 GUI 观测。"
-    },
-    "evaluation": {
-      "title": "基准与验证资源",
-      "description": "检验程序行为、状态、渲染后果以及面向 agent 的一致性。"
-    },
-    "scene_programs": {
-      "title": "场景与资产程序",
-      "description": "程序化几何、重建、关节建模与场景组合。"
-    },
-    "foundations": {
-      "title": "历史与表示基础",
-      "description": "早期可执行动力学、程序归纳与程序化表示。"
-    },
-    "comparators": {
-      "title": "对照与相邻方法",
-      "description": "比较其他状态表示、学习型仿真器与相邻机制。"
-    },
-    "surveys": {
-      "title": "相关综述",
-      "description": "世界建模、场景生成与代码智能的更广泛研究视角。"
+    "vibeworlding": {
+      "title": "VibeWorlding-type · agentic 3D 世界构建",
+      "description": "构建和编辑可编辑、可渲染或可仿真的 3D 世界。"
     }
   },
   "summaries": {

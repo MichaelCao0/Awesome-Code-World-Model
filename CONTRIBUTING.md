@@ -9,7 +9,7 @@ The canonical bibliography is `data/papers.json`. README paper lists, navigation
 3. Search the existing catalogue for its arXiv ID, DOI, title, and aliases. Update an existing record when it is the same source; link related sources with symmetric `related_ids` when their relationship is unresolved.
 4. Choose an editorial `section`, a `scope` label, semantic `code_roles`, and lifecycle `tags` using [the taxonomy](docs/taxonomy.md).
 5. Write a concise mechanism or relevance summary. Record evaluation conditions that materially affect comparisons in `evidence_notes`.
-6. Add or update the matching coarse-family record in `data/classification.json`. Use exactly one of `worldcoder`, `code_as_world`, `vibeworlding`, or `other`; do not add a second fine-grained public family layer.
+6. Add or update the matching coarse-family record in `data/classification.json`. Use one of `worldcoder`, `code_as_world`, or `vibeworlding` for a classified core paper. Leave smaller or adjacent records unassigned; do not add a second fine-grained public family layer.
 7. Update `updated_on` and the literature cutoff when appropriate, then regenerate and validate:
 
 ```bash

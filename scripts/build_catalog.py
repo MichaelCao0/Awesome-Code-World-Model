@@ -17,15 +17,9 @@ SCOPES = {'core', 'historical', 'enabling', 'benchmark', 'resource', 'comparator
 DEPTHS = {'targeted_fulltext': 'FT', 'abstract': 'A', 'metadata': 'M'}
 ROLES = {'transition', 'observation'}
 PRESENTATION = {
-    'dynamics': ('Executable dynamics & planning', 'Learning rules, abstractions, and mechanisms that can be executed for prediction and planning.', False),
-    'construction': ('Persistent executable worlds', 'Constructing interactive worlds, physical simulations, and verified world families.', False),
-    'coupling': ('Execution meets visual generation', 'Connecting persistent program state to conventional and neural visual output.', False),
-    'observation': ('Renderable-code observations', 'Predicting action-conditioned GUI observations through executable rendering code.', False),
-    'evaluation': ('Benchmarks & verification', 'Testing program behavior, state, rendered consequences, and agent-facing consistency.', False),
-    'scene_programs': ('Scene & asset programs', 'Programmatic geometry, reconstruction, articulation, and scene composition.', True),
-    'foundations': ('Historical foundations', 'Earlier executable dynamics, program induction, and procedural representations.', True),
-    'comparators': ('Comparators & adjacent approaches', 'Alternative state representations, learned simulators, and neighboring mechanisms.', True),
-    'surveys': ('Related surveys', 'Broader perspectives on world modeling, scene generation, and code intelligence.', True),
+    'worldcoder': ('WorldCoder-type · Programmatic Dynamics', 'Executable transition mechanisms, world-program induction, planning, and model repair.', False),
+    'code_as_world': ('Code-as-World-type · Executable World Programs', 'Persistent world state, rules, simulators, and execution/rendering interfaces.', False),
+    'vibeworlding': ('VibeWorlding-type · Agentic 3D World Construction', 'Agentic construction and editing of editable, renderable, or simulation-ready 3D worlds.', False),
 }
 
 def require(condition, message):
@@ -69,7 +63,7 @@ def load_data():
         require(re.fullmatch(r'[A-Za-z][A-Za-z0-9_]*', p['citation_key']), f'{pid}: invalid BibTeX key')
         require(p['authors'] and all(isinstance(a, str) and a.strip() == a and a for a in p['authors']), f'{pid}: invalid authors')
         require(p['scope'] in SCOPES, f'{pid}: invalid scope')
-        require(p['section'] in sections, f'{pid}: unknown section')
+        require(p['section'] is None or p['section'] in sections, f'{pid}: unknown section')
         require(p['review_depth'] in DEPTHS, f'{pid}: invalid review depth')
         require(set(p['code_roles']) <= ROLES and len(p['code_roles']) == len(set(p['code_roles'])), f'{pid}: invalid code roles')
         require(p['tags'] and len(p['tags']) == len(set(p['tags'])), f'{pid}: missing or duplicate tags')
@@ -131,14 +125,15 @@ def section_papers(data, section_id):
                   key=lambda p: (record_date(p), p['id']), reverse=True)
 
 def catalogue(data, localized=None):
+    unassigned = [p for p in data['papers'] if p['section'] is None]
     if localized:
         lines = [f"**{len(data['papers'])} 条文献来源** · 文献截止日期：**{data['literature_cutoff']}**。", '',
-                 '按研究方向浏览。[完整注释、核查深度与证据说明 →](docs/catalogue.md)', '',
-                 '各分区按记录日期倒序排列；首发日期未知的项目按已公开时间上界排序，详见注释表。支撑与相邻分支可展开浏览。']
+                 'README 只按三类主线浏览；未归类的小型、评测与相邻来源保留在[全量论文总表](docs/paper-master-list.md)。', '',
+                 '各主类按记录日期倒序排列；完整核查、证据和未归类来源见注释表。']
     else:
         lines = [f"**{len(data['papers'])} sources** · literature through **{data['literature_cutoff']}**.", '',
-                 'Browse by research direction below. [Full annotations, review depth, and evidence notes →](docs/catalogue.md)', '',
-                 'Sources are ordered by recorded publication dates or, for undated projects, availability bounds documented in the annotations. Supporting and adjacent branches can be expanded.']
+                 'The README groups papers by the three primary families; smaller, benchmark, and adjacent sources remain in the [paper master list](docs/paper-master-list.md).', '',
+                 'Each primary family is ordered by recorded publication date; the annotated catalogue and master list retain the complete corpus.']
     for index, section in enumerate(data['sections'], 1):
         title, description, folded = PRESENTATION[section['id']]
         if localized:
@@ -147,9 +142,6 @@ def catalogue(data, localized=None):
         subset = section_papers(data, section['id'])
         lines += ['', f'<a id="papers-{section["id"]}"></a>', f'### {index:02d} · {title}', '',
                   f'*{description}*', '']
-        if folded:
-            caption = f'展开 {len(subset)} 条文献' if localized else f'Explore {len(subset)} sources'
-            lines += ['<details>', f'<summary><strong>{caption}</strong></summary>', '']
         for p in subset:
             label = md(p['title'])
             if p.get('alias') and p['alias'].lower() not in p['title'].lower():
@@ -161,8 +153,6 @@ def catalogue(data, localized=None):
             summary = localized['summaries'][p['id']] if localized else p['summary']
             lines += [f"- **{label}** `{p['year']}` [![{badge_label}](assets/badges/{kind}.svg)]({p['source_url']})",
                       f"  <br><sub>{escape(summary)}</sub>", '']
-        if folded:
-            lines += ['</details>', '']
         lines += ['[↑ 返回导航](#contents)' if localized else '[↑ Contents](#contents)']
     return '\n'.join(lines)
 
@@ -173,11 +163,15 @@ def navigation(data, localized=None):
         count = len(section_papers(data, sid))
         title = localized['sections'][sid]['title'] if localized else PRESENTATION[sid][0]
         entries.append(f"[{index:02d} · {title}](#papers-{sid}) <sub>({count})</sub>")
-    lines = ['| 建模与评测 | 基础与相邻研究 |' if localized else '| Modeling & evaluation | Foundations & context |', '|---|---|']
-    more = '[详细核查表 →](docs/catalogue.md)' if localized else '[All annotations →](docs/catalogue.md)'
-    for index in range(5):
-        right = entries[index + 5] if index + 5 < len(entries) else more
-        lines.append(f'| {entries[index]} | {right} |')
+    if localized:
+        lines = ['| 三类主线 |', '|---|']
+    else:
+        lines = ['| Three primary families |', '|---|']
+    lines.extend(f'| {entry} |' for entry in entries)
+    if localized:
+        lines.append('| [全量论文总表](docs/paper-master-list.md)（含未归类来源） |')
+    else:
+        lines.append('| [Paper master list](docs/paper-master-list.md) (including unassigned sources) |')
     return '\n'.join(lines)
 
 def annotated_catalogue(data):
@@ -204,6 +198,17 @@ def annotated_catalogue(data):
             for p in notes:
                 lines += [f"- **{md(p.get('alias', p['title']))}:** {p['evidence_notes']}"]
             lines += ['', '</details>']
+    unassigned = section_papers(data, None)
+    if unassigned:
+        lines += ['', f"## Additional records not assigned to a primary family ({len(unassigned)})", '',
+                  'These records remain in the corpus and master list without a primary three-family assignment.', '',
+                  '| Date | Paper | Mechanism / relevance | Scope | Review |',
+                  '|---|---|---|---|---|']
+        for p in unassigned:
+            label = md(p['title'])
+            if p.get('alias') and p['alias'].lower() not in p['title'].lower():
+                label += f" **({md(p['alias'])})**"
+            lines.append(f"| {display_date(p)} | [{label}]({p['source_url']}) | {md(p['summary'])} | {p['scope']} | {DEPTHS[p['review_depth']]} |")
     return '\n'.join(lines) + '\n'
 
 def badge(label, value, color='#0f766e', left_color='#40564e'):

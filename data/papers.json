@@ -5,40 +5,19 @@
   "description": "Curated source records for a code-centric world-model survey. Source counts are bibliographic records, not unique-method counts. Review depth refers to citation and mechanism checking, not experiment reproduction.",
   "sections": [
     {
-      "id": "dynamics",
-      "title": "Executable dynamics, induction, and planning"
+      "id": "worldcoder",
+      "title": "WorldCoder-type · Programmatic Dynamics",
+      "description": "Executable transition mechanisms, world-program induction, planning, and model repair."
     },
     {
-      "id": "construction",
-      "title": "Persistent executable worlds and physical simulation"
+      "id": "code_as_world",
+      "title": "Code-as-World-type · Executable World Programs",
+      "description": "Persistent world state, rules, simulators, and execution/rendering interfaces."
     },
     {
-      "id": "coupling",
-      "title": "Coupling execution with visual generation"
-    },
-    {
-      "id": "observation",
-      "title": "Renderable-code observation prediction"
-    },
-    {
-      "id": "evaluation",
-      "title": "Benchmarks and verification resources"
-    },
-    {
-      "id": "scene_programs",
-      "title": "Scene and asset programs"
-    },
-    {
-      "id": "foundations",
-      "title": "Historical foundations and program representations"
-    },
-    {
-      "id": "comparators",
-      "title": "Comparators and adjacent approaches"
-    },
-    {
-      "id": "surveys",
-      "title": "Related surveys"
+      "id": "vibeworlding",
+      "title": "VibeWorlding-type · Agentic 3D World Construction",
+      "description": "Agentic construction and editing of editable, renderable, or simulation-ready 3D worlds."
     }
   ],
   "papers": [
@@ -58,7 +37,7 @@
       "review_depth": "metadata",
       "reviewed_on": "2026-10-13",
       "doi": "10.1145/2422956.2422957",
-      "section": "foundations",
+      "section": null,
       "scope": "enabling",
       "code_roles": [],
       "tags": [
@@ -82,7 +61,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "doi": "10.24963/ijcai.2017/518",
-      "section": "foundations",
+      "section": "worldcoder",
       "scope": "historical",
       "code_roles": [
         "transition"
@@ -109,7 +88,7 @@
       "source_url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Sharma_CSGNet_Neural_Shape_CVPR_2018_paper.html",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "foundations",
+      "section": null,
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -141,7 +120,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2006.08381",
-      "section": "foundations",
+      "section": null,
       "scope": "enabling",
       "code_roles": [],
       "tags": [
@@ -171,7 +150,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2009.08026",
-      "section": "foundations",
+      "section": null,
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -203,7 +182,7 @@
       "source_url": "https://arxiv.org/abs/2107.12544",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "foundations",
+      "section": "worldcoder",
       "scope": "historical",
       "code_roles": [
         "transition"
@@ -243,7 +222,7 @@
       "source_url": "https://openaccess.thecvf.com/content/CVPR2023/html/Raistrick_Infinite_Photorealistic_Worlds_Using_Procedural_Generation_CVPR_2023_paper.html",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "foundations",
+      "section": null,
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -271,7 +250,7 @@
       "source_url": "https://doi.org/10.1145/3571249",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "foundations",
+      "section": "worldcoder",
       "scope": "historical",
       "code_roles": [
         "transition"
@@ -300,7 +279,7 @@
       "source_url": "https://arxiv.org/abs/2303.05501",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [
         "transition"
@@ -330,7 +309,7 @@
       "source_url": "https://arxiv.org/abs/2305.14909",
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
-      "section": "foundations",
+      "section": "worldcoder",
       "scope": "historical",
       "code_roles": [
         "transition"
@@ -369,7 +348,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2312.09067",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -403,7 +382,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2403.09675",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -430,7 +409,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2402.12275",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -464,7 +443,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2403.01248",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -493,7 +472,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2405.15383",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -525,7 +504,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2408.02211",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -558,7 +537,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2410.13232",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -588,7 +567,7 @@
       "source_url": "https://arxiv.org/abs/2410.23156",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [
         "transition"
@@ -625,7 +604,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2411.06559",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -656,7 +635,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2502.04728",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -691,7 +670,7 @@
       "source_url": "https://arxiv.org/abs/2502.13092",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -726,7 +705,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2502.20694",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -753,7 +732,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2503.20124",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -787,7 +766,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2504.05482",
-      "section": "scene_programs",
+      "section": null,
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -824,7 +803,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2504.13936",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -852,7 +831,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2505.10819",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -879,7 +858,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2508.11836",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -927,7 +906,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2509.07996",
-      "section": "surveys",
+      "section": null,
       "scope": "survey",
       "code_roles": [],
       "tags": [
@@ -999,7 +978,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2510.02387",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -1038,7 +1017,7 @@
       "source_url": "https://arxiv.org/abs/2510.04542",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1068,7 +1047,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2510.12088",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1104,7 +1083,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2510.16147",
-      "section": "scene_programs",
+      "section": null,
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -1138,7 +1117,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2512.14014",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -1172,7 +1151,7 @@
       "source_url": "https://arxiv.org/abs/2512.22336",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1203,7 +1182,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2512.23676",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -1234,7 +1213,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.00929",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1265,7 +1244,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.01576",
-      "section": "observation",
+      "section": null,
       "scope": "core",
       "code_roles": [
         "observation"
@@ -1301,7 +1280,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.09856",
-      "section": "observation",
+      "section": null,
       "scope": "core",
       "code_roles": [
         "observation"
@@ -1331,7 +1310,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.11757",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -1371,7 +1350,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.14721",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -1411,7 +1390,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.17365",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -1436,7 +1415,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2606.23690",
-      "section": "surveys",
+      "section": null,
       "scope": "survey",
       "code_roles": [],
       "tags": [
@@ -1461,7 +1440,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2605.05138",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1499,7 +1478,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2605.10347",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -1528,7 +1507,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2605.14398",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -1558,7 +1537,7 @@
       "source_url": "https://arxiv.org/abs/2605.16725",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1591,7 +1570,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2605.19587",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -1624,7 +1603,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2605.19769",
-      "section": "evaluation",
+      "section": null,
       "scope": "resource",
       "code_roles": [],
       "tags": [
@@ -1664,7 +1643,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2605.30880",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1701,7 +1680,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2606.01869",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -1729,7 +1708,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2606.16070",
-      "section": "dynamics",
+      "section": null,
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1756,7 +1735,7 @@
       "source_url": "https://arxiv.org/abs/2606.31689",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -1782,7 +1761,7 @@
       "source_url": "https://arxiv.org/abs/2607.01531",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1818,7 +1797,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.09163",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1845,7 +1824,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2607.15439",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -1877,7 +1856,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2607.16900",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -1900,7 +1879,7 @@
       "source_url": "https://arxiv.org/abs/2607.17540",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "adjacent",
       "code_roles": [
         "transition"
@@ -1927,7 +1906,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2607.25236",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1958,7 +1937,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2607.26754",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -1983,7 +1962,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2607.28287",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -2013,7 +1992,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.05248",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -2048,7 +2027,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.05891",
-      "section": "observation",
+      "section": null,
       "scope": "core",
       "code_roles": [
         "observation"
@@ -2082,7 +2061,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.06257",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -2111,7 +2090,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.14490",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -2139,7 +2118,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.25927",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -2175,7 +2154,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.27168",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -2219,7 +2198,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.27549",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -2251,7 +2230,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.29305",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [],
       "tags": [
@@ -2282,7 +2261,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.29519",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -2315,7 +2294,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.00048",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -2348,7 +2327,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.30530",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [
         "transition",
@@ -2379,7 +2358,7 @@
       "review_depth": "metadata",
       "reviewed_on": "2026-10-13",
       "doi": "10.1007/s11263-026-02999-6",
-      "section": "surveys",
+      "section": null,
       "scope": "survey",
       "code_roles": [],
       "tags": [
@@ -2409,7 +2388,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.02885",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -2442,7 +2421,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.10540",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -2472,7 +2451,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.11499",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -2509,7 +2488,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.21562",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -2537,7 +2516,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.25652",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -2573,7 +2552,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.26458",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -2609,7 +2588,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.28416",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [],
       "tags": [
@@ -2641,7 +2620,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.32679",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -2681,7 +2660,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.35047",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -2717,7 +2696,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.36380",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -2742,7 +2721,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.00834",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -2789,7 +2768,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.01215",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -2821,7 +2800,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.02205",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -2857,7 +2836,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.04432",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -2885,7 +2864,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.04940",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -2910,7 +2889,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.11253",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "adjacent",
       "code_roles": [
         "transition"
@@ -2941,7 +2920,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.11322",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -2975,7 +2954,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.11794",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -3007,7 +2986,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.11942",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -3044,7 +3023,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2610.12374",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3084,7 +3063,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "construction",
+      "section": "vibeworlding",
       "scope": "resource",
       "code_roles": [
         "observation"
@@ -3116,7 +3095,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3161,7 +3140,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -3192,7 +3171,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [
         "observation"
@@ -3224,7 +3203,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [
         "transition"
@@ -3262,7 +3241,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [],
       "tags": [
@@ -3294,7 +3273,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [
         "observation"
@@ -3324,7 +3303,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "construction",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -3358,7 +3337,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3399,7 +3378,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3430,7 +3409,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -3473,7 +3452,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "comparators",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [],
       "tags": [
@@ -3513,7 +3492,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "evaluation",
+      "section": "vibeworlding",
       "scope": "benchmark",
       "code_roles": [
         "observation"
@@ -3559,7 +3538,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "resource",
       "code_roles": [
         "observation"
@@ -3590,7 +3569,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -3618,7 +3597,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "comparators",
+      "section": null,
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -3649,7 +3628,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "construction",
+      "section": "vibeworlding",
       "scope": "core",
       "code_roles": [
         "observation"
@@ -3695,7 +3674,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3730,7 +3709,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "adjacent",
       "code_roles": [
         "observation"
@@ -3772,7 +3751,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "observation"
@@ -3809,7 +3788,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "coupling",
+      "section": null,
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -3841,7 +3820,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "evaluation",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [
         "observation"
@@ -3880,7 +3859,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3911,7 +3890,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3950,7 +3929,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "evaluation",
+      "section": "code_as_world",
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -3981,7 +3960,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "construction",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -4016,7 +3995,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -4053,7 +4032,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "enabling",
       "code_roles": [],
       "tags": [
@@ -4100,7 +4079,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -4134,7 +4113,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "dynamics",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -4172,7 +4151,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "coupling",
+      "section": "code_as_world",
       "scope": "resource",
       "code_roles": [
         "transition",
@@ -4214,7 +4193,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-29",
       "arxiv_id": "2608.15265",
-      "section": "scene_programs",
+      "section": "vibeworlding",
       "scope": "core",
       "code_roles": [
         "observation"
