@@ -2,7 +2,11 @@
 
 This is the initial editorial map for the survey. It gives each catalogue record one primary family so that the literature can be written as a coherent story; `code_roles`, acquisition source, renderer, verification, and lifecycle tags remain orthogonal attributes.
 
+**Domain boundary:** Robotics is not a separate survey family. A robot or physics-engine setting is included only when the contribution is executable dynamics, a world program, simulator extension, or world construction; the robot is the evaluation substrate. Pure robot control, manipulation policy, or Real2Sim tooling is not core merely because it uses code.
+
 这是综述当前采用的初版主分类。每条记录只分配一个主类，便于组织正文；`code_roles`、知识来源、渲染器、验证方式和生命周期标签仍是正交属性，不被主分类吞掉。
+
+**Domain boundary / 领域边界：** 机器人不是本综述的独立主线。涉及机器人或物理仿真的论文只有在其核心贡献是可执行动力学、世界程序、模拟器扩展或世界构建时才纳入；机器人本体只是实验载体。纯机器人控制、操作策略或 Real2Sim 工具不会因为使用代码就自动进入核心范围。
 
 ## 1. WorldCoder-type: Programmatic Dynamics / World Program Induction
 

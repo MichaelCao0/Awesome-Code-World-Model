@@ -78,7 +78,7 @@
 
 | 初版主类 | 核心问题 | 代表工作 |
 |---|---|---|
-| **WorldCoder-type** · 程序化动力学 | 代码能否预测动作后果并支持规划？ | [WorldCoder](https://arxiv.org/abs/2402.12275)、[TheoryCoder](https://arxiv.org/abs/2503.20124)、[OneLife](https://arxiv.org/abs/2510.12088)、[EMPIRIC](https://arxiv.org/abs/2609.35047) |
+| **WorldCoder-type** · 程序化动力学 | 代码能否预测动作后果并支持规划？ | [WorldCoder](https://arxiv.org/abs/2402.12275)、[TheoryCoder](https://arxiv.org/abs/2503.20124)、[OneLife](https://arxiv.org/abs/2510.12088)、[Code World Models for General Game Playing](https://arxiv.org/abs/2510.04542) |
 | **Code-as-World-type** · 可执行世界程序 | 代码能否持续维护世界、状态、规则及其接口？ | [Code as Worlds](https://arxiv.org/abs/2608.27549)、[Programmable World Model](https://arxiv.org/abs/2609.10540)、[AgentGarten](https://arxiv.org/abs/2610.12374)、[Oneira](https://arxiv.org/abs/2610.01614) |
 | **VibeWorlding-type** · agentic 3D 世界构建 | agent 能否构建并编辑可编辑、可仿真的 3D 世界？ | [VibeWorlding](https://arxiv.org/abs/2608.15265)、[WorldClaw](https://arxiv.org/abs/2608.05248)、[USDCraft](https://arxiv.org/abs/2610.11322)、[SceneRig](https://arxiv.org/abs/2610.28585) |
 

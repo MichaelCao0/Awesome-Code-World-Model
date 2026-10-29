@@ -72,7 +72,7 @@ Program origin, verification, and downstream use form a second set of attributes
 
 | Initial family | Core question | Representative anchors |
 |---|---|---|
-| **WorldCoder-type** · Programmatic Dynamics | Does code predict action consequences and support planning? | [WorldCoder](https://arxiv.org/abs/2402.12275), [TheoryCoder](https://arxiv.org/abs/2503.20124), [OneLife](https://arxiv.org/abs/2510.12088), [EMPIRIC](https://arxiv.org/abs/2609.35047) |
+| **WorldCoder-type** · Programmatic Dynamics | Does code predict action consequences and support planning? | [WorldCoder](https://arxiv.org/abs/2402.12275), [TheoryCoder](https://arxiv.org/abs/2503.20124), [OneLife](https://arxiv.org/abs/2510.12088), [Code World Models for General Game Playing](https://arxiv.org/abs/2510.04542) |
 | **Code-as-World-type** · Executable World Programs | Does code keep a persistent world, its state, rules, and interfaces executable? | [Code as Worlds](https://arxiv.org/abs/2608.27549), [Programmable World Model](https://arxiv.org/abs/2609.10540), [AgentGarten](https://arxiv.org/abs/2610.12374), [Oneira](https://arxiv.org/abs/2610.01614) |
 | **VibeWorlding-type** · Agentic 3D World Construction | Can an agent construct and edit an editable, simulation-ready 3D world? | [VibeWorlding](https://arxiv.org/abs/2608.15265), [WorldClaw](https://arxiv.org/abs/2608.05248), [USDCraft](https://arxiv.org/abs/2610.11322), [SceneRig](https://arxiv.org/abs/2610.28585) |
 
