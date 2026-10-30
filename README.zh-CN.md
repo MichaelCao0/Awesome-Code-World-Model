@@ -37,6 +37,7 @@
 <a id="news"></a>
 ## 更新
 
+- **2026-10-30** — 继续补充三类主线归类；评测、综述和明显相邻来源保留在总表但不强行归类。仓库目录现在只有三个 section。
 - **2026-10-29** — 加入 VibeWorlding，整理覆盖 124 条记录的全量论文总表，并将 README 主分类收敛为 WorldCoder-type、Code-as-World-type、VibeWorlding-type 三类。封面改为代码—状态—数字世界主题的栅格图。
 - **2026-10-26** — 补入 31 条核实来源，形成当前文献目录基础。
 - **2026-10-19** — 加入中英双语 README、PNG 封面、综述标签占位与分类导航。
@@ -47,15 +48,15 @@
 
 [研究动机](#motivation) · [综述与资源](#survey--resources) · [核心视角](#at-a-glance) · [文献目录](#paper-collection) · [参与贡献](#contributing) · [致谢](#acknowledgements)
 
-**写作讨论：** [三类框架](docs/coarse-taxonomy.md) · [全量论文总表](docs/paper-master-list.md) · [分类 JSON](data/classification.json) · [本轮更新](docs/updates/2026-10-29.md)
+**写作讨论：** [三类框架](docs/coarse-taxonomy.md) · [全量论文总表](docs/paper-master-list.md) · [分类 JSON](data/classification.json) · [本轮更新](docs/updates/2026-10-30.md)
 
 <!-- NAVIGATION:BEGIN -->
 
 | 三类主线 |
 |---|
-| [01 · WorldCoder-type · 程序化动力学](#papers-worldcoder) <sub>(30)</sub> |
-| [02 · Code-as-World-type · 可执行世界程序](#papers-code_as_world) <sub>(23)</sub> |
-| [03 · VibeWorlding-type · agentic 3D 世界构建](#papers-vibeworlding) <sub>(15)</sub> |
+| [01 · WorldCoder-type · 程序化动力学](#papers-worldcoder) <sub>(32)</sub> |
+| [02 · Code-as-World-type · 可执行世界程序](#papers-code_as_world) <sub>(27)</sub> |
+| [03 · VibeWorlding-type · agentic 3D 世界构建](#papers-vibeworlding) <sub>(22)</sub> |
 | [全量论文总表](docs/paper-master-list.md)（含未归类来源） |
 
 <!-- NAVIGATION:END -->
@@ -149,6 +150,9 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 - **OPINE-World: Programmatic World Modeling with Ontology-error-Prioritized Interactive Exploration for ARC-AGI-3** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2607.01531)
   <br><sub>OPINE-World 通过错误优先探索，联合修订符号本体、转移假设与目标。</sub>
 
+- **Mind-Studio: Executable World Models with Lookahead Evaluation for Partially Observable Games** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2606.16070)
+  <br><sub>Mind-Studio 为部分可观测游戏构建可执行模型，并评价同状态起点的多步前瞻保真度。</sub>
+
 - **PatchWorld: Gradient-Free Optimization of Executable World Models for Agent Environments** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2605.30880)
   <br><sub>PatchWorld 通过反例引导的补丁优化可执行信念状态模型，并用于动作前瞻。</sub>
 
@@ -190,6 +194,9 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning** `2023` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2305.14909)
   <br><sub>利用 LLM 构建和修正 PDDL 域模型，再通过可靠的外部规划器进行任务规划。</sub>
+
+- **PDSketch: Integrated Planning Domain Programming and Learning** `2023` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2303.05501)
+  <br><sub>PDSketch 将预设的转移结构与学习到的神经组件结合，并自动导出规划启发式。</sub>
 
 - **Combining Functional and Automata Synthesis to Discover Causal Reactive Programs (AutumnSynth)** `2023` [![Paper](assets/badges/paper.svg)](https://doi.org/10.1145/3571249)
   <br><sub>AutumnSynth 交替合成转移函数与自动机，恢复包含潜在状态的响应式程序。</sub>
@@ -252,6 +259,9 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 - **Programmable World Model** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2609.10540)
   <br><sub>Programmable World Model 将包含非视觉事实的持久引擎状态，编译为视频生成控制信号。</sub>
 
+- **WebWorld: The Browser as a World Model for Self-Improving Web Code** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.30530)
+  <br><sub>通过浏览器执行与验证自改进 Web 代码，检查交互合同及已有行为的保持。</sub>
+
 - **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.27549)
   <br><sub>Code as Worlds 通过提出、实例化、执行、渲染和验证的循环，发现可执行物理表示。</sub>
 
@@ -260,6 +270,9 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **Code World Model: Coding Agent as World Brain** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.25927)
   <br><sub>Code World Model 通过可执行代理表示，连接编码世界大脑与视觉世界引擎。</sub>
+
+- **AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.05891)
+  <br><sub>AppDeltaWorld 结合检索结构、视觉资产与闭环修订，预测由动作转移约束的 HTML 更新。</sub>
 
 - **World-Time Compute with Verified Code World Models** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2609.09163)
   <br><sub>World-Time Compute 利用经验证的符号代码世界，生成具有精确标签的训练轨迹。</sub>
@@ -272,6 +285,12 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **Code2Worlds: Empowering Coding LLMs for 4D World Generation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2602.11757)
   <br><sub>Code2Worlds 生成用于四维仿真的物体与场景程序，并结合 Blender 动力学与视觉运动反馈。</sub>
+
+- **Code2World: A GUI World Model via Renderable Code Generation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2602.09856)
+  <br><sub>Code2World 结合 AndroidCode、视觉修订与渲染感知学习，生成下一屏 GUI 代码。</sub>
+
+- **Generative Visual Code Mobile World Models (gWorld)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2602.01576)
+  <br><sub>gWorld 使用单一视觉语言模型，将移动 GUI 的未来观测预测为可渲染 Web 代码。</sub>
 
 - **Web World Models** `2025` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2512.23676)
   <br><sub>Web World Models 以类型化 Web 状态和代码定义的规则，支撑持久的生成式世界。</sub>
@@ -288,6 +307,9 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **NeoWorld-3: From Pixels to Code-Defined Physical Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.27690)
   <br><sub>通过分层编码智能体、可微参数拟合以及关节与物理检查，从视觉证据重建可编辑几何程序。</sub>
+
+- **Self-Building Labs** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.23826)
+  <br><sub>智能体从科学目标、照片和设备信息构建实验室数字孪生、机器人技能与工作流，并通过观测和物理反馈改进场景模型。</sub>
 
 - **3DCodeVerse: Exploring 3D Worlds as Code** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.22341)
   <br><sub>将可执行 3D 程序、资产与验证记录组成数据资源，并通过执行检查、几何测量及视觉反馈迭代生成和修正程序。</sub>
@@ -316,6 +338,12 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 - **WorldClaw: Agentic 3D Open-World Generation at Scale** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.05248)
   <br><sub>WorldClaw 通过区域规划、地形生成和渲染反馈，构建大规模可编辑三维场景。</sub>
 
+- **Procedural Scene Programs for Open-Universe Scene Generation: LLM-Free Error Correction via Program Search** `2025` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2510.16147)
+  <br><sub>研究程序化场景表示，以及通过程序搜索进行错误修正的方法。</sub>
+
+- **Imperative vs. Declarative Programming Paradigms for Open-Universe Scene Generation** `2025` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2504.05482)
+  <br><sub>研究命令式与声明式场景程序的表示差异，以及基于程序的错误修正。</sub>
+
 - **SceneMotifCoder: Example-driven Visual Program Learning for Generating 3D Object Arrangements** `2024` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2408.02211)
   <br><sub>SceneMotifCoder 从少量视觉示例中学习可编辑的物体排列程序。</sub>
 
@@ -327,6 +355,18 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **Holodeck: Language Guided Generation of 3D Embodied AI Environments** `2023` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2312.09067)
   <br><sub>Holodeck 通过空间约束与优化构建语言驱动的三维具身环境。</sub>
+
+- **Infinite Photorealistic Worlds Using Procedural Generation (Infinigen)** `2023` [![Paper](assets/badges/paper.svg)](https://openaccess.thecvf.com/content/CVPR2023/html/Raistrick_Infinite_Photorealistic_Worlds_Using_Procedural_Generation_CVPR_2023_paper.html)
+  <br><sub>Infinigen 通过程序化规则生成世界尺度的逼真几何与材质。</sub>
+
+- **ShapeAssembly: Learning to Generate Programs for 3D Shape Structure Synthesis** `2020` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2009.08026)
+  <br><sub>ShapeAssembly 以层次化参数装配程序表示三维部件结构。</sub>
+
+- **CSGNet: Neural Shape Parser for Constructive Solid Geometry** `2018` [![Paper](assets/badges/paper.svg)](https://openaccess.thecvf.com/content_cvpr_2018/html/Sharma_CSGNet_Neural_Shape_CVPR_2018_paper.html)
+  <br><sub>CSGNet 将视觉形状解析为可执行的构造实体几何程序。</sub>
+
+- **Procedural content generation for games** `2013` [![Paper](assets/badges/paper.svg)](https://doi.org/10.1145/2422956.2422957)
+  <br><sub>游戏程序化内容生成的历史参考文献；本轮核查书目信息。</sub>
 
 [↑ 返回导航](#contents)
 

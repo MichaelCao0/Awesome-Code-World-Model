@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-29",
+  "updated_on": "2026-10-30",
   "literature_cutoff": "2026-10-29",
   "description": "Curated source records for a code-centric world-model survey. Source counts are bibliographic records, not unique-method counts. Review depth refers to citation and mechanism checking, not experiment reproduction.",
   "sections": [
@@ -37,7 +37,7 @@
       "review_depth": "metadata",
       "reviewed_on": "2026-10-13",
       "doi": "10.1145/2422956.2422957",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [],
       "tags": [
@@ -88,7 +88,7 @@
       "source_url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Sharma_CSGNet_Neural_Shape_CVPR_2018_paper.html",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -150,7 +150,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2009.08026",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -222,7 +222,7 @@
       "source_url": "https://openaccess.thecvf.com/content/CVPR2023/html/Raistrick_Infinite_Photorealistic_Worlds_Using_Procedural_Generation_CVPR_2023_paper.html",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -279,7 +279,7 @@
       "source_url": "https://arxiv.org/abs/2303.05501",
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
-      "section": null,
+      "section": "worldcoder",
       "scope": "adjacent",
       "code_roles": [
         "transition"
@@ -766,7 +766,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2504.05482",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -1083,7 +1083,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2510.16147",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -1244,7 +1244,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.01576",
-      "section": null,
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "observation"
@@ -1280,7 +1280,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.09856",
-      "section": null,
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "observation"
@@ -1708,7 +1708,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2606.16070",
-      "section": null,
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -2027,7 +2027,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.05891",
-      "section": null,
+      "section": "code_as_world",
       "scope": "core",
       "code_roles": [
         "observation"
@@ -2327,7 +2327,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.30530",
-      "section": null,
+      "section": "code_as_world",
       "scope": "adjacent",
       "code_roles": [
         "transition",
@@ -3273,7 +3273,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "adjacent",
       "code_roles": [
         "observation"

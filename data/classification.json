@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_on": "2026-10-29",
+  "updated_on": "2026-10-30",
   "status": "discussion-draft",
   "scope": "One of three public family assignments per classified record: WorldCoder-type, Code-as-World-type, or VibeWorlding-type. Smaller, benchmark, historical, renderer, GUI, survey, and adjacent records remain unassigned in the master list.",
   "families": {
@@ -11,8 +11,8 @@
   "records": [
     {
       "id": "pcg2013",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -35,8 +35,8 @@
     },
     {
       "id": "csgnet2018",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -59,8 +59,8 @@
     },
     {
       "id": "2009.08026",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -83,8 +83,8 @@
     },
     {
       "id": "infinigen2023",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -107,8 +107,8 @@
     },
     {
       "id": "2303.05501",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -287,8 +287,8 @@
     },
     {
       "id": "2504.05482",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -383,8 +383,8 @@
     },
     {
       "id": "2510.16147",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -443,8 +443,8 @@
     },
     {
       "id": "2602.01576",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -455,8 +455,8 @@
     },
     {
       "id": "2602.09856",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -611,8 +611,8 @@
     },
     {
       "id": "2606.16070",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -743,8 +743,8 @@
     },
     {
       "id": "2608.05891",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -851,8 +851,8 @@
     },
     {
       "id": "2608.30530",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1189,8 +1189,8 @@
     },
     {
       "id": "2610.23826",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [

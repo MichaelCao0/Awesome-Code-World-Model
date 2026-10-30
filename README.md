@@ -36,6 +36,7 @@ Beyond predicting pixels, code-centric world models enable **explicit dynamics, 
 
 ## News
 
+- **2026-10-30** — Expanded the three-family assignments while leaving benchmarks and adjacent sources unassigned in the master list. The repository now has exactly three catalogue sections.
 - **2026-10-29** — Added VibeWorlding, a 124-record [paper master list](docs/paper-master-list.md), and the initial three-family map: WorldCoder-type, Code-as-World-type, and VibeWorlding-type. Replaced the cover with a generated raster image.
 - **2026-10-19** — Bilingual READMEs, a PNG cover, reserved survey links, and visual navigation.
 - **2026-10-14** — Initial release: 92 source records, structured metadata, BibTeX, and a shared taxonomy and evaluation framework.
@@ -44,15 +45,15 @@ Beyond predicting pixels, code-centric world models enable **explicit dynamics, 
 
 [Motivation](#motivation) · [Survey & resources](#survey--resources) · [At a glance](#at-a-glance) · [Paper collection](#paper-collection) · [Contributing](#contributing) · [Acknowledgements](#acknowledgements)
 
-**Writing discussion:** [Three-family map](docs/coarse-taxonomy.md) · [Paper master list](docs/paper-master-list.md) · [Classification JSON](data/classification.json) · [Update notes](docs/updates/2026-10-29.md)
+**Writing discussion:** [Three-family map](docs/coarse-taxonomy.md) · [Paper master list](docs/paper-master-list.md) · [Classification JSON](data/classification.json) · [Update notes](docs/updates/2026-10-30.md)
 
 <!-- NAVIGATION:BEGIN -->
 
 | Three primary families |
 |---|
-| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(30)</sub> |
-| [02 · Code-as-World-type · Executable World Programs](#papers-code_as_world) <sub>(23)</sub> |
-| [03 · VibeWorlding-type · Agentic 3D World Construction](#papers-vibeworlding) <sub>(15)</sub> |
+| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(32)</sub> |
+| [02 · Code-as-World-type · Executable World Programs](#papers-code_as_world) <sub>(27)</sub> |
+| [03 · VibeWorlding-type · Agentic 3D World Construction](#papers-vibeworlding) <sub>(22)</sub> |
 | [Paper master list](docs/paper-master-list.md) (including unassigned sources) |
 
 <!-- NAVIGATION:END -->
@@ -142,6 +143,9 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **OPINE-World: Programmatic World Modeling with Ontology-error-Prioritized Interactive Exploration for ARC-AGI-3** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2607.01531)
   <br><sub>OPINE-World jointly revises symbolic ontology, transition hypotheses, and goals through error-prioritized exploration.</sub>
 
+- **Mind-Studio: Executable World Models with Lookahead Evaluation for Partially Observable Games** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2606.16070)
+  <br><sub>Mind-Studio constructs executable models for partially observable games and evaluates same-state multi-step lookahead fidelity.</sub>
+
 - **PatchWorld: Gradient-Free Optimization of Executable World Models for Agent Environments** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2605.30880)
   <br><sub>PatchWorld optimizes executable belief-state models through counterexample-guided patches and uses them for action lookahead.</sub>
 
@@ -183,6 +187,9 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning** `2023` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2305.14909)
   <br><sub>Uses LLMs to construct and correct PDDL domain models for sound model-based task planning.</sub>
+
+- **PDSketch: Integrated Planning Domain Programming and Learning** `2023` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2303.05501)
+  <br><sub>PDSketch combines programmed transition structure with learned neural details and automatically derived planning heuristics.</sub>
 
 - **Combining Functional and Automata Synthesis to Discover Causal Reactive Programs (AutumnSynth)** `2023` [![Paper](assets/badges/paper.svg)](https://doi.org/10.1145/3571249)
   <br><sub>AutumnSynth alternates transition-function synthesis and automata synthesis to recover reactive programs with latent state.</sub>
@@ -245,6 +252,9 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **Programmable World Model** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2609.10540)
   <br><sub>Programmable World Model compiles persistent engine state, including nonvisual facts, into controls for video generation.</sub>
 
+- **WebWorld: The Browser as a World Model for Self-Improving Web Code** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.30530)
+  <br><sub>Uses the browser to execute and verify self-improving web code against interaction contracts and preserved behaviors.</sub>
+
 - **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.27549)
   <br><sub>Code as Worlds discovers executable physical representations through propose, instantiate, execute, render, and verify loops.</sub>
 
@@ -253,6 +263,9 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Code World Model: Coding Agent as World Brain** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.25927)
   <br><sub>Code World Model separates a coding world brain from a visual world engine through executable proxy representations.</sub>
+
+- **AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.05891)
+  <br><sub>AppDeltaWorld predicts transition-grounded HTML updates with retrieved structure, visual assets, and closed-loop refinement.</sub>
 
 - **World-Time Compute with Verified Code World Models** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2609.09163)
   <br><sub>World-Time Compute uses verified symbolic code worlds to generate exactly labeled trajectories for model training.</sub>
@@ -265,6 +278,12 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Code2Worlds: Empowering Coding LLMs for 4D World Generation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2602.11757)
   <br><sub>Code2Worlds generates object and scene programs for 4D simulation, using Blender dynamics and visual motion feedback.</sub>
+
+- **Code2World: A GUI World Model via Renderable Code Generation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2602.09856)
+  <br><sub>Code2World learns next-GUI code generation with AndroidCode, visual revision, and render-aware learning.</sub>
+
+- **Generative Visual Code Mobile World Models (gWorld)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2602.01576)
+  <br><sub>gWorld predicts mobile GUI observations as renderable web code with a single vision-language model.</sub>
 
 - **Web World Models** `2025` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2512.23676)
   <br><sub>Web World Models uses typed web state and code-defined rules as the substrate for persistent, generative worlds.</sub>
@@ -281,6 +300,9 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **NeoWorld-3: From Pixels to Code-Defined Physical Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.27690)
   <br><sub>Reconstructs editable geometry programs from visual evidence through hierarchical coding agents, differentiable parameter fitting and articulation/physics checks.</sub>
+
+- **Self-Building Labs** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.23826)
+  <br><sub>Agents construct laboratory digital twins, reusable robot skills and workflows from objectives, photographs and device information, refining scene models using observations and physical feedback.</sub>
 
 - **3DCodeVerse: Exploring 3D Worlds as Code** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.22341)
   <br><sub>Packages executable 3D programs with assets and verification records; a generation-and-repair harness uses execution, geometry measurements and visual feedback.</sub>
@@ -309,6 +331,12 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **WorldClaw: Agentic 3D Open-World Generation at Scale** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2608.05248)
   <br><sub>WorldClaw builds large editable 3D scenes through region planning, terrain generation, and render-guided refinement.</sub>
 
+- **Procedural Scene Programs for Open-Universe Scene Generation: LLM-Free Error Correction via Program Search** `2025` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2510.16147)
+  <br><sub>Studies procedural scene programs and error correction through program search.</sub>
+
+- **Imperative vs. Declarative Programming Paradigms for Open-Universe Scene Generation** `2025` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2504.05482)
+  <br><sub>Studies imperative and declarative scene-program representations and program-based error correction.</sub>
+
 - **SceneMotifCoder: Example-driven Visual Program Learning for Generating 3D Object Arrangements** `2024` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2408.02211)
   <br><sub>SceneMotifCoder learns editable object-arrangement programs from a few visual examples.</sub>
 
@@ -320,6 +348,18 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Holodeck: Language Guided Generation of 3D Embodied AI Environments** `2023` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2312.09067)
   <br><sub>Holodeck builds language-guided 3D embodied environments through spatial constraints and optimization.</sub>
+
+- **Infinite Photorealistic Worlds Using Procedural Generation (Infinigen)** `2023` [![Paper](assets/badges/paper.svg)](https://openaccess.thecvf.com/content/CVPR2023/html/Raistrick_Infinite_Photorealistic_Worlds_Using_Procedural_Generation_CVPR_2023_paper.html)
+  <br><sub>Infinigen provides procedural rules for generating photorealistic geometry and materials at world scale.</sub>
+
+- **ShapeAssembly: Learning to Generate Programs for 3D Shape Structure Synthesis** `2020` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2009.08026)
+  <br><sub>ShapeAssembly represents 3D part structure with hierarchical parametric assembly programs.</sub>
+
+- **CSGNet: Neural Shape Parser for Constructive Solid Geometry** `2018` [![Paper](assets/badges/paper.svg)](https://openaccess.thecvf.com/content_cvpr_2018/html/Sharma_CSGNet_Neural_Shape_CVPR_2018_paper.html)
+  <br><sub>CSGNet parses visual shapes into executable constructive-solid-geometry programs.</sub>
+
+- **Procedural content generation for games** `2013` [![Paper](assets/badges/paper.svg)](https://doi.org/10.1145/2422956.2422957)
+  <br><sub>Historical reference on procedural content generation for games; bibliographic metadata reviewed.</sub>
 
 [↑ Contents](#contents)
 
