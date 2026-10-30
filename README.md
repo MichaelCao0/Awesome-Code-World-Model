@@ -16,13 +16,23 @@ A living literature collection and home for our forthcoming survey.
 
 <!-- BADGES:END -->
 
-[Survey Hub](docs/survey.md) · [Paper Collection](#paper-collection) · [Taxonomy](docs/taxonomy.md) · [BibTeX](papers.bib) · [Contributing](CONTRIBUTING.md)
+[📝 Survey Hub](docs/survey.md) · [📚 Paper Collection](#paper-collection) · [🧭 Taxonomy](docs/taxonomy.md) · [📖 BibTeX](papers.bib) · [🤝 Contributing](CONTRIBUTING.md)
 
 <p><img src="./assets/banner.png" alt="Worlds, made executable: code, persistent state, and rendered observations" width="1280"></p>
 
 </div>
 
-Code makes world models **executable, editable, and inspectable**. This collection connects program synthesis, model-based agents, physical simulation, GUI prediction, and controllable visual generation through one question: **what world semantics does code carry?**
+<a id="motivation"></a>
+## 💡 Motivation: Why Code, Why Now?
+
+As coding agents become increasingly capable of **generating, executing, and refining complex programs**, code is emerging as a promising representation for world modeling.
+
+Beyond predicting pixels, code-centric world models enable **explicit dynamics, persistent states, and programmable interactions**, offering a complementary path toward more **controllable, editable, and verifiable worlds**.
+
+> [!NOTE]
+> **📝 We are writing a survey on code-centric world models.** Explore the [survey hub](docs/survey.md) for our outline, framework, and bibliography.
+>
+> **🤝 PRs are welcome!** Help us add missing papers, correct metadata, refine the taxonomy, or improve the survey discussion. See the [contribution guide](CONTRIBUTING.md) to get started.
 
 ## News
 
@@ -32,7 +42,7 @@ Code makes world models **executable, editable, and inspectable**. This collecti
 
 ## Contents
 
-[Survey & resources](#survey--resources) · [At a glance](#at-a-glance) · [Paper collection](#paper-collection) · [Contributing](#contributing) · [Acknowledgements](#acknowledgements)
+[Motivation](#motivation) · [Survey & resources](#survey--resources) · [At a glance](#at-a-glance) · [Paper collection](#paper-collection) · [Contributing](#contributing) · [Acknowledgements](#acknowledgements)
 
 **Writing discussion:** [Three-family map](docs/coarse-taxonomy.md) · [Paper master list](docs/paper-master-list.md) · [Classification JSON](data/classification.json) · [Update notes](docs/updates/2026-10-29.md)
 

@@ -16,13 +16,23 @@
 
 <!-- BADGES:END -->
 
-[综述入口](docs/survey.md) · [文献目录](#paper-collection) · [分类框架](docs/taxonomy.md) · [BibTeX](papers.bib) · [参与贡献](CONTRIBUTING.md)
+[📝 综述入口](docs/survey.md) · [📚 文献目录](#paper-collection) · [🧭 分类框架](docs/taxonomy.md) · [📖 BibTeX](papers.bib) · [🤝 参与贡献](CONTRIBUTING.md)
 
 <p><img src="./assets/banner.png" alt="以程序构建可执行世界：代码、持久状态与渲染观测" width="1280"></p>
 
 </div>
 
-代码使世界模型能够被**执行、编辑和检查**。本仓库围绕“**代码承担什么世界语义**”这一问题，连接程序合成、基于模型的 agent、物理仿真、GUI 预测与可控视觉生成，梳理程序如何获得、验证和使用。
+<a id="motivation"></a>
+## 💡 研究动机：为什么是代码，为什么是现在？
+
+随着编码智能体在**生成、执行和迭代改进复杂程序**方面的能力不断增强，代码正成为世界建模的一种有前景的表示方式。
+
+除了预测像素，以代码为核心的世界模型还支持**显式动力学、持久状态与可编程交互**，为构建更**可控、可编辑、可验证的世界**提供了一条互补路径。
+
+> [!NOTE]
+> **📝 我们正在撰写以代码为核心的世界模型综述。** 当前大纲、概念框架与文献资料见[综述入口](docs/survey.md)。
+>
+> **🤝 欢迎提交 PR！** 无论是补充遗漏论文、修正文献信息、完善分类框架，还是改进综述讨论，都欢迎参与。请先阅读[贡献指南](CONTRIBUTING.md)。
 
 <a id="news"></a>
 ## 更新
@@ -35,7 +45,7 @@
 <a id="contents"></a>
 ## 导航
 
-[综述与资源](#survey--resources) · [核心视角](#at-a-glance) · [文献目录](#paper-collection) · [参与贡献](#contributing) · [致谢](#acknowledgements)
+[研究动机](#motivation) · [综述与资源](#survey--resources) · [核心视角](#at-a-glance) · [文献目录](#paper-collection) · [参与贡献](#contributing) · [致谢](#acknowledgements)
 
 **写作讨论：** [三类框架](docs/coarse-taxonomy.md) · [全量论文总表](docs/paper-master-list.md) · [分类 JSON](data/classification.json) · [本轮更新](docs/updates/2026-10-29.md)
 
