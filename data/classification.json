@@ -1598,6 +1598,557 @@
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2609.39140",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2609.39140"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2607.14169",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.14169"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2605.24375",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2605.24375"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2601.18620",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2601.18620"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2605.13740",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2605.13740"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2602.10480",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2602.10480"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2608.16637",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2608.16637"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2608.04575",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2608.04575"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2505.14948",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2505.14948"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2505.02216",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2505.02216"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2504.15785",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2504.15785"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2603.05449",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2603.05449"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2607.27380",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.27380"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2607.01766",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.01766"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2605.14700",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2605.14700"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2602.10116",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2602.10116"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2605.09423",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2605.09423"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2602.05362",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2602.05362"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.18342",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.18342"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.05033",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.05033"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2606.01538",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2606.01538"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
+    },
+    {
+      "id": "2610.08720",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.08720"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
+    },
+    {
+      "id": "2602.13294",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2602.13294"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
+    },
+    {
+      "id": "2604.23580",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2604.23580"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
+    },
+    {
+      "id": "2610.15722",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.15722"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
+    },
+    {
+      "id": "2510.19788",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2510.19788"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
+    },
+    {
+      "id": "2610.03715",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.03715"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
+    },
+    {
+      "id": "2606.01057",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2606.01057"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
+    },
+    {
+      "id": "2610.10622",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.10622"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
+    },
+    {
+      "id": "2610.04253",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.04253"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
+    },
+    {
+      "id": "2609.28654",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2609.28654"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "video_wm"
+    },
+    {
+      "id": "2601.04035",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2601.04035"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
+    },
+    {
+      "id": "2607.15550",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.15550"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
+    },
+    {
+      "id": "2601.04126",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2601.04126"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
+    },
+    {
+      "id": "2602.10090",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2602.10090"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
+    },
+    {
+      "id": "2604.22748",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2604.22748"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "survey",
+      "comparison": "It organizes world models by capability level and law regime across 400+ works, with code-based models as one implementation among many. Here the organizing question is what executable code carries in the world, and only methods where code is the world substrate are included.",
+      "comparison_zh": "该综述按能力层级与规律类型梳理 400 余项工作，代码化模型只是众多实现方式之一。本综述的组织问题是代码在世界中承担什么，只收录以代码为世界载体的方法。"
+    },
+    {
+      "id": "2606.09032",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2606.09032"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "survey",
+      "comparison": "It covers textual environments and treats code-as-world-model as one construction paradigm. Here code-as-world is the subject itself, extended from text and symbolic states to whitebox worlds with generative rendering and full 3D worlds.",
+      "comparison_zh": "该综述聚焦文本环境，把\"代码作为世界模型\"视为一种构建范式。本综述以代码世界本身为主题，并从文本与符号状态扩展到白模加生成式渲染以及完整 3D 世界。"
+    },
+    {
+      "id": "2608.23070",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2608.23070"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "survey",
+      "comparison": "It asks how far latent, video and joint-embedding world models are from simulators. Code world models take the opposite route: they start from an executable simulator-like substrate with explicit state, and this survey studies how that substrate is induced, built and rendered.",
+      "comparison_zh": "该综述考察潜变量、视频和联合嵌入世界模型距离模拟器还有多远。代码世界模型走的是相反路线：从带显式状态的可执行基底出发；本综述研究这一基底如何被归纳、构建和渲染。"
+    },
+    {
+      "id": "2606.12191",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2606.12191"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "survey",
+      "comparison": "It treats environments as training infrastructure for agents. Here an environment matters only when its code acts as a world model, predicting or simulating how the world evolves; benchmarks and synthetic task environments are secondary.",
+      "comparison_zh": "该综述把环境视为 agent 的训练基础设施。本综述只关注其代码充当世界模型、预测或模拟世界演化的情形，基准和合成任务环境居于次要位置。"
+    },
+    {
+      "id": "2609.16679",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2609.16679"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "survey",
+      "comparison": "It covers games broadly, including learned game-world models and AI-assisted development. Here games are one domain among several, and the focus is on game rules and worlds written as executable code.",
+      "comparison_zh": "该综述覆盖游戏领域的方方面面，包括学习型游戏世界模型与 AI 辅助开发。本综述中游戏只是若干领域之一，重点是以可执行代码写成的游戏规则与世界。"
+    },
+    {
+      "id": "2503.18971",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2503.18971"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "survey",
+      "comparison": "It covers one corner of the WorldCoder-type line: symbolic planning models written from language. Here such models sit alongside Python transition programs, physical residuals, generatively rendered code worlds and 3D world programs.",
+      "comparison_zh": "该综述覆盖 WorldCoder-type 的一个分支：由语言写出的符号规划模型。本综述将其与 Python 转移程序、物理残差、生成式渲染的代码世界和 3D 世界程序放在同一框架下。"
+    },
+    {
+      "id": "2607.14076",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2607.14076"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "survey",
+      "comparison": "It argues that video world models should recover the explicit state loop of game engines. Code-as-World methods keep that loop in executable code and use video models only to render it; this survey compares how much of the loop code owns.",
+      "comparison_zh": "该综述主张视频世界模型应恢复游戏引擎中的显式状态循环。Code-as-World 方法把这一循环保留在可执行代码中，视频模型只负责渲染；本综述比较的是代码承担了这一循环的多少部分。"
     }
   ]
 }

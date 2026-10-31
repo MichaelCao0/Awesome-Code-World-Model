@@ -4366,6 +4366,1499 @@
       "evidence_notes": "Relevant simulation-ready scene-generation context. The abstract does not identify code as the primary world representation, so it remains adjacent. Date follows arXiv v1 metadata; no venue assignment is inferred.",
       "arxiv_id": "2610.32978",
       "alias": "SceneBloom"
+    },
+    {
+      "id": "2609.39140",
+      "citation_key": "cwm_2609_39140",
+      "title": "Schema: Discovering Unknown Environments via Agentic Program Induction",
+      "authors": [
+        "Guanning Zeng",
+        "Jiani Wang",
+        "Wenjie Ma",
+        "Shaofeng Yin",
+        "Chenyang Wang",
+        "Shichen Liu",
+        "Angjoo Kanazawa",
+        "Wode Ni",
+        "Xiuyu Li",
+        "Andrea Zanette",
+        "Haiwen Feng"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-09-30",
+      "source_url": "https://arxiv.org/abs/2609.39140",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "interaction-induction",
+        "planning",
+        "replay-verification"
+      ],
+      "summary": "An agent harness keeps its understanding of an unknown environment as executable programs in a persistent workspace, checks them against interaction history, and plans with them under step-wise verification (ARC-AGI-3 and other games).",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2609.39140",
+      "alias": "Schema"
+    },
+    {
+      "id": "2607.14169",
+      "citation_key": "cwm_2607_14169",
+      "title": "When a Verified World Model Still Loses: Play-Adequacy vs Prediction-Accuracy in LLM-Synthesized Code World Models",
+      "authors": [
+        "Javier Aguilar Martín"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-07-15",
+      "source_url": "https://arxiv.org/abs/2607.14169",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "planning",
+        "verification"
+      ],
+      "summary": "Shows that an LLM-synthesized code world model can pass transition-accuracy checks yet lose at play because its rare errors sit on pivotal dynamics, and proposes play-adequacy rather than prediction accuracy as the acceptance criterion.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2607.14169"
+    },
+    {
+      "id": "2605.24375",
+      "citation_key": "cwm_2605_24375",
+      "title": "Distilling Game Code World Model Generation into Lightweight Large Language Models",
+      "authors": [
+        "Tyrone Serapio",
+        "Arjun Prakash",
+        "Haoyang Xu",
+        "Kevin Wang",
+        "Amy Greenwald"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-05-23",
+      "source_url": "https://arxiv.org/abs/2605.24375",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "specification-synthesis",
+        "supervised-training"
+      ],
+      "summary": "Distills the generation of game code world models (rules, legal actions, transitions, observations, rewards) from frontier LLMs into smaller models through post-training.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2605.24375",
+      "alias": "GameCWM distillation"
+    },
+    {
+      "id": "2601.18620",
+      "citation_key": "cwm_2601_18620",
+      "title": "CASSANDRA: Programmatic and Probabilistic Learning and Inference for Stochastic World Modeling",
+      "authors": [
+        "Panagiotis Lymperopoulos",
+        "Abhiramon Rajasekharan",
+        "Ian Berlot-Attwell",
+        "Stéphane Aroca-Ouellette",
+        "Kaheer Suleman"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-01-26",
+      "source_url": "https://arxiv.org/abs/2601.18620",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "probabilistic-induction",
+        "planning"
+      ],
+      "summary": "Builds transition models for business-style planning domains from LLM-written code for deterministic features plus LLM-guided structure learning of a probabilistic graphical model for stochastic ones.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2601.18620",
+      "alias": "CASSANDRA"
+    },
+    {
+      "id": "2605.13740",
+      "citation_key": "cwm_2605_13740",
+      "title": "Learning POMDP World Models from Observations with Language-Model Priors",
+      "authors": [
+        "Valentin Six",
+        "Frederik Panse",
+        "Mathis Fajeau",
+        "Lancelot Da Costa",
+        "Mridul Sharma",
+        "Alfonso Amayuelas",
+        "Tim Z. Xiao",
+        "David Hyland",
+        "Philipp Hennig",
+        "Bernhard Schölkopf"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-05-13",
+      "source_url": "https://arxiv.org/abs/2605.13740",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "trajectory-induction",
+        "latent-state"
+      ],
+      "summary": "An LLM proposes candidate POMDP world models from a few observation-action trajectories and refines them against a belief-based likelihood, without access to hidden state.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2605.13740",
+      "alias": "Pinductor"
+    },
+    {
+      "id": "2602.10480",
+      "citation_key": "cwm_2602_10480",
+      "title": "Neuro-Symbolic Synergy for World Modeling",
+      "authors": [
+        "Hongyu Zhao",
+        "Siyu Zhou",
+        "Haolin Yang",
+        "Zengyi Qin",
+        "Tianyi Zhou"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-02-11",
+      "source_url": "https://arxiv.org/abs/2602.10480",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "adjacent",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "trajectory-induction",
+        "neurosymbolic"
+      ],
+      "summary": "Alternately trains an LLM world model and executable symbolic rules on transitions the other explains poorly, combining them through log-linear reranking.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2602.10480",
+      "alias": "NeSyS"
+    },
+    {
+      "id": "2608.16637",
+      "citation_key": "cwm_2608_16637",
+      "title": "PDDLCoder: Agentic PDDL Generation for LLM-Assisted Symbolic Planning",
+      "authors": [
+        "Veit Laule",
+        "Jiangtao Shuai",
+        "Manfred Hauswirth",
+        "Sonja Schimmler"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-08-17",
+      "source_url": "https://arxiv.org/abs/2608.16637",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "llm-to-pddl",
+        "specification-synthesis",
+        "repair"
+      ],
+      "summary": "An agentic loop generates, analyzes and refines PDDL domains and problems from natural language, with a benchmark of gym environments that verify plan applicability automatically.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2608.16637",
+      "alias": "PDDLCoder"
+    },
+    {
+      "id": "2608.04575",
+      "citation_key": "cwm_2608_04575",
+      "title": "PhysMind: From Video to Executable Worlds for Training-Free Physical Reasoning",
+      "authors": [
+        "Chen Yang",
+        "Shenxiang Zeng",
+        "Haoyang Zhao",
+        "Zhouyuan Xu",
+        "Youquan He",
+        "Haoyu Li",
+        "Mingyi Deng",
+        "Jiansheng Fan",
+        "Chen Wang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-08-05",
+      "source_url": "https://arxiv.org/abs/2608.04575",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "video-induction",
+        "counterfactuals",
+        "physical-calibration"
+      ],
+      "summary": "Builds one reusable executable world per video by reconstructing objects and poses and fitting analytic dynamics and latent physical parameters, then answers questions by continuing or editing that world.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2608.04575",
+      "alias": "PhysMind"
+    },
+    {
+      "id": "2505.14948",
+      "citation_key": "cwm_2505_14948",
+      "title": "Programmatic Video Prediction Using Large Language Models",
+      "authors": [
+        "Hao Tang",
+        "Kevin Ellis",
+        "Suhas Lohit",
+        "Michael J. Jones",
+        "Moitreya Chatterjee"
+      ],
+      "year": 2025,
+      "first_public_date": "2025-05-20",
+      "source_url": "https://arxiv.org/abs/2505.14948",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "video-induction",
+        "program-synthesis"
+      ],
+      "summary": "Predicts future video frames by having an LLM/VLM synthesize programs that estimate per-frame symbolic states, roll them forward, and render the predicted states.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2505.14948",
+      "alias": "ProgGen"
+    },
+    {
+      "id": "2505.02216",
+      "citation_key": "cwm_2505_02216",
+      "title": "LLM-Guided Probabilistic Program Induction for POMDP Model Estimation",
+      "authors": [
+        "Aidan Curtis",
+        "Hao Tang",
+        "Thiago Veloso",
+        "Kevin Ellis",
+        "Joshua Tenenbaum",
+        "Tomás Lozano-Pérez",
+        "Leslie Pack Kaelbling"
+      ],
+      "year": 2025,
+      "first_public_date": "2025-05-04",
+      "source_url": "https://arxiv.org/abs/2505.02216",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "probabilistic-induction",
+        "latent-state"
+      ],
+      "summary": "Uses an LLM as a prior over short probabilistic programs for POMDP components (transition, observation, reward, initial state) and refines them against empirical data, including robot search domains.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2505.02216"
+    },
+    {
+      "id": "2504.15785",
+      "citation_key": "cwm_2504_15785",
+      "title": "WALL-E 2.0: World Alignment by NeuroSymbolic Learning improves World Model-based LLM Agents",
+      "authors": [
+        "Siyu Zhou",
+        "Tianyi Zhou",
+        "Yijun Yang",
+        "Guodong Long",
+        "Deheng Ye",
+        "Jing Jiang",
+        "Chengqi Zhang"
+      ],
+      "year": 2025,
+      "first_public_date": "2025-04-22",
+      "source_url": "https://arxiv.org/abs/2504.15785",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "interaction-induction",
+        "planning"
+      ],
+      "summary": "Extracts action rules, knowledge graphs and scene graphs from exploration trajectories, encodes them as executable code that aligns an LLM world model, and plans with model-predictive control.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2504.15785",
+      "alias": "WALL-E 2.0"
+    },
+    {
+      "id": "2603.05449",
+      "citation_key": "cwm_2603_05449",
+      "title": "RealWonder: Real-Time Physical Action-Conditioned Video Generation",
+      "authors": [
+        "Wei Liu",
+        "Ziyu Chen",
+        "Zizhang Li",
+        "Yue Wang",
+        "Hong-Xing Yu",
+        "Jiajun Wu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-03-05",
+      "source_url": "https://arxiv.org/abs/2603.05449",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "code_as_world",
+      "scope": "adjacent",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "physics-simulation",
+        "neural-rendering",
+        "action-conditioned"
+      ],
+      "summary": "Translates 3D actions such as forces and robot motions through a physics simulation over a single-image reconstruction, then renders the simulated flow and RGB with a few-step video generator in real time.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2603.05449",
+      "alias": "RealWonder"
+    },
+    {
+      "id": "2607.27380",
+      "citation_key": "cwm_2607_27380",
+      "title": "VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System",
+      "authors": [
+        "Haodong Li",
+        "Tianfei Ren",
+        "Xiaoxiao Ma",
+        "Chunmei Qing",
+        "Zhen Fang",
+        "Sipeng He",
+        "Ziyu Guo",
+        "Haoyu Wu",
+        "Juanxi Tian",
+        "Yihang Zou",
+        "Ruichuan An",
+        "Dongzhi Jiang",
+        "Boxue Yang",
+        "Ji Xie",
+        "Xu Huang",
+        "Wenhao Yan",
+        "Jialv Zou",
+        "Zhengrong Yue",
+        "Yaxin Luo",
+        "Xiaotong Li",
+        "Yuzhu Wang",
+        "Junyan Ye",
+        "Jinjing Zhao",
+        "Zehui Chen",
+        "Lin Chen",
+        "Renye Yan",
+        "Feng Zhao",
+        "Pheng-Ann Heng"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-07-29",
+      "source_url": "https://arxiv.org/abs/2607.27380",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "code_as_world",
+      "scope": "adjacent",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "blender-code",
+        "neural-rendering",
+        "physics-simulation"
+      ],
+      "summary": "A coding agent writes a Blender program that specifies a scene and its temporal evolution; the executed simulation gives a deterministic draft that a video model turns into the final video.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2607.27380",
+      "alias": "VideoCoCo"
+    },
+    {
+      "id": "2607.01766",
+      "citation_key": "cwm_2607_01766",
+      "title": "SimWorlds: A Multi-Agent System for Dynamic 3D Scene Creation",
+      "authors": [
+        "Chunjiang Liu",
+        "Xiaoyuan Wang",
+        "Haoyu Chen",
+        "Yizhou Zhao",
+        "Ming-Hsuan Yang",
+        "László A. Jeni"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-07-02",
+      "source_url": "https://arxiv.org/abs/2607.01766",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "blender-code",
+        "physics-simulation",
+        "world-construction"
+      ],
+      "summary": "A planner-coder-reviewer multi-agent system writes Blender programs for dynamic 4D scenes with fluids, particles, rigid bodies and articulated mechanisms, and checks motion from rendered video.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2607.01766",
+      "alias": "SimWorlds"
+    },
+    {
+      "id": "2605.14700",
+      "citation_key": "cwm_2605_14700",
+      "title": "SR-Platform: An Agentic Pipeline for Natural Language-Driven Robot Simulation Environment Synthesis",
+      "authors": [
+        "Ben Wei Lim",
+        "Minh Duc Le",
+        "Thang Truong",
+        "Thanh Nguyen Canh"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-05-14",
+      "source_url": "https://arxiv.org/abs/2605.14700",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "enabling",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "simulation-ready",
+        "mujoco",
+        "world-construction"
+      ],
+      "summary": "Turns natural-language descriptions into executable MuJoCo environments through scene planning, CadQuery asset synthesis, constrained layout and MJCF assembly.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2605.14700",
+      "alias": "SR-Platform"
+    },
+    {
+      "id": "2602.10116",
+      "citation_key": "cwm_2602_10116",
+      "title": "SAGE: Scalable Agentic 3D Scene Generation for Embodied AI",
+      "authors": [
+        "Hongchi Xia",
+        "Xuan Li",
+        "Zhaoshuo Li",
+        "Qianli Ma",
+        "Jiashu Xu",
+        "Ming-Yu Liu",
+        "Yin Cui",
+        "Tsung-Yi Lin",
+        "Wei-Chiu Ma",
+        "Shenlong Wang",
+        "Shuran Song",
+        "Fangyin Wei"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-02-10",
+      "source_url": "https://arxiv.org/abs/2602.10116",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "enabling",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "simulation-ready",
+        "embodied-environments",
+        "world-construction"
+      ],
+      "summary": "An agent couples layout and object generators with critics for semantics, realism and physical stability to produce simulation-ready scenes for embodied tasks at scale.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2602.10116",
+      "alias": "SAGE"
+    },
+    {
+      "id": "2605.09423",
+      "citation_key": "cwm_2605_09423",
+      "title": "SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning",
+      "authors": [
+        "Haoqiang Kang",
+        "Xiaokang Ye",
+        "Yuhan Liu",
+        "Siddhant Hitesh Mantri",
+        "Lingjun Mao",
+        "James Fleming",
+        "Drishti Regmi",
+        "Lianhui Qin"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-05-10",
+      "source_url": "https://arxiv.org/abs/2605.09423",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "unreal",
+        "world-construction",
+        "agent-training"
+      ],
+      "summary": "A self-evolving coding agent writes and runs Unreal Engine code to build physically grounded embodied environments with verifiable tasks from language or image instructions.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2605.09423",
+      "alias": "SimWorld Studio"
+    },
+    {
+      "id": "2602.05362",
+      "citation_key": "cwm_2602_05362",
+      "title": "Imagine a City: CityGenAgent for Procedural 3D City Generation",
+      "authors": [
+        "Zishan Liu",
+        "Zecong Tang",
+        "RuoCheng Wu",
+        "Xinzhe Zheng",
+        "Jingyu Hu",
+        "Ka-Hei Hui",
+        "Haoran Xie",
+        "Bo Dai",
+        "Zhengzhe Liu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-02-05",
+      "source_url": "https://arxiv.org/abs/2602.05362",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "enabling",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "procedural-generation",
+        "city-generation"
+      ],
+      "summary": "Generates 3D cities hierarchically as block and building programs from language, trained with supervised fine-tuning and reinforcement learning for valid, aligned programs.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2602.05362",
+      "alias": "CityGenAgent"
+    },
+    {
+      "id": "2610.18342",
+      "citation_key": "cwm_2610_18342",
+      "title": "CityCode: Building Agent-Operable 3D Cities from Sparse Aerial Observations",
+      "authors": [
+        "Jiahui Sun",
+        "Ran Bi",
+        "Yifei Liu",
+        "Xiaolong Zhou",
+        "Yishuo Xu",
+        "Yuanqi Li",
+        "Congcong Zhu",
+        "Lei Yang",
+        "Yanwen Guo",
+        "Zhihang Zhong",
+        "Hongjie Zhang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-13",
+      "source_url": "https://arxiv.org/abs/2610.18342",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "core",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "city-generation",
+        "persistent-state",
+        "visual-reconstruction"
+      ],
+      "summary": "Builds agent-operable, parameterized 3D cities from one aerial image per region, kept as persistent code-based state with entity identities and versioned, validated updates.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2610.18342",
+      "alias": "CityCode"
+    },
+    {
+      "id": "2610.05033",
+      "citation_key": "cwm_2610_05033",
+      "title": "Code2Games: Enabling Coding Agents for Gaming World Generation",
+      "authors": [
+        "Wei Wu",
+        "Ziyang Xu",
+        "Zeyu Zhang",
+        "Yang Zhao",
+        "Hao Tang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-04",
+      "source_url": "https://arxiv.org/abs/2610.05033",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "game-code",
+        "unreal",
+        "world-construction"
+      ],
+      "summary": "Builds playable gaming worlds from a game intent by planning gameplay over a generated Blender world, porting it to Unreal Engine 5, and repairing it with compilation and runtime feedback.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2610.05033",
+      "alias": "Code2Games"
+    },
+    {
+      "id": "2606.01538",
+      "citation_key": "cwm_2606_01538",
+      "title": "MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics",
+      "authors": [
+        "Žiga Kovačič",
+        "Kevin Ellis"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-06-01",
+      "source_url": "https://arxiv.org/abs/2606.01538",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "benchmark",
+        "video-induction",
+        "physics-simulation"
+      ],
+      "summary": "A dataset of 2D material-point-method simulations used to compare code generation and video diffusion for inferring physical dynamics from video and extrapolating them.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2606.01538",
+      "alias": "MPMWorlds"
+    },
+    {
+      "id": "2610.08720",
+      "citation_key": "cwm_2610_08720",
+      "title": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
+      "authors": [
+        "Siru Jiang",
+        "Yongzhe Lyu",
+        "Shuo Lu",
+        "Yubin Wang",
+        "Yuxiang Zhang",
+        "Yue Liao",
+        "Bin Wang",
+        "Jian Liang",
+        "Tieniu Tan"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-06",
+      "source_url": "https://arxiv.org/abs/2610.08720",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "benchmark",
+        "physics-simulation"
+      ],
+      "summary": "Benchmarks whether LLM agents can implement physics solvers for 168 simulation tasks drawn from classic graphics papers, inside fixed simulation scaffolds.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2610.08720",
+      "alias": "WorldSolver"
+    },
+    {
+      "id": "2602.13294",
+      "citation_key": "cwm_2602_13294",
+      "title": "VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction",
+      "authors": [
+        "Jiarong Liang",
+        "Max Ku",
+        "Ka-Hei Hui",
+        "Ping Nie",
+        "Wenhu Chen"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-02-09",
+      "source_url": "https://arxiv.org/abs/2602.13294",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "benchmark",
+        "video-induction",
+        "physics-simulation"
+      ],
+      "summary": "Evaluates physical reasoning by asking multimodal models to write executable simulator code that reconstructs observed videos, separating physical inference from rendering.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2602.13294",
+      "alias": "VisPhyWorld"
+    },
+    {
+      "id": "2604.23580",
+      "citation_key": "cwm_2604_23580",
+      "title": "PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement",
+      "authors": [
+        "Tianyidan Xie",
+        "Peiyu Wang",
+        "Hu Jiaxin",
+        "Yuyi Qian",
+        "Yuxuan Wang",
+        "Shenyi Wang",
+        "Rui Ma",
+        "Yanlun Peng",
+        "Lanjun Wang",
+        "Ying Tai",
+        "Jian Yang",
+        "Zili Yi"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-04-26",
+      "source_url": "https://arxiv.org/abs/2604.23580",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "benchmark",
+        "physics-simulation",
+        "repair"
+      ],
+      "summary": "Benchmarks translating physical descriptions into simulation code, scoring physical correctness from engine state through conservation residuals and expert assertions.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2604.23580",
+      "alias": "PhysCodeBench"
+    },
+    {
+      "id": "2610.15722",
+      "citation_key": "cwm_2610_15722",
+      "title": "PhySimCode: A Benchmark and Evaluation Method for Physics Video to Code Generation",
+      "authors": [
+        "Souraja Kundu",
+        "Aditya Gupta",
+        "Joel Julin",
+        "Yizhou Zhao",
+        "Liuyue Xie",
+        "Laszlo A. Jeni"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-11",
+      "source_url": "https://arxiv.org/abs/2610.15722",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "benchmark",
+        "video-induction"
+      ],
+      "summary": "Benchmarks physics video-to-code generation: infer the governing physics and parameters from raw video and write runnable Python that regenerates the scene.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2610.15722",
+      "alias": "PhySimCode"
+    },
+    {
+      "id": "2510.19788",
+      "citation_key": "cwm_2510_19788",
+      "title": "Benchmarking World-Model Learning with Environment-Level Queries",
+      "authors": [
+        "Archana Warrier",
+        "Dat Nguyen",
+        "Michelangelo Naim",
+        "Moksh Jain",
+        "Yichao Liang",
+        "Karen Schroeder",
+        "Cambridge Yang",
+        "Joshua B. Tenenbaum",
+        "Sebastian Vollmer",
+        "Kevin Ellis",
+        "Zenna Tavares"
+      ],
+      "year": 2025,
+      "first_public_date": "2025-10-22",
+      "source_url": "https://arxiv.org/abs/2510.19788",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "benchmark",
+        "interaction-induction"
+      ],
+      "summary": "Proposes evaluating learned world models with environment-level queries (reachability, counterfactual effects) after reward-free exploration, instantiated as AutumnBench with 43 interactive grid-world environments.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2510.19788",
+      "alias": "WorldTest"
+    },
+    {
+      "id": "2610.03715",
+      "citation_key": "cwm_2610_03715",
+      "title": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+      "authors": [
+        "Ruihong Shen",
+        "Žiga Kovačič",
+        "Peter Kulits",
+        "Xingrui Wang",
+        "Zizhang Li",
+        "Joshua B. Tenenbaum",
+        "Alan Yuille",
+        "Jieneng Chen",
+        "Jiajun Wu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-02",
+      "source_url": "https://arxiv.org/abs/2610.03715",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "benchmark",
+        "inverse-graphics",
+        "physics-simulation"
+      ],
+      "summary": "Benchmarks agents that reconstruct dynamic scenes from video as executable graphics programs, including physical simulation of deformation, fluids and fracture.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2610.03715",
+      "alias": "4DCodeBench"
+    },
+    {
+      "id": "2606.01057",
+      "citation_key": "cwm_2606_01057",
+      "title": "3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code",
+      "authors": [
+        "Yipeng Gao",
+        "Lei Shu",
+        "Genzhi Ye",
+        "Xi Xiong",
+        "Ameesh Makadia",
+        "Meiqi Guo",
+        "Laurent Itti",
+        "Jindong Chen"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-05-31",
+      "source_url": "https://arxiv.org/abs/2606.01057",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "benchmark",
+        "procedural-generation"
+      ],
+      "summary": "Benchmarks VLM agents on procedural 3D modeling through code in 3D software from text and image references, with a human-preference ranking arena.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2606.01057",
+      "alias": "3DCodeBench"
+    },
+    {
+      "id": "2610.10622",
+      "citation_key": "cwm_2610_10622",
+      "title": "WorldBench: Evaluating LLMs on Three.js Voxel World Generation",
+      "authors": [
+        "Krish Bakshi"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-07",
+      "source_url": "https://arxiv.org/abs/2610.10622",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "benchmark",
+        "world-construction"
+      ],
+      "summary": "Benchmarks LLM-written Three.js voxel worlds with a judge that both explores the running world and reads the code, counting evidence only when the two agree.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2610.10622",
+      "alias": "WorldBench"
+    },
+    {
+      "id": "2610.04253",
+      "citation_key": "cwm_2610_04253",
+      "title": "Spec2Game: Can LLMs Generate Complete Playable Games from Detailed Specifications?",
+      "authors": [
+        "Yixue Cai",
+        "Yuzhe Zhao",
+        "Hanxiang Chao",
+        "Qingsen Ma",
+        "Ziheng Xiong",
+        "Jinhu Qi",
+        "Irwin King"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-03",
+      "source_url": "https://arxiv.org/abs/2610.04253",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "benchmark",
+        "game-code",
+        "specification-synthesis"
+      ],
+      "summary": "Benchmarks generating complete Pygame projects from detailed game specifications with controlled rule variants, separating executability from faithful rule realization.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2610.04253",
+      "alias": "Spec2Game"
+    },
+    {
+      "id": "2609.28654",
+      "citation_key": "cwm_2609_28654",
+      "title": "Training Object Permanence in World Models",
+      "authors": [
+        "Haotian Zhang",
+        "Fengyuan Yu",
+        "Dezhi Luo",
+        "Haoran Sun",
+        "Zehong Zhao",
+        "Qingying Gao",
+        "Yihan Li",
+        "Siyuan An",
+        "Huayi Qin",
+        "Yilan Zhang",
+        "Zhengze Jiang",
+        "Pinyuan Feng",
+        "Renrui Zhang",
+        "Ziyu Guo",
+        "Letian Wang",
+        "Mengyue Yang",
+        "Kangfu Mei",
+        "Maijunxian Wang",
+        "Ran Ji",
+        "Vikash Kumar",
+        "Freda Shi",
+        "Chandra Sripada",
+        "Vincent C. Muller",
+        "Philip Torr",
+        "Alan Yuille",
+        "Nikolaus Kriegeskorte",
+        "Felix Juefei-Xu",
+        "Lvmin Zhang",
+        "Jieneng Chen",
+        "Yilun Du",
+        "Hokin Deng"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-09-23",
+      "source_url": "https://arxiv.org/abs/2609.28654",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "benchmark",
+        "video-world-model",
+        "blender-code"
+      ],
+      "summary": "Builds Blender generators for object-permanence and solidity tasks to train and examine video models as world models.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2609.28654",
+      "alias": "WROP"
+    },
+    {
+      "id": "2601.04035",
+      "citation_key": "cwm_2601_04035",
+      "title": "MobileDreamer: Generative Sketch World Model for GUI Agent",
+      "authors": [
+        "Yilin Cao",
+        "Yufeng Zhong",
+        "Zhixiong Zeng",
+        "Siran Dai",
+        "Liming Zheng",
+        "Jing Huang",
+        "Haibo Qiu",
+        "Peng Shi",
+        "Wenji Mao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-01-07",
+      "source_url": "https://arxiv.org/abs/2601.04035",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "comparator",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "gui-world-model",
+        "planning"
+      ],
+      "summary": "A textual sketch world model forecasts post-action mobile GUI states for lookahead rollouts by a GUI agent.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2601.04035",
+      "alias": "MobileDreamer"
+    },
+    {
+      "id": "2607.15550",
+      "citation_key": "cwm_2607_15550",
+      "title": "SeerGuard: A Safety Framework for Mobile GUI Agents via World Model Prediction",
+      "authors": [
+        "Xue Yu",
+        "Bo Yuan",
+        "Kailin Zhao",
+        "Pengshuai Yang",
+        "Hong Hu",
+        "Junlan Feng"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-07-17",
+      "source_url": "https://arxiv.org/abs/2607.15550",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "comparator",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "gui-world-model",
+        "safety"
+      ],
+      "summary": "Uses a safety-augmented GUI world model that predicts semantic next states to screen instructions and assess action risk before a mobile agent acts.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2607.15550",
+      "alias": "SeerGuard"
+    },
+    {
+      "id": "2601.04126",
+      "citation_key": "cwm_2601_04126",
+      "title": "InfiniteWeb: Scalable Web Environment Synthesis for GUI Agent Training",
+      "authors": [
+        "Ziyun Zhang",
+        "Zezhou Wang",
+        "Xiaoyi Zhang",
+        "Zongyu Guo",
+        "Jiahao Li",
+        "Bin Li",
+        "Yan Lu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-01-07",
+      "source_url": "https://arxiv.org/abs/2601.04126",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "resource",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "environment-synthesis",
+        "agent-training"
+      ],
+      "summary": "Generates functional multi-page web environments with verifiable task evaluators at scale for training GUI agents.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2601.04126",
+      "alias": "InfiniteWeb"
+    },
+    {
+      "id": "2602.10090",
+      "citation_key": "cwm_2602_10090",
+      "title": "Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning",
+      "authors": [
+        "Zhaoyang Wang",
+        "Canwen Xu",
+        "Boyi Liu",
+        "Yite Wang",
+        "Siwei Han",
+        "Zhewei Yao",
+        "Huaxiu Yao",
+        "Yuxiong He"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-02-10",
+      "source_url": "https://arxiv.org/abs/2602.10090",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "resource",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "environment-synthesis",
+        "agent-training"
+      ],
+      "summary": "Synthesizes about 1,000 code-driven, database-backed tool environments for agentic reinforcement learning, with more consistent state transitions than LLM-simulated environments.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2602.10090",
+      "alias": "Agent World Model"
+    },
+    {
+      "id": "2604.22748",
+      "citation_key": "cwm_2604_22748",
+      "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+      "authors": [
+        "Meng Chu",
+        "Xuan Billy Zhang",
+        "Kevin Qinghong Lin",
+        "Lingdong Kong",
+        "Jize Zhang",
+        "Teng Tu",
+        "Weijian Ma",
+        "Ziqi Huang",
+        "Senqiao Yang",
+        "Wei Huang",
+        "Yeying Jin",
+        "Zhefan Rao",
+        "Jinhui Ye",
+        "Xinyu Lin",
+        "Xichen Zhang",
+        "Qisheng Hu",
+        "Shuai Yang",
+        "Leyang Shen",
+        "Wei Chow",
+        "Yifei Dong",
+        "Fengyi Wu",
+        "Quanyu Long",
+        "Bin Xia",
+        "Shaozuo Yu",
+        "Mingkang Zhu",
+        "Wenhu Zhang",
+        "Jiehui Huang",
+        "Haokun Gui",
+        "Runyi Li",
+        "Chenyu Tang",
+        "Dong Huang",
+        "Xuhang Chen",
+        "Rui Liu",
+        "Chengzu Li",
+        "Shiyi Du",
+        "Xu Huang",
+        "Haoxuan Che",
+        "Long Chen",
+        "Qifeng Chen",
+        "Wenya Wang",
+        "Wenxuan Zhang",
+        "Xiaojuan Qi",
+        "Yang Deng",
+        "Yanwei Li",
+        "Mike Zheng Shou",
+        "Zhi-Qi Cheng",
+        "See-Kiong Ng",
+        "Ziwei Liu",
+        "Philip Torr",
+        "Jiaya Jia"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-04-24",
+      "source_url": "https://arxiv.org/abs/2604.22748",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "survey",
+      "code_roles": [],
+      "tags": [
+        "survey"
+      ],
+      "summary": "Surveys world models for agents with a levels-by-laws taxonomy: predictor, simulator and evolver levels across physical, digital, social and scientific regimes.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2604.22748",
+      "alias": "Agentic World Modeling"
+    },
+    {
+      "id": "2606.09032",
+      "citation_key": "cwm_2606_09032",
+      "title": "Bridging the Agent-World Gap: Text World Models for LLM-based Agents",
+      "authors": [
+        "Yixia Li",
+        "Hongru Wang",
+        "Peng Lai",
+        "Zhiwen Ruan",
+        "He Zhu",
+        "Youxin Zhu",
+        "Ganlong Zhao",
+        "Minda Hu",
+        "Yun Chen",
+        "Sibei Yang",
+        "Peng Li",
+        "Jeff Z. Pan",
+        "Jia Pan",
+        "Guanhua Chen",
+        "Yang Liu",
+        "Guanbin Li"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-06-08",
+      "source_url": "https://arxiv.org/abs/2606.09032",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "survey",
+      "code_roles": [],
+      "tags": [
+        "survey"
+      ],
+      "summary": "Surveys text world models for LLM agents, which predict the next webpage, terminal output or API response, covering LLM-as-WM and code-as-WM construction, applications and evaluation.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2606.09032",
+      "alias": "Text World Models"
+    },
+    {
+      "id": "2608.23070",
+      "citation_key": "cwm_2608_23070",
+      "title": "From Generation to Simulation: How Far Are World Models from Being True Simulators?",
+      "authors": [
+        "Tong Wang",
+        "Huan Deng",
+        "Mucheng Yang",
+        "Yang He",
+        "Xiaohui Kuang",
+        "Gang Zhao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23070",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "survey",
+      "code_roles": [],
+      "tags": [
+        "survey"
+      ],
+      "summary": "Measures generative world models against eight capabilities of traditional simulators across 200 works, finding structured state feedback the most neglected.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2608.23070",
+      "alias": "From Generation to Simulation"
+    },
+    {
+      "id": "2606.12191",
+      "citation_key": "cwm_2606_12191",
+      "title": "Agentic Environment Engineering for Large Language Models: A Survey of Environment Modeling, Synthesis, Evaluation, and Application",
+      "authors": [
+        "Jiachun Li",
+        "Zhuoran Jin",
+        "Tianyi Men",
+        "Yupu Hao",
+        "Kejian Zhu",
+        "Lingshuai Wang",
+        "Dongqi Huang",
+        "Longxiang Wang",
+        "Shengjia Hua",
+        "Lu Wang",
+        "Jinshan Gao",
+        "Hongbang Yuan",
+        "Ruilin Xu",
+        "Kang Liu",
+        "Jun Zhao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-06-10",
+      "source_url": "https://arxiv.org/abs/2606.12191",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "survey",
+      "code_roles": [],
+      "tags": [
+        "survey"
+      ],
+      "summary": "Surveys environments for LLM agents across modeling, symbolic and neural synthesis, evaluation, and agent-environment co-evolution.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2606.12191",
+      "alias": "Agentic Environment Engineering"
+    },
+    {
+      "id": "2609.16679",
+      "citation_key": "cwm_2609_16679",
+      "title": "AI for Games in the Foundation Model Era",
+      "authors": [
+        "Meng Luo",
+        "Yanlin Li",
+        "Hao Li",
+        "Hongzhan Lin",
+        "Pengfei Zhou",
+        "Tianjie Ju",
+        "Ran Zhang",
+        "Yeying Jin",
+        "Mong-Li Lee",
+        "Wynne Hsu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-09-15",
+      "source_url": "https://arxiv.org/abs/2609.16679",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "survey",
+      "code_roles": [],
+      "tags": [
+        "survey"
+      ],
+      "summary": "Surveys AI across the game lifecycle in six roles, from playing and modeling games to building, adapting at runtime and testing them.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2609.16679",
+      "alias": "AI for Games"
+    },
+    {
+      "id": "2503.18971",
+      "citation_key": "cwm_2503_18971",
+      "title": "LLMs as Planning Formalizers: A Survey for Leveraging Large Language Models to Construct Automated Planning Models",
+      "authors": [
+        "Marcus Tantakoun",
+        "Xiaodan Zhu",
+        "Christian Muise"
+      ],
+      "year": 2025,
+      "first_public_date": "2025-03-22",
+      "source_url": "https://arxiv.org/abs/2503.18971",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "survey",
+      "code_roles": [],
+      "tags": [
+        "survey",
+        "llm-to-pddl"
+      ],
+      "summary": "Surveys LLMs that formalize and refine planning specifications such as PDDL for off-the-shelf automated planners.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2503.18971",
+      "alias": "LLMs as Planning Formalizers"
+    },
+    {
+      "id": "2607.14076",
+      "citation_key": "cwm_2607_14076",
+      "title": "From Pixels to States: Rethinking Interactive World Models as Game Engines",
+      "authors": [
+        "Zhen Li",
+        "Zian Meng",
+        "Shuwei Shi",
+        "Mingliang Zhai",
+        "Jiaming Tan",
+        "Chuanhao Li",
+        "Kaipeng Zhang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-07-15",
+      "source_url": "https://arxiv.org/abs/2607.14076",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "survey",
+      "code_roles": [],
+      "tags": [
+        "survey",
+        "game-world-model"
+      ],
+      "summary": "Reviews interactive game world models through the game-engine loop of action, state and observation, and releases a state-annotated Black Myth: Wukong gameplay data engine.",
+      "evidence_notes": "Added in the 2026-10-31 coverage pass; placement follows the arXiv abstract. Date follows arXiv v1 metadata.",
+      "arxiv_id": "2607.14076",
+      "alias": "From Pixels to States"
     }
   ]
 }
