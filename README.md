@@ -79,7 +79,7 @@ Related surveys centre on video models or world models in general. This survey t
 
 ## News
 
-- **2026-10-31 (coverage pass)** — Added 42 records from a 2026 search pass: 11 WorldCoder-type, 2 Code-as-World-type, 7 VibeWorlding-type, 11 benchmarks, 4 GUI world models and 7 related surveys. See the [update notes](docs/updates/2026-10-31.md#coverage-pass).
+- **2026-10-31 (coverage pass)** — Added 30 records from a 2026 search pass, keeping only work that models an interactive world: 9 WorldCoder-type, 7 VibeWorlding-type, 3 benchmarks, 4 GUI world models and 7 related surveys. See the [update notes](docs/updates/2026-10-31.md#coverage-pass).
 - **2026-10-31 (Other & related surveys)** — Removed five comparator/adjacent records (StatePlay, Simulate to Generalize, Software World Models, Agent-Editing World Model, AW-0). Grouped everything outside the three families under **Other** (GUI world models · benchmarks by evaluation target, now including ExeWorldBench and BlenderWorld) and added a [related-surveys](#related-surveys) section that states how this survey differs.
 - **2026-10-31 (reclassification)** — Split the three families by how much of the world code carries: WorldCoder-type (state only), Code-as-World-type (whitebox world + generative rendering), VibeWorlding-type (full 3D, static scenes included). Tightened Code-as-World-type, moved simulation-ready 3D construction to VibeWorlding-type, and grouped GUI world models as an unassigned GUI section. See the [update notes](docs/updates/2026-10-31.md#reclassification).
 - **2026-10-31** — Added 21 records from the 2026-10-13–29 search pass, including executable dynamics, persistent world engines, editable 3D construction, and execution-grounded benchmarks. The strict catalogue boundary remains the three-family map; supporting sources stay unassigned.
@@ -98,10 +98,10 @@ Related surveys centre on video models or world models in general. This survey t
 
 | Three primary families |
 |---|
-| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(49)</sub> |
-| [02 · Code-as-World-type · Whitebox Worlds + Generative Rendering](#papers-code_as_world) <sub>(24)</sub> |
+| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(47)</sub> |
+| [02 · Code-as-World-type · Whitebox Worlds + Generative Rendering](#papers-code_as_world) <sub>(22)</sub> |
 | [03 · VibeWorlding-type · Agentic 3D World Construction](#papers-vibeworlding) <sub>(40)</sub> |
-| [Other](#papers-other): [GUI World Models](#papers-other-gui) <sub>(20)</sub> · [Benchmarks](#papers-other-benchmark) <sub>(28)</sub> |
+| [Other](#papers-other): [GUI World Models](#papers-other-gui) <sub>(20)</sub> · [Benchmarks](#papers-other-benchmark) <sub>(20)</sub> |
 | [Paper master list](docs/paper-master-list.md) (including unassigned sources) |
 
 <!-- NAVIGATION:END -->
@@ -141,7 +141,7 @@ The families are split by how much of the world code carries: state only, a whit
 
 <!-- CATALOG:BEGIN -->
 
-**169 sources** · literature through **2026-10-29**.
+**157 sources** · literature through **2026-10-29**.
 
 The README groups papers by the three primary families; smaller, benchmark, and adjacent sources remain in the [paper master list](docs/paper-master-list.md).
 
@@ -199,9 +199,6 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Twin: Playing an Unknown Game with a Test-Time Digital Twin** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.14490-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.14490)
   <br><sub>Twin builds a test-time digital twin and checks historical transitions before choosing actions in unknown games.</sub>
-
-- **PhysMind: From Video to Executable Worlds for Training-Free Physical Reasoning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.04575-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.04575)
-  <br><sub>Builds one reusable executable world per video by reconstructing objects and poses and fitting analytic dynamics and latent physical parameters, then answers questions by continuing or editing that world.</sub>
 
 - **Tycho: Active Abstraction with Programmatic World Models for ARC-AGI-3** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2607.28287-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.28287)
   <br><sub>Tycho actively revises abstractions and programmatic hypotheses while solving ARC-AGI-3 games.</sub>
@@ -262,9 +259,6 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Finite Automata Extraction: Low-data World Model Learning as Programs from Gameplay Video (FAE)** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2508.11836-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2508.11836)
   <br><sub>FAE extracts sprite-grid behavior programs from gameplay video through a constrained reactive DSL.</sub>
-
-- **Programmatic Video Prediction Using Large Language Models (ProgGen)** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2505.14948-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.14948)
-  <br><sub>Predicts future video frames by having an LLM/VLM synthesize programs that estimate per-frame symbolic states, roll them forward, and render the predicted states.</sub>
 
 - **PoE-World: Compositional World Modeling with Products of Programmatic Experts** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2505.10819-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2505.10819)
   <br><sub>PoE-World composes programmatic experts into a stochastic world model for prediction and planning.</sub>
@@ -368,12 +362,6 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Code World Model: Coding Agent as World Brain** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.25927-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.25927)
   <br><sub>Code World Model separates a coding world brain from a visual world engine through executable proxy representations.</sub>
-
-- **VideoCoCo: Code-as-CoT for Physically-Consistent Video Generation via an Agentic Dual-Engine System** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2607.27380-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.27380)
-  <br><sub>A coding agent writes a Blender program that specifies a scene and its temporal evolution; the executed simulation gives a deterministic draft that a video model turns into the final video.</sub>
-
-- **RealWonder: Real-Time Physical Action-Conditioned Video Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2603.05449-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2603.05449)
-  <br><sub>Translates 3D actions such as forces and robot motions through a physics simulation over a single-image reconstruction, then renders the simulated flow and RGB with a few-step video generator in real time.</sub>
 
 - **Web World Models** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2512.23676-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.23676)
   <br><sub>Web World Models uses typed web state and code-defined rules as the substrate for persistent, generative worlds.</sub>
@@ -583,38 +571,23 @@ Each primary family is ordered by recorded publication date; the annotated catal
 </details>
 
 <a id="papers-other-benchmark"></a>
-#### Benchmarks (28)
+#### Benchmarks (20)
 
 *Benchmarks and diagnostic studies, grouped by what they evaluate.*
 
 <details>
-<summary>28 records</summary>
+<summary>20 records</summary>
 
 **Evaluating state-level dynamics (WorldCoder-type)**
 
 - **GlobeBench: Evaluating Text-Based World Model Capabilities for Scalable Environment Simulations** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.22708-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.22708)
   <br><sub>Tests textual action-conditioned successor predictions against execution-derived references, combining deterministic checks with semantic judging.</sub>
 
-- **PhySimCode: A Benchmark and Evaluation Method for Physics Video to Code Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.15722-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.15722)
-  <br><sub>Benchmarks physics video-to-code generation: infer the governing physics and parameters from raw video and write runnable Python that regenerates the scene.</sub>
-
-- **WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.08720-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.08720)
-  <br><sub>Benchmarks whether LLM agents can implement physics solvers for 168 simulation tasks drawn from classic graphics papers, inside fixed simulation scaffolds.</sub>
-
 - **GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.21562-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.21562)
   <br><sub>GameLogicBench checks Godot game rules at every simulation tick across varied reproducible scenarios.</sub>
 
 - **ScratchWorld: Evaluating If World Models Compute Executable Consequences** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2606.31689-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.31689)
   <br><sub>ScratchWorld uses replay-verified Scratch transitions and changed-field metrics to evaluate executable consequences.</sub>
-
-- **MPMWorlds: Material-Point-Method Simulations for Inferring and Extrapolating Physical Dynamics** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2606.01538-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.01538)
-  <br><sub>A dataset of 2D material-point-method simulations used to compare code generation and video diffusion for inferring physical dynamics from video and extrapolating them.</sub>
-
-- **PhysCodeBench: Benchmarking Physics-Aware Symbolic Simulation of 3D Scenes via Self-Corrective Multi-Agent Refinement** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2604.23580-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.23580)
-  <br><sub>Benchmarks translating physical descriptions into simulation code, scoring physical correctness from engine state through conservation residuals and expert assertions.</sub>
-
-- **VisPhyWorld: Probing Physical Reasoning via Code-Driven Video Reconstruction** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.13294-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.13294)
-  <br><sub>Evaluates physical reasoning by asking multimodal models to write executable simulator code that reconstructs observed videos, separating physical inference from rendering.</sub>
 
 - **Benchmarking World-Model Learning with Environment-Level Queries (WorldTest)** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2510.19788-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.19788)
   <br><sub>Proposes evaluating learned world models with environment-level queries (reachability, counterfactual effects) after reward-free exploration, instantiated as AutumnBench with 43 interactive grid-world environments.</sub>
@@ -653,14 +626,8 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **Spec2Game: Can LLMs Generate Complete Playable Games from Detailed Specifications?** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.04253-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.04253)
   <br><sub>Benchmarks generating complete Pygame projects from detailed game specifications with controlled rule variants, separating executability from faithful rule realization.</sub>
 
-- **4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.03715-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.03715)
-  <br><sub>Benchmarks agents that reconstruct dynamic scenes from video as executable graphics programs, including physical simulation of deformation, fluids and fracture.</sub>
-
 - **WorldCoder-Bench: Benchmarking Physically Grounded 3D World Synthesis** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2606.01869-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.01869)
   <br><sub>WorldCoder-Bench tests physically grounded 3D world synthesis using hidden runtime behavior contracts.</sub>
-
-- **3DCodeBench: Benchmarking Agentic Procedural 3D Modeling Via Code** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2606.01057-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2606.01057)
-  <br><sub>Benchmarks VLM agents on procedural 3D modeling through code in 3D software from text and image references, with a human-preference ranking arena.</sub>
 
 **Evaluating non-code video and learned world models**
 
@@ -675,9 +642,6 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **WorldOracle: Benchmarking Action-Conditioned World Models against Real-World Executions** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.18826-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.18826)
   <br><sub>Evaluates action-conditioned robot world-model rollouts against paired physical executions across state correctness, spatial alignment, local interaction fidelity and multiview coherence.</sub>
-
-- **Training Object Permanence in World Models (WROP)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.28654-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.28654)
-  <br><sub>Builds Blender generators for object-permanence and solidity tasks to train and examine video models as world models.</sub>
 
 - **WorldModelBench: Judging Video Generation Models As World Models** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2502.20694-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2502.20694)
   <br><sub>WorldModelBench evaluates video world models using instruction adherence, physical plausibility, and human preferences.</sub>

@@ -1684,30 +1684,6 @@
       "annotated_on": "2026-10-31"
     },
     {
-      "id": "2608.04575",
-      "coarse_family": "worldcoder",
-      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2608.04575"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
-    },
-    {
-      "id": "2505.14948",
-      "coarse_family": "worldcoder",
-      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2505.14948"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
-    },
-    {
       "id": "2505.02216",
       "coarse_family": "worldcoder",
       "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
@@ -1727,30 +1703,6 @@
       "assignment_status": "provisional",
       "evidence_urls": [
         "https://arxiv.org/abs/2504.15785"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
-    },
-    {
-      "id": "2603.05449",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2603.05449"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
-    },
-    {
-      "id": "2607.27380",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2607.27380"
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-31"
@@ -1840,76 +1792,6 @@
       "annotated_on": "2026-10-31"
     },
     {
-      "id": "2606.01538",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2606.01538"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31",
-      "unassigned_group": "benchmark",
-      "benchmark_target": "worldcoder"
-    },
-    {
-      "id": "2610.08720",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2610.08720"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31",
-      "unassigned_group": "benchmark",
-      "benchmark_target": "worldcoder"
-    },
-    {
-      "id": "2602.13294",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2602.13294"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31",
-      "unassigned_group": "benchmark",
-      "benchmark_target": "worldcoder"
-    },
-    {
-      "id": "2604.23580",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2604.23580"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31",
-      "unassigned_group": "benchmark",
-      "benchmark_target": "worldcoder"
-    },
-    {
-      "id": "2610.15722",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2610.15722"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31",
-      "unassigned_group": "benchmark",
-      "benchmark_target": "worldcoder"
-    },
-    {
       "id": "2510.19788",
       "coarse_family": null,
       "coarse_family_label": "Unassigned / 未归类",
@@ -1922,34 +1804,6 @@
       "annotated_on": "2026-10-31",
       "unassigned_group": "benchmark",
       "benchmark_target": "worldcoder"
-    },
-    {
-      "id": "2610.03715",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2610.03715"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31",
-      "unassigned_group": "benchmark",
-      "benchmark_target": "vibeworlding"
-    },
-    {
-      "id": "2606.01057",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2606.01057"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31",
-      "unassigned_group": "benchmark",
-      "benchmark_target": "vibeworlding"
     },
     {
       "id": "2610.10622",
@@ -1978,20 +1832,6 @@
       "annotated_on": "2026-10-31",
       "unassigned_group": "benchmark",
       "benchmark_target": "vibeworlding"
-    },
-    {
-      "id": "2609.28654",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2609.28654"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31",
-      "unassigned_group": "benchmark",
-      "benchmark_target": "video_wm"
     },
     {
       "id": "2601.04035",
