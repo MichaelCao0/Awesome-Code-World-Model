@@ -54,7 +54,7 @@ Beyond predicting pixels, code-centric world models enable **explicit dynamics, 
 
 | Three primary families |
 |---|
-| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(33)</sub> |
+| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(32)</sub> |
 | [02 · Code-as-World-type · Executable World Programs](#papers-code_as_world) <sub>(32)</sub> |
 | [03 · VibeWorlding-type · Agentic 3D World Construction](#papers-vibeworlding) <sub>(26)</sub> |
 | [Paper master list](docs/paper-master-list.md) (including unassigned sources) |
@@ -96,7 +96,7 @@ The [three-family guide](docs/coarse-taxonomy.md) gives the placement rules. Sma
 
 <!-- CATALOG:BEGIN -->
 
-**145 sources** · literature through **2026-10-29**.
+**132 sources** · literature through **2026-10-29**.
 
 The README groups papers by the three primary families; smaller, benchmark, and adjacent sources remain in the [paper master list](docs/paper-master-list.md).
 
@@ -193,9 +193,6 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning** `2023` [![arXiv](https://img.shields.io/badge/arXiv-2305.14909-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2305.14909)
   <br><sub>Uses LLMs to construct and correct PDDL domain models for sound model-based task planning.</sub>
-
-- **PDSketch: Integrated Planning Domain Programming and Learning** `2023` [![arXiv](https://img.shields.io/badge/arXiv-2303.05501-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2303.05501)
-  <br><sub>PDSketch combines programmed transition structure with learned neural details and automatically derived planning heuristics.</sub>
 
 - **Combining Functional and Automata Synthesis to Discover Causal Reactive Programs (AutumnSynth)** `2023` [![Paper](assets/badges/paper.svg)](https://doi.org/10.1145/3571249)
   <br><sub>AutumnSynth alternates transition-function synthesis and automata synthesis to recover reactive programs with latent state.</sub>

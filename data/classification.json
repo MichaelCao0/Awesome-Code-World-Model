@@ -46,18 +46,6 @@
       "annotated_on": "2026-10-26"
     },
     {
-      "id": "2006.08381",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2006.08381"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
       "id": "2009.08026",
       "coarse_family": "vibeworlding",
       "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
@@ -101,18 +89,6 @@
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://doi.org/10.1145/3571249"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2303.05501",
-      "coarse_family": "worldcoder",
-      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2303.05501"
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26"
@@ -197,42 +173,6 @@
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2408.02211"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2410.13232",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2410.13232"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2410.23156",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2410.23156"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2411.06559",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2411.06559"
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26"
@@ -331,30 +271,6 @@
         "https://arxiv.org/abs/2508.11836"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2509.07996",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2509.07996"
-      ],
-      "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2510.02387",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue + feishu_visible_pasted_text",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2510.02387"
-      ],
-      "evidence_depth": "abstract",
       "annotated_on": "2026-10-26"
     },
     {
@@ -497,18 +413,6 @@
       "assignment_status": "provisional",
       "evidence_urls": [
         "https://arxiv.org/abs/2602.17365"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2606.23690",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2606.23690"
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-26"
@@ -754,18 +658,6 @@
       "annotated_on": "2026-10-26"
     },
     {
-      "id": "2608.06257",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2608.06257"
-      ],
-      "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
-    },
-    {
       "id": "2608.14490",
       "coarse_family": "worldcoder",
       "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
@@ -814,18 +706,6 @@
       "annotated_on": "2026-10-26"
     },
     {
-      "id": "2608.29305",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2608.29305"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
       "id": "2608.29519",
       "coarse_family": "vibeworlding",
       "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
@@ -857,30 +737,6 @@
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2608.30530"
-      ],
-      "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "scene-survey2026",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://doi.org/10.1007/s11263-026-02999-6"
-      ],
-      "evidence_depth": "metadata",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2609.02885",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2609.02885"
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26"
@@ -1674,18 +1530,6 @@
       "assignment_status": "provisional",
       "evidence_urls": [
         "https://arxiv.org/abs/2610.39721"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
-    },
-    {
-      "id": "2610.37257",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "arxiv_search_2026-10-31",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2610.37257"
       ],
       "evidence_depth": "abstract",
       "annotated_on": "2026-10-31"

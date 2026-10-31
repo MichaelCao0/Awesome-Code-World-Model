@@ -57,7 +57,7 @@
 
 | 三类主线 |
 |---|
-| [01 · WorldCoder-type · 程序化动力学](#papers-worldcoder) <sub>(33)</sub> |
+| [01 · WorldCoder-type · 程序化动力学](#papers-worldcoder) <sub>(32)</sub> |
 | [02 · Code-as-World-type · 可执行世界程序](#papers-code_as_world) <sub>(32)</sub> |
 | [03 · VibeWorlding-type · agentic 3D 世界构建](#papers-vibeworlding) <sub>(26)</sub> |
 | [全量论文总表](docs/paper-master-list.md)（含未归类来源） |
@@ -103,7 +103,7 @@
 
 <!-- CATALOG:BEGIN -->
 
-**145 条文献来源** · 文献截止日期：**2026-10-29**。
+**132 条文献来源** · 文献截止日期：**2026-10-29**。
 
 README 只按三类主线浏览；未归类的小型、评测与相邻来源保留在[全量论文总表](docs/paper-master-list.md)。
 
@@ -200,9 +200,6 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **Leveraging Pre-trained Large Language Models to Construct and Utilize World Models for Model-based Task Planning** `2023` [![arXiv](https://img.shields.io/badge/arXiv-2305.14909-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2305.14909)
   <br><sub>利用 LLM 构建和修正 PDDL 域模型，再通过可靠的外部规划器进行任务规划。</sub>
-
-- **PDSketch: Integrated Planning Domain Programming and Learning** `2023` [![arXiv](https://img.shields.io/badge/arXiv-2303.05501-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2303.05501)
-  <br><sub>PDSketch 将预设的转移结构与学习到的神经组件结合，并自动导出规划启发式。</sub>
 
 - **Combining Functional and Automata Synthesis to Discover Causal Reactive Programs (AutumnSynth)** `2023` [![Paper](assets/badges/paper.svg)](https://doi.org/10.1145/3571249)
   <br><sub>AutumnSynth 交替合成转移函数与自动机，恢复包含潜在状态的响应式程序。</sub>
