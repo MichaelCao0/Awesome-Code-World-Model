@@ -237,17 +237,30 @@ def badges(data, survey_links):
     return output
 
 def badge_row(survey_links):
-    links = [('sources', 'Source records', '#paper-collection'), ('topics', 'Reading sections', '#contents'),
-             ('cutoff', 'Literature cutoff', 'docs/review-protocol.md'), ('contributions', 'Contributions welcome', 'CONTRIBUTING.md')]
-    current = ' '.join(f'[![{alt}](assets/badges/{name}.svg)]({target})' for name, alt, target in links)
-    publication = []
-    for name, alt, target in [('survey-arxiv', 'Survey arXiv', survey_links['arxiv_url']),
-                              ('survey-citations', 'Survey Semantic Scholar citations', survey_links['semantic_scholar_url'])]:
-        source = survey_links['semantic_scholar_citations_badge_url'] if name == 'survey-citations' else None
-        source = source or f'assets/badges/{name}.svg'
-        icon = f'![{alt}]({source})'
-        publication.append(f'[{icon}]({target})' if target else icon)
-    return current + '\n\n' + ' '.join(publication)
+    repo = 'https://github.com/MichaelCao0/Awesome-Code-World-Model'
+    identity = [
+        ('https://awesome.re/badge.svg', 'Awesome', 'https://github.com/sindresorhus/awesome'),
+        (f'https://img.shields.io/github/stars/MichaelCao0/Awesome-Code-World-Model?style=social', 'GitHub stars', f'{repo}/stargazers'),
+        (f'https://img.shields.io/github/forks/MichaelCao0/Awesome-Code-World-Model?style=social', 'GitHub forks', f'{repo}/network/members'),
+        ('https://img.shields.io/badge/PRs-welcome-brightgreen.svg', 'PRs welcome', 'CONTRIBUTING.md'),
+    ]
+    metrics = [
+        ('sources', 'Source records', '#paper-collection'),
+        ('topics', 'Reading sections', '#contents'),
+        ('cutoff', 'Literature cutoff', 'docs/review-protocol.md'),
+    ]
+    identity_row = ' '.join(f'[![{alt}]({source})]({target})' for source, alt, target in identity)
+    metric_row = ' '.join(f'[![{alt}](assets/badges/{name}.svg)]({target})' for name, alt, target in metrics)
+    arxiv_badge = ('https://img.shields.io/badge/arXiv-survey%20pending-b31b1b?style=flat-square&logo=arxiv&logoColor=white'
+                   if not survey_links['arxiv_url'] else
+                   'https://img.shields.io/badge/arXiv-paper-b31b1b?style=flat-square&logo=arxiv&logoColor=white')
+    scholar_badge = (survey_links['semantic_scholar_citations_badge_url'] or
+                     'https://img.shields.io/badge/Semantic%20Scholar-citations%20pending-1857b6?style=flat-square&logo=semanticscholar&logoColor=white')
+    publication = [
+        f"[![Survey arXiv]({arxiv_badge})]({survey_links['arxiv_url']})" if survey_links['arxiv_url'] else f'![Survey arXiv]({arxiv_badge})',
+        f"[![Survey Semantic Scholar citations]({scholar_badge})]({survey_links['semantic_scholar_url']})" if survey_links['semantic_scholar_url'] else f'![Survey Semantic Scholar citations]({scholar_badge})',
+    ]
+    return identity_row + '\n\n' + metric_row + '\n\n' + ' '.join(publication)
 
 def bib_escape(value):
     replacements = {'\\': r'\textbackslash{}', '&': r'\&', '%': r'\%', '_': r'\_', '#': r'\#', '$': r'\$', '{': r'\{', '}': r'\}'}

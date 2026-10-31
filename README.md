@@ -10,9 +10,11 @@ A living literature collection and home for our forthcoming survey.
 
 <!-- BADGES:BEGIN -->
 
-[![Source records](assets/badges/sources.svg)](#paper-collection) [![Reading sections](assets/badges/topics.svg)](#contents) [![Literature cutoff](assets/badges/cutoff.svg)](docs/review-protocol.md) [![Contributions welcome](assets/badges/contributions.svg)](CONTRIBUTING.md)
+[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome) [![GitHub stars](https://img.shields.io/github/stars/MichaelCao0/Awesome-Code-World-Model?style=social)](https://github.com/MichaelCao0/Awesome-Code-World-Model/stargazers) [![GitHub forks](https://img.shields.io/github/forks/MichaelCao0/Awesome-Code-World-Model?style=social)](https://github.com/MichaelCao0/Awesome-Code-World-Model/network/members) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-![Survey arXiv](assets/badges/survey-arxiv.svg) ![Survey Semantic Scholar citations](assets/badges/survey-citations.svg)
+[![Source records](assets/badges/sources.svg)](#paper-collection) [![Reading sections](assets/badges/topics.svg)](#contents) [![Literature cutoff](assets/badges/cutoff.svg)](docs/review-protocol.md)
+
+![Survey arXiv](https://img.shields.io/badge/arXiv-survey%20pending-b31b1b?style=flat-square&logo=arxiv&logoColor=white) ![Survey Semantic Scholar citations](https://img.shields.io/badge/Semantic%20Scholar-citations%20pending-1857b6?style=flat-square&logo=semanticscholar&logoColor=white)
 
 <!-- BADGES:END -->
 
