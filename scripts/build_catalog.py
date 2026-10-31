@@ -151,7 +151,9 @@ def catalogue(data, localized=None):
             if p.get('source_type') == 'project':
                 kind = 'project'
             summary = localized['summaries'][p['id']] if localized else p['summary']
-            lines += [f"- **{label}** `{p['year']}` [![{badge_label}](assets/badges/{kind}.svg)]({p['source_url']})",
+            badge_source = (f"https://img.shields.io/badge/arXiv-{p['arxiv_id']}-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white"
+                            if p.get('arxiv_id') else f'assets/badges/{kind}.svg')
+            lines += [f"- **{label}** `{p['year']}` [![{badge_label}]({badge_source})]({p['source_url']})",
                       f"  <br><sub>{escape(summary)}</sub>", '']
         lines += ['[↑ 返回导航](#contents)' if localized else '[↑ Contents](#contents)']
     return '\n'.join(lines)
