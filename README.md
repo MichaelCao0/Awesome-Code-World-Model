@@ -38,6 +38,7 @@ Beyond predicting pixels, code-centric world models enable **explicit dynamics, 
 
 ## News
 
+- **2026-10-31 (reclassification)** — Split the three families by how much of the world code carries: WorldCoder-type (state only), Code-as-World-type (whitebox world + generative rendering), VibeWorlding-type (full 3D, static scenes included). Tightened Code-as-World-type, moved simulation-ready 3D construction to VibeWorlding-type, and grouped GUI world models as an unassigned GUI section. See the [update notes](docs/updates/2026-10-31.md#reclassification).
 - **2026-10-31** — Added 21 records from the 2026-10-13–29 search pass, including executable dynamics, persistent world engines, editable 3D construction, and execution-grounded benchmarks. The strict catalogue boundary remains the three-family map; supporting sources stay unassigned.
 - **2026-10-30** — Expanded the three-family assignments while leaving benchmarks and adjacent sources unassigned in the master list. The repository now has exactly three catalogue sections.
 - **2026-10-29** — Added VibeWorlding, a 124-record [paper master list](docs/paper-master-list.md), and the initial three-family map: WorldCoder-type, Code-as-World-type, and VibeWorlding-type. Replaced the cover with a generated raster image.
@@ -54,9 +55,10 @@ Beyond predicting pixels, code-centric world models enable **explicit dynamics, 
 
 | Three primary families |
 |---|
-| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(32)</sub> |
-| [02 · Code-as-World-type · Executable World Programs](#papers-code_as_world) <sub>(32)</sub> |
-| [03 · VibeWorlding-type · Agentic 3D World Construction](#papers-vibeworlding) <sub>(26)</sub> |
+| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(38)</sub> |
+| [02 · Code-as-World-type · Whitebox Worlds + Generative Rendering](#papers-code_as_world) <sub>(22)</sub> |
+| [03 · VibeWorlding-type · Agentic 3D World Construction](#papers-vibeworlding) <sub>(35)</sub> |
+| [Unassigned · GUI World Models](#papers-unassigned-gui) <sub>(16)</sub> |
 | [Paper master list](docs/paper-master-list.md) (including unassigned sources) |
 
 <!-- NAVIGATION:END -->
@@ -83,13 +85,13 @@ Program origin, verification, and downstream use form a second set of attributes
 
 ### Three-family writing map
 
-| Initial family | Core question | Representative anchors |
+| Family (code carries…) | Core question | Representative anchors |
 |---|---|---|
-| **WorldCoder-type** · Programmatic Dynamics | Does code predict action consequences and support planning? | [WorldCoder](https://arxiv.org/abs/2402.12275), [TheoryCoder](https://arxiv.org/abs/2503.20124), [OneLife](https://arxiv.org/abs/2510.12088), [Code World Models for General Game Playing](https://arxiv.org/abs/2510.04542) |
-| **Code-as-World-type** · Executable World Programs | Does code keep a persistent world, its state, rules, and interfaces executable? | [Code as Worlds](https://arxiv.org/abs/2608.27549), [Programmable World Model](https://arxiv.org/abs/2609.10540), [AgentGarten](https://arxiv.org/abs/2610.12374), [Oneira](https://arxiv.org/abs/2610.01614) |
-| **VibeWorlding-type** · Agentic 3D World Construction | Can an agent construct and edit an editable, simulation-ready 3D world? | [VibeWorlding](https://arxiv.org/abs/2608.15265), [WorldClaw](https://arxiv.org/abs/2608.05248), [USDCraft](https://arxiv.org/abs/2610.11322), [SceneRig](https://arxiv.org/abs/2610.28585) |
+| **WorldCoder-type** · Programmatic Dynamics (state only) | Does code predict action consequences and support planning? | [WorldCoder](https://arxiv.org/abs/2402.12275), [TheoryCoder](https://arxiv.org/abs/2503.20124), [OneLife](https://arxiv.org/abs/2510.12088), [Code World Models for General Game Playing](https://arxiv.org/abs/2510.04542) |
+| **Code-as-World-type** · Whitebox Worlds + Generative Rendering | Can executable state and rules over a whitebox/proxy world drive a generatively rendered world? | [Code World Model](https://arxiv.org/abs/2608.25927), [Programmable World Model](https://arxiv.org/abs/2609.10540), [AgentGarten](https://arxiv.org/abs/2610.12374), [Oneira](https://arxiv.org/abs/2610.01614) |
+| **VibeWorlding-type** · Agentic 3D World Construction | Can an agent write and edit a full 3D world in code, static or simulation-ready? | [VibeWorlding](https://arxiv.org/abs/2608.15265), [WorldClaw](https://arxiv.org/abs/2608.05248), [USDCraft](https://arxiv.org/abs/2610.11322), [SceneRig](https://arxiv.org/abs/2610.28585) |
 
-The [three-family guide](docs/coarse-taxonomy.md) gives the placement rules. Smaller, benchmark, GUI, historical, and adjacent records stay unassigned in the [master list](docs/paper-master-list.md).
+The families are split by how much of the world code carries: state only, a whitebox world rendered generatively, or the full 3D world. The [three-family guide](docs/coarse-taxonomy.md) gives the placement rules. GUI world models are listed in a separate [unassigned GUI group](#papers-unassigned-gui); benchmarks and adjacent records stay unassigned in the [master list](docs/paper-master-list.md).
 
 <a id="paper-collection"></a>
 ## Paper collection
@@ -105,13 +107,22 @@ Each primary family is ordered by recorded publication date; the annotated catal
 <a id="papers-worldcoder"></a>
 ### 01 · WorldCoder-type · Programmatic Dynamics
 
-*Executable transition mechanisms, world-program induction, planning, and model repair.*
+*State-level executable dynamics: transition mechanisms, world-program induction, planning, and model repair, without generated appearance.*
 
 - **Algebraic World Model: From Exploration to Proofs** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.40503-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40503)
   <br><sub>Explores unknown games with executable Python hypotheses, typed rules, and Lean formalization for reachability and impossibility proofs.</sub>
 
+- **PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.34921-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.34921)
+  <br><sub>Has a shared VLM propose executable physical worlds while a deterministic engine verifies counterfactual branches and produces answer-bound training tasks.</sub>
+
+- **Build, Don't Play: Self-Improving LLM Research Agents Develop a Hearthstone Battlegrounds AI That Rivals Top Players (AutoTavern)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.33845-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.33845)
+  <br><sub>A self-improving research-agent system builds and verifies a faithful Hearthstone Battlegrounds simulator, then trains agents against calibrated opponents.</sub>
+
 - **LLM Agents as Suppliers of Physical System Models: Calibration and Acceptance in Modelica** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.25019-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.25019)
   <br><sub>Studies LLM coding agents that assemble and calibrate executable Modelica physical-system models from descriptions and data, with acceptance based on behavioral fit, invariants and interpretability.</sub>
+
+- **Neurosymbolic Learning of Interpretable World Models (CGWM)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.19955-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.19955)
+  <br><sub>Learns visual concept grounding while a parameter-free predictor applies supplied temporal-logic transition rules; planning differentiates through symbolic imagined trajectories.</sub>
 
 - **A Declared World Model: Language Models Write the Rules of the Scene They are Shown** `2026` [![Paper](assets/badges/paper.svg)](https://www.preprints.org/manuscript/202610.1139)
   <br><sub>A language model writes world rules from a labelled scene graph. A deterministic engine checks proposed actions and computes next states. Experiments test whether generated rules transfer beyond the observed layout.</sub>
@@ -134,6 +145,9 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.35047-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.35047)
   <br><sub>EMPIRIC learns residual code that extends a physics engine with missing forces, constraints, and hidden state.</sub>
 
+- **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.27549-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27549)
+  <br><sub>Code as Worlds discovers executable physical representations through propose, instantiate, execute, render, and verify loops.</sub>
+
 - **Twin: Playing an Unknown Game with a Test-Time Digital Twin** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.14490-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.14490)
   <br><sub>Twin builds a test-time digital twin and checks historical transitions before choosing actions in unknown games.</sub>
 
@@ -145,6 +159,12 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Program Synthesis for Simulation-Based Inference: Joint Model Selection and Parameter Estimation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2607.17540-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.17540)
   <br><sub>Combines LLM-generated simulator families with neural simulation-based inference to select mechanisms and estimate parameters.</sub>
+
+- **Do Coding Agents Need Executable World Models, Simplification, and Verification to Solve ARC-AGI-3?** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2607.15439-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.15439)
+  <br><sub>Tests executable-model discipline, simplification, and replay verification in coding agents for ARC-AGI-3.</sub>
+
+- **World-Time Compute with Verified Code World Models** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.09163-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.09163)
+  <br><sub>World-Time Compute uses verified symbolic code worlds to generate exactly labeled trajectories for model training.</sub>
 
 - **OPINE-World: Programmatic World Modeling with Ontology-error-Prioritized Interactive Exploration for ARC-AGI-3** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2607.01531-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.01531)
   <br><sub>OPINE-World jointly revises symbolic ontology, transition hypotheses, and goals through error-prioritized exploration.</sub>
@@ -206,15 +226,15 @@ Each primary family is ordered by recorded publication date; the annotated catal
 [↑ Contents](#contents)
 
 <a id="papers-code_as_world"></a>
-### 02 · Code-as-World-type · Executable World Programs
+### 02 · Code-as-World-type · Whitebox Worlds + Generative Rendering
 
-*Persistent world state, rules, simulators, and execution/rendering interfaces.*
+*Code keeps persistent state and rules over a whitebox/proxy world; a generative renderer supplies appearance.*
 
 - **Fight World Model: Customizable Combat through Visual Interaction Proxies** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.40607-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40607)
   <br><sub>Separates executable combat state and rule resolution from video rendering with identity- and timing-aligned interaction proxies; tests rule changes and customization.</sub>
 
-- **Cinematize from Unreal: Agentic Choreography for Controllable World Simulation (CineU)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.38468-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.38468)
-  <br><sub>Uses an Unreal project as a persistent inspectable world; agent-generated code performs geometry- and capability-constrained operations with verification and localized repair.</sub>
+- **Wizard: Manipulate Any World in Real Time via Agentic Control** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.40339-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40339)
+  <br><sub>Combines structured skeleton/geometry proxies with an agentic framework that maintains game state for real-time, generalizable video-world control.</sub>
 
 - **EdenLive: Real-Time Generative Rendering from Any Visual Reference** `2026` [![Project](assets/badges/project.svg)](https://github.com/VAST-AI-Research/EdenLive)
   <br><sub>A generative renderer maps upstream reference video, a target first frame and a prompt to enhanced video. The upstream program maintains state and rules. Released tooling also includes a prompt-to-playable-game skill and workbench.</sub>
@@ -222,20 +242,17 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **BoxWorld: Let World Engines Control and Video Generators Render** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.36371-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.36371)
   <br><sub>A coding agent turns user rules into a Box World Engine exposing persistent attributes and status variables; a state renderer converts the stream into interactive video.</sub>
 
-- **PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.34921-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.34921)
-  <br><sub>Has a shared VLM propose executable physical worlds while a deterministic engine verifies counterfactual branches and produces answer-bound training tasks.</sub>
-
 - **Mundo: Customized World Model** `2026` [![Project](assets/badges/project.svg)](https://mundo-world-model.github.io/)
   <br><sub>Images are reconstructed into an editable 3D proxy. A scene program specifies objects and physical parameters; scripts and usually MuJoCo evolve state. Proxy frames condition a video renderer together with context views.</sub>
 
-- **WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.28827-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.28827)
-  <br><sub>Hierarchical planning predicts typed regional and tile specifications; fixed procedural generators compile them, while persistent records retain identities, boundary contracts and edits across streaming revisits.</sub>
+- **AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.31466-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.31466)
+  <br><sub>Renders agent-built game blockouts into entity-consistent video while preserving layout, camera, entity timing, and count changes.</sub>
+
+- **SolarRenderer: Few-Step Generative Reference Rendering** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.28630-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.28630)
+  <br><sub>Adapts a frozen video backbone with control and acceleration LoRAs to turn aligned structural video into detailed video, including streaming generation.</sub>
 
 - **Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.27999-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.27999)
   <br><sub>A coding agent turns player requests into executable game rules; an engine owns persistent state, while a causal video model renders detailed views from low-poly proxies.</sub>
-
-- **Agent World Model in the Wild: Computer-Use Agent Environment Synthesis (WildAWM)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.26828-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.26828)
-  <br><sub>Synthesizes executable computer-use worlds spanning GUI, MCP and CLI interfaces, with replayable state-building programs and execution-based task/verifier quality gates for agent training.</sub>
 
 - **State World Models: Execute the Rules, Generate the Pixels** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.26811-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.26811)
   <br><sub>A coding agent writes a typed game definition; a runtime executes rules over semantic and spatial state before a frozen video renderer, then admits rule-compatible visual feedback.</sub>
@@ -243,17 +260,17 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **Mallea: Building, Steering, and Memorizing Worlds with Coding Agent** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.21283-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.21283)
   <br><sub>A coding agent jointly builds object structures and rules, supports runtime edits preserving unaffected state, and combines executed state with object texture memory for rendering.</sub>
 
+- **Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation (ATAS)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.20571-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.20571)
+  <br><sub>Compiles screenplay shots with spatial and event-time references, retrieves registered scene and event memories, and admits generated observations into memory only after checks.</sub>
+
 - **Generative World Simulation with DAO and JING (DAO + JING)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.19726-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.19726)
   <br><sub>DAO maintains shared character, object, and space states under world time and interaction rules, while JING renders observer-specific audiovisual experiences.</sub>
 
-- **Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.17651-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.17651)
-  <br><sub>Compiles generated visual scenes into MuJoCo-compatible worlds with physical attributes and refines executable dynamics using simulator feedback.</sub>
+- **From Pixels to Executable Physics: Behavior-Grounded World Models for Embodied Action Consequence Prediction (DR-WM)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.17630-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.17630)
+  <br><sub>Combines RGB scene reconstruction and behavior-calibrated terrain contact priors with physics simulation, using simulated motion and geometry to guide a video world model.</sub>
 
 - **StreamRender-H3: Interactive Coding Worlds with Real-time Streaming Diffusion Render** `2026` [![Project](assets/badges/project.svg)](https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/)
   <br><sub>A three.js game engine maintains maps, rules and state, advancing on player inputs. Semantic frames connect it to a streaming MiniMax-H3 renderer. The demonstrated system separates executable simulation from generated appearance.</sub>
-
-- **ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.15166-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.15166)
-  <br><sub>Evaluates individual mechanisms, compositional mechanical systems, and intent-driven executable 3D world synthesis.</sub>
 
 - **AgentGarten: Code Worlds for Evolving Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.12374-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.12374)
   <br><sub>AgentGarten connects program-defined simulation backends to a shared real-time renderer and reusable agent playbooks.</sub>
@@ -270,38 +287,11 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **Programmable World Model** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.10540-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.10540)
   <br><sub>Programmable World Model compiles persistent engine state, including nonvisual facts, into controls for video generation.</sub>
 
-- **WebWorld: The Browser as a World Model for Self-Improving Web Code** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.30530-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.30530)
-  <br><sub>Uses the browser to execute and verify self-improving web code against interaction contracts and preserved behaviors.</sub>
-
-- **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.27549-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27549)
-  <br><sub>Code as Worlds discovers executable physical representations through propose, instantiate, execute, render, and verify loops.</sub>
-
 - **Magpie: Real-Time World Renderer for Interactive Games** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.27168-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27168)
   <br><sub>Magpie combines persistent game-engine state and rules with a whitebox-conditioned interactive neural renderer.</sub>
 
 - **Code World Model: Coding Agent as World Brain** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.25927-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.25927)
   <br><sub>Code World Model separates a coding world brain from a visual world engine through executable proxy representations.</sub>
-
-- **AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.05891-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.05891)
-  <br><sub>AppDeltaWorld predicts transition-grounded HTML updates with retrieved structure, visual assets, and closed-loop refinement.</sub>
-
-- **World-Time Compute with Verified Code World Models** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.09163-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.09163)
-  <br><sub>World-Time Compute uses verified symbolic code worlds to generate exactly labeled trajectories for model training.</sub>
-
-- **SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.19587-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.19587)
-  <br><sub>SceneCode builds editable indoor world programs with articulated objects, simulation exports, and persistent scene organization.</sub>
-
-- **ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.14398-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.14398)
-  <br><sub>ChronoAgentic constructs PyChrono simulation programs using planning, coding, visual review, and trajectory checks.</sub>
-
-- **Code2Worlds: Empowering Coding LLMs for 4D World Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.11757-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.11757)
-  <br><sub>Code2Worlds generates object and scene programs for 4D simulation, using Blender dynamics and visual motion feedback.</sub>
-
-- **Code2World: A GUI World Model via Renderable Code Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.09856-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09856)
-  <br><sub>Code2World learns next-GUI code generation with AndroidCode, visual revision, and render-aware learning.</sub>
-
-- **Generative Visual Code Mobile World Models (gWorld)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.01576-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.01576)
-  <br><sub>gWorld predicts mobile GUI observations as renderable web code with a single vision-language model.</sub>
 
 - **Web World Models** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2512.23676-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.23676)
   <br><sub>Web World Models uses typed web state and code-defined rules as the substrate for persistent, generative worlds.</sub>
@@ -311,16 +301,28 @@ Each primary family is ordered by recorded publication date; the annotated catal
 <a id="papers-vibeworlding"></a>
 ### 03 · VibeWorlding-type · Agentic 3D World Construction
 
-*Agentic construction and editing of editable, renderable, or simulation-ready 3D worlds.*
+*Code specifies the full 3D world (geometry, materials, layout, and optionally physics) for conventional rendering or simulation; static scenes included.*
 
 - **Gym-Anything for Robotics: Scaling physical simulations with digital agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.40565-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40565)
   <br><sub>Treats simulation creation as a coding-agent task and releases RoboWorld environments plus an adversarial creation-audit loop for physical simulation construction.</sub>
 
+- **Cinematize from Unreal: Agentic Choreography for Controllable World Simulation (CineU)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.38468-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.38468)
+  <br><sub>Uses an Unreal project as a persistent inspectable world; agent-generated code performs geometry- and capability-constrained operations with verification and localized repair.</sub>
+
 - **Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction (SceneEvolve)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.37046-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.37046)
   <br><sub>Represents compositional 3D scenes as executable code and evolves the reconstruction harness while fixing model parameters, action semantics, and execution backend.</sub>
 
+- **SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.34745-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.34745)
+  <br><sub>Coordinates reconstruction, physical modeling, simulation inspection, and repair to turn 3D/4D captures into interactive simulation environments.</sub>
+
+- **SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.32978-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.32978)
+  <br><sub>Combines visual layout sampling with contract-guided 3D compilation and physical-stability checks for embodied-learning environments.</sub>
+
 - **WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.31834-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.31834)
   <br><sub>Constructs interactive digital twins from in-the-wild robot demonstrations by iteratively refining an executable world program with verification feedback.</sub>
+
+- **WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.28827-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.28827)
+  <br><sub>Hierarchical planning predicts typed regional and tile specifications; fixed procedural generators compile them, while persistent records retain identities, boundary contracts and edits across streaming revisits.</sub>
 
 - **SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.28585-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.28585)
   <br><sub>Reconstructs objects and scene layout from one image, then edits scene code and uses bounded pose search plus simulation validation to retain physically stable, visually aligned configurations.</sub>
@@ -343,6 +345,12 @@ Each primary family is ordered by recorded publication date; the annotated catal
 - **RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.18835-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.18835)
   <br><sub>Interactive Newton-based toolkit exposes solver, contact-model and physical-parameter choices so humans and coding agents can refine manipulation simulations against observed behavior.</sub>
 
+- **Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.17651-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.17651)
+  <br><sub>Compiles generated visual scenes into MuJoCo-compatible worlds with physical attributes and refines executable dynamics using simulator feedback.</sub>
+
+- **ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.15166-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.15166)
+  <br><sub>Evaluates individual mechanisms, compositional mechanical systems, and intent-driven executable 3D world synthesis.</sub>
+
 - **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.11322-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.11322)
   <br><sub>USDCraft converts source geometry into executable modeling programs that export articulated USD simulation assets.</sub>
 
@@ -360,6 +368,15 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **WorldClaw: Agentic 3D Open-World Generation at Scale** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.05248-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.05248)
   <br><sub>WorldClaw builds large editable 3D scenes through region planning, terrain generation, and render-guided refinement.</sub>
+
+- **SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.19587-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.19587)
+  <br><sub>SceneCode builds editable indoor world programs with articulated objects, simulation exports, and persistent scene organization.</sub>
+
+- **ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.14398-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.14398)
+  <br><sub>ChronoAgentic constructs PyChrono simulation programs using planning, coding, visual review, and trajectory checks.</sub>
+
+- **Code2Worlds: Empowering Coding LLMs for 4D World Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.11757-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.11757)
+  <br><sub>Code2Worlds generates object and scene programs for 4D simulation, using Blender dynamics and visual motion feedback.</sub>
 
 - **Procedural Scene Programs for Open-Universe Scene Generation: LLM-Free Error Correction via Program Search** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2510.16147-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.16147)
   <br><sub>Studies procedural scene programs and error correction through program search.</sub>
@@ -390,6 +407,66 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Procedural content generation for games** `2013` [![Paper](assets/badges/paper.svg)](https://doi.org/10.1145/2422956.2422957)
   <br><sub>Historical reference on procedural content generation for games; bibliographic metadata reviewed.</sub>
+
+[↑ Contents](#contents)
+
+<a id="papers-unassigned-gui"></a>
+### Unassigned · GUI World Models
+
+*GUI, web, and computer-use world models, including renderable-code screen predictors. Not yet included in the three families.*
+
+<details>
+<summary>16 records</summary>
+
+- **Agent World Model in the Wild: Computer-Use Agent Environment Synthesis (WildAWM)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.26828-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.26828)
+  <br><sub>Synthesizes executable computer-use worlds spanning GUI, MCP and CLI interfaces, with replayable state-building programs and execution-based task/verifier quality gates for agent training.</sub>
+
+- **Beyond Next-Screen Prediction: The Decision Value of GUI World Models** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.24372-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.24372)
+  <br><sub>Controls prediction presentation and supervision when comparing GUI lookahead with a directly learned action ranker, testing the incremental decision value of predicted screens.</sub>
+
+- **Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.11942-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.11942)
+  <br><sub>Studies GUI world models as transition verifiers and separates screen similarity from transition correctness.</sub>
+
+- **AutoGUIWorld: Image Generators as Visual World Models for GUI Agent** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.01215-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.01215)
+  <br><sub>AutoGUIWorld synthesizes GUI trajectories by planning visual consequences and iteratively editing screenshots.</sub>
+
+- **The GUI Is Not the State: Diagnosing State Aliasing in GUI World Models (StateAliasBench)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.32679-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.32679)
+  <br><sub>StateAliasBench pairs identical visible GUI conditions with different futures to diagnose hidden transition state.</sub>
+
+- **WebWorld: The Browser as a World Model for Self-Improving Web Code** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.30530-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.30530)
+  <br><sub>Uses the browser to execute and verify self-improving web code against interaction contracts and preserved behaviors.</sub>
+
+- **GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.00048-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.00048)
+  <br><sub>GUI-CC evaluates multi-step contextual consistency through offline reference actions and online agent loops.</sub>
+
+- **AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.05891-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.05891)
+  <br><sub>AppDeltaWorld predicts transition-grounded HTML updates with retrieved structure, visual assets, and closed-loop refinement.</sub>
+
+- **OpenComputer: Verifiable Software Worlds for Computer-Use Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.19769-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.19769)
+  <br><sub>OpenComputer provides real software environments with structured state verification and auditable task rewards.</sub>
+
+- **How Mobile World Model Guides GUI Agents?** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.10347-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.10347)
+  <br><sub>Compares text, image, and renderable-code mobile predictions across reconstruction, online use, and agent-consumption strategies.</sub>
+
+- **Computer-Using World Model** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.17365-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.17365)
+  <br><sub>Computer-Using World Model predicts textual changes and then screenshots for desktop software interactions.</sub>
+
+- **WebWorld: A Large-Scale World Model for Web Agent Training** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.14721-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.14721)
+  <br><sub>WebWorld learns a large-scale web simulator for agent training.</sub>
+
+- **Code2World: A GUI World Model via Renderable Code Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.09856-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09856)
+  <br><sub>Code2World learns next-GUI code generation with AndroidCode, visual revision, and render-aware learning.</sub>
+
+- **Generative Visual Code Mobile World Models (gWorld)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.01576-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.01576)
+  <br><sub>gWorld predicts mobile GUI observations as renderable web code with a single vision-language model.</sub>
+
+- **MobileWorldBench: Towards Semantic World Modeling For Mobile Agents** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2512.14014-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.14014)
+  <br><sub>MobileWorldBench evaluates semantic mobile state transitions and their usefulness for GUI agents.</sub>
+
+- **ViMo: A Generative Visual GUI World Model for App Agents** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2504.13936-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.13936)
+  <br><sub>ViMo models mobile GUI futures through graphic and textual decomposition.</sub>
+
+</details>
 
 [↑ Contents](#contents)
 

@@ -1,49 +1,63 @@
-# Three-family working taxonomy / 三类工作分类（初版）
+# Three-family working taxonomy / 三类工作分类
 
-This is the initial editorial map for the survey. It gives each catalogue record one primary family so that the literature can be written as a coherent story; `code_roles`, acquisition source, renderer, verification, and lifecycle tags remain orthogonal attributes.
+The three families are split along a single axis: **how much of the world the code carries**. WorldCoder-type code carries state and rules only; Code-as-World-type code carries state, rules and a whitebox/proxy world whose appearance comes from a generative renderer; VibeWorlding-type code carries the full 3D world itself. Each catalogue record gets at most one primary family; acquisition source, verification and lifecycle tags remain orthogonal attributes.
 
-**Domain boundary:** Robotics is not a separate survey family. A robot or physics-engine setting is included only when the contribution is executable dynamics, a world program, simulator extension, or world construction; the robot is the evaluation substrate. Pure robot control, manipulation policy, or Real2Sim tooling is not core merely because it uses code.
+三类沿同一条轴划分：**代码承担了世界的多少部分**。WorldCoder-type 只承担状态与规则；Code-as-World-type 承担状态、规则和白模/proxy 世界，外观由生成式渲染器补全；VibeWorlding-type 由代码写出完整的 3D 世界本身。每条记录最多分配一个主类；知识来源、验证方式和生命周期标签仍是正交属性。
 
-这是综述当前采用的初版主分类。每条记录只分配一个主类，便于组织正文；`code_roles`、知识来源、渲染器、验证方式和生命周期标签仍是正交属性，不被主分类吞掉。
+| Family / 主类 | Code carries state & rules / 代码负责状态与规则 | Where appearance comes from / 外观来源 |
+|---|---|---|
+| WorldCoder-type | Yes / 是 | None, or diagnostic visualization only / 无外观，或仅诊断用可视化 |
+| Code-as-World-type | Yes / 是 | Generative renderer conditioned on a whitebox/proxy / 由白模或 proxy 条件化的生成式渲染器 |
+| VibeWorlding-type | Optional / 可有可无 | The code itself (geometry, materials, layout), via conventional rendering or simulation / 代码本身（几何、材质、布局），经常规渲染或仿真 |
 
-**Domain boundary / 领域边界：** 机器人不是本综述的独立主线。涉及机器人或物理仿真的论文只有在其核心贡献是可执行动力学、世界程序、模拟器扩展或世界构建时才纳入；机器人本体只是实验载体。纯机器人控制、操作策略或 Real2Sim 工具不会因为使用代码就自动进入核心范围。
+**Domain boundary:** Robotics is not a separate survey family. A robot or physics-engine setting is placed by the same axis; the robot is the evaluation substrate.
 
-## 1. WorldCoder-type: Programmatic Dynamics / World Program Induction
+**领域边界：** 机器人不是独立主线，涉及机器人或物理引擎的论文同样按上表归类，机器人只是实验载体。
+
+## Placement order / 判定顺序
+
+Apply the questions in order and stop at the first match. / 按顺序判断，命中即停。
+
+1. Is it a GUI, web, or computer-use world model (including renderable-code screen prediction)? → **Unassigned · GUI**
+2. Does code hold persistent state and rules while a generative model (video, image, diffusion renderer) produces the observations? → **Code-as-World-type**
+3. Does code specify a full 3D world (geometry, assets, layout, articulation, optionally physics) that a conventional renderer or simulator executes? → **VibeWorlding-type**
+4. Does code carry state-level dynamics: transitions, legal actions, reward, latent state, simulator residuals, or symbolic/physical worlds without generated appearance? → **WorldCoder-type**
+5. Otherwise (generic benchmarks, learned simulators without a code world, surveys, other adjacent work) → **Unassigned**
+
+## 1. WorldCoder-type: Programmatic Dynamics / 纯状态
 
 **Question:** Can a program predict what will happen after an action?
 
-The program is the transition mechanism or a structured extension of it. Typical interfaces expose `next_state`, legal actions, reward, termination, latent-state updates, or a simulator-callable residual. Evidence comes from interaction, trajectories, experiments, counterexamples, replay, and planning value. WorldCoder, GIF-MCTS, TheoryCoder, PoE-World, OneLife, ARC executable-world-model papers, and EMPIRIC are the main anchors.
+The program is the transition mechanism or a structured extension of it. Typical interfaces expose `next_state`, legal actions, reward, termination, latent-state updates, or a simulator-callable residual. Physical worlds whose output is state, trajectories or training labels rather than rendered appearance also belong here (Code as Worlds, PhysEvolve, World-Time Compute). Anchors: WorldCoder, GIF-MCTS, TheoryCoder, PoE-World, OneLife, PatchWorld, the ARC-AGI-3 executable-model papers, and EMPIRIC.
 
-**判据：** 如果代码的核心职责是把动作映射为后果，或补充一个已有引擎缺失的因果机制，就放入 WorldCoder-type。输入可以是轨迹、规则、视频或实验；关键是程序承担了可执行的动力学/机制预测，而不是只生成一个外观场景。
+**判据：** 代码的核心职责是把动作映射为后果，或补充已有引擎缺失的因果机制，并且不负责生成外观。渲染若只用于和观测比对、验证假设（如 Code as Worlds），仍归入此类。
 
-## 2. Code-as-World-type: Executable World Programs
+## 2. Code-as-World-type: Whitebox Worlds + Generative Rendering / 白模 + 生成式渲染
 
-**Question:** Can the world continue to exist, update, and be queried because its state and rules are executable?
+**Question:** Can executable state and rules govern a world whose appearance a generative model renders?
 
-The output is a persistent world program or an executable environment family. It may contain entities, geometry, physics parameters, rules, state tables, a simulator interface, and a renderer interface. A neural renderer can be attached, but the family assignment follows the persistent executable world substrate. Code as Worlds, Code2Worlds and Code2Worlds-2, Programmable World Model, CoDeR, GameDirector, AgentGarten, Oneira, Mallea, Web World Models, and WorldStream are representative anchors.
+Code (an engine, state table, game definition, or coding agent) owns entities, persistent state and rules; it exports a whitebox, low-poly proxy, skeleton, box layout, semantic frame, or event record; a video or diffusion renderer turns that proxy into observations. Renderer-side systems built specifically to render such proxies (Magpie, EdenLive, AnyGameRenderer, SolarRenderer) are kept here as the other half of the interface. Anchors: Code World Model, Programmable World Model, CoDeR, GameDirector, AgentGarten, Oneira, Mallea, BoxWorld, State World Models, Matrix-Game 4.0.
 
-**判据：** 如果代码定义或维持了一个可持续运行的世界，包括实体、状态、规则、物理引擎接口或渲染接口，就放入 Code-as-World-type。它可以由文本、图像、视频或 agent 交互得到，也可以是预先设计的程序；重点是世界程序本身成为可复用的环境载体。
+**判据：** 代码维护持久状态与规则，但只给出白模/proxy，外观由生成式渲染器补全。如果代码已经写出完整几何与材质、由常规引擎直接渲染，就归入 VibeWorlding-type；如果完全不涉及外观，就归入 WorldCoder-type。
 
-## 3. VibeWorlding-type: Agentic 3D World Construction
+## 3. VibeWorlding-type: Agentic 3D World Construction / 完整 3D
 
-**Question:** Can an agent turn intent, references, and tools into an editable, simulation-ready 3D world?
+**Question:** Can an agent turn intent, references and tools into a 3D world written in code?
 
-The central output is a constructed or edited 3D world: scene layout, assets, articulation, materials, collision or physical properties, and executable scene code. The central evidence is construction quality, editability, geometric/physical feasibility, render feedback, or simulation readiness. VibeWorlding is the naming anchor; Holodeck, SceneCraft, WorldClaw, FuncRoom-Agent, Recursive Code World Models, LEGO-Anything, USDCraft, NeoWorld-3, 3DCodeVerse, and SceneRig are representative entries.
+The central output is a constructed or edited 3D world: scene layout, assets, articulation, materials, collision or physical properties, and executable scene code, rendered or simulated by Blender, USD, MuJoCo, PyChrono, Unreal or similar engines. **Static scenes are included** for now, together with their representation lineage (CSGNet, ShapeAssembly, Infinigen, Holodeck, SceneCraft). Simulation-ready world construction formerly listed under Code-as-World-type (Code2Worlds, Code2Worlds-2, SceneCode, ChronoAgentic, WorldStream, CineU) is placed here because conventional engines, not a generative renderer, produce its appearance.
 
-**判据：** 如果 coding agent 主要在 Blender、USD、仿真工具或类似沙盒中检索资产、编写/修改场景程序，并通过渲染或仿真反馈完成 3D 世界构建，就放入 VibeWorlding-type。静态场景构建可以属于这一类，但不能因为可渲染就自动宣称它发现了未知时间动力学。
+**判据：** coding agent 在 Blender、USD、仿真工具或类似沙盒中写出或修改完整的 3D 世界，外观由代码本身决定。当前版本收录静态场景；可仿真、可交互的世界构建同样属于此类。
 
-## Unassigned records / 未归类来源
+## Unassigned records / 未收录来源
 
-GUI observation-code models, renderer-only systems, benchmarks, learned simulators without a code-defined world substrate, surveys, and historical representations remain in the corpus without a primary family. They are still part of the master list and can support the survey; they are simply not forced into one of the three main lines.
+Unassigned records stay in the corpus and master list. One named group exists:
 
-GUI 观测代码模型、只负责渲染的系统、基准测试、没有代码世界基底的学习型模拟器、综述和表示历史保留在总表中，但不强行分进三条主线。它们仍可作为对照或证据使用。
+- **GUI / 未收录 · GUI 世界模型** (`unassigned_group: "gui"`): GUI, web and computer-use world models, whether they predict text, screenshots or renderable code (gWorld, Code2World, AppDeltaWorld), and their benchmarks and environment-synthesis work. In these models code at most carries the predicted observation, not persistent world state, so they do not sit on the three-family axis. They are kept together for a possible later section.
 
-## How to use the taxonomy in the manuscript
+Other unassigned records (benchmarks, learned simulators without a code-defined world, surveys, adjacent work) remain ungrouped.
 
-1. Use the three families for the top-level narrative and the master list.
-2. Use acquisition source as a second axis: interaction/trajectory induction, specification-driven construction, visual or physical reconstruction, or hybrid evidence.
-3. Use execution and rendering as a third axis: symbolic transition, external engine, deterministic scene renderer, neural renderer, or GUI renderer.
-4. Use verification as a fourth axis: replay, counterexample repair, simulator-in-the-loop, state-to-render consistency, or downstream agent utility.
-5. Assign exactly one primary family in `data/classification.json`. Keep the catalogue section, scope, and mechanism tags as browsing metadata; they are not additional public classification families.
+未收录来源仍保留在总表中。目前只设一个分组：**GUI**，收录 GUI、网页和 computer-use 世界模型，包括以可渲染代码预测下一屏的工作及相关基准。这类模型中代码至多承载被预测的观测，而不是持久世界状态，因此不在三类主线的轴上，暂时集中放在一起。
 
-The three family labels are the only public classification layer in this repository. The [paper master list](paper-master-list.md) gives the current one-row-per-record assignment; the structured [classification JSON](../data/classification.json) and [CSV](../data/classification.csv) keep the same three family values; unassigned records have a blank family for filtering.
+## Data files
+
+Assign at most one primary family in `data/classification.json` (and the matching `section` in `data/papers.json`). Unassigned records may set `unassigned_group`; the only valid value is `"gui"`. Run `python3 scripts/build_catalog.py` to regenerate the READMEs, [paper master list](paper-master-list.md), [classification CSV](../data/classification.csv) and [annotated catalogue](catalogue.md).

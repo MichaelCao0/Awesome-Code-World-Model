@@ -1,12 +1,12 @@
 # Taxonomy & scope
 
-The repository uses one public classification layer with three primary families:
+The repository uses one public classification layer with three primary families, split by how much of the world the code carries:
 
-1. **WorldCoder-type — Programmatic Dynamics / World Program Induction:** code predicts action consequences or extends a simulator with executable mechanisms.
-2. **Code-as-World-type — Executable World Programs:** code maintains a persistent world, its entities, state, rules, simulator interfaces, or renderer interfaces.
-3. **VibeWorlding-type — Agentic 3D World Construction:** an agent constructs or edits an editable, renderable, or simulation-ready 3D world.
+1. **WorldCoder-type — Programmatic Dynamics (state only):** code predicts action consequences or extends a simulator with executable mechanisms; it does not produce rendered appearance.
+2. **Code-as-World-type — Whitebox Worlds + Generative Rendering:** code maintains persistent state and rules over a whitebox/proxy world, and a generative renderer supplies the appearance.
+3. **VibeWorlding-type — Agentic 3D World Construction (full 3D):** an agent writes or edits a complete 3D world in code (geometry, materials, layout, optionally physics), rendered or simulated by conventional engines. Static scenes are included.
 
-Benchmarks, GUI observation-code models, renderer-only systems, historical foundations, surveys, and adjacent work remain unassigned in the master list when forcing one of the three families would obscure their contribution.
+GUI, web and computer-use world models (including renderable-code screen predictors such as gWorld and Code2World) are kept in a separate unassigned **GUI** group. Generic benchmarks, learned simulators without a code-defined world, surveys and other adjacent work remain unassigned in the master list.
 
 The [three-family guide](coarse-taxonomy.md) defines the placement rules. The [paper master list](paper-master-list.md) gives one primary family for every record, and [data/classification.json](../data/classification.json) stores the same assignment for filtering.
 

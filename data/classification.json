@@ -2,11 +2,11 @@
   "schema_version": 2,
   "updated_on": "2026-10-31",
   "status": "discussion-draft",
-  "scope": "One of three public family assignments per classified record: WorldCoder-type, Code-as-World-type, or VibeWorlding-type. Smaller, benchmark, historical, renderer, GUI, survey, and adjacent records remain unassigned in the master list.",
+  "scope": "One of three public family assignments per classified record, split by how much of the world code carries: WorldCoder-type (state and rules only), Code-as-World-type (whitebox/proxy world plus generative rendering), or VibeWorlding-type (full 3D world in code, static scenes included). Unassigned records may carry an unassigned_group; \"gui\" marks GUI/computer-use world models.",
   "families": {
-    "worldcoder": "Programmatic dynamics and world-program induction.",
-    "code_as_world": "Persistent executable world programs.",
-    "vibeworlding": "Agentic 3D world construction and editing."
+    "worldcoder": "State-level programmatic dynamics and world-program induction.",
+    "code_as_world": "Whitebox/proxy executable worlds rendered by generative models.",
+    "vibeworlding": "Agentic construction of full 3D worlds in code, including static scenes."
   },
   "records": [
     {
@@ -247,7 +247,8 @@
         "https://arxiv.org/abs/2504.13936"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2505.10819",
@@ -319,7 +320,8 @@
         "https://arxiv.org/abs/2512.14014"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2512.22336",
@@ -336,7 +338,7 @@
     {
       "id": "2512.23676",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -359,39 +361,41 @@
     },
     {
       "id": "2602.01576",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2602.01576"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
     },
     {
       "id": "2602.09856",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2602.09856"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
     },
     {
       "id": "2602.11757",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2602.11757"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2602.14721",
@@ -403,7 +407,8 @@
         "https://arxiv.org/abs/2602.14721"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2602.17365",
@@ -415,7 +420,8 @@
         "https://arxiv.org/abs/2602.17365"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2605.05138",
@@ -439,19 +445,20 @@
         "https://arxiv.org/abs/2605.10347"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2605.14398",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2605.14398"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2605.16725",
@@ -467,15 +474,15 @@
     },
     {
       "id": "2605.19587",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2605.19587"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2605.19769",
@@ -487,7 +494,8 @@
         "https://arxiv.org/abs/2605.19769"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2605.30880",
@@ -551,27 +559,27 @@
     },
     {
       "id": "2609.09163",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2609.09163"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2607.15439",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2607.15439"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2607.16900",
@@ -647,15 +655,16 @@
     },
     {
       "id": "2608.05891",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2608.05891"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
     },
     {
       "id": "2608.14490",
@@ -672,7 +681,7 @@
     {
       "id": "2608.25927",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -684,7 +693,7 @@
     {
       "id": "2608.27168",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -695,15 +704,15 @@
     },
     {
       "id": "2608.27549",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2608.27549"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2608.29519",
@@ -727,24 +736,26 @@
         "https://arxiv.org/abs/2609.00048"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2608.30530",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2608.30530"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
     },
     {
       "id": "2609.10540",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -780,7 +791,7 @@
     {
       "id": "2609.25652",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -792,7 +803,7 @@
     {
       "id": "2609.26458",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -823,7 +834,8 @@
         "https://arxiv.org/abs/2609.32679"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2609.35047",
@@ -871,7 +883,8 @@
         "https://arxiv.org/abs/2610.01215"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2610.02205",
@@ -955,12 +968,13 @@
         "https://arxiv.org/abs/2610.11942"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2610.12374",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1008,20 +1022,20 @@
     },
     {
       "id": "2610.17630",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
         "https://arxiv.org/abs/2610.17630"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2610.19955",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1029,19 +1043,19 @@
         "https://arxiv.org/html/2610.19955v1"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2610.20571",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2610.20571"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2610.23826",
@@ -1071,7 +1085,7 @@
     {
       "id": "2610.26811",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1083,8 +1097,8 @@
     },
     {
       "id": "2610.26828",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1092,7 +1106,8 @@
         "https://arxiv.org/html/2610.26828v1"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "gui"
     },
     {
       "id": "2610.29435",
@@ -1164,7 +1179,8 @@
         "https://arxiv.org/abs/2610.24372"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "gui"
     },
     {
       "id": "2610.27690",
@@ -1182,7 +1198,7 @@
     {
       "id": "2610.27999",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1206,8 +1222,8 @@
     },
     {
       "id": "2610.28827",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1215,19 +1231,19 @@
         "https://arxiv.org/html/2610.28827v1"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2610.28630",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2610.28630"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2610.28416",
@@ -1245,7 +1261,7 @@
     {
       "id": "2610.01614",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1257,7 +1273,7 @@
     {
       "id": "2610.21283",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1268,27 +1284,27 @@
     },
     {
       "id": "2610.15166",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2610.15166"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2610.17651",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "github_catalogue + feishu_visible_pasted_text",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2610.17651"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31"
     },
     {
       "id": "2610.13172",
@@ -1305,7 +1321,7 @@
     {
       "id": "edenlive",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1319,7 +1335,7 @@
     {
       "id": "mundo",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1344,7 +1360,7 @@
     {
       "id": "streamrender_h3",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
@@ -1369,7 +1385,7 @@
     {
       "id": "2610.40607",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1381,7 +1397,7 @@
     {
       "id": "2610.36371",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1392,8 +1408,8 @@
     },
     {
       "id": "2610.38468",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1452,8 +1468,8 @@
     },
     {
       "id": "2610.34921",
-      "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1477,7 +1493,7 @@
     {
       "id": "2610.19726",
       "coarse_family": "code_as_world",
-      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1548,8 +1564,8 @@
     },
     {
       "id": "2610.34745",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1560,8 +1576,8 @@
     },
     {
       "id": "2610.31466",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1572,8 +1588,8 @@
     },
     {
       "id": "2610.40339",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1584,8 +1600,8 @@
     },
     {
       "id": "2610.33845",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [
@@ -1596,8 +1612,8 @@
     },
     {
       "id": "2610.32978",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
       "source_provenance": "arxiv_search_2026-10-31",
       "assignment_status": "provisional",
       "evidence_urls": [

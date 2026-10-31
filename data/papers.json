@@ -7,17 +7,17 @@
     {
       "id": "worldcoder",
       "title": "WorldCoder-type · Programmatic Dynamics",
-      "description": "Executable transition mechanisms, world-program induction, planning, and model repair."
+      "description": "State-level executable dynamics: transition mechanisms, world-program induction, planning, and model repair, without generated appearance."
     },
     {
       "id": "code_as_world",
-      "title": "Code-as-World-type · Executable World Programs",
-      "description": "Persistent world state, rules, simulators, and execution/rendering interfaces."
+      "title": "Code-as-World-type · Whitebox Worlds + Generative Rendering",
+      "description": "Code keeps persistent state and rules over a whitebox/proxy world; a generative renderer supplies appearance."
     },
     {
       "id": "vibeworlding",
       "title": "VibeWorlding-type · Agentic 3D World Construction",
-      "description": "Agentic construction and editing of editable, renderable, or simulation-ready 3D worlds."
+      "description": "Code specifies the full 3D world (geometry, materials, layout, and optionally physics) for conventional rendering or simulation; static scenes included."
     }
   ],
   "papers": [
@@ -966,7 +966,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.01576",
-      "section": "code_as_world",
+      "section": null,
       "scope": "core",
       "code_roles": [
         "observation"
@@ -1002,7 +1002,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.09856",
-      "section": "code_as_world",
+      "section": null,
       "scope": "core",
       "code_roles": [
         "observation"
@@ -1032,7 +1032,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2602.11757",
-      "section": "code_as_world",
+      "section": "vibeworlding",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -1202,7 +1202,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2605.14398",
-      "section": "code_as_world",
+      "section": "vibeworlding",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -1265,7 +1265,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2605.19587",
-      "section": "code_as_world",
+      "section": "vibeworlding",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -1492,7 +1492,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2609.09163",
-      "section": "code_as_world",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition"
@@ -1519,7 +1519,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2607.15439",
-      "section": null,
+      "section": "worldcoder",
       "scope": "comparator",
       "code_roles": [],
       "tags": [
@@ -1722,7 +1722,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.05891",
-      "section": "code_as_world",
+      "section": null,
       "scope": "core",
       "code_roles": [
         "observation"
@@ -1861,7 +1861,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.27549",
-      "section": "code_as_world",
+      "section": "worldcoder",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -1961,7 +1961,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-13",
       "arxiv_id": "2608.30530",
-      "section": "code_as_world",
+      "section": null,
       "scope": "adjacent",
       "code_roles": [
         "transition",
@@ -2748,7 +2748,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": null,
+      "section": "code_as_world",
       "scope": "adjacent",
       "code_roles": [
         "observation"
@@ -2780,7 +2780,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": null,
+      "section": "worldcoder",
       "scope": "adjacent",
       "code_roles": [
         "transition"
@@ -2818,7 +2818,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": null,
+      "section": "code_as_world",
       "scope": "adjacent",
       "code_roles": [],
       "tags": [
@@ -2955,7 +2955,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "code_as_world",
+      "section": null,
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3328,7 +3328,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "code_as_world",
+      "section": "vibeworlding",
       "scope": "core",
       "code_roles": [
         "observation"
@@ -3365,7 +3365,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": null,
+      "section": "code_as_world",
       "scope": "enabling",
       "code_roles": [
         "observation"
@@ -3506,7 +3506,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "code_as_world",
+      "section": "vibeworlding",
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
@@ -3537,7 +3537,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "code_as_world",
+      "section": "vibeworlding",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -3877,7 +3877,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-31",
       "metadata_checked_on": "2026-10-31",
-      "section": "code_as_world",
+      "section": "vibeworlding",
       "scope": "core",
       "code_roles": [
         "transition",
@@ -4049,7 +4049,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-31",
       "metadata_checked_on": "2026-10-31",
-      "section": "code_as_world",
+      "section": "worldcoder",
       "scope": "enabling",
       "code_roles": [
         "transition"
@@ -4386,7 +4386,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-31",
       "metadata_checked_on": "2026-10-31",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "adjacent",
       "code_roles": [
         "observation"
@@ -4419,7 +4419,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-31",
       "metadata_checked_on": "2026-10-31",
-      "section": null,
+      "section": "code_as_world",
       "scope": "adjacent",
       "code_roles": [
         "observation"
@@ -4450,7 +4450,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-31",
       "metadata_checked_on": "2026-10-31",
-      "section": null,
+      "section": "code_as_world",
       "scope": "adjacent",
       "code_roles": [
         "observation"
@@ -4480,7 +4480,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-31",
       "metadata_checked_on": "2026-10-31",
-      "section": null,
+      "section": "worldcoder",
       "scope": "adjacent",
       "code_roles": [
         "transition"
@@ -4511,7 +4511,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-31",
       "metadata_checked_on": "2026-10-31",
-      "section": null,
+      "section": "vibeworlding",
       "scope": "adjacent",
       "code_roles": [
         "observation"

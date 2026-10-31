@@ -39,6 +39,7 @@
 <a id="news"></a>
 ## 更新
 
+- **2026-10-31（重新分类）** — 三类改为按"代码承担了世界的多少部分"划分：WorldCoder-type（纯状态）、Code-as-World-type（白模 + 生成式渲染）、VibeWorlding-type（完整 3D，当前包含静态场景）。收紧 Code-as-World-type，将可仿真 3D 构建移入 VibeWorlding-type，GUI 世界模型集中为未收录的 GUI 分组。详见[更新说明](docs/updates/2026-10-31.md#reclassification)。
 - **2026-10-31** — 根据 10 月 13–29 日检索新增 21 条记录，补充可执行动力学、持久世界引擎、可编辑 3D 构建与运行时评测。严格范围仍由三类主线定义，支撑来源保留在未归类总表中。
 - **2026-10-30** — 继续补充三类主线归类；评测、综述和明显相邻来源保留在总表但不强行归类。仓库目录现在只有三个 section。
 - **2026-10-29** — 加入 VibeWorlding，整理覆盖 124 条记录的全量论文总表，并将 README 主分类收敛为 WorldCoder-type、Code-as-World-type、VibeWorlding-type 三类。封面改为代码—状态—数字世界主题的栅格图。
@@ -57,9 +58,10 @@
 
 | 三类主线 |
 |---|
-| [01 · WorldCoder-type · 程序化动力学](#papers-worldcoder) <sub>(32)</sub> |
-| [02 · Code-as-World-type · 可执行世界程序](#papers-code_as_world) <sub>(32)</sub> |
-| [03 · VibeWorlding-type · agentic 3D 世界构建](#papers-vibeworlding) <sub>(26)</sub> |
+| [01 · WorldCoder-type · 程序化动力学](#papers-worldcoder) <sub>(38)</sub> |
+| [02 · Code-as-World-type · 白模世界 + 生成式渲染](#papers-code_as_world) <sub>(22)</sub> |
+| [03 · VibeWorlding-type · agentic 3D 世界构建](#papers-vibeworlding) <sub>(35)</sub> |
+| [未收录 · GUI 世界模型](#papers-unassigned-gui) <sub>(16)</sub> |
 | [全量论文总表](docs/paper-master-list.md)（含未归类来源） |
 
 <!-- NAVIGATION:END -->
@@ -92,11 +94,11 @@
 
 | 初版主类 | 核心问题 | 代表工作 |
 |---|---|---|
-| **WorldCoder-type** · 程序化动力学 | 代码能否预测动作后果并支持规划？ | [WorldCoder](https://arxiv.org/abs/2402.12275)、[TheoryCoder](https://arxiv.org/abs/2503.20124)、[OneLife](https://arxiv.org/abs/2510.12088)、[Code World Models for General Game Playing](https://arxiv.org/abs/2510.04542) |
-| **Code-as-World-type** · 可执行世界程序 | 代码能否持续维护世界、状态、规则及其接口？ | [Code as Worlds](https://arxiv.org/abs/2608.27549)、[Programmable World Model](https://arxiv.org/abs/2609.10540)、[AgentGarten](https://arxiv.org/abs/2610.12374)、[Oneira](https://arxiv.org/abs/2610.01614) |
-| **VibeWorlding-type** · agentic 3D 世界构建 | agent 能否构建并编辑可编辑、可仿真的 3D 世界？ | [VibeWorlding](https://arxiv.org/abs/2608.15265)、[WorldClaw](https://arxiv.org/abs/2608.05248)、[USDCraft](https://arxiv.org/abs/2610.11322)、[SceneRig](https://arxiv.org/abs/2610.28585) |
+| **WorldCoder-type** · 程序化动力学（纯状态） | 代码能否预测动作后果并支持规划？ | [WorldCoder](https://arxiv.org/abs/2402.12275)、[TheoryCoder](https://arxiv.org/abs/2503.20124)、[OneLife](https://arxiv.org/abs/2510.12088)、[Code World Models for General Game Playing](https://arxiv.org/abs/2510.04542) |
+| **Code-as-World-type** · 白模世界 + 生成式渲染 | 代码维护的白模/proxy 世界状态与规则，能否驱动生成式渲染的世界？ | [Code World Model](https://arxiv.org/abs/2608.25927)、[Programmable World Model](https://arxiv.org/abs/2609.10540)、[AgentGarten](https://arxiv.org/abs/2610.12374)、[Oneira](https://arxiv.org/abs/2610.01614) |
+| **VibeWorlding-type** · agentic 3D 世界构建 | agent 能否用代码写出并编辑完整 3D 世界（含静态与可仿真场景）？ | [VibeWorlding](https://arxiv.org/abs/2608.15265)、[WorldClaw](https://arxiv.org/abs/2608.05248)、[USDCraft](https://arxiv.org/abs/2610.11322)、[SceneRig](https://arxiv.org/abs/2610.28585) |
 
-[三类框架说明](docs/coarse-taxonomy.md) 给出具体判据。小型、评测、GUI、历史和相邻来源保留在[全量总表](docs/paper-master-list.md)，不强行归入三条主线。
+三类按"代码承担了世界的多少部分"划分：只有状态、白模世界加生成式渲染、完整 3D 世界。[三类框架说明](docs/coarse-taxonomy.md) 给出具体判据。GUI 世界模型单独列为[未收录 · GUI 分组](#papers-unassigned-gui)；评测和相邻来源保留在[全量总表](docs/paper-master-list.md)。
 
 <a id="paper-collection"></a>
 ## 文献目录
@@ -112,13 +114,22 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 <a id="papers-worldcoder"></a>
 ### 01 · WorldCoder-type · 程序化动力学
 
-*可执行转移机制、世界程序归纳、规划与模型修复。*
+*纯状态层面的可执行动力学：转移机制、世界程序归纳、规划与模型修复，不生成外观。*
 
 - **Algebraic World Model: From Exploration to Proofs** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.40503-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40503)
   <br><sub>通过可执行 Python 假设、类型化规则和 Lean 证明探索未知游戏中的可达性与不可达性。</sub>
 
+- **PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.34921-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.34921)
+  <br><sub>由 VLM 提出可执行物理世界，确定性物理引擎验证反事实分支并生成可验证的训练任务。</sub>
+
+- **Build, Don't Play: Self-Improving LLM Research Agents Develop a Hearthstone Battlegrounds AI That Rivals Top Players (AutoTavern)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.33845-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.33845)
+  <br><sub>自我改进的研究 agent 构建并验证 Hearthstone Battlegrounds 模拟器，再训练对手和游戏 agent；作为相邻可执行环境工作保留。</sub>
+
 - **LLM Agents as Suppliers of Physical System Models: Calibration and Acceptance in Modelica** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.25019-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.25019)
   <br><sub>研究编码智能体根据描述与数据组合、校准可执行 Modelica 物理系统模型，并以行为拟合、物理不变量与可解释性进行验收。</sub>
+
+- **Neurosymbolic Learning of Interpretable World Models (CGWM)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.19955-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.19955)
+  <br><sub>学习视觉概念落地，而无可学习参数的预测器执行给定时序逻辑转移规则；通过符号想象轨迹进行可微规划。</sub>
 
 - **A Declared World Model: Language Models Write the Rules of the Scene They are Shown** `2026` [![Paper](assets/badges/paper.svg)](https://www.preprints.org/manuscript/202610.1139)
   <br><sub>语言模型根据带标签场景图编写世界规则，由确定性引擎检查动作并计算下一状态；实验检验规则能否迁移到未见布局。</sub>
@@ -141,6 +152,9 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 - **EMPIRIC: Experiment-Driven Learning of Residual World Models for Robot Planning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.35047-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.35047)
   <br><sub>EMPIRIC 学习残差代码，为物理引擎补充缺失的力、约束与隐藏状态。</sub>
 
+- **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.27549-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27549)
+  <br><sub>Code as Worlds 通过提出、实例化、执行、渲染和验证的循环，发现可执行物理表示。</sub>
+
 - **Twin: Playing an Unknown Game with a Test-Time Digital Twin** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.14490-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.14490)
   <br><sub>Twin 在测试时构建数字孪生，并在未知游戏中选择动作前检查历史转移。</sub>
 
@@ -152,6 +166,12 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **Program Synthesis for Simulation-Based Inference: Joint Model Selection and Parameter Estimation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2607.17540-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.17540)
   <br><sub>将 LLM 生成的仿真器族与神经仿真推断结合，用于机制选择和参数估计。</sub>
+
+- **Do Coding Agents Need Executable World Models, Simplification, and Verification to Solve ARC-AGI-3?** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2607.15439-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.15439)
+  <br><sub>在 ARC-AGI-3 编码 agent 中，检验维护可执行模型、简化和回放验证的作用。</sub>
+
+- **World-Time Compute with Verified Code World Models** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.09163-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.09163)
+  <br><sub>World-Time Compute 利用经验证的符号代码世界，生成具有精确标签的训练轨迹。</sub>
 
 - **OPINE-World: Programmatic World Modeling with Ontology-error-Prioritized Interactive Exploration for ARC-AGI-3** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2607.01531-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2607.01531)
   <br><sub>OPINE-World 通过错误优先探索，联合修订符号本体、转移假设与目标。</sub>
@@ -213,15 +233,15 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 [↑ 返回导航](#contents)
 
 <a id="papers-code_as_world"></a>
-### 02 · Code-as-World-type · 可执行世界程序
+### 02 · Code-as-World-type · 白模世界 + 生成式渲染
 
-*持久世界状态、规则、模拟器以及执行/渲染接口。*
+*代码维护白模/proxy 世界的持久状态与规则，由生成式渲染器补全外观。*
 
 - **Fight World Model: Customizable Combat through Visual Interaction Proxies** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.40607-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40607)
   <br><sub>将可执行的战斗状态和规则解析与视频渲染分开，用绑定身份和时间的交互代理保持攻击、受击与生命状态一致。</sub>
 
-- **Cinematize from Unreal: Agentic Choreography for Controllable World Simulation (CineU)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.38468-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.38468)
-  <br><sub>把 Unreal 工程作为可检查的持久世界，利用智能体生成代码执行并验证操作，通过几何约束、时间线和局部修复完成世界编排。</sub>
+- **Wizard: Manipulate Any World in Real Time via Agentic Control** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.40339-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40339)
+  <br><sub>用骨架和几何代理结合显式游戏状态，支持实时、可泛化的视频世界控制；摘要未证明代码是世界表示。</sub>
 
 - **EdenLive: Real-Time Generative Rendering from Any Visual Reference** `2026` [![Project](assets/badges/project.svg)](https://github.com/VAST-AI-Research/EdenLive)
   <br><sub>生成式渲染器把上游参考视频、目标首帧和提示转换为增强视频；状态和规则由上游程序维护。官方还提供从提示生成可玩游戏的 skill 与工作台。</sub>
@@ -229,20 +249,17 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 - **BoxWorld: Let World Engines Control and Video Generators Render** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.36371-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.36371)
   <br><sub>编码智能体把用户规则写成 Box World Engine，由持久属性和状态变量驱动神经视频渲染，并提出成对状态控制评测。</sub>
 
-- **PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.34921-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.34921)
-  <br><sub>由 VLM 提出可执行物理世界，确定性物理引擎验证反事实分支并生成可验证的训练任务。</sub>
-
 - **Mundo: Customized World Model** `2026` [![Project](assets/badges/project.svg)](https://mundo-world-model.github.io/)
   <br><sub>从图像重建可编辑的三维代理场景；场景程序指定对象和物理参数，脚本及通常采用的 MuJoCo 推进状态，代理帧与参考视图共同控制视频渲染。</sub>
 
-- **WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.28827-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.28827)
-  <br><sub>分层规划预测区域与地块的类型化规格，固定过程生成器将其编译成场景；持久记录保留对象身份、边界约束和编辑，以支持流式加载与重访。</sub>
+- **AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.31466-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.31466)
+  <br><sub>把编码智能体生成的游戏 blockout 渲染成保持实体、布局和时序一致的高质量视频；属于 renderer 相邻工作。</sub>
+
+- **SolarRenderer: Few-Step Generative Reference Rendering** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.28630-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.28630)
+  <br><sub>通过控制与加速 LoRA 适配冻结视频骨干，将对齐的结构视频转成细节视频，并支持流式生成。</sub>
 
 - **Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.27999-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.27999)
   <br><sub>编码智能体把玩家要求写成游戏代码与规则；引擎维护持久状态，因果视频模型根据低模画面生成细节视图。</sub>
-
-- **Agent World Model in the Wild: Computer-Use Agent Environment Synthesis (WildAWM)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.26828-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.26828)
-  <br><sub>合成贯通 GUI、MCP 和 CLI 的可执行计算机环境，以可重放状态构建程序和基于执行的任务、验证器质量门控支持智能体训练。</sub>
 
 - **State World Models: Execute the Rules, Generate the Pixels** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.26811-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.26811)
   <br><sub>编码智能体生成有类型的游戏定义；运行时先执行语义与空间状态规则，再调用冻结视频渲染器，之后接收与规则兼容的视觉反馈。</sub>
@@ -250,17 +267,17 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 - **Mallea: Building, Steering, and Memorizing Worlds with Coding Agent** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.21283-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.21283)
   <br><sub>编码智能体联合构建对象结构与规则，支持保留未受影响状态的运行时编辑，并结合执行状态与对象纹理记忆进行渲染。</sub>
 
+- **Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation (ATAS)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.20571-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.20571)
+  <br><sub>将剧本编译为带空间和事件时间引用的镜头请求，检索配准场景与事件记忆，并在检查通过后将生成观测写入记忆。</sub>
+
 - **Generative World Simulation with DAO and JING (DAO + JING)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.19726-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.19726)
   <br><sub>DAO 在交互规则和世界时间下维护共享角色、物体与空间状态，JING 为不同观察者生成视听体验。</sub>
 
-- **Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.17651-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.17651)
-  <br><sub>将生成的视觉场景编译为具有物理属性的 MuJoCo 世界，通过仿真器反馈修正可执行动力学与场景设置。</sub>
+- **From Pixels to Executable Physics: Behavior-Grounded World Models for Embodied Action Consequence Prediction (DR-WM)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.17630-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.17630)
+  <br><sub>结合 RGB 场景重建、真实动作响应校准的地形接触先验与物理仿真，以模拟运动和几何指导视频世界模型。</sub>
 
 - **StreamRender-H3: Interactive Coding Worlds with Real-time Streaming Diffusion Render** `2026` [![Project](assets/badges/project.svg)](https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/)
   <br><sub>three.js 游戏引擎维护地图、规则和状态，并根据玩家输入推进；语义帧连接引擎和流式 MiniMax-H3 渲染器，构成执行式模拟与生成外观分离的系统。</sub>
-
-- **ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.15166-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.15166)
-  <br><sub>评估单个机制、多阶段组合机械系统以及意图驱动的可执行三维世界合成。</sub>
 
 - **AgentGarten: Code Worlds for Evolving Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.12374-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.12374)
   <br><sub>AgentGarten 将程序定义的仿真后端连接到共享实时渲染器，并复用 agent 的文字技能手册。</sub>
@@ -277,38 +294,11 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 - **Programmable World Model** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.10540-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.10540)
   <br><sub>Programmable World Model 将包含非视觉事实的持久引擎状态，编译为视频生成控制信号。</sub>
 
-- **WebWorld: The Browser as a World Model for Self-Improving Web Code** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.30530-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.30530)
-  <br><sub>通过浏览器执行与验证自改进 Web 代码，检查交互合同及已有行为的保持。</sub>
-
-- **Code as Worlds: Agentic Discovery of Executable World Representations for Physical Reasoning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.27549-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27549)
-  <br><sub>Code as Worlds 通过提出、实例化、执行、渲染和验证的循环，发现可执行物理表示。</sub>
-
 - **Magpie: Real-Time World Renderer for Interactive Games** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.27168-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.27168)
   <br><sub>Magpie 将持久的游戏引擎状态与规则，连接到由白盒观测驱动的交互式神经渲染器。</sub>
 
 - **Code World Model: Coding Agent as World Brain** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.25927-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.25927)
   <br><sub>Code World Model 通过可执行代理表示，连接编码世界大脑与视觉世界引擎。</sub>
-
-- **AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.05891-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.05891)
-  <br><sub>AppDeltaWorld 结合检索结构、视觉资产与闭环修订，预测由动作转移约束的 HTML 更新。</sub>
-
-- **World-Time Compute with Verified Code World Models** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.09163-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.09163)
-  <br><sub>World-Time Compute 利用经验证的符号代码世界，生成具有精确标签的训练轨迹。</sub>
-
-- **SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.19587-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.19587)
-  <br><sub>SceneCode 构建可编辑的室内世界程序，包含关节物体、仿真导出与持久场景组织。</sub>
-
-- **ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.14398-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.14398)
-  <br><sub>ChronoAgentic 结合规划、编码、视觉审阅与轨迹检查，构建 PyChrono 仿真程序。</sub>
-
-- **Code2Worlds: Empowering Coding LLMs for 4D World Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.11757-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.11757)
-  <br><sub>Code2Worlds 生成用于四维仿真的物体与场景程序，并结合 Blender 动力学与视觉运动反馈。</sub>
-
-- **Code2World: A GUI World Model via Renderable Code Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.09856-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09856)
-  <br><sub>Code2World 结合 AndroidCode、视觉修订与渲染感知学习，生成下一屏 GUI 代码。</sub>
-
-- **Generative Visual Code Mobile World Models (gWorld)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.01576-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.01576)
-  <br><sub>gWorld 使用单一视觉语言模型，将移动 GUI 的未来观测预测为可渲染 Web 代码。</sub>
 
 - **Web World Models** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2512.23676-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.23676)
   <br><sub>Web World Models 以类型化 Web 状态和代码定义的规则，支撑持久的生成式世界。</sub>
@@ -318,16 +308,28 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 <a id="papers-vibeworlding"></a>
 ### 03 · VibeWorlding-type · agentic 3D 世界构建
 
-*构建和编辑可编辑、可渲染或可仿真的 3D 世界。*
+*代码写出完整 3D 世界（几何、材质、布局，可含物理），由常规渲染器或仿真器执行；包含静态场景。*
 
 - **Gym-Anything for Robotics: Scaling physical simulations with digital agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.40565-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.40565)
   <br><sub>把仿真创建视为编码智能体任务，构建并审计 RoboWorld 物理仿真环境；作为 3D/模拟器构建支撑工作收录。</sub>
 
+- **Cinematize from Unreal: Agentic Choreography for Controllable World Simulation (CineU)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.38468-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.38468)
+  <br><sub>把 Unreal 工程作为可检查的持久世界，利用智能体生成代码执行并验证操作，通过几何约束、时间线和局部修复完成世界编排。</sub>
+
 - **Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction (SceneEvolve)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.37046-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.37046)
   <br><sub>用可执行代码表示组合式 3D 场景，并在固定模型和执行后端的条件下演化重建 harness。</sub>
 
+- **SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.34745-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.34745)
+  <br><sub>通过重建、物理建模、仿真检查和修复，把 3D/4D 采集转换为可交互仿真环境；作为相邻 real-to-sim 工作保留。</sub>
+
+- **SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.32978-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.32978)
+  <br><sub>用视觉布局采样、契约引导的 3D 编译和物理稳定性检查生成具身学习环境；作为相邻场景构建工作保留。</sub>
+
 - **WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.31834-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.31834)
   <br><sub>从真实机器人演示构建交互式数字孪生，通过编码智能体迭代修复可执行世界程序并验证物理一致性。</sub>
+
+- **WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.28827-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.28827)
+  <br><sub>分层规划预测区域与地块的类型化规格，固定过程生成器将其编译成场景；持久记录保留对象身份、边界约束和编辑，以支持流式加载与重访。</sub>
 
 - **SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.28585-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.28585)
   <br><sub>从单张图像重建物体与布局，通过场景代码编辑、受限位姿搜索和仿真验证，保留物理稳定且与图像对齐的场景配置。</sub>
@@ -350,6 +352,12 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 - **RoboSimStudio: An Interactive Toolkit for Human and Agent Rapid Real2Sim of Robot Manipulation Tasks** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.18835-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.18835)
   <br><sub>基于 Newton 的交互式工具包，将求解器、接触模型与物理参数显式开放给人类和编码智能体，依据观测行为迭代调整操作仿真。</sub>
 
+- **Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.17651-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.17651)
+  <br><sub>将生成的视觉场景编译为具有物理属性的 MuJoCo 世界，通过仿真器反馈修正可执行动力学与场景设置。</sub>
+
+- **ExeWorldBench: Benchmarking Code-Based Executable 3D World Modeling** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.15166-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.15166)
+  <br><sub>评估单个机制、多阶段组合机械系统以及意图驱动的可执行三维世界合成。</sub>
+
 - **USDCraft: Geometrically Grounded Programmatic Modeling of Articulated 3D Assets for Simulation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.11322-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.11322)
   <br><sub>USDCraft 将输入几何转为可执行建模程序，导出具有关节结构的 USD 仿真资产。</sub>
 
@@ -367,6 +375,15 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **WorldClaw: Agentic 3D Open-World Generation at Scale** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.05248-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.05248)
   <br><sub>WorldClaw 通过区域规划、地形生成和渲染反馈，构建大规模可编辑三维场景。</sub>
+
+- **SceneCode: Executable World Programs for Editable Indoor Scenes with Articulated Objects** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.19587-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.19587)
+  <br><sub>SceneCode 构建可编辑的室内世界程序，包含关节物体、仿真导出与持久场景组织。</sub>
+
+- **ChronoAgentic: A Code-based Multi-Agent World Simulator for Physically Grounded Simulation Construction** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.14398-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.14398)
+  <br><sub>ChronoAgentic 结合规划、编码、视觉审阅与轨迹检查，构建 PyChrono 仿真程序。</sub>
+
+- **Code2Worlds: Empowering Coding LLMs for 4D World Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.11757-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.11757)
+  <br><sub>Code2Worlds 生成用于四维仿真的物体与场景程序，并结合 Blender 动力学与视觉运动反馈。</sub>
 
 - **Procedural Scene Programs for Open-Universe Scene Generation: LLM-Free Error Correction via Program Search** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2510.16147-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2510.16147)
   <br><sub>研究程序化场景表示，以及通过程序搜索进行错误修正的方法。</sub>
@@ -397,6 +414,66 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **Procedural content generation for games** `2013` [![Paper](assets/badges/paper.svg)](https://doi.org/10.1145/2422956.2422957)
   <br><sub>游戏程序化内容生成的历史参考文献；本轮核查书目信息。</sub>
+
+[↑ 返回导航](#contents)
+
+<a id="papers-unassigned-gui"></a>
+### 未收录 · GUI 世界模型
+
+*GUI、网页与 computer-use 世界模型，包括以可渲染代码预测下一屏的工作；暂不纳入三类主线。*
+
+<details>
+<summary>16 条记录</summary>
+
+- **Agent World Model in the Wild: Computer-Use Agent Environment Synthesis (WildAWM)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.26828-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.26828)
+  <br><sub>合成贯通 GUI、MCP 和 CLI 的可执行计算机环境，以可重放状态构建程序和基于执行的任务、验证器质量门控支持智能体训练。</sub>
+
+- **Beyond Next-Screen Prediction: The Decision Value of GUI World Models** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.24372-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.24372)
+  <br><sub>控制预测呈现方式和监督条件，对比 GUI 前瞻预测与直接动作排序器，检验预测画面对决策的增量价值。</sub>
+
+- **Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.11942-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.11942)
+  <br><sub>研究以 GUI 世界模型验证状态转移，并区分界面相似度与转移正确性。</sub>
+
+- **AutoGUIWorld: Image Generators as Visual World Models for GUI Agent** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2610.01215-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2610.01215)
+  <br><sub>AutoGUIWorld 通过规划视觉后果并迭代编辑截图，合成 GUI 交互轨迹。</sub>
+
+- **The GUI Is Not the State: Diagnosing State Aliasing in GUI World Models (StateAliasBench)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.32679-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.32679)
+  <br><sub>StateAliasBench 配对可见 GUI 条件相同、未来却不同的案例，诊断隐藏转移状态。</sub>
+
+- **WebWorld: The Browser as a World Model for Self-Improving Web Code** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.30530-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.30530)
+  <br><sub>通过浏览器执行与验证自改进 Web 代码，检查交互合同及已有行为的保持。</sub>
+
+- **GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2609.00048-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.00048)
+  <br><sub>GUI-CC 结合离线参考动作与在线 agent 闭环，评价多步上下文一致性。</sub>
+
+- **AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2608.05891-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.05891)
+  <br><sub>AppDeltaWorld 结合检索结构、视觉资产与闭环修订，预测由动作转移约束的 HTML 更新。</sub>
+
+- **OpenComputer: Verifiable Software Worlds for Computer-Use Agents** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.19769-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.19769)
+  <br><sub>OpenComputer 提供真实软件环境、结构化状态验证与可审计的任务奖励。</sub>
+
+- **How Mobile World Model Guides GUI Agents?** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2605.10347-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.10347)
+  <br><sub>比较文本、图像和可渲染代码表示，分析重建、在线使用及 agent 消费预测的不同方式。</sub>
+
+- **Computer-Using World Model** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.17365-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.17365)
+  <br><sub>Computer-Using World Model 先预测文本变化，再生成桌面软件交互后的截图。</sub>
+
+- **WebWorld: A Large-Scale World Model for Web Agent Training** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.14721-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.14721)
+  <br><sub>WebWorld 学习大规模网页仿真器，用于 agent 训练。</sub>
+
+- **Code2World: A GUI World Model via Renderable Code Generation** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.09856-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.09856)
+  <br><sub>Code2World 结合 AndroidCode、视觉修订与渲染感知学习，生成下一屏 GUI 代码。</sub>
+
+- **Generative Visual Code Mobile World Models (gWorld)** `2026` [![arXiv](https://img.shields.io/badge/arXiv-2602.01576-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.01576)
+  <br><sub>gWorld 使用单一视觉语言模型，将移动 GUI 的未来观测预测为可渲染 Web 代码。</sub>
+
+- **MobileWorldBench: Towards Semantic World Modeling For Mobile Agents** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2512.14014-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2512.14014)
+  <br><sub>MobileWorldBench 评价移动环境的语义状态转移及其对 GUI agent 的使用价值。</sub>
+
+- **ViMo: A Generative Visual GUI World Model for App Agents** `2025` [![arXiv](https://img.shields.io/badge/arXiv-2504.13936-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2504.13936)
+  <br><sub>ViMo 通过图形与文本分解建模移动 GUI 的未来观测。</sub>
+
+</details>
 
 [↑ 返回导航](#contents)
 

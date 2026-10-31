@@ -17,9 +17,17 @@ SCOPES = {'core', 'historical', 'enabling', 'benchmark', 'resource', 'comparator
 DEPTHS = {'targeted_fulltext': 'FT', 'abstract': 'A', 'metadata': 'M'}
 ROLES = {'transition', 'observation'}
 PRESENTATION = {
-    'worldcoder': ('WorldCoder-type · Programmatic Dynamics', 'Executable transition mechanisms, world-program induction, planning, and model repair.', False),
-    'code_as_world': ('Code-as-World-type · Executable World Programs', 'Persistent world state, rules, simulators, and execution/rendering interfaces.', False),
-    'vibeworlding': ('VibeWorlding-type · Agentic 3D World Construction', 'Agentic construction and editing of editable, renderable, or simulation-ready 3D worlds.', False),
+    'worldcoder': ('WorldCoder-type · Programmatic Dynamics', 'State-level executable dynamics: transition mechanisms, world-program induction, planning, and model repair, without generated appearance.', False),
+    'code_as_world': ('Code-as-World-type · Whitebox Worlds + Generative Rendering', 'Code keeps persistent state and rules over a whitebox/proxy world; a generative renderer supplies appearance.', False),
+    'vibeworlding': ('VibeWorlding-type · Agentic 3D World Construction', 'Code specifies the full 3D world (geometry, materials, layout, and optionally physics) for conventional rendering or simulation; static scenes included.', False),
+}
+UNASSIGNED_GROUPS = {
+    'gui': {
+        'title': 'Unassigned · GUI World Models',
+        'description': 'GUI, web, and computer-use world models, including renderable-code screen predictors. Not yet included in the three families.',
+        'title_zh': '未收录 · GUI 世界模型',
+        'description_zh': 'GUI、网页与 computer-use 世界模型，包括以可渲染代码预测下一屏的工作；暂不纳入三类主线。',
+    },
 }
 
 def require(condition, message):
@@ -92,6 +100,12 @@ def load_data():
             require(related in ids and related != pid, f'{pid}: invalid related record')
             require(pid in by_id[related].get('related_ids', []), f'{pid}: asymmetric related_ids')
     require(all(any(p['section'] == sid for p in records) for sid in sections), 'Empty catalogue section')
+    classification = json.loads((ROOT / 'data/classification.json').read_text(encoding='utf-8'))
+    groups = {r['id']: r['unassigned_group'] for r in classification['records'] if r.get('unassigned_group')}
+    for pid, group in groups.items():
+        require(group in UNASSIGNED_GROUPS, f'{pid}: unknown unassigned group')
+        require(pid in by_id and by_id[pid]['section'] is None, f'{pid}: grouped record must be unassigned')
+    data['unassigned_groups'] = groups
     return data
 
 def md(value):
@@ -124,6 +138,23 @@ def section_papers(data, section_id):
     return sorted((p for p in data['papers'] if p['section'] == section_id),
                   key=lambda p: (record_date(p), p['id']), reverse=True)
 
+def group_papers(data, group):
+    return [p for p in section_papers(data, None) if data['unassigned_groups'].get(p['id']) == group]
+
+def paper_lines(p, localized=None):
+    label = md(p['title'])
+    if p.get('alias') and p['alias'].lower() not in p['title'].lower():
+        label += f" ({md(p['alias'])})"
+    kind = 'arxiv' if p.get('arxiv_id') else 'paper'
+    badge_label = 'arXiv' if p.get('arxiv_id') else 'Project' if p.get('source_type') == 'project' else 'Paper'
+    if p.get('source_type') == 'project':
+        kind = 'project'
+    summary = localized['summaries'][p['id']] if localized else p['summary']
+    badge_source = (f"https://img.shields.io/badge/arXiv-{p['arxiv_id']}-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white"
+                    if p.get('arxiv_id') else f'assets/badges/{kind}.svg')
+    return [f"- **{label}** `{p['year']}` [![{badge_label}]({badge_source})]({p['source_url']})",
+            f"  <br><sub>{escape(summary)}</sub>", '']
+
 def catalogue(data, localized=None):
     unassigned = [p for p in data['papers'] if p['section'] is None]
     if localized:
@@ -143,19 +174,19 @@ def catalogue(data, localized=None):
         lines += ['', f'<a id="papers-{section["id"]}"></a>', f'### {index:02d} · {title}', '',
                   f'*{description}*', '']
         for p in subset:
-            label = md(p['title'])
-            if p.get('alias') and p['alias'].lower() not in p['title'].lower():
-                label += f" ({md(p['alias'])})"
-            kind = 'arxiv' if p.get('arxiv_id') else 'paper'
-            badge_label = 'arXiv' if p.get('arxiv_id') else 'Project' if p.get('source_type') == 'project' else 'Paper'
-            if p.get('source_type') == 'project':
-                kind = 'project'
-            summary = localized['summaries'][p['id']] if localized else p['summary']
-            badge_source = (f"https://img.shields.io/badge/arXiv-{p['arxiv_id']}-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white"
-                            if p.get('arxiv_id') else f'assets/badges/{kind}.svg')
-            lines += [f"- **{label}** `{p['year']}` [![{badge_label}]({badge_source})]({p['source_url']})",
-                      f"  <br><sub>{escape(summary)}</sub>", '']
+            lines += paper_lines(p, localized)
         lines += ['[↑ 返回导航](#contents)' if localized else '[↑ Contents](#contents)']
+    for gid, spec in UNASSIGNED_GROUPS.items():
+        subset = group_papers(data, gid)
+        if not subset:
+            continue
+        title = spec['title_zh'] if localized else spec['title']
+        description = spec['description_zh'] if localized else spec['description']
+        lines += ['', f'<a id="papers-unassigned-{gid}"></a>', f'### {title}', '', f'*{description}*', '',
+                  '<details>', f'<summary>{len(subset)} {"条记录" if localized else "records"}</summary>', '']
+        for p in subset:
+            lines += paper_lines(p, localized)
+        lines += ['</details>', '', '[↑ 返回导航](#contents)' if localized else '[↑ Contents](#contents)']
     return '\n'.join(lines)
 
 def navigation(data, localized=None):
@@ -170,6 +201,11 @@ def navigation(data, localized=None):
     else:
         lines = ['| Three primary families |', '|---|']
     lines.extend(f'| {entry} |' for entry in entries)
+    for gid, spec in UNASSIGNED_GROUPS.items():
+        count = len(group_papers(data, gid))
+        if count:
+            title = spec['title_zh'] if localized else spec['title']
+            lines.append(f'| [{title}](#papers-unassigned-{gid}) <sub>({count})</sub> |')
     if localized:
         lines.append('| [全量论文总表](docs/paper-master-list.md)（含未归类来源） |')
     else:
@@ -200,10 +236,13 @@ def annotated_catalogue(data):
             for p in notes:
                 lines += [f"- **{md(p.get('alias', p['title']))}:** {p['evidence_notes']}"]
             lines += ['', '</details>']
-    unassigned = section_papers(data, None)
-    if unassigned:
-        lines += ['', f"## Additional records not assigned to a primary family ({len(unassigned)})", '',
-                  'These records remain in the corpus and master list without a primary three-family assignment.', '',
+    blocks = [(f"Unassigned · GUI world models", 'GUI, web, and computer-use world models kept outside the three families for now.', group_papers(data, 'gui')),
+              ('Additional records not assigned to a primary family', 'These records remain in the corpus and master list without a primary three-family assignment.',
+               [p for p in section_papers(data, None) if p['id'] not in data['unassigned_groups']])]
+    for heading, note, unassigned in blocks:
+        if not unassigned:
+            continue
+        lines += ['', f"## {heading} ({len(unassigned)})", '', note, '',
                   '| Date | Paper | Mechanism / relevance | Scope | Review |',
                   '|---|---|---|---|---|']
         for p in unassigned:

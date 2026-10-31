@@ -3,15 +3,15 @@
   "sections": {
     "worldcoder": {
       "title": "WorldCoder-type · 程序化动力学",
-      "description": "可执行转移机制、世界程序归纳、规划与模型修复。"
+      "description": "纯状态层面的可执行动力学：转移机制、世界程序归纳、规划与模型修复，不生成外观。"
     },
     "code_as_world": {
-      "title": "Code-as-World-type · 可执行世界程序",
-      "description": "持久世界状态、规则、模拟器以及执行/渲染接口。"
+      "title": "Code-as-World-type · 白模世界 + 生成式渲染",
+      "description": "代码维护白模/proxy 世界的持久状态与规则，由生成式渲染器补全外观。"
     },
     "vibeworlding": {
       "title": "VibeWorlding-type · agentic 3D 世界构建",
-      "description": "构建和编辑可编辑、可渲染或可仿真的 3D 世界。"
+      "description": "代码写出完整 3D 世界（几何、材质、布局，可含物理），由常规渲染器或仿真器执行；包含静态场景。"
     }
   },
   "summaries": {
