@@ -6,7 +6,7 @@ The repository uses one public classification layer with three primary families,
 2. **Code-as-World-type — Whitebox Worlds + Generative Rendering:** code maintains persistent state and rules over a whitebox/proxy world, and a generative renderer supplies the appearance.
 3. **VibeWorlding-type — Agentic 3D World Construction (full 3D):** an agent writes or edits a complete 3D world in code (geometry, materials, layout, optionally physics), rendered or simulated by conventional engines. Static scenes are included.
 
-GUI, web and computer-use world models (including renderable-code screen predictors such as gWorld and Code2World) are kept in a separate unassigned **GUI** group. Generic benchmarks, learned simulators without a code-defined world, surveys and other adjacent work remain unassigned in the master list.
+Everything else sits under **Other**, split into **GUI world models** (including renderable-code screen predictors such as gWorld and Code2World) and **benchmarks** grouped by what they evaluate. Related surveys are listed at the top of the README with a note on how this survey differs.
 
 The [three-family guide](coarse-taxonomy.md) defines the placement rules. The [paper master list](paper-master-list.md) gives one primary family for every record, and [data/classification.json](../data/classification.json) stores the same assignment for filtering.
 

@@ -18,11 +18,11 @@ The three families are split along a single axis: **how much of the world the co
 
 Apply the questions in order and stop at the first match. / 按顺序判断，命中即停。
 
-1. Is it a GUI, web, or computer-use world model (including renderable-code screen prediction)? → **Unassigned · GUI**
+1. Is it a GUI, web, or computer-use world model (including renderable-code screen prediction)? → **Other · GUI**
 2. Does code hold persistent state and rules while a generative model (video, image, diffusion renderer) produces the observations? → **Code-as-World-type**
 3. Does code specify a full 3D world (geometry, assets, layout, articulation, optionally physics) that a conventional renderer or simulator executes? → **VibeWorlding-type**
 4. Does code carry state-level dynamics: transitions, legal actions, reward, latent state, simulator residuals, or symbolic/physical worlds without generated appearance? → **WorldCoder-type**
-5. Otherwise (generic benchmarks, learned simulators without a code world, surveys, other adjacent work) → **Unassigned**
+5. Otherwise: benchmarks → **Other · Benchmarks**; surveys → **Related surveys**; anything else is out of scope.
 
 ## 1. WorldCoder-type: Programmatic Dynamics / 纯状态
 
@@ -48,16 +48,18 @@ The central output is a constructed or edited 3D world: scene layout, assets, ar
 
 **判据：** coding agent 在 Blender、USD、仿真工具或类似沙盒中写出或修改完整的 3D 世界，外观由代码本身决定。当前版本收录静态场景；可仿真、可交互的世界构建同样属于此类。
 
-## Unassigned records / 未收录来源
+## Other and related surveys / 其他与相关综述
 
-Unassigned records stay in the corpus and master list. One named group exists:
+Every record outside the three families carries an `unassigned_group`:
 
-- **GUI / 未收录 · GUI 世界模型** (`unassigned_group: "gui"`): GUI, web and computer-use world models, whether they predict text, screenshots or renderable code (gWorld, Code2World, AppDeltaWorld), and their benchmarks and environment-synthesis work. In these models code at most carries the predicted observation, not persistent world state, so they do not sit on the three-family axis. They are kept together for a possible later section.
+- **Other · GUI world models / 其他 · GUI 世界模型** (`"gui"`): GUI, web and computer-use world models, whether they predict text, screenshots or renderable code (gWorld, Code2World, AppDeltaWorld), and their environment-synthesis work. Code here at most carries the predicted observation, not persistent world state, so they do not sit on the three-family axis.
+- **Other · Benchmarks / 其他 · 评测基准** (`"benchmark"`): benchmarks and diagnostic studies, with `benchmark_target` naming what they evaluate: `worldcoder` (state-level dynamics), `code_as_world` (program-to-video rendering), `vibeworlding` (3D world construction, including ExeWorldBench and BlenderWorld), or `video_wm` (non-code video and learned world models).
+- **Related surveys / 相关综述** (`"survey"`): shown at the top of the README with a `comparison` / `comparison_zh` note on how this survey differs.
 
-Other unassigned records (benchmarks, learned simulators without a code-defined world, surveys, adjacent work) remain ungrouped.
+Comparator and adjacent records that fit none of these (learned simulators, code-as-skill models) were removed from the corpus on 2026-10-31.
 
-未收录来源仍保留在总表中。目前只设一个分组：**GUI**，收录 GUI、网页和 computer-use 世界模型，包括以可渲染代码预测下一屏的工作及相关基准。这类模型中代码至多承载被预测的观测，而不是持久世界状态，因此不在三类主线的轴上，暂时集中放在一起。
+三类之外的每条记录都必须属于以上三组之一：GUI 世界模型、按评测对象分组的评测基准，或放在 README 开头、附"与本综述的区别"说明的相关综述。不属于这三组的对照/相邻工作已于 2026-10-31 从文献库中移除。
 
 ## Data files
 
-Assign at most one primary family in `data/classification.json` (and the matching `section` in `data/papers.json`). Unassigned records may set `unassigned_group`; the only valid value is `"gui"`. Run `python3 scripts/build_catalog.py` to regenerate the READMEs, [paper master list](paper-master-list.md), [classification CSV](../data/classification.csv) and [annotated catalogue](catalogue.md).
+Assign at most one primary family in `data/classification.json` (and the matching `section` in `data/papers.json`). Every other record must set `unassigned_group` to `"gui"`, `"benchmark"` (plus `benchmark_target`) or `"survey"` (plus `comparison` and `comparison_zh`); the build fails otherwise. Run `python3 scripts/build_catalog.py` to regenerate the READMEs, [paper master list](paper-master-list.md), [classification CSV](../data/classification.csv) and [annotated catalogue](catalogue.md).

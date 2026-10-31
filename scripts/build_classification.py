@@ -10,7 +10,7 @@ FAMILIES = {
     'code_as_world': 'Code-as-World-type · Whitebox Worlds + Generative Rendering',
     'vibeworlding': 'VibeWorlding-type · Agentic 3D World Construction',
 }
-UNASSIGNED_GROUPS = {'gui'}
+UNASSIGNED_GROUPS = {'gui', 'benchmark', 'survey'}
 
 
 def outputs(root, catalogue):
@@ -21,7 +21,7 @@ def outputs(root, catalogue):
         raise ValueError('Three-family classification must cover every catalogue ID exactly once')
     seen = set()
     fields = ['id', 'title', 'alias', 'source_url', 'year', 'coarse_family',
-              'coarse_family_label', 'unassigned_group', 'source_provenance', 'scope', 'review_depth']
+              'coarse_family_label', 'unassigned_group', 'benchmark_target', 'source_provenance', 'scope', 'review_depth']
     buffer = io.StringIO(newline='')
     writer = csv.DictWriter(buffer, fieldnames=fields, lineterminator='\n')
     writer.writeheader()
@@ -50,7 +50,7 @@ def outputs(root, catalogue):
             'id': pid, 'title': paper['title'], 'alias': paper.get('alias', ''),
             'source_url': paper['source_url'], 'year': paper['year'],
             'coarse_family': family or '', 'coarse_family_label': expected_label,
-            'unassigned_group': group or '',
+            'unassigned_group': group or '', 'benchmark_target': record.get('benchmark_target', ''),
             'source_provenance': record['source_provenance'], 'scope': paper['scope'],
             'review_depth': paper['review_depth'],
         })

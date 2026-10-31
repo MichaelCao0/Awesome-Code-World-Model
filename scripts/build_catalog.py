@@ -21,13 +21,26 @@ PRESENTATION = {
     'code_as_world': ('Code-as-World-type · Whitebox Worlds + Generative Rendering', 'Code keeps persistent state and rules over a whitebox/proxy world; a generative renderer supplies appearance.', False),
     'vibeworlding': ('VibeWorlding-type · Agentic 3D World Construction', 'Code specifies the full 3D world (geometry, materials, layout, and optionally physics) for conventional rendering or simulation; static scenes included.', False),
 }
-UNASSIGNED_GROUPS = {
+OTHER_GROUPS = {
     'gui': {
-        'title': 'Unassigned · GUI World Models',
-        'description': 'GUI, web, and computer-use world models, including renderable-code screen predictors. Not yet included in the three families.',
-        'title_zh': '未收录 · GUI 世界模型',
-        'description_zh': 'GUI、网页与 computer-use 世界模型，包括以可渲染代码预测下一屏的工作；暂不纳入三类主线。',
+        'title': 'GUI World Models',
+        'description': 'GUI, web, and computer-use world models, including renderable-code screen predictors. Kept outside the three families.',
+        'title_zh': 'GUI 世界模型',
+        'description_zh': 'GUI、网页与 computer-use 世界模型，包括以可渲染代码预测下一屏的工作；不纳入三类主线。',
     },
+    'benchmark': {
+        'title': 'Benchmarks',
+        'description': 'Benchmarks and diagnostic studies, grouped by what they evaluate.',
+        'title_zh': '评测基准',
+        'description_zh': '评测基准与诊断研究，按评测对象分组。',
+    },
+}
+UNASSIGNED_GROUPS = {*OTHER_GROUPS, 'survey'}
+BENCHMARK_TARGETS = {
+    'worldcoder': ('state-level dynamics (WorldCoder-type)', '纯状态动力学（WorldCoder-type）'),
+    'code_as_world': ('program-to-video rendering (Code-as-World-type)', '程序到视频的渲染（Code-as-World-type）'),
+    'vibeworlding': ('3D world construction (VibeWorlding-type)', '3D 世界构建（VibeWorlding-type）'),
+    'video_wm': ('non-code video and learned world models', '非代码的视频与学习型世界模型'),
 }
 
 def require(condition, message):
@@ -105,7 +118,15 @@ def load_data():
     for pid, group in groups.items():
         require(group in UNASSIGNED_GROUPS, f'{pid}: unknown unassigned group')
         require(pid in by_id and by_id[pid]['section'] is None, f'{pid}: grouped record must be unassigned')
+    for r in classification['records']:
+        require((r.get('benchmark_target') in BENCHMARK_TARGETS) == (r.get('unassigned_group') == 'benchmark'),
+                f"{r['id']}: benchmark records need exactly one valid benchmark_target")
+        if r.get('unassigned_group') == 'survey':
+            require(r.get('comparison') and r.get('comparison_zh'), f"{r['id']}: survey needs comparison text")
+    require(all(p['section'] or p['id'] in groups for p in records), 'Every record needs a family or an unassigned group')
     data['unassigned_groups'] = groups
+    data['benchmark_targets'] = {r['id']: r['benchmark_target'] for r in classification['records'] if r.get('benchmark_target')}
+    data['comparisons'] = {r['id']: (r['comparison'], r['comparison_zh']) for r in classification['records'] if r.get('comparison')}
     return data
 
 def md(value):
@@ -176,18 +197,40 @@ def catalogue(data, localized=None):
         for p in subset:
             lines += paper_lines(p, localized)
         lines += ['[↑ 返回导航](#contents)' if localized else '[↑ Contents](#contents)']
-    for gid, spec in UNASSIGNED_GROUPS.items():
+    lines += ['', '<a id="papers-other"></a>', '### 其他' if localized else '### Other', '',
+              '*不属于三类主线的记录，分为 GUI 世界模型与评测基准两组。*' if localized else
+              '*Records outside the three families, in two groups: GUI world models and benchmarks.*']
+    for gid, spec in OTHER_GROUPS.items():
         subset = group_papers(data, gid)
-        if not subset:
-            continue
         title = spec['title_zh'] if localized else spec['title']
         description = spec['description_zh'] if localized else spec['description']
-        lines += ['', f'<a id="papers-unassigned-{gid}"></a>', f'### {title}', '', f'*{description}*', '',
+        lines += ['', f'<a id="papers-other-{gid}"></a>', f'#### {title} ({len(subset)})', '', f'*{description}*', '',
                   '<details>', f'<summary>{len(subset)} {"条记录" if localized else "records"}</summary>', '']
-        for p in subset:
-            lines += paper_lines(p, localized)
-        lines += ['</details>', '', '[↑ 返回导航](#contents)' if localized else '[↑ Contents](#contents)']
+        if gid == 'benchmark':
+            for tid, (en, zh) in BENCHMARK_TARGETS.items():
+                part = [p for p in subset if data['benchmark_targets'][p['id']] == tid]
+                if part:
+                    lines += [f"**{'评测' if localized else 'Evaluating'} {zh if localized else en}**", '']
+                    for p in part:
+                        lines += paper_lines(p, localized)
+        else:
+            for p in subset:
+                lines += paper_lines(p, localized)
+        lines += ['</details>']
+    lines += ['', '[↑ 返回导航](#contents)' if localized else '[↑ Contents](#contents)']
     return '\n'.join(lines)
+
+def related_surveys(data, localized=None):
+    surveys = group_papers(data, 'survey')
+    if localized:
+        lines = ['相关综述以视频模型或通用世界模型为中心；本综述以**可执行代码作为世界的载体**为纳入标准，按代码承担了世界的多少部分（纯状态 / 白模 + 生成式渲染 / 完整 3D）组织文献，视频模型只作为可选的渲染器出现。', '']
+    else:
+        lines = ['Related surveys centre on video models or world models in general. This survey takes **executable code as the substrate of the world** as its inclusion criterion and organises the literature by how much of the world code carries (state only / whitebox + generative rendering / full 3D); video models appear only as optional renderers.', '']
+    for p in surveys:
+        lines += paper_lines(p, localized)[:2]
+        en, zh = data['comparisons'][p['id']]
+        lines += [f"  <br>**{'与本综述的区别：' if localized else 'How we differ:'}** {zh if localized else en}", '']
+    return '\n'.join(lines).rstrip()
 
 def navigation(data, localized=None):
     entries = []
@@ -201,11 +244,9 @@ def navigation(data, localized=None):
     else:
         lines = ['| Three primary families |', '|---|']
     lines.extend(f'| {entry} |' for entry in entries)
-    for gid, spec in UNASSIGNED_GROUPS.items():
-        count = len(group_papers(data, gid))
-        if count:
-            title = spec['title_zh'] if localized else spec['title']
-            lines.append(f'| [{title}](#papers-unassigned-{gid}) <sub>({count})</sub> |')
+    other = ' · '.join(f"[{spec['title_zh'] if localized else spec['title']}](#papers-other-{gid}) <sub>({len(group_papers(data, gid))})</sub>"
+                       for gid, spec in OTHER_GROUPS.items())
+    lines.append(f"| [{'其他' if localized else 'Other'}](#papers-other): {other} |")
     if localized:
         lines.append('| [全量论文总表](docs/paper-master-list.md)（含未归类来源） |')
     else:
@@ -236,9 +277,9 @@ def annotated_catalogue(data):
             for p in notes:
                 lines += [f"- **{md(p.get('alias', p['title']))}:** {p['evidence_notes']}"]
             lines += ['', '</details>']
-    blocks = [(f"Unassigned · GUI world models", 'GUI, web, and computer-use world models kept outside the three families for now.', group_papers(data, 'gui')),
-              ('Additional records not assigned to a primary family', 'These records remain in the corpus and master list without a primary three-family assignment.',
-               [p for p in section_papers(data, None) if p['id'] not in data['unassigned_groups']])]
+    blocks = [('Other · GUI world models', 'GUI, web, and computer-use world models kept outside the three families.', group_papers(data, 'gui')),
+              ('Other · Benchmarks', 'Benchmarks and diagnostic studies. The README and master list group them by what they evaluate.', group_papers(data, 'benchmark')),
+              ('Related surveys', 'Surveys compared against in the README.', group_papers(data, 'survey'))]
     for heading, note, unassigned in blocks:
         if not unassigned:
             continue
@@ -401,7 +442,7 @@ def main():
         readme_path = ROOT / filename
         readme = readme_path.read_text(encoding='utf-8')
         for name, content in [('BADGES', badge_row(survey_links)), ('NAVIGATION', navigation(data, language)),
-                              ('CATALOG', catalogue(data, language))]:
+                              ('CATALOG', catalogue(data, language)), ('RELATED', related_surveys(data, language))]:
             readme = replace_region(readme, name, content)
         expected[readme_path] = readme
     for path, text in expected.items():

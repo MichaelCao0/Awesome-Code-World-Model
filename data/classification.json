@@ -2,7 +2,7 @@
   "schema_version": 2,
   "updated_on": "2026-10-31",
   "status": "discussion-draft",
-  "scope": "One of three public family assignments per classified record, split by how much of the world code carries: WorldCoder-type (state and rules only), Code-as-World-type (whitebox/proxy world plus generative rendering), or VibeWorlding-type (full 3D world in code, static scenes included). Unassigned records may carry an unassigned_group; \"gui\" marks GUI/computer-use world models.",
+  "scope": "One of three public family assignments per classified record, split by how much of the world code carries: WorldCoder-type (state and rules only), Code-as-World-type (whitebox/proxy world plus generative rendering), or VibeWorlding-type (full 3D world in code, static scenes included). Every other record carries an unassigned_group: \"gui\" (Other · GUI world models), \"benchmark\" (Other · Benchmarks, with benchmark_target naming what it evaluates), or \"survey\" (related surveys, shown at the top of the README).",
   "families": {
     "worldcoder": "State-level programmatic dynamics and world-program induction.",
     "code_as_world": "Whitebox/proxy executable worlds rendered by generative models.",
@@ -199,7 +199,9 @@
         "https://arxiv.org/abs/2502.13092"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
     },
     {
       "id": "2502.20694",
@@ -211,7 +213,9 @@
         "https://arxiv.org/abs/2502.20694"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "video_wm"
     },
     {
       "id": "2503.20124",
@@ -519,7 +523,9 @@
         "https://arxiv.org/abs/2606.01869"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
     },
     {
       "id": "2606.16070",
@@ -543,7 +549,9 @@
         "https://arxiv.org/abs/2606.31689"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
     },
     {
       "id": "2607.01531",
@@ -582,18 +590,6 @@
       "annotated_on": "2026-10-31"
     },
     {
-      "id": "2607.16900",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2607.16900"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
       "id": "2607.17540",
       "coarse_family": "worldcoder",
       "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
@@ -613,18 +609,6 @@
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2607.25236"
-      ],
-      "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2607.26754",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue + feishu_visible_pasted_text",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2607.26754"
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-26"
@@ -786,7 +770,9 @@
         "https://arxiv.org/abs/2609.21562"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
     },
     {
       "id": "2609.25652",
@@ -810,18 +796,6 @@
         "https://arxiv.org/abs/2609.26458"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2609.28416",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "provisional",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2609.28416"
-      ],
-      "evidence_depth": "abstract",
       "annotated_on": "2026-10-26"
     },
     {
@@ -896,7 +870,9 @@
         "https://arxiv.org/abs/2610.02205"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "code_as_world"
     },
     {
       "id": "2610.04432",
@@ -908,19 +884,9 @@
         "https://arxiv.org/abs/2610.04432"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2610.04940",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2610.04940"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
     },
     {
       "id": "2610.11253",
@@ -1018,7 +984,9 @@
         "https://arxiv.org/abs/2610.18826"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "video_wm"
     },
     {
       "id": "2610.17630",
@@ -1119,31 +1087,23 @@
         "https://arxiv.org/abs/2610.29435"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
-    },
-    {
-      "id": "2610.30136",
-      "coarse_family": null,
-      "coarse_family_label": "Unassigned / 未归类",
-      "source_provenance": "github_catalogue",
-      "assignment_status": "reviewed-proposal",
-      "evidence_urls": [
-        "https://arxiv.org/abs/2610.30136"
-      ],
-      "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "video_wm"
     },
     {
       "id": "2610.23986",
-      "coarse_family": "vibeworlding",
-      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2610.23986"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
     },
     {
       "id": "2610.22341",
@@ -1167,7 +1127,9 @@
         "https://arxiv.org/abs/2610.22708"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "worldcoder"
     },
     {
       "id": "2610.24372",
@@ -1256,7 +1218,9 @@
         "https://arxiv.org/html/2610.28416v1"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-26"
+      "annotated_on": "2026-10-26",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "code_as_world"
     },
     {
       "id": "2610.01614",
@@ -1284,15 +1248,17 @@
     },
     {
       "id": "2610.15166",
-      "coarse_family": "vibeworlding",
-      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
       "source_provenance": "github_catalogue",
       "assignment_status": "reviewed-proposal",
       "evidence_urls": [
         "https://arxiv.org/abs/2610.15166"
       ],
       "evidence_depth": "targeted_fulltext",
-      "annotated_on": "2026-10-31"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
     },
     {
       "id": "2610.17651",
@@ -1512,7 +1478,9 @@
         "https://arxiv.org/abs/2610.38231"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
     },
     {
       "id": "2610.35980",
@@ -1524,7 +1492,9 @@
         "https://arxiv.org/abs/2610.35980"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "vibeworlding"
     },
     {
       "id": "2610.33894",
@@ -1536,7 +1506,9 @@
         "https://arxiv.org/abs/2610.33894"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "video_wm"
     },
     {
       "id": "2610.39721",
@@ -1548,7 +1520,9 @@
         "https://arxiv.org/abs/2610.39721"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "benchmark",
+      "benchmark_target": "video_wm"
     },
     {
       "id": "2610.40191",
@@ -1560,7 +1534,10 @@
         "https://arxiv.org/abs/2610.40191"
       ],
       "evidence_depth": "abstract",
-      "annotated_on": "2026-10-31"
+      "annotated_on": "2026-10-31",
+      "unassigned_group": "survey",
+      "comparison": "It surveys agent harnesses built around video generation models, covering video production, interactive world modeling and recursive self-improvement, so the video model is the centre and code is one harness component. Here code is the world substrate: it carries state and rules, a whitebox world, or the full 3D world, and a video model is only one possible renderer.",
+      "comparison_zh": "该综述以视频生成模型为中心，梳理围绕它构建的 agent harness（视频制作、交互式世界建模、递归自我改进），代码只是 harness 的组件之一。本综述以代码为世界的载体：代码承担状态与规则、白模世界或完整 3D 世界，视频模型只是可选的渲染器之一。"
     },
     {
       "id": "2610.34745",

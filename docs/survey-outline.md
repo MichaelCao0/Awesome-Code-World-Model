@@ -18,7 +18,7 @@
 | **Code-as-World-type**（白模 + 生成式渲染） | 代码维护的状态与规则能否驱动生成式渲染的世界？ | 状态权威、实体和规则、白模/proxy 条件、神经渲染接口、持久性与记忆 | Code World Model、Programmable World Model、CoDeR、GameDirector、AgentGarten、Oneira、Mallea、BoxWorld、State World Models、Matrix-Game 4.0 |
 | **VibeWorlding-type**（完整 3D） | agent 能否用代码构建和编辑完整 3D 世界？ | 资产检索、场景程序、空间布局、关节/物理属性、渲染反馈与仿真准备度；含静态场景 | VibeWorlding、Holodeck、SceneCraft、WorldClaw、USDCraft、NeoWorld-3、SceneRig、Code2Worlds-2、SceneCode、ChronoAgentic |
 
-GUI 世界模型（包括 gWorld、Code2World、AppDeltaWorld 等可渲染代码预测）暂列为未收录的 GUI 分组；评测基准、综述和相邻学习型模拟器保留在文献总表中，不强行制造第四类主线。
+三类之外的记录放在"其他"下：GUI 世界模型（包括 gWorld、Code2World、AppDeltaWorld 等可渲染代码预测）和按评测对象分组的评测基准。相关综述放在开头，用来说明本综述与它们的不同。
 
 ## 章节草案
 

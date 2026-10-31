@@ -1532,36 +1532,6 @@
       "metadata_checked_on": "2026-10-14"
     },
     {
-      "id": "2607.16900",
-      "citation_key": "cwm_2607_16900",
-      "title": "Simulate to Generalize: Scaling Stateful Supervision for API-calling Agents using LLM World Models",
-      "authors": [
-        "Seanie Lee",
-        "Sanjoy Chowdhury",
-        "Chao Jiang",
-        "Cheng-Yu Hsieh",
-        "Ting-Yao Hu",
-        "Alexander T Toshev",
-        "Oncel Tuzel",
-        "Raviteja Vemulapalli"
-      ],
-      "year": 2026,
-      "first_public_date": "2026-07-18",
-      "source_url": "https://arxiv.org/abs/2607.16900",
-      "review_depth": "abstract",
-      "reviewed_on": "2026-10-13",
-      "arxiv_id": "2607.16900",
-      "section": null,
-      "scope": "comparator",
-      "code_roles": [],
-      "tags": [
-        "stateful-api-simulation",
-        "agent-training"
-      ],
-      "summary": "Uses language-model simulators to generate stateful API-calling supervision for agents.",
-      "metadata_checked_on": "2026-10-14"
-    },
-    {
       "id": "2607.17540",
       "citation_key": "cwm_2607_17540",
       "arxiv_id": "2607.17540",
@@ -1613,33 +1583,6 @@
       ],
       "summary": "VisualPatchWorld fits dynamics from structured state-action traces and uses visual scene graphs for replanning.",
       "evidence_notes": "Dynamics induction uses structured traces. Visual planning and oracle-state induction conditions should be compared separately.",
-      "metadata_checked_on": "2026-10-14"
-    },
-    {
-      "id": "2607.26754",
-      "citation_key": "cwm_2607_26754",
-      "title": "StatePlay: State-Aware Game World Models for Mechanics-Consistent Generation",
-      "authors": [
-        "Zijun Lin",
-        "Zeqing Wang",
-        "Cheston Tan",
-        "Bihan Wen",
-        "Yeying Jin"
-      ],
-      "year": 2026,
-      "first_public_date": "2026-07-29",
-      "source_url": "https://arxiv.org/abs/2607.26754",
-      "review_depth": "targeted_fulltext",
-      "reviewed_on": "2026-10-13",
-      "arxiv_id": "2607.26754",
-      "section": null,
-      "scope": "comparator",
-      "code_roles": [],
-      "tags": [
-        "learned-state-dynamics",
-        "visual-generation"
-      ],
-      "summary": "StatePlay jointly predicts game states and video, providing a learned-dynamics comparison for explicit code transitions.",
       "metadata_checked_on": "2026-10-14"
     },
     {
@@ -2145,37 +2088,6 @@
       "metadata_checked_on": "2026-10-14"
     },
     {
-      "id": "2609.28416",
-      "citation_key": "cwm_2609_28416",
-      "title": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
-      "authors": [
-        "Shuang Sun",
-        "Guoxin Chen",
-        "Fanzhe Meng",
-        "Jia Deng",
-        "Huatong Song",
-        "Jinhao Jiang",
-        "Wayne Xin Zhao",
-        "Hongteng Xu",
-        "Ji-Rong Wen"
-      ],
-      "year": 2026,
-      "first_public_date": "2026-09-23",
-      "source_url": "https://arxiv.org/abs/2609.28416",
-      "review_depth": "abstract",
-      "reviewed_on": "2026-10-13",
-      "arxiv_id": "2609.28416",
-      "section": null,
-      "scope": "adjacent",
-      "code_roles": [],
-      "tags": [
-        "agent-editing",
-        "task-continuation"
-      ],
-      "summary": "Agent-Editing World Model models editable agent reasoning and task continuation as an adjacent world-model formulation.",
-      "metadata_checked_on": "2026-10-14"
-    },
-    {
       "id": "2609.32679",
       "citation_key": "cwm_2609_32679",
       "title": "The GUI Is Not the State: Diagnosing State Aliasing in GUI World Models",
@@ -2421,35 +2333,6 @@
         "geometry-dynamics-function"
       ],
       "summary": "Video2World evaluates video-to-interactive-world reconstruction through geometry, dynamics, and function.",
-      "metadata_checked_on": "2026-10-14"
-    },
-    {
-      "id": "2610.04940",
-      "citation_key": "cwm_2610_04940",
-      "title": "Software World Models: From Consequence Prediction to Decision Value",
-      "authors": [
-        "Tongli Su",
-        "Yuntong Hu",
-        "Liang Zhao",
-        "Bowen Zhu",
-        "JayaSai Somasundaram",
-        "Hasibul Haque"
-      ],
-      "year": 2026,
-      "first_public_date": "2026-10-04",
-      "source_url": "https://arxiv.org/abs/2610.04940",
-      "review_depth": "abstract",
-      "reviewed_on": "2026-10-13",
-      "arxiv_id": "2610.04940",
-      "section": null,
-      "scope": "comparator",
-      "code_roles": [],
-      "tags": [
-        "code-as-object",
-        "consequence-prediction",
-        "decision-value"
-      ],
-      "summary": "Software World Models predicts consequences of code edits and evaluates their value for decisions.",
       "metadata_checked_on": "2026-10-14"
     },
     {
@@ -3000,49 +2883,6 @@
       "alias": "Events, Not Pixels"
     },
     {
-      "id": "2610.30136",
-      "citation_key": "cwm_2610_30136",
-      "title": "Agentic World Action Models",
-      "authors": [
-        "Zhuoyang Liu",
-        "Dantong Niu",
-        "Botong Zhang",
-        "Boning Shao",
-        "Jing Wang",
-        "Ruijie Zheng",
-        "Yuvan Sharma",
-        "Runyu Lu",
-        "Jiaming Liu",
-        "Renrui Zhang",
-        "Roei Herzig",
-        "Yutong Bai",
-        "Ken Goldberg",
-        "Danfei Xu",
-        "Yuke Zhu",
-        "Guanzhi Wang",
-        "Linxi \"Jim\" Fan",
-        "Trevor Darrell"
-      ],
-      "year": 2026,
-      "first_public_date": "2026-10-21",
-      "source_url": "https://arxiv.org/abs/2610.30136",
-      "review_depth": "abstract",
-      "reviewed_on": "2026-10-26",
-      "metadata_checked_on": "2026-10-26",
-      "section": null,
-      "scope": "adjacent",
-      "code_roles": [],
-      "tags": [
-        "code-as-policy",
-        "video-action-experts",
-        "reusable-skills"
-      ],
-      "summary": "Jointly models code, future video and actions with coupled experts; generated programs provide reusable skills and control structure while video/action experts predict visual futures and motor commands.",
-      "evidence_notes": "Code is a skill/policy/control representation. The verified abstract does not show code implementing an autonomous state-transition simulator or encoding predicted observations. Induction refers to learned multimodal predictions/skills, not induction of executable world dynamics. Date records arXiv v1; earlier external releases were not exhaustively audited.",
-      "arxiv_id": "2610.30136",
-      "alias": "AW-0"
-    },
-    {
       "id": "2610.23986",
       "citation_key": "cwm_2610_23986",
       "title": "BlenderWorld: Benchmarking Visual Agents for 3D Creation from Real-World References",
@@ -3069,7 +2909,7 @@
       "review_depth": "abstract",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "vibeworlding",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [
         "observation"
@@ -3506,7 +3346,7 @@
       "review_depth": "targeted_fulltext",
       "reviewed_on": "2026-10-26",
       "metadata_checked_on": "2026-10-26",
-      "section": "vibeworlding",
+      "section": null,
       "scope": "benchmark",
       "code_roles": [],
       "tags": [
