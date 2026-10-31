@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_on": "2026-10-30",
+  "updated_on": "2026-10-31",
   "literature_cutoff": "2026-10-29",
   "description": "Curated source records for a code-centric world-model survey. Source counts are bibliographic records, not unique-method counts. Review depth refers to citation and mechanism checking, not experiment reproduction.",
   "sections": [
@@ -4208,6 +4208,786 @@
       "evidence_notes": "The primary task is agentic 3D world construction and editing with VWE-Bench; it should not be counted as temporal dynamics discovery unless a separate transition model is evaluated.",
       "metadata_checked_on": "2026-10-29",
       "alias": "VibeWorlding"
+    },
+    {
+      "id": "2610.40607",
+      "citation_key": "cwm_2610_40607",
+      "title": "Fight World Model: Customizable Combat through Visual Interaction Proxies",
+      "authors": [
+        "Jiahua Li",
+        "Zixu John",
+        "Tom Zhong",
+        "Fuping Wu",
+        "Tianhao Xu",
+        "Ruicheng Zhang",
+        "Jun Zhou",
+        "Zunnan Xu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-29",
+      "source_url": "https://arxiv.org/abs/2610.40607",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "code_as_world",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "game-code",
+        "persistent-state",
+        "interaction-proxy",
+        "neural-rendering"
+      ],
+      "summary": "Separates executable combat state and rule resolution from video rendering with identity- and timing-aligned interaction proxies; tests rule changes and customization.",
+      "evidence_notes": "The abstract describes an executable engine as the source of combat state and a deterministic proxy compiler for the renderer. This is a code-as-world design, not evidence that the combat rules were induced from unknown observations. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.40607",
+      "alias": "Fight World Model"
+    },
+    {
+      "id": "2610.36371",
+      "citation_key": "cwm_2610_36371",
+      "title": "BoxWorld: Let World Engines Control and Video Generators Render",
+      "authors": [
+        "Zike Wu",
+        "Ahmed Hatem",
+        "Chintan Trivedi",
+        "Wallace Michel Pinto Lira",
+        "Xuebin Qin",
+        "Lele Wang",
+        "Renjie Liao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-26",
+      "source_url": "https://arxiv.org/abs/2610.36371",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "code_as_world",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "engine-code",
+        "persistent-state",
+        "neural-rendering",
+        "paired-benchmark"
+      ],
+      "summary": "A coding agent turns user rules into a Box World Engine exposing persistent attributes and status variables; a state renderer converts the stream into interactive video.",
+      "evidence_notes": "The abstract explicitly separates coding-agent rule execution from generative rendering and introduces PairedStateBench. Detailed training and benchmark claims remain abstract-level in this pass. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.36371",
+      "alias": "BoxWorld"
+    },
+    {
+      "id": "2610.38468",
+      "citation_key": "cwm_2610_38468",
+      "title": "Cinematize from Unreal: Agentic Choreography for Controllable World Simulation",
+      "authors": [
+        "Zifan Song",
+        "Caihua Shan",
+        "Kaitao Song",
+        "Yifan Yang",
+        "Dongsheng Li",
+        "Cairong Zhao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-28",
+      "source_url": "https://arxiv.org/abs/2610.38468",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "code_as_world",
+      "scope": "core",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "unreal-engine",
+        "executable-world",
+        "code-synthesis",
+        "verification"
+      ],
+      "summary": "Uses an Unreal project as a persistent inspectable world; agent-generated code performs geometry- and capability-constrained operations with verification and localized repair.",
+      "evidence_notes": "CineU is included because executable engine state and agent-generated operations are central to the abstract. Cinematic choreography is the application, not the inclusion criterion. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.38468",
+      "alias": "CineU"
+    },
+    {
+      "id": "2610.37046",
+      "citation_key": "cwm_2610_37046",
+      "title": "Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction",
+      "authors": [
+        "Haoyu Yao",
+        "Chenguo Lin",
+        "Ruize Du",
+        "Yadong Mu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-27",
+      "source_url": "https://arxiv.org/abs/2610.37046",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "core",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "scene-code",
+        "harness-evolution",
+        "3d-reconstruction",
+        "verification"
+      ],
+      "summary": "Represents compositional 3D scenes as executable code and evolves the reconstruction harness while fixing model parameters, action semantics, and execution backend.",
+      "evidence_notes": "The work targets reusable reconstruction procedures and executable scene code. Harness evolution is recorded as a lifecycle mechanism; it does not create a separate repository family. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.37046",
+      "alias": "SceneEvolve"
+    },
+    {
+      "id": "2610.31834",
+      "citation_key": "cwm_2610_31834",
+      "title": "WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations",
+      "authors": [
+        "Tianling Xu",
+        "Weijie Wan",
+        "Honghao Su",
+        "Kailun Su",
+        "Junyuan Tang",
+        "Huichi Zhou",
+        "Haozheng Zhang",
+        "Qi Xiong",
+        "Ping Luo",
+        "Wenbo Ding",
+        "Tianxing Chen",
+        "Yue Chen"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-22",
+      "source_url": "https://arxiv.org/abs/2610.31834",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "core",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "real-to-sim",
+        "world-program",
+        "physical-validity",
+        "robot-demonstration"
+      ],
+      "summary": "Constructs interactive digital twins from in-the-wild robot demonstrations by iteratively refining an executable world program with verification feedback.",
+      "evidence_notes": "Included under VibeWorlding because its contribution is code-mediated interactive world construction and physical validation; the robot is the evaluation substrate, not a separate taxonomy branch. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.31834",
+      "alias": "WorldMirror"
+    },
+    {
+      "id": "2610.40565",
+      "citation_key": "cwm_2610_40565",
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "authors": [
+        "Pranjal Aggarwal",
+        "Sean Welleck"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-29",
+      "source_url": "https://arxiv.org/abs/2610.40565",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "enabling",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "simulation-generation",
+        "coding-agent",
+        "robotics",
+        "benchmark"
+      ],
+      "summary": "Treats simulation creation as a coding-agent task and releases RoboWorld environments plus an adversarial creation-audit loop for physical simulation construction.",
+      "evidence_notes": "This is an enabling simulator-construction resource. It is included because coding agents create and audit the executable simulations; robot policy learning is downstream evidence. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.40565",
+      "alias": "Gym-Anything"
+    },
+    {
+      "id": "2610.26853",
+      "citation_key": "cwm_2610_26853",
+      "title": "InfiniDream: Open-Ended Photorealistic 3D Worlds Through Procedural Generation",
+      "authors": [
+        "Yi-Chuan Huang",
+        "Hao-Jen Chien",
+        "Zheng-Hui Huang",
+        "Yu-Lun Liu",
+        "Kaipeng Zhang",
+        "Zhixiang Wang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-19",
+      "source_url": "https://arxiv.org/abs/2610.26853",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "vibeworlding",
+      "scope": "core",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "procedural-generation",
+        "3d-worlds",
+        "editable-assets",
+        "code-generation"
+      ],
+      "summary": "Uses a VLM-driven procedural pipeline with symbolic constraints and deterministic placement to build editable, animated, photorealistic 3D worlds.",
+      "evidence_notes": "The abstract identifies VLM-guided code generation and procedural algorithms as the mechanism. The primary contribution is editable world construction rather than discovery of unknown dynamics. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.26853",
+      "alias": "InfiniDream",
+      "reviewed_version": "v2"
+    },
+    {
+      "id": "2610.34921",
+      "citation_key": "cwm_2610_34921",
+      "title": "PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds",
+      "authors": [
+        "Jinyuan Hu",
+        "Yilei Jiang",
+        "Chen Tang",
+        "Minghong Cai",
+        "Xinran Liu",
+        "Xiangyu Yue"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-26",
+      "source_url": "https://arxiv.org/abs/2610.34921",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "code_as_world",
+      "scope": "enabling",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "executable-worlds",
+        "physics-engine",
+        "counterfactuals",
+        "verification"
+      ],
+      "summary": "Has a shared VLM propose executable physical worlds while a deterministic engine verifies counterfactual branches and produces answer-bound training tasks.",
+      "evidence_notes": "Included as an enabling executable-world pipeline: program proposals and deterministic physics provide the external source of truth, while the main downstream target is physical reasoning training. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.34921",
+      "alias": "PhysEvolve"
+    },
+    {
+      "id": "2610.40503",
+      "citation_key": "cwm_2610_40503",
+      "title": "Algebraic World Model: From Exploration to Proofs",
+      "authors": [
+        "Guancheng Pan",
+        "Qixin Tan",
+        "Yang Yuan",
+        "Andrew Chi-Chih Yao"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-29",
+      "source_url": "https://arxiv.org/abs/2610.40503",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "worldcoder",
+      "scope": "core",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "executable-hypotheses",
+        "formal-verification",
+        "arc-agi-3",
+        "world-rules"
+      ],
+      "summary": "Explores unknown games with executable Python hypotheses, typed rules, and Lean formalization for reachability and impossibility proofs.",
+      "evidence_notes": "This is a direct programmatic-dynamics addition: executable hypotheses are tested against observations and used to predict unseen transitions. The Lean proof layer strengthens verification but does not change the primary family. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.40503",
+      "alias": "Algebraic World Model"
+    },
+    {
+      "id": "2610.19726",
+      "citation_key": "cwm_2610_19726",
+      "title": "Generative World Simulation with DAO and JING",
+      "authors": [
+        "XGEN Team",
+        "Guohao Cai",
+        "Haoxuan Che",
+        "Frank Fan",
+        "Chenran Huang",
+        "Junjia Huang",
+        "Jiayi Jiang",
+        "Yanheng Li",
+        "Leon Liu",
+        "Shaoteng Liu",
+        "Xi Liu",
+        "Feng Nie",
+        "Zhefan Rao",
+        "An Wang",
+        "Hanwen Wang",
+        "Pengxiang Yan",
+        "Jieming Yu",
+        "Qian Zha",
+        "Wentao Zheng"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-14",
+      "source_url": "https://arxiv.org/abs/2610.19726",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": "code_as_world",
+      "scope": "enabling",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "persistent-state",
+        "world-engine",
+        "audiovisual-rendering",
+        "multi-observer"
+      ],
+      "summary": "DAO maintains shared character, object, and space states under world time and interaction rules, while JING renders observer-specific audiovisual experiences.",
+      "evidence_notes": "The abstract presents a computable world engine and persistent state, but does not claim coding-agent synthesis. It is therefore an enabling comparator for persistent executable-world architectures. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.19726",
+      "alias": "DAO + JING"
+    },
+    {
+      "id": "2610.38231",
+      "citation_key": "cwm_2610_38231",
+      "title": "3DCodeEdit: Benchmarking Instruction-Guided 3D Program Editing",
+      "authors": [
+        "Binjie Wang",
+        "Xinran Zhao",
+        "Shoubin Yu",
+        "Xiang Li",
+        "Silong Yong",
+        "Chenyang Yang",
+        "Tianyu Chen",
+        "Ruofei Du",
+        "He He",
+        "Chen Zhao",
+        "Tongshuang Wu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-28",
+      "source_url": "https://arxiv.org/abs/2610.38231",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "3d-code-editing",
+        "benchmark",
+        "blender",
+        "render-verification"
+      ],
+      "summary": "Benchmarks instruction-guided edits to Blender programs and uses render-based checklists to expose geometric-foresight failures.",
+      "evidence_notes": "A benchmark for executable 3D program editing; retained outside the three primary families so benchmark evidence is not mistaken for a world-model method. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.38231",
+      "alias": "3DCodeEdit"
+    },
+    {
+      "id": "2610.35980",
+      "citation_key": "cwm_2610_35980",
+      "title": "UnityBench-Mini3D: Evaluating LLM Agents for 3D Game Development in Unity",
+      "authors": [
+        "Yijun Zhou",
+        "Minghao Shao",
+        "Ke Zhang",
+        "Renkai Yuan",
+        "Hongbo Yuan",
+        "Bin Hu",
+        "Bozhao Qian",
+        "Hongxia Shen",
+        "Yanhong Liu",
+        "Yuting Chen",
+        "Yuntao Shi",
+        "Zhongxuan Xu",
+        "Shuo Mao",
+        "Haijia Zhou",
+        "Zhendong Li",
+        "Tao Zhang",
+        "Chenggang Li",
+        "Yuxuan Wang",
+        "Zinan Zheng",
+        "Calvin Zhang",
+        "Jia Li",
+        "Heng Chang",
+        "Jie Feng"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-26",
+      "source_url": "https://arxiv.org/abs/2610.35980",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "unity",
+        "benchmark",
+        "runtime-tests",
+        "coding-agents"
+      ],
+      "summary": "Evaluates coding agents on Unity projects with deterministic milestone tests over scene structure, component configuration, and runtime behavior.",
+      "evidence_notes": "The benchmark directly measures engine-state and runtime correctness, but it is an evaluation resource rather than a proposed code-world model. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.35980",
+      "alias": "UnityBench-Mini3D"
+    },
+    {
+      "id": "2610.33894",
+      "citation_key": "cwm_2610_33894",
+      "title": "WMEval: Evaluating Interactive World Models Grounded on Physical Simulations",
+      "authors": [
+        "Lanxiang Hu",
+        "Yixin Huang",
+        "Abhilash Shankarampeta",
+        "Zilin Dai",
+        "Yuyuan Wu",
+        "Kun Qian",
+        "Junze Liu",
+        "Arvind Srinivasan",
+        "Mingjia Huo",
+        "Will Lin",
+        "Kai Zhong",
+        "Weiqi Zhang",
+        "Tian Wang",
+        "Qingjun Cui",
+        "Tajana Rosing",
+        "Hao Zhang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-24",
+      "source_url": "https://arxiv.org/abs/2610.33894",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "physical-causality",
+        "benchmark",
+        "unity",
+        "state-verification"
+      ],
+      "summary": "Uses Unity physical simulations as ground-truth oracles to compare interactive world-model trajectories at perceptual and state/causal levels.",
+      "evidence_notes": "A useful external benchmark for the survey evidence framework; it evaluates world models and does not itself synthesize a code-defined world. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.33894",
+      "alias": "WMEval",
+      "reviewed_version": "v2"
+    },
+    {
+      "id": "2610.39721",
+      "citation_key": "cwm_2610_39721",
+      "title": "WorldProbe: When Video World Models Fall Apart under Long-Horizon Spatial Exploration",
+      "authors": [
+        "Minqi Wang",
+        "Jie Peng",
+        "Hejun Dong",
+        "Ruchang Yao",
+        "Puyi Wang",
+        "Siyuan Huang",
+        "Jihai Zhang",
+        "Yafu Li",
+        "Qi Dou",
+        "Xiaoye Qu",
+        "Yu Cheng"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-29",
+      "source_url": "https://arxiv.org/abs/2610.39721",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "benchmark",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "long-horizon",
+        "benchmark",
+        "spatial-exploration",
+        "world-consistency"
+      ],
+      "summary": "Uses a goal-conditioned agent to adapt camera actions online and probe long-horizon spatial consistency in video world models.",
+      "evidence_notes": "This benchmark targets persistent visual worlds without a code-defined substrate, so it remains an adjacent evaluation record. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.39721",
+      "alias": "WorldProbe"
+    },
+    {
+      "id": "2610.37257",
+      "citation_key": "cwm_2610_37257",
+      "title": "GameVerse: A Minute-Scale Gameplay Dataset for Long-Horizon Interactive World Modeling",
+      "authors": [
+        "Kang He",
+        "Wenshuo Peng",
+        "Chuanhao Li",
+        "Zihui Gao",
+        "Xiaojie Xu",
+        "Zhengyuan Lin",
+        "Yuzhe Ding",
+        "Donghong Ji",
+        "Kaipeng Zhang",
+        "Yongtao Ge"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-27",
+      "source_url": "https://arxiv.org/abs/2610.37257",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "resource",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "gameplay-dataset",
+        "long-horizon",
+        "video-world-model",
+        "event-captions"
+      ],
+      "summary": "Provides minute-scale gameplay clips with stable camera trajectories and event-aligned captions for long-horizon interactive world-model training.",
+      "evidence_notes": "A data resource for the visual-world branch. It supports comparison with code-defined worlds but does not itself provide executable dynamics. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.37257",
+      "alias": "GameVerse",
+      "reviewed_version": "v2"
+    },
+    {
+      "id": "2610.40191",
+      "citation_key": "cwm_2610_40191",
+      "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+      "authors": [
+        "Liaoyuan Fan",
+        "Yuhao Zheng",
+        "Dongxing Mao",
+        "Hangyu Ran",
+        "Siyuan Hu",
+        "Weijia Mao",
+        "Rui Zhao",
+        "Weijia Wu",
+        "Guian Fang",
+        "Yanzhe Chen",
+        "Zeyu Zhu",
+        "Yuxin Jiang",
+        "Yiren Song",
+        "Yuchao Gu",
+        "Junchao Yi",
+        "Qi Hu",
+        "Dan Kong",
+        "Alex Jinpeng Wang",
+        "Kevin Qinghong Lin",
+        "Mike Zheng Shou",
+        "Wei Liu"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-29",
+      "source_url": "https://arxiv.org/abs/2610.40191",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "survey",
+      "code_roles": [
+        "transition",
+        "observation"
+      ],
+      "tags": [
+        "survey",
+        "agent-harness",
+        "video-world-model",
+        "recursive-self-improvement"
+      ],
+      "summary": "Surveys agent harnesses for video production, interactive world modeling, and recursive self-improvement; it is a related survey rather than a core code-world method.",
+      "evidence_notes": "Concurrent related survey. Its unit of analysis is the harness around video generation; our survey keeps code semantics and executable world substrates as the inclusion criterion. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.40191",
+      "alias": "Video Generation Meets Agent Harness"
+    },
+    {
+      "id": "2610.34745",
+      "citation_key": "cwm_2610_34745",
+      "title": "SceneAgent: An Agentic Pipeline from 3D and 4D Captures to Simulation Environments",
+      "authors": [
+        "Luke Hollis",
+        "Tianxing Fan",
+        "Heng Yang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-26",
+      "source_url": "https://arxiv.org/abs/2610.34745",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "adjacent",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "real-to-sim",
+        "simulation-ready",
+        "scene-reconstruction",
+        "repair"
+      ],
+      "summary": "Coordinates reconstruction, physical modeling, simulation inspection, and repair to turn 3D/4D captures into interactive simulation environments.",
+      "evidence_notes": "Relevant real-to-sim and simulator-repair context, but the abstract does not make an executable code world the central representation; retained as adjacent. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.34745",
+      "alias": "SceneAgent"
+    },
+    {
+      "id": "2610.31466",
+      "citation_key": "cwm_2610_31466",
+      "title": "AnyGameRenderer: Entity-Consistent Generative Rendering Across Games and an Entity-Level Benchmark",
+      "authors": [
+        "Ruicong Liu",
+        "Liangyang Ouyang",
+        "Fengbo Lan",
+        "Zhixiang Wang",
+        "Kaipeng Zhang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-22",
+      "source_url": "https://arxiv.org/abs/2610.31466",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "adjacent",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "generative-rendering",
+        "entity-consistency",
+        "code-built-games",
+        "benchmark"
+      ],
+      "summary": "Renders agent-built game blockouts into entity-consistent video while preserving layout, camera, entity timing, and count changes.",
+      "evidence_notes": "A renderer and entity-consistency benchmark for code-built games. Upstream game code supplies state, but the paper does not propose code as the world-model substrate. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.31466",
+      "alias": "AnyGameRenderer"
+    },
+    {
+      "id": "2610.40339",
+      "citation_key": "cwm_2610_40339",
+      "title": "Wizard: Manipulate Any World in Real Time via Agentic Control",
+      "authors": [
+        "Yuzhe Wu",
+        "Zijun Lin",
+        "Yeying Jin"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-29",
+      "source_url": "https://arxiv.org/abs/2610.40339",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "adjacent",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "structured-proxy",
+        "game-state",
+        "agentic-control",
+        "video-world-model"
+      ],
+      "summary": "Combines structured skeleton/geometry proxies with an agentic framework that maintains game state for real-time, generalizable video-world control.",
+      "evidence_notes": "Useful adjacent video-world comparison. The abstract does not establish executable code as the world representation, so it is not assigned to Code-as-World-type. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.40339",
+      "alias": "Wizard"
+    },
+    {
+      "id": "2610.33845",
+      "citation_key": "cwm_2610_33845",
+      "title": "Build, Don't Play: Self-Improving LLM Research Agents Develop a Hearthstone Battlegrounds AI That Rivals Top Players",
+      "authors": [
+        "Changlian Ma",
+        "Limin Wang"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-24",
+      "source_url": "https://arxiv.org/abs/2610.33845",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "adjacent",
+      "code_roles": [
+        "transition"
+      ],
+      "tags": [
+        "game-simulator",
+        "self-improving-agent",
+        "executable-environment",
+        "verification"
+      ],
+      "summary": "A self-improving research-agent system builds and verifies a faithful Hearthstone Battlegrounds simulator, then trains agents against calibrated opponents.",
+      "evidence_notes": "Relevant because agents build an executable game environment, but the main contribution is the research-agent loop rather than a code-centric world-model method. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.33845",
+      "alias": "AutoTavern"
+    },
+    {
+      "id": "2610.32978",
+      "citation_key": "cwm_2610_32978",
+      "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+      "authors": [
+        "Yuhan Liu",
+        "Lianhui Qin",
+        "Shenji Wan"
+      ],
+      "year": 2026,
+      "first_public_date": "2026-10-23",
+      "source_url": "https://arxiv.org/abs/2610.32978",
+      "review_depth": "abstract",
+      "reviewed_on": "2026-10-31",
+      "metadata_checked_on": "2026-10-31",
+      "section": null,
+      "scope": "adjacent",
+      "code_roles": [
+        "observation"
+      ],
+      "tags": [
+        "scene-generation",
+        "simulation-ready",
+        "physics-stability",
+        "embodied-learning"
+      ],
+      "summary": "Combines visual layout sampling with contract-guided 3D compilation and physical-stability checks for embodied-learning environments.",
+      "evidence_notes": "Relevant simulation-ready scene-generation context. The abstract does not identify code as the primary world representation, so it remains adjacent. Date follows arXiv v1 metadata; no venue assignment is inferred.",
+      "arxiv_id": "2610.32978",
+      "alias": "SceneBloom"
     }
   ]
 }

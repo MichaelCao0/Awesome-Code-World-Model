@@ -14,9 +14,9 @@
 
 | 主线 | 核心问题 | 正文重点 | 代表工作 |
 |---|---|---|---|
-| **WorldCoder-type** | 代码能否预测动作后果？ | 转移程序、随机/层次机制、规划、反例修复与主动实验 | WorldCoder、GIF-MCTS、TheoryCoder、PoE-World、OneLife、PatchWorld、EMPIRIC |
-| **Code-as-World-type** | 代码能否让世界持续存在并可执行？ | 状态权威、实体和规则、模拟器接口、神经渲染接口、长时交互 | Code as Worlds、Code2Worlds、Programmable World Model、CoDeR、AgentGarten、Oneira、Mallea |
-| **VibeWorlding-type** | agent 能否构建和编辑 3D 世界？ | 资产检索、场景程序、空间布局、关节/物理属性、渲染反馈与仿真准备度 | VibeWorlding、Holodeck、SceneCraft、WorldClaw、USDCraft、NeoWorld-3、SceneRig |
+| **WorldCoder-type** | 代码能否预测动作后果？ | 转移程序、随机/层次机制、规划、反例修复与主动实验 | WorldCoder、GIF-MCTS、TheoryCoder、PoE-World、OneLife、PatchWorld、Algebraic World Model、EMPIRIC |
+| **Code-as-World-type** | 代码能否让世界持续存在并可执行？ | 状态权威、实体和规则、模拟器接口、神经渲染接口、长时交互 | Code as Worlds、Code2Worlds、Programmable World Model、CoDeR、AgentGarten、Oneira、Mallea、Fight World Model、BoxWorld、CineU |
+| **VibeWorlding-type** | agent 能否构建和编辑 3D 世界？ | 资产检索、场景程序、空间布局、关节/物理属性、渲染反馈与仿真准备度 | VibeWorlding、Holodeck、SceneCraft、WorldClaw、USDCraft、NeoWorld-3、SceneRig、SceneEvolve、WorldMirror、InfiniDream |
 
 GUI 观测代码模型、渲染器、评测基准、历史表示和相邻学习型模拟器保留在文献总表中，但不强行制造第四类主线。
 
@@ -28,7 +28,7 @@ GUI 观测代码模型、渲染器、评测基准、历史表示和相邻学习�
 | 2. Foundations | 三类主线分别把什么交给程序？ | 世界模型定义、状态权威、程序接口、执行与观测边界 |
 | 3. WorldCoder-type | 如何从交互和证据获得可执行动力学？ | WorldCoder/GIF-MCTS；TheoryCoder/PoE-World/OneLife；PatchWorld/Memento 3/EMPIRIC |
 | 4. Code-as-World-type | 如何构建持久的可执行环境？ | Code as Worlds/Code2Worlds；PWM/CoDeR/GameDirector；AgentGarten/Oneira/Mallea/Web World Models |
-| 5. VibeWorlding-type | 如何把意图和工具转成 3D 世界？ | VibeWorlding、SceneCraft、WorldClaw、USDCraft、SceneRig、NeoWorld-3；Code for 3D 与 simulation-ready 资产 |
+| 5. VibeWorlding-type | 如何把意图和工具转成 3D 世界？ | VibeWorlding、SceneCraft、WorldClaw、USDCraft、SceneRig、NeoWorld-3；SceneEvolve/WorldMirror/InfiniDream；Code for 3D 与 simulation-ready 资产 |
 | 6. Observation and rendering interfaces | 世界状态如何变成可见观测？ | gWorld/Code2World/AppDeltaWorld；确定性渲染、神经渲染、GUI 渲染与状态—观测一致性 |
 | 7. Verification and maintenance | 错误如何发现、修复和回归验证？ | 回放、反例、仿真反馈、事件遵循、长期一致性 |
 | 8. Evaluation | benchmark 实际验证哪个承诺？ | WorldCoder-Bench、ExeWorldBench、Video2World、GameLogicBench、PROWBench、GUI-CC |

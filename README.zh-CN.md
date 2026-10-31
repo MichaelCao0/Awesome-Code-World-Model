@@ -37,6 +37,7 @@
 <a id="news"></a>
 ## 更新
 
+- **2026-10-31** — 根据 10 月 13–29 日检索新增 21 条记录，补充可执行动力学、持久世界引擎、可编辑 3D 构建与运行时评测。严格范围仍由三类主线定义，支撑来源保留在未归类总表中。
 - **2026-10-30** — 继续补充三类主线归类；评测、综述和明显相邻来源保留在总表但不强行归类。仓库目录现在只有三个 section。
 - **2026-10-29** — 加入 VibeWorlding，整理覆盖 124 条记录的全量论文总表，并将 README 主分类收敛为 WorldCoder-type、Code-as-World-type、VibeWorlding-type 三类。封面改为代码—状态—数字世界主题的栅格图。
 - **2026-10-26** — 补入 31 条核实来源，形成当前文献目录基础。
@@ -48,15 +49,15 @@
 
 [研究动机](#motivation) · [综述与资源](#survey--resources) · [核心视角](#at-a-glance) · [文献目录](#paper-collection) · [参与贡献](#contributing) · [致谢](#acknowledgements)
 
-**写作讨论：** [三类框架](docs/coarse-taxonomy.md) · [全量论文总表](docs/paper-master-list.md) · [分类 JSON](data/classification.json) · [本轮更新](docs/updates/2026-10-30.md)
+**写作讨论：** [三类框架](docs/coarse-taxonomy.md) · [全量论文总表](docs/paper-master-list.md) · [分类 JSON](data/classification.json) · [本轮更新](docs/updates/2026-10-31.md)
 
 <!-- NAVIGATION:BEGIN -->
 
 | 三类主线 |
 |---|
-| [01 · WorldCoder-type · 程序化动力学](#papers-worldcoder) <sub>(32)</sub> |
-| [02 · Code-as-World-type · 可执行世界程序](#papers-code_as_world) <sub>(27)</sub> |
-| [03 · VibeWorlding-type · agentic 3D 世界构建](#papers-vibeworlding) <sub>(22)</sub> |
+| [01 · WorldCoder-type · 程序化动力学](#papers-worldcoder) <sub>(33)</sub> |
+| [02 · Code-as-World-type · 可执行世界程序](#papers-code_as_world) <sub>(32)</sub> |
+| [03 · VibeWorlding-type · agentic 3D 世界构建](#papers-vibeworlding) <sub>(26)</sub> |
 | [全量论文总表](docs/paper-master-list.md)（含未归类来源） |
 
 <!-- NAVIGATION:END -->
@@ -100,7 +101,7 @@
 
 <!-- CATALOG:BEGIN -->
 
-**124 条文献来源** · 文献截止日期：**2026-10-29**。
+**145 条文献来源** · 文献截止日期：**2026-10-29**。
 
 README 只按三类主线浏览；未归类的小型、评测与相邻来源保留在[全量论文总表](docs/paper-master-list.md)。
 
@@ -110,6 +111,9 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 ### 01 · WorldCoder-type · 程序化动力学
 
 *可执行转移机制、世界程序归纳、规划与模型修复。*
+
+- **Algebraic World Model: From Exploration to Proofs** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.40503)
+  <br><sub>通过可执行 Python 假设、类型化规则和 Lean 证明探索未知游戏中的可达性与不可达性。</sub>
 
 - **LLM Agents as Suppliers of Physical System Models: Calibration and Acceptance in Modelica** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.25019)
   <br><sub>研究编码智能体根据描述与数据组合、校准可执行 Modelica 物理系统模型，并以行为拟合、物理不变量与可解释性进行验收。</sub>
@@ -214,8 +218,20 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 *持久世界状态、规则、模拟器以及执行/渲染接口。*
 
+- **Fight World Model: Customizable Combat through Visual Interaction Proxies** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.40607)
+  <br><sub>将可执行的战斗状态和规则解析与视频渲染分开，用绑定身份和时间的交互代理保持攻击、受击与生命状态一致。</sub>
+
+- **Cinematize from Unreal: Agentic Choreography for Controllable World Simulation (CineU)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.38468)
+  <br><sub>把 Unreal 工程作为可检查的持久世界，利用智能体生成代码执行并验证操作，通过几何约束、时间线和局部修复完成世界编排。</sub>
+
 - **EdenLive: Real-Time Generative Rendering from Any Visual Reference** `2026` [![Project](assets/badges/project.svg)](https://github.com/VAST-AI-Research/EdenLive)
   <br><sub>生成式渲染器把上游参考视频、目标首帧和提示转换为增强视频；状态和规则由上游程序维护。官方还提供从提示生成可玩游戏的 skill 与工作台。</sub>
+
+- **BoxWorld: Let World Engines Control and Video Generators Render** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.36371)
+  <br><sub>编码智能体把用户规则写成 Box World Engine，由持久属性和状态变量驱动神经视频渲染，并提出成对状态控制评测。</sub>
+
+- **PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.34921)
+  <br><sub>由 VLM 提出可执行物理世界，确定性物理引擎验证反事实分支并生成可验证的训练任务。</sub>
 
 - **Mundo: Customized World Model** `2026` [![Project](assets/badges/project.svg)](https://mundo-world-model.github.io/)
   <br><sub>从图像重建可编辑的三维代理场景；场景程序指定对象和物理参数，脚本及通常采用的 MuJoCo 推进状态，代理帧与参考视图共同控制视频渲染。</sub>
@@ -234,6 +250,9 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 - **Mallea: Building, Steering, and Memorizing Worlds with Coding Agent** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.21283)
   <br><sub>编码智能体联合构建对象结构与规则，支持保留未受影响状态的运行时编辑，并结合执行状态与对象纹理记忆进行渲染。</sub>
+
+- **Generative World Simulation with DAO and JING (DAO + JING)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.19726)
+  <br><sub>DAO 在交互规则和世界时间下维护共享角色、物体与空间状态，JING 为不同观察者生成视听体验。</sub>
 
 - **Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.17651)
   <br><sub>将生成的视觉场景编译为具有物理属性的 MuJoCo 世界，通过仿真器反馈修正可执行动力学与场景设置。</sub>
@@ -302,11 +321,23 @@ README 只按三类主线浏览；未归类的小型、评测与相邻来源保�
 
 *构建和编辑可编辑、可渲染或可仿真的 3D 世界。*
 
+- **Gym-Anything for Robotics: Scaling physical simulations with digital agents** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.40565)
+  <br><sub>把仿真创建视为编码智能体任务，构建并审计 RoboWorld 物理仿真环境；作为 3D/模拟器构建支撑工作收录。</sub>
+
+- **Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction (SceneEvolve)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.37046)
+  <br><sub>用可执行代码表示组合式 3D 场景，并在固定模型和执行后端的条件下演化重建 harness。</sub>
+
+- **WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.31834)
+  <br><sub>从真实机器人演示构建交互式数字孪生，通过编码智能体迭代修复可执行世界程序并验证物理一致性。</sub>
+
 - **SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28585)
   <br><sub>从单张图像重建物体与布局，通过场景代码编辑、受限位姿搜索和仿真验证，保留物理稳定且与图像对齐的场景配置。</sub>
 
 - **NeoWorld-3: From Pixels to Code-Defined Physical Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.27690)
   <br><sub>通过分层编码智能体、可微参数拟合以及关节与物理检查，从视觉证据重建可编辑几何程序。</sub>
+
+- **InfiniDream: Open-Ended Photorealistic 3D Worlds Through Procedural Generation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.26853)
+  <br><sub>用 VLM 驱动符号约束的程序化生成和确定性布局，构建可编辑、可动画化的开放式 3D 世界。</sub>
 
 - **Self-Building Labs** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.23826)
   <br><sub>智能体从科学目标、照片和设备信息构建实验室数字孪生、机器人技能与工作流，并通过观测和物理反馈改进场景模型。</sub>

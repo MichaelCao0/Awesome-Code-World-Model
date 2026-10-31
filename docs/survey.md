@@ -23,6 +23,8 @@ The survey links and citation indicator are reserved for publication. Their URLs
 
 The working manuscript title is *Programmatic World Models: A Survey*. The collection title above is retained while organization is discussed. Start with the [three-family taxonomy](coarse-taxonomy.md) and [paper master list](paper-master-list.md). The [writing plan](survey-outline.md) explains how the three families can organize the manuscript while lifecycle chapters compare shared mechanisms.
 
+A related survey, [Video Generation Meets Agent Harness](https://arxiv.org/abs/2610.40191), reviews agent harnesses around video generation, agentic world modeling, and recursive self-improvement. Our scope is narrower and complementary: the code representation must carry executable dynamics, persistent state/rules, simulator extensions, or editable 3D-world construction.
+
 ## Read the framework
 
 | Resource | What you will find |

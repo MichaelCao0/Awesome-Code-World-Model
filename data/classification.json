@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_on": "2026-10-30",
+  "updated_on": "2026-10-31",
   "status": "discussion-draft",
   "scope": "One of three public family assignments per classified record: WorldCoder-type, Code-as-World-type, or VibeWorlding-type. Smaller, benchmark, historical, renderer, GUI, survey, and adjacent records remain unassigned in the master list.",
   "families": {
@@ -1509,6 +1509,258 @@
       ],
       "evidence_depth": "targeted_fulltext",
       "annotated_on": "2026-10-29"
+    },
+    {
+      "id": "2610.40607",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40607"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.36371",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.36371"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.38468",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.38468"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.37046",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.37046"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.31834",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.31834"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.40565",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40565"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.26853",
+      "coarse_family": "vibeworlding",
+      "coarse_family_label": "VibeWorlding-type · Agentic 3D World Construction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.26853"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.34921",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.34921"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.40503",
+      "coarse_family": "worldcoder",
+      "coarse_family_label": "WorldCoder-type · Programmatic Dynamics / World Program Induction",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40503"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.19726",
+      "coarse_family": "code_as_world",
+      "coarse_family_label": "Code-as-World-type · Executable World Programs",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.19726"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.38231",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.38231"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.35980",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.35980"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.33894",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.33894"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.39721",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.39721"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.37257",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.37257"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.40191",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40191"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.34745",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.34745"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.31466",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.31466"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.40339",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.40339"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.33845",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.33845"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
+    },
+    {
+      "id": "2610.32978",
+      "coarse_family": null,
+      "coarse_family_label": "Unassigned / 未归类",
+      "source_provenance": "arxiv_search_2026-10-31",
+      "assignment_status": "provisional",
+      "evidence_urls": [
+        "https://arxiv.org/abs/2610.32978"
+      ],
+      "evidence_depth": "abstract",
+      "annotated_on": "2026-10-31"
     }
   ]
 }

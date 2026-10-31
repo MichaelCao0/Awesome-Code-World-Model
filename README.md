@@ -36,6 +36,7 @@ Beyond predicting pixels, code-centric world models enable **explicit dynamics, 
 
 ## News
 
+- **2026-10-31** — Added 21 records from the 2026-10-13–29 search pass, including executable dynamics, persistent world engines, editable 3D construction, and execution-grounded benchmarks. The strict catalogue boundary remains the three-family map; supporting sources stay unassigned.
 - **2026-10-30** — Expanded the three-family assignments while leaving benchmarks and adjacent sources unassigned in the master list. The repository now has exactly three catalogue sections.
 - **2026-10-29** — Added VibeWorlding, a 124-record [paper master list](docs/paper-master-list.md), and the initial three-family map: WorldCoder-type, Code-as-World-type, and VibeWorlding-type. Replaced the cover with a generated raster image.
 - **2026-10-19** — Bilingual READMEs, a PNG cover, reserved survey links, and visual navigation.
@@ -45,15 +46,15 @@ Beyond predicting pixels, code-centric world models enable **explicit dynamics, 
 
 [Motivation](#motivation) · [Survey & resources](#survey--resources) · [At a glance](#at-a-glance) · [Paper collection](#paper-collection) · [Contributing](#contributing) · [Acknowledgements](#acknowledgements)
 
-**Writing discussion:** [Three-family map](docs/coarse-taxonomy.md) · [Paper master list](docs/paper-master-list.md) · [Classification JSON](data/classification.json) · [Update notes](docs/updates/2026-10-30.md)
+**Writing discussion:** [Three-family map](docs/coarse-taxonomy.md) · [Paper master list](docs/paper-master-list.md) · [Classification JSON](data/classification.json) · [Update notes](docs/updates/2026-10-31.md)
 
 <!-- NAVIGATION:BEGIN -->
 
 | Three primary families |
 |---|
-| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(32)</sub> |
-| [02 · Code-as-World-type · Executable World Programs](#papers-code_as_world) <sub>(27)</sub> |
-| [03 · VibeWorlding-type · Agentic 3D World Construction](#papers-vibeworlding) <sub>(22)</sub> |
+| [01 · WorldCoder-type · Programmatic Dynamics](#papers-worldcoder) <sub>(33)</sub> |
+| [02 · Code-as-World-type · Executable World Programs](#papers-code_as_world) <sub>(32)</sub> |
+| [03 · VibeWorlding-type · Agentic 3D World Construction](#papers-vibeworlding) <sub>(26)</sub> |
 | [Paper master list](docs/paper-master-list.md) (including unassigned sources) |
 
 <!-- NAVIGATION:END -->
@@ -93,7 +94,7 @@ The [three-family guide](docs/coarse-taxonomy.md) gives the placement rules. Sma
 
 <!-- CATALOG:BEGIN -->
 
-**124 sources** · literature through **2026-10-29**.
+**145 sources** · literature through **2026-10-29**.
 
 The README groups papers by the three primary families; smaller, benchmark, and adjacent sources remain in the [paper master list](docs/paper-master-list.md).
 
@@ -103,6 +104,9 @@ Each primary family is ordered by recorded publication date; the annotated catal
 ### 01 · WorldCoder-type · Programmatic Dynamics
 
 *Executable transition mechanisms, world-program induction, planning, and model repair.*
+
+- **Algebraic World Model: From Exploration to Proofs** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.40503)
+  <br><sub>Explores unknown games with executable Python hypotheses, typed rules, and Lean formalization for reachability and impossibility proofs.</sub>
 
 - **LLM Agents as Suppliers of Physical System Models: Calibration and Acceptance in Modelica** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.25019)
   <br><sub>Studies LLM coding agents that assemble and calibrate executable Modelica physical-system models from descriptions and data, with acceptance based on behavioral fit, invariants and interpretability.</sub>
@@ -207,8 +211,20 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 *Persistent world state, rules, simulators, and execution/rendering interfaces.*
 
+- **Fight World Model: Customizable Combat through Visual Interaction Proxies** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.40607)
+  <br><sub>Separates executable combat state and rule resolution from video rendering with identity- and timing-aligned interaction proxies; tests rule changes and customization.</sub>
+
+- **Cinematize from Unreal: Agentic Choreography for Controllable World Simulation (CineU)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.38468)
+  <br><sub>Uses an Unreal project as a persistent inspectable world; agent-generated code performs geometry- and capability-constrained operations with verification and localized repair.</sub>
+
 - **EdenLive: Real-Time Generative Rendering from Any Visual Reference** `2026` [![Project](assets/badges/project.svg)](https://github.com/VAST-AI-Research/EdenLive)
   <br><sub>A generative renderer maps upstream reference video, a target first frame and a prompt to enhanced video. The upstream program maintains state and rules. Released tooling also includes a prompt-to-playable-game skill and workbench.</sub>
+
+- **BoxWorld: Let World Engines Control and Video Generators Render** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.36371)
+  <br><sub>A coding agent turns user rules into a Box World Engine exposing persistent attributes and status variables; a state renderer converts the stream into interactive video.</sub>
+
+- **PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.34921)
+  <br><sub>Has a shared VLM propose executable physical worlds while a deterministic engine verifies counterfactual branches and produces answer-bound training tasks.</sub>
 
 - **Mundo: Customized World Model** `2026` [![Project](assets/badges/project.svg)](https://mundo-world-model.github.io/)
   <br><sub>Images are reconstructed into an editable 3D proxy. A scene program specifies objects and physical parameters; scripts and usually MuJoCo evolve state. Proxy frames condition a video renderer together with context views.</sub>
@@ -227,6 +243,9 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 - **Mallea: Building, Steering, and Memorizing Worlds with Coding Agent** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.21283)
   <br><sub>A coding agent jointly builds object structures and rules, supports runtime edits preserving unaffected state, and combines executed state with object texture memory for rendering.</sub>
+
+- **Generative World Simulation with DAO and JING (DAO + JING)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.19726)
+  <br><sub>DAO maintains shared character, object, and space states under world time and interaction rules, while JING renders observer-specific audiovisual experiences.</sub>
 
 - **Code2Worlds-2: Physically Plausible Agent Harness for Embodied World Simulation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.17651)
   <br><sub>Compiles generated visual scenes into MuJoCo-compatible worlds with physical attributes and refines executable dynamics using simulator feedback.</sub>
@@ -295,11 +314,23 @@ Each primary family is ordered by recorded publication date; the annotated catal
 
 *Agentic construction and editing of editable, renderable, or simulation-ready 3D worlds.*
 
+- **Gym-Anything for Robotics: Scaling physical simulations with digital agents** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.40565)
+  <br><sub>Treats simulation creation as a coding-agent task and releases RoboWorld environments plus an adversarial creation-audit loop for physical simulation construction.</sub>
+
+- **Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction (SceneEvolve)** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.37046)
+  <br><sub>Represents compositional 3D scenes as executable code and evolves the reconstruction harness while fixing model parameters, action semantics, and execution backend.</sub>
+
+- **WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.31834)
+  <br><sub>Constructs interactive digital twins from in-the-wild robot demonstrations by iteratively refining an executable world program with verification feedback.</sub>
+
 - **SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.28585)
   <br><sub>Reconstructs objects and scene layout from one image, then edits scene code and uses bounded pose search plus simulation validation to retain physically stable, visually aligned configurations.</sub>
 
 - **NeoWorld-3: From Pixels to Code-Defined Physical Worlds** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.27690)
   <br><sub>Reconstructs editable geometry programs from visual evidence through hierarchical coding agents, differentiable parameter fitting and articulation/physics checks.</sub>
+
+- **InfiniDream: Open-Ended Photorealistic 3D Worlds Through Procedural Generation** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.26853)
+  <br><sub>Uses a VLM-driven procedural pipeline with symbolic constraints and deterministic placement to build editable, animated, photorealistic 3D worlds.</sub>
 
 - **Self-Building Labs** `2026` [![arXiv](assets/badges/arxiv.svg)](https://arxiv.org/abs/2610.23826)
   <br><sub>Agents construct laboratory digital twins, reusable robot skills and workflows from objectives, photographs and device information, refining scene models using observations and physical feedback.</sub>
